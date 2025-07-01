@@ -6,4 +6,5 @@ part 'app_update_check_event.freezed.dart';
 sealed class AppUpdateCheckEvent with _$AppUpdateCheckEvent {
   const factory AppUpdateCheckEvent.initialize() = Initialize;
   const factory AppUpdateCheckEvent.checkForUpdate() = CheckForUpdate;
+  const factory AppUpdateCheckEvent.skipCheckForUpdate() = SkipCheckForUpdate;
 }

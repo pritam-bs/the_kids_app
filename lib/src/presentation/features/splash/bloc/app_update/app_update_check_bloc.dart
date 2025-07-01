@@ -16,22 +16,31 @@ class AppUpdateCheckBloc
   AppUpdateCheckBloc(
     this._checkAppUpdateUseCase,
     this._getLastSkippedVersionUseCase,
-  ) : super(const AppUpdateCheckState.initial()) {
-    on<AppUpdateCheckEvent>(_onEvent);
+  ) : super(const Initial()) {
+    on<Initialize>(_onInitialize);
+    on<CheckForUpdate>(_onCheckForUpdate);
+    on<SkipCheckForUpdate>(_onSkipCheckForUpdate);
   }
 
-  Future<void> _onEvent(
-    AppUpdateCheckEvent event,
+  Future<void> _onInitialize(
+    Initialize event,
     Emitter<AppUpdateCheckState> emit,
   ) async {
-    switch (event) {
-      case Initialize():
-        emit(AppUpdateCheckState.initial());
-        break;
-      case CheckForUpdate():
-        await _checkForUpdate(emit);
-        break;
-    }
+    emit(Initial());
+  }
+
+  Future<void> _onCheckForUpdate(
+    CheckForUpdate event,
+    Emitter<AppUpdateCheckState> emit,
+  ) async {
+    await _checkForUpdate(emit);
+  }
+
+  Future<void> _onSkipCheckForUpdate(
+    SkipCheckForUpdate event,
+    Emitter<AppUpdateCheckState> emit,
+  ) async {
+    emit(UpdateSkipped());
   }
 
   Future<void> _checkForUpdate(Emitter<AppUpdateCheckState> emit) async {
@@ -40,16 +49,16 @@ class AppUpdateCheckBloc
       final lastSkippedVersion = await _getLastSkippedVersionUseCase.execute();
       if (lastSkippedVersion != null &&
           appUpdateInfo.latestVersion == lastSkippedVersion) {
-        emit(AppUpdateCheckState.updateSkipped());
+        emit(UpdateSkipped());
       } else if (appUpdateInfo.shouldForceUpdate ||
           appUpdateInfo.shouldRecommendUpdate) {
-        emit(AppUpdateCheckState.updateAvailable(appUpdateInfo));
+        emit(UpdateAvailable(appUpdateInfo));
       } else {
-        emit(AppUpdateCheckState.upToDate());
+        emit(UpToDate());
       }
     } catch (e) {
       AppLogger.e(e);
-      emit(AppUpdateCheckState.error(ErrorMessages.unexpectedError));
+      emit(Error(ErrorMessages.unexpectedError));
     }
   }
 }

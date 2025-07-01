@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:auto_route/auto_route.dart';
@@ -15,8 +16,7 @@ class SplashScreen extends StatelessWidget implements AutoRouteWrapper {
   @override
   Widget wrappedRoute(BuildContext context) {
     return BlocProvider(
-      create:
-          (context) => getIt<AppUpdateCheckBloc>()..add(const CheckForUpdate()),
+      create: (context) => getIt<AppUpdateCheckBloc>()..add(Initialize()),
       child: this,
     );
   }
@@ -27,11 +27,17 @@ class SplashScreen extends StatelessWidget implements AutoRouteWrapper {
       listener: (context, state) {
         switch (state) {
           case Initial():
-            context.read<AppUpdateCheckBloc>().add(const CheckForUpdate());
+            if (kIsWeb) {
+              context.read<AppUpdateCheckBloc>().add(
+                const SkipCheckForUpdate(),
+              );
+            } else {
+              context.read<AppUpdateCheckBloc>().add(const CheckForUpdate());
+            }
+
           case UpToDate():
           case UpdateSkipped():
             // App is up to date or update was skipped
-            // When up to date or skipped, check auth state to determine next screen
             context.router.root.replace(const HomeRoute());
             break;
           case UpdateAvailable(appUpdateInfo: final info):
@@ -64,6 +70,6 @@ class SplashScreen extends StatelessWidget implements AutoRouteWrapper {
   }
 
   void onRetry(BuildContext context) {
-    context.read<AppUpdateCheckBloc>().add(const Initialize());
+    context.read<AppUpdateCheckBloc>().add(const CheckForUpdate());
   }
 }

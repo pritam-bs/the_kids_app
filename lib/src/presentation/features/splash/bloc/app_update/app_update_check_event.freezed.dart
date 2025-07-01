@@ -106,4 +106,36 @@ String toString() {
 
 
 
+/// @nodoc
+
+
+class SkipCheckForUpdate implements AppUpdateCheckEvent {
+  const SkipCheckForUpdate();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SkipCheckForUpdate);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'AppUpdateCheckEvent.skipCheckForUpdate()';
+}
+
+
+}
+
+
+
+
 // dart format on

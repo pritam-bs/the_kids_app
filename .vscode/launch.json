@@ -1,64 +1,118 @@
 {
   "version": "0.2.0",
   "configurations": [
-    // Debug configurations
+    // --- Native Debug configurations ---
     {
-      "name": "kids_app (dev debug)",
+      "name": "kids_app (dev debug) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
       "args": ["--flavor=dev", "--dart-define-from-file=.env.dev"]
     },
     {
-      "name": "kids_app (prod debug)",
+      "name": "kids_app (prod debug) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
       "args": ["--flavor=prod", "--dart-define-from-file=.env.prod"]
     },
 
-    // Profile configurations
+    // --- Web Debug configurations ---
     {
-      "name": "kids_app (dev profile)",
+      "name": "kids_app (dev debug) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=.env.dev"]
+    },
+    {
+      "name": "kids_app (prod debug) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=.env.prod"]
+    },
+
+    // --- Native Profile configurations ---
+    {
+      "name": "kids_app (dev profile) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
       "args": ["--flavor=dev", "--dart-define-from-file=.env.dev"]
     },
     {
-      "name": "kids_app (prod profile)",
+      "name": "kids_app (prod profile) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
       "args": ["--flavor=prod", "--dart-define-from-file=.env.prod"]
     },
 
-    // Release configurations
+    // --- Web Profile configurations ---
     {
-      "name": "kids_app (dev release)",
+      "name": "kids_app (dev profile) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=.env.dev"]
+    },
+    {
+      "name": "kids_app (prod profile) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=.env.prod"]
+    },
+
+    // --- Native Release configurations ---
+    {
+      "name": "kids_app (dev release) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",
       "args": ["--flavor=dev", "--dart-define-from-file=.env.dev"]
     },
     {
-      "name": "kids_app (prod release)",
+      "name": "kids_app (prod release) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",
       "args": ["--flavor=prod", "--dart-define-from-file=.env.prod"]
+    },
+
+    // --- Web Release configurations ---
+    {
+      "name": "kids_app (dev release) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=.env.dev"]
+    },
+    {
+      "name": "kids_app (prod release) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=.env.prod"]
     },
 
     // Additional useful configurations
     {
-      "name": "kids_app (dev debug with --verbose)",
+      "name": "kids_app (dev debug with --verbose) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
       "args": ["--flavor=dev", "--verbose", "--dart-define-from-file=.env.dev"]
     },
     {
-      "name": "kids_app (prod debug with observatory)",
+      "name": "kids_app (prod debug with observatory) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
@@ -67,6 +121,14 @@
         "--observatory-port=8888",
         "--dart-define-from-file=.env.prod"
       ]
+    },
+    {
+      "name": "kids_app (dev debug with --verbose) - Web",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "deviceId": "chrome",
+      "args": ["--verbose", "--dart-define-from-file=.env.dev"]
     }
   ]
 }
