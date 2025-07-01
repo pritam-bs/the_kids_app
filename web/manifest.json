@@ -1,0 +1,41 @@
+{
+    "name": "the_kids_app",
+    "short_name": "the_kids_app",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "This project develops a cross-platform mobile and web application designed to facilitate German language acquisition for children. Built with Flutter, it targets iOS, Android, and Web platforms, ensuring a consistent user experience across diverse devices. A core architectural feature is the integration of the Gemma 3 Nano models for language processing and content generation. This on-device machine learning capability provides significant advantages:
+
+Enhanced Data Privacy: By performing language model inferences locally, the application minimizes external data transmission, ensuring sensitive user interactions and learning patterns remain private to the device.
+
+Robust Offline Functionality: The reliance on local Gemma 3 Nano models enables the app to operate fully without an active internet connection, supporting uninterrupted learning in various environments.
+
+The application's design prioritizes a child-friendly interface while backend logic leverages the efficiency and compact size of the Gemma 3 Nano models to deliver engaging, personalized language learning experiences with minimal resource overhead.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
