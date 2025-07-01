@@ -45,11 +45,7 @@ app.*.map.json
 /android/app/release
 /android/app/dev/release
 
-# Firebase configuration files
-GoogleService-Info.plist
-google-services.json
-
-# dotenv environment variables file
+# Environment variables file
 .env.dev
 .env.prod
 

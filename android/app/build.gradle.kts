@@ -3,20 +3,13 @@ import java.io.FileInputStream
 
 plugins {
     id("com.android.application")
+    // START: FlutterFire Configuration
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
+    // END: FlutterFire Configuration
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
-    // The Google services Gradle plugin
-    id("com.google.gms.google-services")
-
-}
-
-dependencies {
-  // Import the Firebase BoM
-  implementation(platform("com.google.firebase:firebase-bom:33.16.0"))
-
-  // The dependencies for Firebase products you want to use
-  implementation("com.google.firebase:firebase-analytics")
 }
 
 val keystoreProperties = Properties()
@@ -104,6 +97,7 @@ android {
         create("dev") {
             dimension = "app"
             versionNameSuffix = "-dev"
+            applicationIdSuffix = ".dev"
             resValue("string", "app_name", "Kids App (Dev)")
         }
         create("prod") {

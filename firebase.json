@@ -1,0 +1,78 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "buildConfigurations": {
+          "src/dev": {
+            "projectId": "the-kids-app-dev",
+            "appId": "1:508679998975:android:056f21ce06ff2690ce6bca",
+            "fileOutput": "android/app/src/dev/google-services.json"
+          },
+          "src/prod": {
+            "projectId": "the-kids-app-prod",
+            "appId": "1:165273895960:android:c31018b15817778be9ef6d",
+            "fileOutput": "android/app/src/prod/google-services.json"
+          }
+        }
+      },
+      "ios": {
+        "buildConfigurations": {
+          "Debug-dev": {
+            "projectId": "the-kids-app-dev",
+            "appId": "1:508679998975:ios:00b8e200f5b2ef41ce6bca",
+            "uploadDebugSymbols": true,
+            "fileOutput": "ios/flavors/dev/GoogleService-Info.plist"
+          },
+          "Release-dev": {
+            "projectId": "the-kids-app-dev",
+            "appId": "1:508679998975:ios:00b8e200f5b2ef41ce6bca",
+            "uploadDebugSymbols": true,
+            "fileOutput": "ios/flavors/dev/GoogleService-Info.plist"
+          },
+          "Profile-dev": {
+            "projectId": "the-kids-app-dev",
+            "appId": "1:508679998975:ios:00b8e200f5b2ef41ce6bca",
+            "uploadDebugSymbols": true,
+            "fileOutput": "ios/flavors/dev/GoogleService-Info.plist"
+          },
+          "Debug-prod": {
+            "projectId": "the-kids-app-prod",
+            "appId": "1:165273895960:ios:6e14f8ffaa3ae737e9ef6d",
+            "uploadDebugSymbols": true,
+            "fileOutput": "ios/flavors/prod/GoogleService-Info.plist"
+          },
+          "Release-prod": {
+            "projectId": "the-kids-app-prod",
+            "appId": "1:165273895960:ios:6e14f8ffaa3ae737e9ef6d",
+            "uploadDebugSymbols": true,
+            "fileOutput": "ios/flavors/prod/GoogleService-Info.plist"
+          },
+          "Profile-prod": {
+            "projectId": "the-kids-app-prod",
+            "appId": "1:165273895960:ios:6e14f8ffaa3ae737e9ef6d",
+            "uploadDebugSymbols": true,
+            "fileOutput": "ios/flavors/prod/GoogleService-Info.plist"
+          }
+        }
+      },
+      "dart": {
+        "lib/src/core/config/firebase_options_dev.dart": {
+          "projectId": "the-kids-app-dev",
+          "configurations": {
+            "android": "1:508679998975:android:056f21ce06ff2690ce6bca",
+            "ios": "1:508679998975:ios:00b8e200f5b2ef41ce6bca",
+            "web": "1:508679998975:web:74eeee84e03430cfce6bca"
+          }
+        },
+        "lib/src/core/config/firebase_options_prod.dart": {
+          "projectId": "the-kids-app-prod",
+          "configurations": {
+            "android": "1:165273895960:android:c31018b15817778be9ef6d",
+            "ios": "1:165273895960:ios:6e14f8ffaa3ae737e9ef6d",
+            "web": "1:165273895960:web:78c4d344e249c4e3e9ef6d"
+          }
+        }
+      }
+    }
+  }
+}

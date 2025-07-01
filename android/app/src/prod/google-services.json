@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "165273895960",
+    "project_id": "the-kids-app-prod",
+    "storage_bucket": "the-kids-app-prod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165273895960:android:c31018b15817778be9ef6d",
+        "android_client_info": {
+          "package_name": "space.prtlab.the_kids_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHcGFndg_q8u-8BHdQ8bgvvjBRRD08_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

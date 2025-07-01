@@ -9,6 +9,6 @@ void main() async {
   await FlavorConfig().load();
 
   await configureDependencies();
-  
+
   runApp(App());
 }
