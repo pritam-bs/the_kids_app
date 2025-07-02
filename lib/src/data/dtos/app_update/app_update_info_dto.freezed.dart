@@ -16,7 +16,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$AppUpdateInfoDTO {
 
-@JsonKey(name: 'minimum_supported_version') String get minimumSupportedVersion;@JsonKey(name: 'latest_version') String get latestVersion;@JsonKey(name: 'release_notes') String get releaseNotes;@JsonKey(name: 'store_url') String? get storeUrl;
+ String get minimumSupportedVersion; String get latestVersion; String get releaseNotes; String? get storeUrl;
 /// Create a copy of AppUpdateInfoDTO
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -49,7 +49,7 @@ abstract mixin class $AppUpdateInfoDTOCopyWith<$Res>  {
   factory $AppUpdateInfoDTOCopyWith(AppUpdateInfoDTO value, $Res Function(AppUpdateInfoDTO) _then) = _$AppUpdateInfoDTOCopyWithImpl;
 @useResult
 $Res call({
-@JsonKey(name: 'minimum_supported_version') String minimumSupportedVersion,@JsonKey(name: 'latest_version') String latestVersion,@JsonKey(name: 'release_notes') String releaseNotes,@JsonKey(name: 'store_url') String? storeUrl
+ String minimumSupportedVersion, String latestVersion, String releaseNotes, String? storeUrl
 });
 
 
@@ -83,13 +83,13 @@ as String?,
 @JsonSerializable()
 
 class _AppUpdateInfoDTO implements AppUpdateInfoDTO {
-  const _AppUpdateInfoDTO({@JsonKey(name: 'minimum_supported_version') required this.minimumSupportedVersion, @JsonKey(name: 'latest_version') required this.latestVersion, @JsonKey(name: 'release_notes') required this.releaseNotes, @JsonKey(name: 'store_url') required this.storeUrl});
+  const _AppUpdateInfoDTO({required this.minimumSupportedVersion, required this.latestVersion, required this.releaseNotes, required this.storeUrl});
   factory _AppUpdateInfoDTO.fromJson(Map<String, dynamic> json) => _$AppUpdateInfoDTOFromJson(json);
 
-@override@JsonKey(name: 'minimum_supported_version') final  String minimumSupportedVersion;
-@override@JsonKey(name: 'latest_version') final  String latestVersion;
-@override@JsonKey(name: 'release_notes') final  String releaseNotes;
-@override@JsonKey(name: 'store_url') final  String? storeUrl;
+@override final  String minimumSupportedVersion;
+@override final  String latestVersion;
+@override final  String releaseNotes;
+@override final  String? storeUrl;
 
 /// Create a copy of AppUpdateInfoDTO
 /// with the given fields replaced by the non-null parameter values.
@@ -124,7 +124,7 @@ abstract mixin class _$AppUpdateInfoDTOCopyWith<$Res> implements $AppUpdateInfoD
   factory _$AppUpdateInfoDTOCopyWith(_AppUpdateInfoDTO value, $Res Function(_AppUpdateInfoDTO) _then) = __$AppUpdateInfoDTOCopyWithImpl;
 @override @useResult
 $Res call({
-@JsonKey(name: 'minimum_supported_version') String minimumSupportedVersion,@JsonKey(name: 'latest_version') String latestVersion,@JsonKey(name: 'release_notes') String releaseNotes,@JsonKey(name: 'store_url') String? storeUrl
+ String minimumSupportedVersion, String latestVersion, String releaseNotes, String? storeUrl
 });
 
 

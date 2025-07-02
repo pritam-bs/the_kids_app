@@ -56,6 +56,7 @@ dependencies:
   # For firebase
   firebase_core: ^3.14.0
   firebase_crashlytics: ^4.3.7
+  firebase_remote_config: ^5.4.6
 
   # Bloc
   bloc: ^9.0.0
@@ -79,9 +80,6 @@ dependencies:
   shared_preferences: ^2.5.3
   package_info_plus: ^8.3.0
   url_launcher: ^6.3.1
-  
-
-
 
 dev_dependencies:
   flutter_test:

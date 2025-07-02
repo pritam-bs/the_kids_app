@@ -18,10 +18,9 @@ class AppUpdateScreen extends StatelessWidget implements AutoRouteWrapper {
   @override
   Widget wrappedRoute(BuildContext context) {
     return BlocProvider(
-      create:
-          (context) =>
-              getIt<AppUpdateInfoBloc>()
-                ..add(OnLoadAppUpdateInfo(appUpdateInfo: updateInfo)),
+      create: (context) =>
+          getIt<AppUpdateInfoBloc>()
+            ..add(OnLoadAppUpdateInfo(appUpdateInfo: updateInfo)),
       child: this,
     );
   }
@@ -29,82 +28,205 @@ class AppUpdateScreen extends StatelessWidget implements AutoRouteWrapper {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Update Available')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: BlocConsumer<AppUpdateInfoBloc, AppUpdateInfoState>(
-          listener: (context, state) {
-            if (state is UpdateSkipped) {
-              context.router.root.replace(const HomeRoute());
-            }
-          },
-          builder: (context, state) {
-            if (state is UpdateInfo) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'New Version: ${state.appUpdateInfo.latestVersion}',
-                    style: Theme.of(context).textTheme.headlineSmall,
-                  ),
-                  const SizedBox(height: 16),
-                  if (state.appUpdateInfo.shouldForceUpdate)
-                    Text(
-                      'This update is mandatory',
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: theme.colorScheme.error,
-                      ),
+      body: BlocConsumer<AppUpdateInfoBloc, AppUpdateInfoState>(
+        listener: (context, state) {
+          if (state is UpdateSkipped) {
+            context.router.root.replace(const HomeRoute());
+          }
+        },
+        builder: (context, state) {
+          if (state is UpdateInfo) {
+            return SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.system_update_alt,
+                      size: 100,
+                      color: theme.colorScheme.primary,
                     ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'Release Notes:',
-                    style: Theme.of(context).textTheme.titleMedium,
-                  ),
-                  Text(state.appUpdateInfo.releaseNotes),
-                  const Spacer(),
-                  Row(
-                    children: [
-                      if (!state.appUpdateInfo.shouldForceUpdate)
-                        Expanded(
-                          child: OutlinedButton(
-                            onPressed: () {
-                              context.read<AppUpdateInfoBloc>().add(
-                                OnSkipUpdate(state.appUpdateInfo.latestVersion),
-                              );
-                            },
-                            child: const Text('Skip This Version'),
+                    const SizedBox(height: 24),
+
+                    // --- Title ---
+                    Text(
+                      'New Update Available!',
+                      style: theme.textTheme.headlineMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: theme.colorScheme.onSurface,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 16),
+
+                    // --- Version Info ---
+                    Text(
+                      'Version: ${state.appUpdateInfo.latestVersion}',
+                      style: theme.textTheme.titleLarge?.copyWith(
+                        color: theme.colorScheme.secondary,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 24),
+
+                    // --- Mandatory Update Warning ---
+                    if (state.appUpdateInfo.shouldForceUpdate)
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 12,
+                        ),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.errorContainer,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: theme.colorScheme.error,
+                            width: 1,
                           ),
                         ),
-                      if (!state.appUpdateInfo.shouldForceUpdate)
-                        const SizedBox(width: 16),
-                      Expanded(
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            if (state.appUpdateInfo.storeUrl != null) {
-                              // Open the store URL for the update
-                              final Uri storeUrl = Uri.parse(
-                                state.appUpdateInfo.storeUrl!,
-                              );
-                              if (await canLaunchUrl(storeUrl)) {
-                                await launchUrl(storeUrl);
-                              } else {
-                                throw 'Could not launch ${state.appUpdateInfo.storeUrl}';
-                              }
-                            }
-                          },
-                          child: const Text('Update Now'),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.warning_rounded,
+                              color: theme.colorScheme.onErrorContainer,
+                              size: 24,
+                            ),
+                            const SizedBox(width: 12),
+                            Flexible(
+                              child: Text(
+                                'This update is mandatory to continue using the app.',
+                                style: theme.textTheme.bodyLarge?.copyWith(
+                                  color: theme.colorScheme.onErrorContainer,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    const SizedBox(height: 24),
+
+                    // --- Release Notes ---
+                    Text(
+                      'What\'s New:',
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: theme.colorScheme.onSurface,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 8),
+                    Expanded(
+                      // Makes release notes scrollable if they are long
+                      child: SingleChildScrollView(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: Text(
+                          state.appUpdateInfo.releaseNotes,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                          textAlign: TextAlign
+                              .center, // Center align for better aesthetics
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 32),
+
+                    // --- Action Buttons ---
+                    Row(
+                      children: [
+                        if (!state.appUpdateInfo.shouldForceUpdate)
+                          Expanded(
+                            child: OutlinedButton(
+                              onPressed: () {
+                                context.read<AppUpdateInfoBloc>().add(
+                                  OnSkipUpdate(
+                                    state.appUpdateInfo.latestVersion,
+                                  ),
+                                );
+                              },
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: theme.colorScheme.onSurface,
+                                side: BorderSide(
+                                  color: theme.colorScheme.outline,
+                                ),
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 16,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                              child: const Text('Skip This Version'),
+                            ),
+                          ),
+                        if (!state.appUpdateInfo.shouldForceUpdate)
+                          const SizedBox(width: 16),
+                        Expanded(
+                          child: ElevatedButton(
+                            onPressed: () async {
+                              if (state.appUpdateInfo.storeUrl != null) {
+                                final Uri storeUrl = Uri.parse(
+                                  state.appUpdateInfo.storeUrl!,
+                                );
+                                if (await canLaunchUrl(storeUrl)) {
+                                  await launchUrl(storeUrl);
+                                } else {
+                                  if (!context.mounted) {
+                                    return;
+                                  }
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        'Could not open store link: ${state.appUpdateInfo.storeUrl}',
+                                      ),
+                                      backgroundColor: theme.colorScheme.error,
+                                    ),
+                                  );
+                                }
+                              }
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: theme.colorScheme.primary,
+                              foregroundColor: theme.colorScheme.onPrimary,
+                              padding: const EdgeInsets.symmetric(vertical: 16),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              elevation: 4,
+                            ),
+                            child: const Text(
+                              'Update Now',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            );
+          } else {
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Loading indicator
+                  const CircularProgressIndicator(),
                 ],
-              );
-            } else {
-              return const SizedBox();
-            }
-          },
-        ),
+              ),
+            );
+          }
+        },
       ),
     );
   }
