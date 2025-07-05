@@ -16,6 +16,8 @@ val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("app/keystore/key.properties")
 if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+} else {
+    println("WARNING: keystore.properties not found at project root. Using environment variables for debug signing.")
 }
 
 android {
@@ -54,6 +56,19 @@ android {
                 keyAlias = System.getenv("KEY_ALIAS")
                 keyPassword = System.getenv("KEY_PASSWORD")
             }
+        }
+        getByName("debug") {
+            if (keystorePropertiesFile.exists()){
+                storeFile = file(keystoreProperties["debugStoreFile"] as String)
+                storePassword = keystoreProperties["debugStorePassword"] as String
+                keyAlias = keystoreProperties["debugKeyAlias"] as String
+                keyPassword = keystoreProperties["debugKeyPassword"] as String
+            } else {
+                storeFile = rootProject.file("keystore/debug.keystore")
+                storePassword = System.getenv("DEBUG_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("DEBUG_KEY_ALIAS")
+                keyPassword = System.getenv("DEBUG_KEY_PASSWORD")
+            }   
         }
     }
 

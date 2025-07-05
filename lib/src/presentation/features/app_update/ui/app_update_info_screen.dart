@@ -33,7 +33,7 @@ class AppUpdateScreen extends StatelessWidget implements AutoRouteWrapper {
       body: BlocConsumer<AppUpdateInfoBloc, AppUpdateInfoState>(
         listener: (context, state) {
           if (state is UpdateSkipped) {
-            context.router.root.replace(const HomeRoute());
+            context.router.root.replace(CategorySelectionRoute());
           }
         },
         builder: (context, state) {

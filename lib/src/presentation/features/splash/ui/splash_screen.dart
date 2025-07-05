@@ -38,7 +38,7 @@ class SplashScreen extends StatelessWidget implements AutoRouteWrapper {
           case UpToDate():
           case UpdateSkipped():
             // App is up to date or update was skipped
-            context.router.root.replace(const HomeRoute());
+            context.router.root.replace(CategorySelectionRoute());
             break;
           case UpdateAvailable(appUpdateInfo: final info):
             context.router.root.replace(AppUpdateRoute(updateInfo: info));

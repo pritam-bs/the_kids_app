@@ -27,4 +27,8 @@ class ErrorMessages {
       'App is under maintenance. Please check back later.';
   static const String updateRequired =
       'Please update the app to the latest version to continue.';
+
+  // App Specific Errors
+  static const String noLearningCategories =
+      'No learning categories available. Please check back later.';
 }

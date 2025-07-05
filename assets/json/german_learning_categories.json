@@ -1,0 +1,388 @@
+[
+  {
+    "nameDe": "Familie",
+    "nameEn": "Family",
+    "descriptionDe": "In dieser Kategorie lernen Kinder die Namen wichtiger Familienmitglieder auf Deutsch kennen und verstehen familiäre Beziehungen.",
+    "descriptionEn": "In this category, children will learn the names of important family members in German and understand family relationships.",
+    "iconName": "icon_family",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Sich vorstellen",
+    "nameEn": "Self-Introduction",
+    "descriptionDe": "Hier lernen Kinder grundlegende Sätze und Wörter, um sich selbst vorzustellen und einfache Gespräche zu beginnen.",
+    "descriptionEn": "Here, children will learn basic phrases and words to introduce themselves and start simple conversations.",
+    "iconName": "icon_self_introduction",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Begrüßungen & Manieren",
+    "nameEn": "Greetings & Manners",
+    "descriptionDe": "Diese Kategorie bringt Kindern bei, wie man andere begrüßt, sich verabschiedet und höfliche Ausdrücke im Alltag verwendet.",
+    "descriptionEn": "This category teaches children how to greet others, say goodbye, and use polite expressions in daily life.",
+    "iconName": "icon_greetings_manners",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Zahlen",
+    "nameEn": "Numbers",
+    "descriptionDe": "Kinder lernen, auf Deutsch zu zählen und Zahlen in verschiedenen Kontexten zu erkennen.",
+    "descriptionEn": "Children will learn to count in German and recognize numbers in various contexts.",
+    "iconName": "icon_numbers",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Farben",
+    "nameEn": "Colors",
+    "descriptionDe": "In dieser Kategorie können Kinder die Namen der Grundfarben auf Deutsch benennen und Gegenstände nach ihrer Farbe beschreiben.",
+    "descriptionEn": "In this category, children can name basic colors in German and describe objects by their color.",
+    "iconName": "icon_colors",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Formen",
+    "nameEn": "Shapes",
+    "descriptionDe": "Kinder lernen die deutschen Namen für verschiedene geometrische Formen kennen und können diese in ihrer Umgebung identifizieren.",
+    "descriptionEn": "Children will learn the German names for various geometric shapes and can identify them in their surroundings.",
+    "iconName": "icon_shapes",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Körperteile",
+    "nameEn": "Body Parts",
+    "descriptionDe": "Diese Kategorie hilft Kindern, die Namen ihrer Körperteile auf Deutsch zu benennen und ihren eigenen Körper zu beschreiben.",
+    "descriptionEn": "This category helps children name their body parts in German and describe their own body.",
+    "iconName": "icon_body_parts",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Kleidung",
+    "nameEn": "Clothing",
+    "descriptionDe": "Kinder lernen die deutschen Begriffe für gängige Kleidungsstücke und können beschreiben, was sie tragen.",
+    "descriptionEn": "Children will learn the German terms for common clothing items and can describe what they are wearing.",
+    "iconName": "icon_clothing",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Essen & Trinken",
+    "nameEn": "Food & Drinks",
+    "descriptionDe": "Hier entdecken Kinder Vokabeln rund um Lebensmittel, Getränke und Mahlzeiten, um über ihre Vorlieben zu sprechen.",
+    "descriptionEn": "Here, children will discover vocabulary related to food, drinks, and meals, to talk about their preferences.",
+    "iconName": "icon_food_drinks",
+    "subcategories": [
+      {
+        "nameDe": "Obst",
+        "nameEn": "Fruits",
+        "descriptionDe": "Lerne die Namen von verschiedenen Früchten auf Deutsch.",
+        "descriptionEn": "Learn the names of different fruits in German.",
+        "iconName": "icon_fruits"
+      },
+      {
+        "nameDe": "Gemüse",
+        "nameEn": "Vegetables",
+        "descriptionDe": "Entdecke die deutschen Bezeichnungen für gängiges Gemüse.",
+        "descriptionEn": "Discover the German terms for common vegetables.",
+        "iconName": "icon_vegetables"
+      },
+      {
+        "nameDe": "Mahlzeiten",
+        "nameEn": "Meals",
+        "descriptionDe": "Benenne die verschiedenen Mahlzeiten des Tages auf Deutsch.",
+        "descriptionEn": "Name the different meals of the day in German.",
+        "iconName": "icon_meals"
+      }
+    ]
+  },
+  {
+    "nameDe": "Tiere",
+    "nameEn": "Animals",
+    "descriptionDe": "In dieser Kategorie lernen Kinder die Namen verschiedener Tiere und können sie nach Typ unterscheiden.",
+    "descriptionEn": "In this category, children will learn the names of various animals and can differentiate them by type.",
+    "iconName": "icon_animals",
+    "subcategories": [
+      {
+        "nameDe": "Bauernhoftiere",
+        "nameEn": "Farm Animals",
+        "descriptionDe": "Erfahre die deutschen Namen der Tiere, die auf einem Bauernhof leben.",
+        "descriptionEn": "Learn the German names of animals living on a farm.",
+        "iconName": "icon_farm_animals"
+      },
+      {
+        "nameDe": "Wildtiere",
+        "nameEn": "Wild Animals",
+        "descriptionDe": "Entdecke die deutschen Bezeichnungen für Tiere, die in der Wildnis leben.",
+        "descriptionEn": "Discover the German terms for animals living in the wild.",
+        "iconName": "icon_wild_animals"
+      },
+      {
+        "nameDe": "Haustiere",
+        "nameEn": "Pets",
+        "descriptionDe": "Lerne, wie man Haustiere auf Deutsch nennt.",
+        "descriptionEn": "Learn how to name pets in German.",
+        "iconName": "icon_pets"
+      }
+    ]
+  },
+  {
+    "nameDe": "Wetter",
+    "nameEn": "Weather",
+    "descriptionDe": "Kinder lernen, das Wetter auf Deutsch zu beschreiben und gängige Wetterphänomene zu benennen.",
+    "descriptionEn": "Children will learn to describe the weather in German and name common weather phenomena.",
+    "iconName": "icon_weather",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Natur",
+    "nameEn": "Nature",
+    "descriptionDe": "Diese Kategorie hilft Kindern, Vokabeln rund um natürliche Elemente wie Bäume, Blumen und Landschaften auf Deutsch zu verstehen.",
+    "descriptionEn": "This category helps children understand vocabulary related to natural elements like trees, flowers, and landscapes in German.",
+    "iconName": "icon_nature",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Zuhause",
+    "nameEn": "Home",
+    "descriptionDe": "Kinder lernen die Namen von Räumen und Möbeln in einem Haus auf Deutsch kennen.",
+    "descriptionEn": "Children will learn the names of rooms and furniture in a house in German.",
+    "iconName": "icon_home",
+    "subcategories": [
+      {
+        "nameDe": "Räume",
+        "nameEn": "Rooms",
+        "descriptionDe": "Lerne die Namen der verschiedenen Räume in einem Haus auf Deutsch.",
+        "descriptionEn": "Learn the names of different rooms in a house in German.",
+        "iconName": "icon_rooms"
+      },
+      {
+        "nameDe": "Möbel",
+        "nameEn": "Furniture",
+        "descriptionDe": "Entdecke die deutschen Begriffe für gängige Möbelstücke.",
+        "descriptionEn": "Discover the German terms for common furniture items.",
+        "iconName": "icon_furniture"
+      }
+    ]
+  },
+  {
+    "nameDe": "Schule",
+    "nameEn": "School",
+    "descriptionDe": "In dieser Kategorie lernen Kinder Wörter, die mit der Schule, dem Klassenzimmer und Lernmaterialien zu tun haben.",
+    "descriptionEn": "In this category, children will learn words related to school, the classroom, and learning materials.",
+    "iconName": "icon_school",
+    "subcategories": [
+      {
+        "nameDe": "Schulaktivitäten",
+        "nameEn": "School Activities",
+        "descriptionDe": "Lerne Vokabeln für Aktivitäten und Fächer, die in der Schule vorkommen, um über den Schulalltag zu sprechen.",
+        "descriptionEn": "Learn vocabulary for activities and subjects that occur at school to talk about daily school life.",
+        "iconName": "icon_school_activities"
+      },
+      {
+        "nameDe": "Schulmaterialien",
+        "nameEn": "School Supplies",
+        "descriptionDe": "Entdecke die deutschen Namen für Dinge, die man in der Schule braucht, wie Stifte, Bücher und Hefte.",
+        "descriptionEn": "Discover the German names for things needed at school, such as pens, books, and notebooks.",
+        "iconName": "icon_school_supplies"
+      }
+    ]
+  },
+  {
+    "nameDe": "Spielzeug",
+    "nameEn": "Toys",
+    "descriptionDe": "Kinder lernen die deutschen Namen für verschiedene Spielzeuge und können über ihre Lieblingsspiele sprechen.",
+    "descriptionEn": "Children will learn the German names for various toys and can talk about their favorite games.",
+    "iconName": "icon_toys",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Berufe",
+    "nameEn": "Professions",
+    "descriptionDe": "Hier entdecken Kinder einfache Berufsbezeichnungen auf Deutsch und verstehen, was Menschen beruflich tun.",
+    "descriptionEn": "Here, children will discover simple job titles in German and understand what people do professionally.",
+    "iconName": "icon_professions",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Verben (einfache Aktionen)",
+    "nameEn": "Verbs (Simple Actions)",
+    "descriptionDe": "Diese Kategorie führt Kinder in die häufigsten Aktionswörter ein, um einfache Sätze zu bilden und über Handlungen zu sprechen.",
+    "descriptionEn": "This category introduces children to the most common action words to form simple sentences and talk about actions.",
+    "iconName": "icon_verbs_simple_actions",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Adjektive (beschreibende Wörter)",
+    "nameEn": "Adjectives (Descriptive Words)",
+    "descriptionDe": "Kinder lernen Adjektive, um Gegenstände, Menschen und Gefühle auf Deutsch zu beschreiben.",
+    "descriptionEn": "Children will learn adjectives to describe objects, people, and feelings in German.",
+    "iconName": "icon_adjectives_descriptive_words",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Wochentage",
+    "nameEn": "Days of the Week",
+    "descriptionDe": "In dieser Kategorie lernen Kinder die Namen der Wochentage auf Deutsch und können über ihren Zeitplan sprechen.",
+    "descriptionEn": "In this category, children will learn the names of the days of the week in German and can talk about their schedule.",
+    "iconName": "icon_days_of_the_week",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Monate",
+    "nameEn": "Months",
+    "descriptionDe": "Kinder können die Namen der Monate auf Deutsch benennen und über Geburtstage und Ereignisse sprechen.",
+    "descriptionEn": "Children can name the months in German and talk about birthdays and events.",
+    "iconName": "icon_months",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Jahreszeiten",
+    "nameEn": "Seasons",
+    "descriptionDe": "Diese Kategorie bringt Kindern bei, die vier Jahreszeiten auf Deutsch zu benennen und ihre Merkmale zu beschreiben.",
+    "descriptionEn": "This category teaches children to name the four seasons in German and describe their characteristics.",
+    "iconName": "icon_seasons",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Orte",
+    "nameEn": "Places",
+    "descriptionDe": "Kinder lernen Vokabeln für verschiedene Orte in ihrer Umgebung, wie Stadt und Natur, und können einfache Richtungsangaben verstehen.",
+    "descriptionEn": "Children will learn vocabulary for various places in their environment, such as city and nature, and can understand simple directions.",
+    "iconName": "icon_places",
+    "subcategories": [
+      {
+        "nameDe": "Stadt/Ort",
+        "nameEn": "City/Town",
+        "descriptionDe": "Entdecke die deutschen Namen für wichtige Orte in der Stadt oder im Dorf.",
+        "descriptionEn": "Discover the German names for important places in the city or town.",
+        "iconName": "icon_city_town"
+      },
+      {
+        "nameDe": "Natur",
+        "nameEn": "Nature",
+        "descriptionDe": "Erweitere den Wortschatz für natürliche Umgebungen wie Wälder und Seen.",
+        "descriptionEn": "Expand vocabulary for natural environments like forests and lakes.",
+        "iconName": "icon_nature"
+      },
+      {
+        "nameDe": "Richtungen",
+        "nameEn": "Directions",
+        "descriptionDe": "Lerne einfache Richtungsangaben, um sich zu orientieren.",
+        "descriptionEn": "Learn simple directions to orient oneself.",
+        "iconName": "icon_directions"
+      }
+    ]
+  },
+  {
+    "nameDe": "Aktionen & Tagesabläufe",
+    "nameEn": "Actions & Daily Routines",
+    "descriptionDe": "In dieser Kategorie lernen Kinder die deutschen Verben für alltägliche Handlungen und können über ihre Routinen sprechen.",
+    "descriptionEn": "In this category, children will learn the German verbs for everyday actions and can talk about their routines.",
+    "iconName": "icon_actions_daily_routines",
+    "subcategories": [
+      {
+        "nameDe": "Morgenroutine",
+        "nameEn": "Morning Routine",
+        "descriptionDe": "Lerne die deutschen Wörter für Aktivitäten am Morgen.",
+        "descriptionEn": "Learn the German words for morning activities.",
+        "iconName": "icon_morning_routine"
+      },
+      {
+        "nameDe": "Abendroutine",
+        "nameEn": "Evening Routine",
+        "descriptionDe": "Entdecke die deutschen Begriffe für Abendaktivitäten.",
+        "descriptionEn": "Discover the German terms for evening activities.",
+        "iconName": "icon_evening_routine"
+      },
+      {
+        "nameDe": "Spielaktivitäten",
+        "nameEn": "Play Activities",
+        "descriptionDe": "Benenne verschiedene Spiel- und Freizeitaktivitäten auf Deutsch.",
+        "descriptionEn": "Name various play and leisure activities in German.",
+        "iconName": "icon_play_activities"
+      }
+    ]
+  },
+  {
+    "nameDe": "Gefühle & Emotionen",
+    "nameEn": "Feelings & Emotions",
+    "descriptionDe": "Kinder lernen, ihre eigenen Gefühle und die anderer auf Deutsch zu benennen und zu verstehen.",
+    "descriptionEn": "Children will learn to name and understand their own feelings and those of others in German.",
+    "iconName": "icon_basic_feelings",
+    "subcategories": []
+  },
+  {
+    "nameDe": "Gegensätze",
+    "nameEn": "Opposites",
+    "descriptionDe": "Diese Kategorie hilft Kindern, kontrastierende Wörter und Konzepte auf Deutsch zu lernen, was ihr Verständnis erweitert.",
+    "descriptionEn": "This category helps children learn contrasting words and concepts in German, expanding their comprehension.",
+    "iconName": "icon_opposites",
+    "subcategories": [
+      {
+        "nameDe": "Adjektive (Gegensätze)",
+        "nameEn": "Adjectives (Opposites)",
+        "descriptionDe": "Lerne Paare von Adjektiven, die das Gegenteil voneinander bedeuten, wie groß und klein.",
+        "descriptionEn": "Learn pairs of adjectives that mean the opposite of each other, like big and small.",
+        "iconName": "icon_adjectives_opposites"
+      }
+    ]
+  },
+  {
+    "nameDe": "Soziales Miteinander",
+    "nameEn": "Social Interaction",
+    "descriptionDe": "Diese Kategorie konzentriert sich auf Vokabeln und Sätze, die für die soziale Interaktion mit anderen Kindern wichtig sind, um Freundschaften zu schließen und zu pflegen.",
+    "descriptionEn": "This category focuses on vocabulary and phrases essential for social interaction with other children, to make and maintain friendships.",
+    "iconName": "icon_social_interaction",
+    "subcategories": [
+      {
+        "nameDe": "Spielen & Freunde",
+        "nameEn": "Playing & Friends",
+        "descriptionDe": "Kinder lernen, andere zum Spielen einzuladen, zu teilen und einfache Gespräche beim Spielen zu führen.",
+        "descriptionEn": "Children learn to invite others to play, share, and have simple conversations while playing.",
+        "iconName": "icon_playing_friends"
+      },
+      {
+        "nameDe": "Fragen stellen & Antworten",
+        "nameEn": "Asking Questions & Answering",
+        "descriptionDe": "Lerne grundlegende Fragewörter (wer, was, wo, wann) und wie man einfache Fragen stellt und beantwortet, um mit Freunden zu kommunizieren.",
+        "descriptionEn": "Learn basic question words (who, what, where, when) and how to ask and answer simple questions to communicate with friends.",
+        "iconName": "icon_asking_questions_answering"
+      },
+      {
+        "nameDe": "Gefühle ausdrücken & verstehen",
+        "nameEn": "Expressing & Understanding Feelings",
+        "descriptionDe": "Vertiefe das Wissen über Gefühle und lerne, wie man über die eigenen Gefühle spricht und die Gefühle anderer erkennt.",
+        "descriptionEn": "Deepen knowledge of feelings and learn how to talk about one's own feelings and recognize the feelings of others.",
+        "iconName": "icon_expressing_understanding_feelings"
+      },
+      {
+        "nameDe": "Im Restaurant/Café",
+        "nameEn": "At the Restaurant/Café",
+        "descriptionDe": "Vokabeln und Sätze, um Essen und Getränke zu bestellen und einfache Interaktionen in einem Restaurant oder Café zu meistern.",
+        "descriptionEn": "Vocabulary and phrases to order food and drinks and manage simple interactions in a restaurant or café.",
+        "iconName": "icon_restaurant_cafe"
+      }
+    ]
+  },
+  {
+    "nameDe": "Freizeit & Hobbys",
+    "nameEn": "Leisure & Hobbies",
+    "descriptionDe": "Diese Kategorie bietet Vokabeln, um über Lieblingsaktivitäten, Hobbys und die Gestaltung der Freizeit zu sprechen.",
+    "descriptionEn": "This category provides vocabulary to talk about favorite activities, hobbies, and how to spend free time.",
+    "iconName": "icon_leisure_hobbies",
+    "subcategories": [
+      {
+        "nameDe": "Sport",
+        "nameEn": "Sports",
+        "descriptionDe": "Lerne die Namen gängiger Sportarten und wie man über Sportaktivitäten und -interessen spricht.",
+        "descriptionEn": "Learn the names of common sports and how to talk about sports activities and interests.",
+        "iconName": "icon_sports"
+      },
+      {
+        "nameDe": "Musik & Kunst",
+        "nameEn": "Music & Art",
+        "descriptionDe": "Vokabeln rund um Musikinstrumente, Singen, Malen und andere kreative und künstlerische Aktivitäten.",
+        "descriptionEn": "Vocabulary around musical instruments, singing, drawing, and other creative and artistic activities.",
+        "iconName": "icon_music_art"
+      }
+    ]
+  }
+]
