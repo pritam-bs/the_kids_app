@@ -33,8 +33,8 @@ class SubcategorySelectionScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 250.0,
             crossAxisSpacing: 8.0,
             mainAxisSpacing: 16.0,
             childAspectRatio: 0.75,
@@ -42,12 +42,9 @@ class SubcategorySelectionScreen extends StatelessWidget {
           itemCount: subcategories.length,
           itemBuilder: (context, index) {
             final subcategory = subcategories[index];
-            final subColor = cardColor.withValues(
-              alpha: 0.9,
-            );
+            final subColor = cardColor.withValues(alpha: 0.9);
             return CategoryCard(
-              iconName:
-                  subcategory.iconName,
+              iconName: subcategory.iconName,
               title: subcategory.nameEn,
               color: subColor,
               onTap: () {

@@ -76,8 +76,8 @@ class CategorySelectionScreen extends StatelessWidget
 
   Widget _buildCategoryGrid(List<LearningCategoryEntity> categories) {
     return GridView.builder(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
+      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+        maxCrossAxisExtent: 250.0,
         crossAxisSpacing: 8.0,
         mainAxisSpacing: 16.0,
         childAspectRatio: 0.75,
