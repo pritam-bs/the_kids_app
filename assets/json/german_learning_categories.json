@@ -314,16 +314,8 @@
     "nameEn": "Opposites",
     "descriptionDe": "Diese Kategorie hilft Kindern, kontrastierende Wörter und Konzepte auf Deutsch zu lernen, was ihr Verständnis erweitert.",
     "descriptionEn": "This category helps children learn contrasting words and concepts in German, expanding their comprehension.",
-    "iconName": "icon_opposites",
-    "subcategories": [
-      {
-        "nameDe": "Adjektive (Gegensätze)",
-        "nameEn": "Adjectives (Opposites)",
-        "descriptionDe": "Lerne Paare von Adjektiven, die das Gegenteil voneinander bedeuten, wie groß und klein.",
-        "descriptionEn": "Learn pairs of adjectives that mean the opposite of each other, like big and small.",
-        "iconName": "icon_adjectives_opposites"
-      }
-    ]
+    "iconName": "icon_adjectives_opposites",
+    "subcategories": []
   },
   {
     "nameDe": "Soziales Miteinander",

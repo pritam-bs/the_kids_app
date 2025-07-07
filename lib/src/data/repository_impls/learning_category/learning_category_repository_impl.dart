@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/services.dart';
 import 'package:the_kids_app/src/core/config/logging_config.dart';
 import 'package:the_kids_app/src/data/dtos/learning_category/learning_category_dto.dart';
