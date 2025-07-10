@@ -28,9 +28,6 @@ class AppUpdateCheckRepositoryImpl implements AppUpdateCheckRepository {
 
   Future<AppUpdateInfoDTO> _getRemoteUpdateInfo() async {
     try {
-      // Fetch the latest config values from the Firebase Remote Config server.
-      // fetchAndActivate() does both fetch and activate in one go.
-      // It returns true if the config was updated, false otherwise.
       final bool updated = await _remoteConfig.fetchAndActivate();
 
       if (updated) {

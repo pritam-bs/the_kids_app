@@ -1,6 +1,6 @@
-import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/core/router/app_router.dart';
+import 'package:the_kids_app/src/presentation/features/app/app_theme.dart';
 
 class App extends StatelessWidget {
   App({super.key});
@@ -13,8 +13,8 @@ class App extends StatelessWidget {
     return MaterialApp.router(
       title: 'Home',
       themeMode: ThemeMode.system,
-      theme: FlexThemeData.light(scheme: FlexScheme.blueM3),
-      darkTheme: FlexThemeData.dark(scheme: FlexScheme.blueM3),
+      theme: lightTheme(),
+      darkTheme: darkTheme(),
       routerConfig: _appRouter.config(),
     );
   }

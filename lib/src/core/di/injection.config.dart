@@ -19,17 +19,24 @@ import '../../data/repository_impls/app_settings/app_local_settings_repository_i
     as _i680;
 import '../../data/repository_impls/app_update/app_update_check_repository_impl.dart'
     as _i226;
+import '../../data/repository_impls/learning_category/learning_category_repository_impl.dart'
+    as _i942;
 import '../../domain/repositories/app_settings/app_local_settings_repository.dart'
     as _i192;
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
     as _i190;
+import '../../domain/repositories/learning_category/learning_category_repository.dart'
+    as _i582;
 import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
     as _i513;
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
     as _i686;
+import '../../domain/usecases/learning_category/learning_category_usecase.dart'
+    as _i268;
 import '../../presentation/features/app_update/bloc/app_update_info_bloc.dart'
     as _i675;
-import '../../presentation/features/home/bloc/home_bloc.dart' as _i635;
+import '../../presentation/features/home/bloc/categoty_selection_bloc.dart'
+    as _i115;
 import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc.dart'
     as _i401;
 import 'modules/data_module.dart' as _i742;
@@ -58,7 +65,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => sharedPreferencesModule.sharedPreferences,
       preResolve: true,
     );
-    gh.factory<_i635.HomeBloc>(() => _i635.HomeBloc());
+    gh.lazySingleton<_i582.LearningCategoryRepository>(
+      () => dataModule.learningCategoryRepository,
+    );
     gh.lazySingleton<_i190.AppUpdateCheckRepository>(
       () => dataModule.appUpdateCheckRepositoryImpl,
     );
@@ -67,6 +76,13 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i686.CheckAppUpdateUseCase>(
       () => _i686.CheckAppUpdateUseCase(gh<_i190.AppUpdateCheckRepository>()),
+    );
+    gh.factory<_i268.LearningCategoryUsecase>(
+      () =>
+          _i268.LearningCategoryUsecase(gh<_i582.LearningCategoryRepository>()),
+    );
+    gh.factory<_i115.CategorySelectionBloc>(
+      () => _i115.CategorySelectionBloc(gh<_i268.LearningCategoryUsecase>()),
     );
     gh.factory<_i513.GetLastSkippedVersionUseCase>(
       () => _i513.GetLastSkippedVersionUseCase(
@@ -99,6 +115,10 @@ class _$DataModule extends _i742.DataModule {
   _$DataModule(this._getIt);
 
   final _i174.GetIt _getIt;
+
+  @override
+  _i942.LearningCategoryRepositoryImpl get learningCategoryRepository =>
+      _i942.LearningCategoryRepositoryImpl();
 
   @override
   _i226.AppUpdateCheckRepositoryImpl get appUpdateCheckRepositoryImpl =>
