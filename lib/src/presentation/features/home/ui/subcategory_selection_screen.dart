@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:the_kids_app/src/core/router/app_router.gr.dart';
 import 'package:the_kids_app/src/domain/entities/learning_category/learning_category_entity.dart';
 import 'package:the_kids_app/src/presentation/features/home/ui/category_card.dart';
 
@@ -48,15 +49,7 @@ class SubcategorySelectionScreen extends StatelessWidget {
               title: subcategory.nameEn,
               color: subColor,
               onTap: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(
-                      'Starting lessons for "${subcategory.nameEn}"!',
-                    ),
-                    backgroundColor: Colors.blue,
-                  ),
-                );
-                // TODO: Implement actual navigation to learning content
+                AutoRouter.of(context).push(LearnWordRoute(id: subcategory.id));
               },
             );
           },

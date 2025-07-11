@@ -5,6 +5,7 @@ part 'learning_category_entity.freezed.dart';
 @freezed
 abstract class LearningCategoryEntity with _$LearningCategoryEntity {
   const factory LearningCategoryEntity({
+    required String id,
     required String nameDe,
     required String nameEn,
     required String descriptionDe,

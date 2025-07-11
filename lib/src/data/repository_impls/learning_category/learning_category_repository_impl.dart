@@ -13,7 +13,7 @@ class LearningCategoryRepositoryImpl implements LearningCategoryRepository {
         'assets/json/german_learning_categories.json',
       );
 
-      final dtoList = learningCategoryDtoFromJson(jsonString);
+      final dtoList = learningCategoryListDtoFromJson(jsonString);
 
       return dtoList.toEntityList();
     } on Exception catch (e) {

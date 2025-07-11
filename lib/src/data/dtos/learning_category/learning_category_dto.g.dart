@@ -8,6 +8,7 @@ part of 'learning_category_dto.dart';
 
 _LearningCategoryDto _$LearningCategoryDtoFromJson(Map<String, dynamic> json) =>
     _LearningCategoryDto(
+      id: json['id'] as String,
       nameDe: json['nameDe'] as String,
       nameEn: json['nameEn'] as String,
       descriptionDe: json['descriptionDe'] as String,
@@ -21,6 +22,7 @@ _LearningCategoryDto _$LearningCategoryDtoFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$LearningCategoryDtoToJson(
   _LearningCategoryDto instance,
 ) => <String, dynamic>{
+  'id': instance.id,
   'nameDe': instance.nameDe,
   'nameEn': instance.nameEn,
   'descriptionDe': instance.descriptionDe,

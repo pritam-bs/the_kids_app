@@ -19,24 +19,34 @@ import '../../data/repository_impls/app_settings/app_local_settings_repository_i
     as _i680;
 import '../../data/repository_impls/app_update/app_update_check_repository_impl.dart'
     as _i226;
+import '../../data/repository_impls/image/image_repository_impls.dart' as _i794;
 import '../../data/repository_impls/learning_category/learning_category_repository_impl.dart'
     as _i942;
+import '../../data/repository_impls/learning_word/word_list_repository_impl.dart'
+    as _i968;
 import '../../domain/repositories/app_settings/app_local_settings_repository.dart'
     as _i192;
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
     as _i190;
+import '../../domain/repositories/image/image_repository.dart' as _i33;
 import '../../domain/repositories/learning_category/learning_category_repository.dart'
     as _i582;
+import '../../domain/repositories/learning_category/word_list_repository.dart'
+    as _i197;
 import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
     as _i513;
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
     as _i686;
+import '../../domain/usecases/image/image_usecase.dart' as _i322;
 import '../../domain/usecases/learning_category/learning_category_usecase.dart'
     as _i268;
+import '../../domain/usecases/learning_word/word_list_usecase.dart' as _i35;
 import '../../presentation/features/app_update/bloc/app_update_info_bloc.dart'
     as _i675;
 import '../../presentation/features/home/bloc/categoty_selection_bloc.dart'
     as _i115;
+import '../../presentation/features/learn_word/bloc/learn_word_bloc.dart'
+    as _i298;
 import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc.dart'
     as _i401;
 import 'modules/data_module.dart' as _i742;
@@ -65,6 +75,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => sharedPreferencesModule.sharedPreferences,
       preResolve: true,
     );
+    gh.lazySingleton<_i197.WordListRepository>(
+      () => dataModule.wordListRepository,
+    );
     gh.lazySingleton<_i582.LearningCategoryRepository>(
       () => dataModule.learningCategoryRepository,
     );
@@ -77,12 +90,16 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i686.CheckAppUpdateUseCase>(
       () => _i686.CheckAppUpdateUseCase(gh<_i190.AppUpdateCheckRepository>()),
     );
+    gh.lazySingleton<_i33.ImageRepository>(() => dataModule.imageRepository);
     gh.factory<_i268.LearningCategoryUsecase>(
       () =>
           _i268.LearningCategoryUsecase(gh<_i582.LearningCategoryRepository>()),
     );
     gh.factory<_i115.CategorySelectionBloc>(
       () => _i115.CategorySelectionBloc(gh<_i268.LearningCategoryUsecase>()),
+    );
+    gh.factory<_i322.ImageUsecase>(
+      () => _i322.ImageUsecase(gh<_i33.ImageRepository>()),
     );
     gh.factory<_i513.GetLastSkippedVersionUseCase>(
       () => _i513.GetLastSkippedVersionUseCase(
@@ -92,6 +109,15 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i513.SaveLastSkippedVersionUseCase>(
       () => _i513.SaveLastSkippedVersionUseCase(
         gh<_i192.AppLocalSettingsRepository>(),
+      ),
+    );
+    gh.factory<_i35.WordListUsecase>(
+      () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
+    );
+    gh.factory<_i298.LearnWordBloc>(
+      () => _i298.LearnWordBloc(
+        gh<_i35.WordListUsecase>(),
+        gh<_i322.ImageUsecase>(),
       ),
     );
     gh.factory<_i675.AppUpdateInfoBloc>(
@@ -117,6 +143,10 @@ class _$DataModule extends _i742.DataModule {
   final _i174.GetIt _getIt;
 
   @override
+  _i968.WordListRepositoryImpl get wordListRepository =>
+      _i968.WordListRepositoryImpl();
+
+  @override
   _i942.LearningCategoryRepositoryImpl get learningCategoryRepository =>
       _i942.LearningCategoryRepositoryImpl();
 
@@ -127,4 +157,8 @@ class _$DataModule extends _i742.DataModule {
   @override
   _i680.AppLocalSettingsRepositoryImpl get appLocalSettingsRepositoryImpl =>
       _i680.AppLocalSettingsRepositoryImpl(_getIt<_i460.SharedPreferences>());
+
+  @override
+  _i794.ImageRepositoryImpls get imageRepository =>
+      _i794.ImageRepositoryImpls();
 }

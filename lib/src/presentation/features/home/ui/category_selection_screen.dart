@@ -102,14 +102,11 @@ class CategorySelectionScreen extends StatelessWidget
                 ),
               );
             } else {
-              // Navigate directly to learning content for categories without subcategories
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text('Starting lessons for "${category.nameEn}"!'),
-                  backgroundColor: Colors.green,
+              AutoRouter.of(context).push(
+                LearnWordRoute(
+                  id: category.id
                 ),
               );
-              // TODO: Implement actual navigation to learning content
             }
           },
         );

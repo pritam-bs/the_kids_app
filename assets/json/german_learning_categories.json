@@ -1,69 +1,86 @@
 [
   {
+    "id": "family",
     "nameDe": "Familie",
     "nameEn": "Family",
     "descriptionDe": "In dieser Kategorie lernen Kinder die Namen wichtiger Familienmitglieder auf Deutsch kennen und verstehen familiäre Beziehungen.",
     "descriptionEn": "In this category, children will learn the names of important family members in German and understand family relationships.",
     "iconName": "icon_family",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Family'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'family_mutter_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common family members and related terms suitable for children's basic understanding. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "self_introduction",
     "nameDe": "Sich vorstellen",
     "nameEn": "Self-Introduction",
     "descriptionDe": "Hier lernen Kinder grundlegende Sätze und Wörter, um sich selbst vorzustellen und einfache Gespräche zu beginnen.",
     "descriptionEn": "Here, children will learn basic phrases and words to introduce themselves and start simple conversations.",
     "iconName": "icon_self_introduction",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Self-Introduction'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'self_introduction_hallo_01'), 'wordDe' (German word), 'wordEn': (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on basic phrases and words for introducing oneself and starting simple conversations. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "greetings_manners",
     "nameDe": "Begrüßungen & Manieren",
     "nameEn": "Greetings & Manners",
     "descriptionDe": "Diese Kategorie bringt Kindern bei, wie man andere begrüßt, sich verabschiedet und höfliche Ausdrücke im Alltag verwendet.",
     "descriptionEn": "This category teaches children how to greet others, say goodbye, and use polite expressions in daily life.",
     "iconName": "icon_greetings_manners",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Greetings & Manners'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'greetings_danke_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common greetings, farewells, and polite expressions for daily use. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "numbers",
     "nameDe": "Zahlen",
     "nameEn": "Numbers",
     "descriptionDe": "Kinder lernen, auf Deutsch zu zählen und Zahlen in verschiedenen Kontexten zu erkennen.",
     "descriptionEn": "Children will learn to count in German and recognize numbers in various contexts.",
     "iconName": "icon_numbers",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Numbers'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'numbers_eins_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on numbers and their use in simple contexts. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "colors",
     "nameDe": "Farben",
     "nameEn": "Colors",
     "descriptionDe": "In dieser Kategorie können Kinder die Namen der Grundfarben auf Deutsch benennen und Gegenstände nach ihrer Farbe beschreiben.",
     "descriptionEn": "In this category, children can name basic colors in German and describe objects by their color.",
     "iconName": "icon_colors",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Colors'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'colors_rot_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on basic colors and how to describe objects by their color. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "shapes",
     "nameDe": "Formen",
     "nameEn": "Shapes",
     "descriptionDe": "Kinder lernen die deutschen Namen für verschiedene geometrische Formen kennen und können diese in ihrer Umgebung identifizieren.",
     "descriptionEn": "Children will learn the German names for various geometric shapes and can identify them in their surroundings.",
     "iconName": "icon_shapes",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Shapes'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'shapes_kreis_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common geometric shapes and their identification. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "body_parts",
     "nameDe": "Körperteile",
     "nameEn": "Body Parts",
     "descriptionDe": "Diese Kategorie hilft Kindern, die Namen ihrer Körperteile auf Deutsch zu benennen und ihren eigenen Körper zu beschreiben.",
     "descriptionEn": "This category helps children name their body parts in German and describe their own body.",
     "iconName": "icon_body_parts",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Body Parts'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'body_parts_kopf_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on basic body parts and simple descriptions. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "clothing",
     "nameDe": "Kleidung",
     "nameEn": "Clothing",
     "descriptionDe": "Kinder lernen die deutschen Begriffe für gängige Kleidungsstücke und können beschreiben, was sie tragen.",
     "descriptionEn": "Children will learn the German terms for common clothing items and can describe what they are wearing.",
     "iconName": "icon_clothing",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Clothing'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'clothing_hemd_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common clothing items and simple descriptions of what one is wearing. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "food_drinks",
     "nameDe": "Essen & Trinken",
     "nameEn": "Food & Drinks",
     "descriptionDe": "Hier entdecken Kinder Vokabeln rund um Lebensmittel, Getränke und Mahlzeiten, um über ihre Vorlieben zu sprechen.",
@@ -71,29 +88,36 @@
     "iconName": "icon_food_drinks",
     "subcategories": [
       {
+        "id": "fruits",
         "nameDe": "Obst",
         "nameEn": "Fruits",
         "descriptionDe": "Lerne die Namen von verschiedenen Früchten auf Deutsch.",
         "descriptionEn": "Learn the names of different fruits in German.",
-        "iconName": "icon_fruits"
+        "iconName": "icon_fruits",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Fruits' within the 'Food & Drinks' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'fruits_apfel_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common fruits. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "vegetables",
         "nameDe": "Gemüse",
         "nameEn": "Vegetables",
         "descriptionDe": "Entdecke die deutschen Bezeichnungen für gängiges Gemüse.",
         "descriptionEn": "Discover the German terms for common vegetables.",
-        "iconName": "icon_vegetables"
+        "iconName": "icon_vegetables",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Vegetables' within the 'Food & Drinks' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'vegetables_karotte_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common vegetables. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "meals",
         "nameDe": "Mahlzeiten",
         "nameEn": "Meals",
         "descriptionDe": "Benenne die verschiedenen Mahlzeiten des Tages auf Deutsch.",
         "descriptionEn": "Name the different meals of the day in German.",
-        "iconName": "icon_meals"
+        "iconName": "icon_meals",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Meals' within the 'Food & Drinks' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'meals_fruehstueck_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on the names of different meals of the day. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "animals",
     "nameDe": "Tiere",
     "nameEn": "Animals",
     "descriptionDe": "In dieser Kategorie lernen Kinder die Namen verschiedener Tiere und können sie nach Typ unterscheiden.",
@@ -101,45 +125,56 @@
     "iconName": "icon_animals",
     "subcategories": [
       {
+        "id": "farm_animals",
         "nameDe": "Bauernhoftiere",
         "nameEn": "Farm Animals",
         "descriptionDe": "Erfahre die deutschen Namen der Tiere, die auf einem Bauernhof leben.",
         "descriptionEn": "Learn the German names of animals living on a farm.",
-        "iconName": "icon_farm_animals"
+        "iconName": "icon_farm_animals",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Farm Animals' within the 'Animals' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'farm_animals_kuh_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common farm animals. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "wild_animals",
         "nameDe": "Wildtiere",
         "nameEn": "Wild Animals",
         "descriptionDe": "Entdecke die deutschen Bezeichnungen für Tiere, die in der Wildnis leben.",
         "descriptionEn": "Discover the German terms for animals living in the wild.",
-        "iconName": "icon_wild_animals"
+        "iconName": "icon_wild_animals",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Wild Animals' within the 'Animals' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'wild_animals_loewe_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common wild animals. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "pets",
         "nameDe": "Haustiere",
         "nameEn": "Pets",
         "descriptionDe": "Lerne, wie man Haustiere auf Deutsch nennt.",
         "descriptionEn": "Learn how to name pets in German.",
-        "iconName": "icon_pets"
+        "iconName": "icon_pets",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Pets' within the 'Animals' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'pets_hund_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common pets. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "weather",
     "nameDe": "Wetter",
     "nameEn": "Weather",
     "descriptionDe": "Kinder lernen, das Wetter auf Deutsch zu beschreiben und gängige Wetterphänomene zu benennen.",
     "descriptionEn": "Children will learn to describe the weather in German and name common weather phenomena.",
     "iconName": "icon_weather",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Weather'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'weather_sonne_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common weather conditions and phenomena. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "nature",
     "nameDe": "Natur",
     "nameEn": "Nature",
     "descriptionDe": "Diese Kategorie hilft Kindern, Vokabeln rund um natürliche Elemente wie Bäume, Blumen und Landschaften auf Deutsch zu verstehen.",
     "descriptionEn": "This category helps children understand vocabulary related to natural elements like trees, flowers, and landscapes in German.",
     "iconName": "icon_nature",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Nature'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'nature_baum_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on vocabulary related to natural elements like trees, flowers, and landscapes. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "home",
     "nameDe": "Zuhause",
     "nameEn": "Home",
     "descriptionDe": "Kinder lernen die Namen von Räumen und Möbeln in einem Haus auf Deutsch kennen.",
@@ -147,22 +182,27 @@
     "iconName": "icon_home",
     "subcategories": [
       {
+        "id": "rooms",
         "nameDe": "Räume",
         "nameEn": "Rooms",
         "descriptionDe": "Lerne die Namen der verschiedenen Räume in einem Haus auf Deutsch.",
         "descriptionEn": "Learn the names of different rooms in a house in German.",
-        "iconName": "icon_rooms"
+        "iconName": "icon_rooms",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Rooms' within the 'Home' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'rooms_wohnzimmer_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on the names of different rooms in a house. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "furniture",
         "nameDe": "Möbel",
         "nameEn": "Furniture",
         "descriptionDe": "Entdecke die deutschen Begriffe für gängige Möbelstücke.",
         "descriptionEn": "Discover the German terms for common furniture items.",
-        "iconName": "icon_furniture"
+        "iconName": "icon_furniture",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Furniture' within the 'Home' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'furniture_tisch_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common furniture items. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "school",
     "nameDe": "Schule",
     "nameEn": "School",
     "descriptionDe": "In dieser Kategorie lernen Kinder Wörter, die mit der Schule, dem Klassenzimmer und Lernmaterialien zu tun haben.",
@@ -170,78 +210,97 @@
     "iconName": "icon_school",
     "subcategories": [
       {
+        "id": "school_activities",
         "nameDe": "Schulaktivitäten",
         "nameEn": "School Activities",
         "descriptionDe": "Lerne Vokabeln für Aktivitäten und Fächer, die in der Schule vorkommen, um über den Schulalltag zu sprechen.",
         "descriptionEn": "Learn vocabulary for activities and subjects that occur at school to talk about daily school life.",
-        "iconName": "icon_school_activities"
+        "iconName": "icon_school_activities",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'School Activities' within the 'School' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'school_activities_lesen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on activities and subjects found in school. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "school_supplies",
         "nameDe": "Schulmaterialien",
         "nameEn": "School Supplies",
         "descriptionDe": "Entdecke die deutschen Namen für Dinge, die man in der Schule braucht, wie Stifte, Bücher und Hefte.",
         "descriptionEn": "Discover the German names for things needed at school, such as pens, books, and notebooks.",
-        "iconName": "icon_school_supplies"
+        "iconName": "icon_school_supplies",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'School Supplies' within the 'School' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'school_supplies_stift_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common school supplies. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "toys",
     "nameDe": "Spielzeug",
     "nameEn": "Toys",
     "descriptionDe": "Kinder lernen die deutschen Namen für verschiedene Spielzeuge und können über ihre Lieblingsspiele sprechen.",
     "descriptionEn": "Children will learn the German names for various toys and can talk about their favorite games.",
     "iconName": "icon_toys",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Toys'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'toys_ball_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common toys and games. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "professions",
     "nameDe": "Berufe",
     "nameEn": "Professions",
     "descriptionDe": "Hier entdecken Kinder einfache Berufsbezeichnungen auf Deutsch und verstehen, was Menschen beruflich tun.",
     "descriptionEn": "Here, children will discover simple job titles in German and understand what people do professionally.",
     "iconName": "icon_professions",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Professions'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'professions_arzt_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on simple job titles and what people do professionally. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "verbs_simple_actions",
     "nameDe": "Verben (einfache Aktionen)",
     "nameEn": "Verbs (Simple Actions)",
     "descriptionDe": "Diese Kategorie führt Kinder in die häufigsten Aktionswörter ein, um einfache Sätze zu bilden und über Handlungen zu sprechen.",
     "descriptionEn": "This category introduces children to the most common action words to form simple sentences and talk about actions.",
     "iconName": "icon_verbs_simple_actions",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Verbs (Simple Actions)'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'verbs_simple_actions_gehen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common action words to form simple sentences and talk about actions. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "adjectives_descriptive_words",
     "nameDe": "Adjektive (beschreibende Wörter)",
     "nameEn": "Adjectives (Descriptive Words)",
     "descriptionDe": "Kinder lernen Adjektive, um Gegenstände, Menschen und Gefühle auf Deutsch zu beschreiben.",
     "descriptionEn": "Children will learn adjectives to describe objects, people, and feelings in German.",
     "iconName": "icon_adjectives_descriptive_words",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Adjectives (Descriptive Words)'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'adjectives_descriptive_words_schnell_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on adjectives to describe objects, people, and feelings. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "days_of_the_week",
     "nameDe": "Wochentage",
     "nameEn": "Days of the Week",
     "descriptionDe": "In dieser Kategorie lernen Kinder die Namen der Wochentage auf Deutsch und können über ihren Zeitplan sprechen.",
     "descriptionEn": "In this category, children will learn the names of the days of the week in German and can talk about their schedule.",
     "iconName": "icon_days_of_the_week",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Days of the Week'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'days_of_the_week_montag_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on the names of the days of the week and talking about schedules. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "months",
     "nameDe": "Monate",
     "nameEn": "Months",
     "descriptionDe": "Kinder können die Namen der Monate auf Deutsch benennen und über Geburtstage und Ereignisse sprechen.",
     "descriptionEn": "Children can name the months in German and talk about birthdays and events.",
     "iconName": "icon_months",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Months'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'months_januar_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on the names of the months and talking about birthdays and events. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "seasons",
     "nameDe": "Jahreszeiten",
     "nameEn": "Seasons",
     "descriptionDe": "Diese Kategorie bringt Kindern bei, die vier Jahreszeiten auf Deutsch zu benennen und ihre Merkmale zu beschreiben.",
     "descriptionEn": "This category teaches children to name the four seasons in German and describe their characteristics.",
     "iconName": "icon_seasons",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Seasons'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'seasons_fruehling_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on the four seasons and their characteristics. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "places",
     "nameDe": "Orte",
     "nameEn": "Places",
     "descriptionDe": "Kinder lernen Vokabeln für verschiedene Orte in ihrer Umgebung, wie Stadt und Natur, und können einfache Richtungsangaben verstehen.",
@@ -249,29 +308,36 @@
     "iconName": "icon_places",
     "subcategories": [
       {
+        "id": "city_town",
         "nameDe": "Stadt/Ort",
         "nameEn": "City/Town",
         "descriptionDe": "Entdecke die deutschen Namen für wichtige Orte in der Stadt oder im Dorf.",
         "descriptionEn": "Discover the German names for important places in the city or town.",
-        "iconName": "icon_city_town"
+        "iconName": "icon_city_town",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'City/Town' within the 'Places' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'city_town_strasse_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on important places in a city or town. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "nature_places",
         "nameDe": "Natur",
         "nameEn": "Nature",
         "descriptionDe": "Erweitere den Wortschatz für natürliche Umgebungen wie Wälder und Seen.",
         "descriptionEn": "Expand vocabulary for natural environments like forests and lakes.",
-        "iconName": "icon_nature"
+        "iconName": "icon_nature",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Nature' within the 'Places' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'nature_places_wald_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on vocabulary for natural environments like forests and lakes. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "directions",
         "nameDe": "Richtungen",
         "nameEn": "Directions",
         "descriptionDe": "Lerne einfache Richtungsangaben, um sich zu orientieren.",
         "descriptionEn": "Learn simple directions to orient oneself.",
-        "iconName": "icon_directions"
+        "iconName": "icon_directions",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Directions' within the 'Places' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'directions_links_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on simple directions for orientation. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "actions_daily_routines",
     "nameDe": "Aktionen & Tagesabläufe",
     "nameEn": "Actions & Daily Routines",
     "descriptionDe": "In dieser Kategorie lernen Kinder die deutschen Verben für alltägliche Handlungen und können über ihre Routinen sprechen.",
@@ -279,45 +345,56 @@
     "iconName": "icon_actions_daily_routines",
     "subcategories": [
       {
+        "id": "morning_routine",
         "nameDe": "Morgenroutine",
         "nameEn": "Morning Routine",
         "descriptionDe": "Lerne die deutschen Wörter für Aktivitäten am Morgen.",
         "descriptionEn": "Learn the German words for morning activities.",
-        "iconName": "icon_morning_routine"
+        "iconName": "icon_morning_routine",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Morning Routine' within the 'Actions & Daily Routines' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'morning_routine_aufstehen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common morning activities. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "evening_routine",
         "nameDe": "Abendroutine",
         "nameEn": "Evening Routine",
         "descriptionDe": "Entdecke die deutschen Begriffe für Abendaktivitäten.",
         "descriptionEn": "Discover the German terms for evening activities.",
-        "iconName": "icon_evening_routine"
+        "iconName": "icon_evening_routine",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Evening Routine' within the 'Actions & Daily Routines' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'evening_routine_schlafen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common evening activities. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "play_activities",
         "nameDe": "Spielaktivitäten",
         "nameEn": "Play Activities",
         "descriptionDe": "Benenne verschiedene Spiel- und Freizeitaktivitäten auf Deutsch.",
         "descriptionEn": "Name various play and leisure activities in German.",
-        "iconName": "icon_play_activities"
+        "iconName": "icon_play_activities",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Play Activities' within the 'Actions & Daily Routines' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'play_activities_spielen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on various play and leisure activities. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "feelings_emotions",
     "nameDe": "Gefühle & Emotionen",
     "nameEn": "Feelings & Emotions",
     "descriptionDe": "Kinder lernen, ihre eigenen Gefühle und die anderer auf Deutsch zu benennen und zu verstehen.",
     "descriptionEn": "Children will learn to name and understand their own feelings and those of others in German.",
     "iconName": "icon_basic_feelings",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the category 'Feelings & Emotions'. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'feelings_emotions_gluecklich_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on naming and understanding feelings and emotions. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "adjectives_opposites",
     "nameDe": "Gegensätze",
     "nameEn": "Opposites",
     "descriptionDe": "Diese Kategorie hilft Kindern, kontrastierende Wörter und Konzepte auf Deutsch zu lernen, was ihr Verständnis erweitert.",
     "descriptionEn": "This category helps children learn contrasting words and concepts in German, expanding their comprehension.",
     "iconName": "icon_adjectives_opposites",
-    "subcategories": []
+    "subcategories": [],
+    "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Adjectives (Opposites)' within the 'Opposites' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'adjectives_opposites_gross_klein_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on pairs of adjectives that are opposites. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
   },
   {
+    "id": "social_interaction",
     "nameDe": "Soziales Miteinander",
     "nameEn": "Social Interaction",
     "descriptionDe": "Diese Kategorie konzentriert sich auf Vokabeln und Sätze, die für die soziale Interaktion mit anderen Kindern wichtig sind, um Freundschaften zu schließen und zu pflegen.",
@@ -325,36 +402,45 @@
     "iconName": "icon_social_interaction",
     "subcategories": [
       {
+        "id": "playing_friends",
         "nameDe": "Spielen & Freunde",
         "nameEn": "Playing & Friends",
         "descriptionDe": "Kinder lernen, andere zum Spielen einzuladen, zu teilen und einfache Gespräche beim Spielen zu führen.",
         "descriptionEn": "Children learn to invite others to play, share, and have simple conversations while playing.",
-        "iconName": "icon_playing_friends"
+        "iconName": "icon_playing_friends",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Playing & Friends' within the 'Social Interaction' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'playing_friends_spielen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on inviting others to play, sharing, and simple conversations during play. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "asking_questions_answering",
         "nameDe": "Fragen stellen & Antworten",
         "nameEn": "Asking Questions & Answering",
         "descriptionDe": "Lerne grundlegende Fragewörter (wer, was, wo, wann) und wie man einfache Fragen stellt und beantwortet, um mit Freunden zu kommunizieren.",
         "descriptionEn": "Learn basic question words (who, what, where, when) and how to ask and answer simple questions to communicate with friends.",
-        "iconName": "icon_asking_questions_answering"
+        "iconName": "icon_asking_questions_anwering",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Asking Questions & Answering' within the 'Social Interaction' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'asking_questions_wer_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on basic question words and how to ask and answer simple questions. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "expressing_understanding_feelings",
         "nameDe": "Gefühle ausdrücken & verstehen",
         "nameEn": "Expressing & Understanding Feelings",
         "descriptionDe": "Vertiefe das Wissen über Gefühle und lerne, wie man über die eigenen Gefühle spricht und die Gefühle anderer erkennt.",
         "descriptionEn": "Deepen knowledge of feelings and learn how to talk about one's own feelings and recognize the feelings of others.",
-        "iconName": "icon_expressing_understanding_feelings"
+        "iconName": "icon_expressing_understanding_feelings",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Expressing & Understanding Feelings' within the 'Social Interaction' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'expressing_feelings_traurig_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on talking about one's own feelings and recognizing the feelings of others. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "restaurant_cafe",
         "nameDe": "Im Restaurant/Café",
         "nameEn": "At the Restaurant/Café",
         "descriptionDe": "Vokabeln und Sätze, um Essen und Getränke zu bestellen und einfache Interaktionen in einem Restaurant oder Café zu meistern.",
         "descriptionEn": "Vocabulary and phrases to order food and drinks and manage simple interactions in a restaurant or café.",
-        "iconName": "icon_restaurant_cafe"
+        "iconName": "icon_restaurant_cafe",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'At the Restaurant/Café' within the 'Social Interaction' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'restaurant_cafe_essen_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on vocabulary and phrases for ordering food and drinks and managing simple interactions in a restaurant or café. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   },
   {
+    "id": "leisure_hobbies",
     "nameDe": "Freizeit & Hobbys",
     "nameEn": "Leisure & Hobbies",
     "descriptionDe": "Diese Kategorie bietet Vokabeln, um über Lieblingsaktivitäten, Hobbys und die Gestaltung der Freizeit zu sprechen.",
@@ -362,18 +448,22 @@
     "iconName": "icon_leisure_hobbies",
     "subcategories": [
       {
+        "id": "sports",
         "nameDe": "Sport",
         "nameEn": "Sports",
         "descriptionDe": "Lerne die Namen gängiger Sportarten und wie man über Sportaktivitäten und -interessen spricht.",
         "descriptionEn": "Learn the names of common sports and how to talk about sports activities and interests.",
-        "iconName": "icon_sports"
+        "iconName": "icon_sports",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Sports' within the 'Leisure & Hobbies' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'sports_fussball_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on common sports and talking about sports activities and interests. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {
+        "id": "music_art",
         "nameDe": "Musik & Kunst",
         "nameEn": "Music & Art",
         "descriptionDe": "Vokabeln rund um Musikinstrumente, Singen, Malen und andere kreative und künstlerische Aktivitäten.",
         "descriptionEn": "Vocabulary around musical instruments, singing, drawing, and other creative and artistic activities.",
-        "iconName": "icon_music_art"
+        "iconName": "icon_music_art",
+        "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Music & Art' within the 'Leisure & Hobbies' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'music_art_gitarre_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on vocabulary around musical instruments, singing, drawing, and other creative and artistic activities. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       }
     ]
   }

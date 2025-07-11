@@ -7,14 +7,14 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
-      "args": ["--flavor=dev", "--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--flavor=dev", "--dart-define-from-file=.env_dev.json"]
     },
     {
       "name": "kids_app (prod debug) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
-      "args": ["--flavor=prod", "--dart-define-from-file=.env.prod"]
+      "toolArgs": ["--flavor=prod", "--dart-define-from-file=.env_prod.json"]
     },
 
     // --- Web Debug configurations ---
@@ -24,7 +24,7 @@
       "type": "dart",
       "flutterMode": "debug",
       "deviceId": "chrome",
-      "args": ["--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--dart-define-from-file=.env_dev.json", "--web-port=3000"]
     },
     {
       "name": "kids_app (prod debug) - Web",
@@ -32,7 +32,7 @@
       "type": "dart",
       "flutterMode": "debug",
       "deviceId": "chrome",
-      "args": ["--dart-define-from-file=.env.prod"]
+      "toolArgs": ["--dart-define-from-file=.env_prod.json"]
     },
 
     // --- Native Profile configurations ---
@@ -41,14 +41,14 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
-      "args": ["--flavor=dev", "--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--flavor=dev", "--dart-define-from-file=.env_dev.json"]
     },
     {
       "name": "kids_app (prod profile) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
-      "args": ["--flavor=prod", "--dart-define-from-file=.env.prod"]
+      "toolArgs": ["--flavor=prod", "--dart-define-from-file=.env_prod.json"]
     },
 
     // --- Web Profile configurations ---
@@ -58,7 +58,7 @@
       "type": "dart",
       "flutterMode": "profile",
       "deviceId": "chrome",
-      "args": ["--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--dart-define-from-file=.env_dev.json"]
     },
     {
       "name": "kids_app (prod profile) - Web",
@@ -66,7 +66,7 @@
       "type": "dart",
       "flutterMode": "profile",
       "deviceId": "chrome",
-      "args": ["--dart-define-from-file=.env.prod"]
+      "toolArgs": ["--dart-define-from-file=.env_prod.json"]
     },
 
     // --- Native Release configurations ---
@@ -75,14 +75,14 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",
-      "args": ["--flavor=dev", "--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--flavor=dev", "--dart-define-from-file=.env_dev.json"]
     },
     {
       "name": "kids_app (prod release) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",
-      "args": ["--flavor=prod", "--dart-define-from-file=.env.prod"]
+      "toolArgs": ["--flavor=prod", "--dart-define-from-file=.env_prod.json"]
     },
 
     // --- Web Release configurations ---
@@ -92,7 +92,7 @@
       "type": "dart",
       "flutterMode": "release",
       "deviceId": "chrome",
-      "args": ["--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--dart-define-from-file=.env_dev.json"]
     },
     {
       "name": "kids_app (prod release) - Web",
@@ -100,7 +100,7 @@
       "type": "dart",
       "flutterMode": "release",
       "deviceId": "chrome",
-      "args": ["--dart-define-from-file=.env.prod"]
+      "toolArgs": ["--dart-define-from-file=.env_prod.json"]
     },
 
     // Additional useful configurations
@@ -109,17 +109,21 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
-      "args": ["--flavor=dev", "--verbose", "--dart-define-from-file=.env.dev"]
+      "toolArgs": [
+        "--verbose",
+        "--flavor=dev",
+        "--dart-define-from-file=.env_dev.json"
+      ]
     },
     {
       "name": "kids_app (prod debug with observatory) - Native",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
-      "args": [
+      "toolArgs": [
         "--flavor=prod",
         "--observatory-port=8888",
-        "--dart-define-from-file=.env.prod"
+        "--dart-define-from-file=.env_prod.json"
       ]
     },
     {
@@ -128,7 +132,7 @@
       "type": "dart",
       "flutterMode": "debug",
       "deviceId": "chrome",
-      "args": ["--verbose", "--dart-define-from-file=.env.dev"]
+      "toolArgs": ["--verbose", "--dart-define-from-file=.env_dev.json"]
     }
   ]
 }
