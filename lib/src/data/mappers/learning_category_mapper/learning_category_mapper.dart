@@ -3,6 +3,7 @@ import 'package:the_kids_app/src/domain/entities/learning_category/learning_cate
 
 extension LearningCategoryMapper on LearningCategoryDto {
   LearningCategoryEntity toEntity() => LearningCategoryEntity(
+    id: id,
     nameDe: nameDe,
     nameEn: nameEn,
     descriptionDe: descriptionDe,

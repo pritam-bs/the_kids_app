@@ -48,6 +48,8 @@ app.*.map.json
 # Environment variables file
 .env.dev
 .env.prod
+.env_dev.json
+.env_prod.json
 
 # Android keystore
 /android/app/keystore
