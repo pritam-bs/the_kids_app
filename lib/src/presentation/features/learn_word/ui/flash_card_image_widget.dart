@@ -2,12 +2,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class FlashCardImage extends StatelessWidget {
-  final String? imageUrl; // Now directly receives the URL
+  final String? imageUrl;
   final double responsiveImageHeight;
 
   const FlashCardImage({
     super.key,
-    required this.imageUrl, // Changed to non-Future
+    required this.imageUrl,
     required this.responsiveImageHeight,
   });
 

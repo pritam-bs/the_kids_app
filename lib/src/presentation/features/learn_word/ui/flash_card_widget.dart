@@ -6,14 +6,14 @@ import 'package:the_kids_app/src/presentation/features/learn_word/ui/flash_card_
 
 class FlashCardWidget extends StatefulWidget {
   final WordEntity word;
-  final String categoryId; // Still needed for the ImageRepository
-  final String? imageUrl; // Now receives the URL from the Bloc
+  final String categoryId;
+  final String? imageUrl;
 
   const FlashCardWidget({
     super.key,
     required this.word,
     required this.categoryId,
-    this.imageUrl, // Make it nullable
+    this.imageUrl,
   });
 
   @override
@@ -81,7 +81,7 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
             borderRadius: BorderRadius.circular(25),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.1),
+                color: Colors.black.withValues(alpha: 0.1),
                 spreadRadius: 1,
                 blurRadius: 5,
                 offset: const Offset(0, 3),
@@ -92,9 +92,8 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Separated Image Loading Widget - now directly uses imageUrl
               FlashCardImage(
-                imageUrl: widget.imageUrl, // Pass the imageUrl directly
+                imageUrl: widget.imageUrl,
                 responsiveImageHeight: responsiveImageHeight,
               ),
               const SizedBox(height: 24),
@@ -105,7 +104,6 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Article (if exists and not flipped)
                       if (!_isFlipped && widget.word.article != null)
                         Text(
                           widget.word.article!,
@@ -113,7 +111,7 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                               ?.copyWith(
                                 fontSize: articleFontSize,
                                 fontWeight: FontWeight.bold,
-                                color: colorScheme.onSecondaryContainer,
+                                color: colorScheme.onPrimaryContainer,
                               ),
                           textAlign: TextAlign.center,
                         ),
@@ -134,17 +132,17 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                                   Shadow(
                                     offset: const Offset(1, 1),
                                     blurRadius: 3.0,
-                                    color: Colors.black.withOpacity(0.2),
+                                    color: Colors.black.withValues(alpha: 0.2),
                                   ),
                                 ],
                               ),
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      if (!_isFlipped && widget.word.ipa != null) ...[
+                      if (!_isFlipped) ...[
                         const SizedBox(height: 12),
                         Text(
-                          '[${widget.word.ipa!}]',
+                          '[${widget.word.ipa}]',
                           style: Theme.of(context).textTheme.titleLarge
                               ?.copyWith(
                                 fontSize: ipaFontSize,
@@ -156,20 +154,18 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                       ],
                       const SizedBox(height: 24),
 
-                      // Example Sentence
                       Text(
                         _isFlipped
                             ? widget.word.exampleSentenceEn
                             : widget.word.exampleSentenceDe,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           fontSize: exampleSentenceFontSize,
-                          color: colorScheme.onSurfaceVariant,
+                          color: colorScheme.onPrimaryContainer,
                         ),
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 24),
 
-                      // Pronunciation Button
                       FloatingActionButton(
                         onPressed: () {
                           ScaffoldMessenger.of(context).showSnackBar(
