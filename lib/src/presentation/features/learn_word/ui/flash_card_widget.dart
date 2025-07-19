@@ -175,6 +175,7 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
 
                       // TTS
                       FloatingActionButton(
+                        heroTag: null,
                         onPressed: () async {
                           final article = (!_isFlipped)
                               ? (widget.word.article ?? '')
