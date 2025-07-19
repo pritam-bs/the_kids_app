@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:the_kids_app/src/core/di/injection.dart';
+import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
 import 'dart:math';
 
@@ -23,6 +25,7 @@ class FlashCardWidget extends StatefulWidget {
 class _FlashCardWidgetState extends State<FlashCardWidget> {
   bool _isFlipped = false;
   late Color _cardColor;
+  final TtsService _ttsService = getIt<TtsService>();
 
   final List<Color> _kidFriendlyColors = [
     Colors.lightBlue.shade400,
@@ -104,6 +107,7 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      // Article
                       if (!_isFlipped && widget.word.article != null)
                         Text(
                           widget.word.article!,
@@ -139,6 +143,8 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                           textAlign: TextAlign.center,
                         ),
                       ),
+
+                      // IPA
                       if (!_isFlipped) ...[
                         const SizedBox(height: 12),
                         Text(
@@ -154,6 +160,7 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                       ],
                       const SizedBox(height: 24),
 
+                      // Sentence
                       Text(
                         _isFlipped
                             ? widget.word.exampleSentenceEn
@@ -166,15 +173,34 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
                       ),
                       const SizedBox(height: 24),
 
+                      // TTS
                       FloatingActionButton(
-                        onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text(
-                                'Playing pronunciation... (Not implemented yet)',
-                              ),
-                            ),
-                          );
+                        onPressed: () async {
+                          final article = (!_isFlipped)
+                              ? (widget.word.article ?? '')
+                              : '';
+                          final word = (!_isFlipped)
+                              ? widget.word.wordDe
+                              : widget.word.wordEn;
+                          final wordText = '$article $word';
+
+                          final sentenceText = (!_isFlipped)
+                              ? widget.word.exampleSentenceDe
+                              : widget.word.exampleSentenceEn;
+
+                          final textToSpeak = '$wordText. $sentenceText';
+
+                          if (!_isFlipped) {
+                            await _ttsService.speak(
+                              textToSpeak,
+                              languageCode: 'de-DE',
+                            );
+                          } else {
+                            await _ttsService.speak(
+                              textToSpeak,
+                              languageCode: 'en-GB',
+                            );
+                          }
                         },
                         backgroundColor: colorScheme.primary,
                         foregroundColor: colorScheme.onPrimary,

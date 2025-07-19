@@ -7,7 +7,7 @@ import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_wor
 import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_word_event.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_word_state.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/ui/flash_card_widget.dart';
-import 'package:the_kids_app/src/presentation/widgets/initial_load_error_view_widget.dart';
+import 'package:the_kids_app/src/presentation/widgets/initial_error/initial_load_error_view_widget.dart';
 
 @RoutePage()
 class LearnWordScreen extends StatelessWidget implements AutoRouteWrapper {
