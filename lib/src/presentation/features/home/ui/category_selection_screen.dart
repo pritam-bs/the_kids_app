@@ -8,7 +8,7 @@ import 'package:the_kids_app/src/presentation/features/home/bloc/categoty_select
 import 'package:the_kids_app/src/presentation/features/home/bloc/categoty_selection_event.dart';
 import 'package:the_kids_app/src/presentation/features/home/bloc/categoty_selection_state.dart';
 import 'package:the_kids_app/src/presentation/features/home/ui/category_card.dart';
-import 'package:the_kids_app/src/presentation/widgets/initial_load_error_view_widget.dart';
+import 'package:the_kids_app/src/presentation/widgets/initial_error/initial_load_error_view_widget.dart';
 
 @RoutePage()
 class CategorySelectionScreen extends StatelessWidget

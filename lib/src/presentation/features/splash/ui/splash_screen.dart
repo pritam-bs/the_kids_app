@@ -7,7 +7,7 @@ import 'package:the_kids_app/src/core/router/app_router.gr.dart';
 import 'package:the_kids_app/src/presentation/features/splash/bloc/app_update/app_update_check_bloc.dart';
 import 'package:the_kids_app/src/presentation/features/splash/bloc/app_update/app_update_check_event.dart';
 import 'package:the_kids_app/src/presentation/features/splash/bloc/app_update/app_update_check_state.dart';
-import 'package:the_kids_app/src/presentation/widgets/initial_load_error_view_widget.dart';
+import 'package:the_kids_app/src/presentation/widgets/initial_error/initial_load_error_view_widget.dart';
 
 @RoutePage()
 class SplashScreen extends StatelessWidget implements AutoRouteWrapper {

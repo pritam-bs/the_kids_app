@@ -49,9 +49,11 @@ import '../../presentation/features/learn_word/bloc/learn_word_bloc.dart'
     as _i298;
 import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc.dart'
     as _i401;
+import '../tts/tts_service.dart' as _i369;
 import 'modules/data_module.dart' as _i742;
 import 'modules/firebase_module.dart' as _i398;
 import 'modules/shared_preferences_module.dart' as _i813;
+import 'modules/tts_module.dart' as _i983;
 
 extension GetItInjectableX on _i174.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt
@@ -61,6 +63,7 @@ extension GetItInjectableX on _i174.GetIt {
   }) async {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     final firebaseModule = _$FirebaseModule();
+    final ttsModule = _$TtsModule();
     final sharedPreferencesModule = _$SharedPreferencesModule();
     final dataModule = _$DataModule(this);
     await gh.factoryAsync<_i982.FirebaseApp>(
@@ -69,6 +72,10 @@ extension GetItInjectableX on _i174.GetIt {
     );
     await gh.factoryAsync<_i627.FirebaseRemoteConfig>(
       () => firebaseModule.firebaseRemoteConfig,
+      preResolve: true,
+    );
+    await gh.factoryAsync<_i369.TtsService>(
+      () => ttsModule.ttsService,
       preResolve: true,
     );
     await gh.factoryAsync<_i460.SharedPreferences>(
@@ -134,6 +141,8 @@ extension GetItInjectableX on _i174.GetIt {
 }
 
 class _$FirebaseModule extends _i398.FirebaseModule {}
+
+class _$TtsModule extends _i983.TtsModule {}
 
 class _$SharedPreferencesModule extends _i813.SharedPreferencesModule {}
 
