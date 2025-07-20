@@ -9,21 +9,26 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:dio/dio.dart' as _i361;
 import 'package:firebase_core/firebase_core.dart' as _i982;
 import 'package:firebase_remote_config/firebase_remote_config.dart' as _i627;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
+import '../../data/datasources/llm_model/mdel_data_source.dart' as _i784;
+import '../../data/datasources/llm_model/mdel_data_source_impl.dart' as _i338;
 import '../../data/repository_impls/app_settings/app_local_settings_repository_impl.dart'
     as _i680;
 import '../../data/repository_impls/app_update/app_update_check_repository_impl.dart'
     as _i226;
-import '../../data/repository_impls/image/image_repository_impls.dart' as _i794;
+import '../../data/repository_impls/image/image_repository_impl.dart' as _i34;
 import '../../data/repository_impls/learning_category/learning_category_repository_impl.dart'
     as _i942;
 import '../../data/repository_impls/learning_word/word_list_repository_impl.dart'
     as _i968;
+import '../../data/repository_impls/llm_model/model_repository_impl.dart'
+    as _i411;
 import '../../domain/repositories/app_settings/app_local_settings_repository.dart'
     as _i192;
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
@@ -33,6 +38,7 @@ import '../../domain/repositories/learning_category/learning_category_repository
     as _i582;
 import '../../domain/repositories/learning_category/word_list_repository.dart'
     as _i197;
+import '../../domain/repositories/llm_model/model_repository.dart' as _i96;
 import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
     as _i513;
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
@@ -41,8 +47,10 @@ import '../../domain/usecases/image/image_usecase.dart' as _i322;
 import '../../domain/usecases/learning_category/learning_category_usecase.dart'
     as _i268;
 import '../../domain/usecases/learning_word/word_list_usecase.dart' as _i35;
+import '../../domain/usecases/llm_model/model_usecase.dart' as _i565;
 import '../../presentation/features/app_update/bloc/app_update_info_bloc.dart'
     as _i675;
+import '../../presentation/features/exercise/bloc/exercise_bloc.dart' as _i770;
 import '../../presentation/features/home/bloc/categoty_selection_bloc.dart'
     as _i115;
 import '../../presentation/features/learn_word/bloc/learn_word_bloc.dart'
@@ -51,7 +59,9 @@ import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc
     as _i401;
 import '../tts/tts_service.dart' as _i369;
 import 'modules/data_module.dart' as _i742;
+import 'modules/dio_module.dart' as _i983;
 import 'modules/firebase_module.dart' as _i398;
+import 'modules/gcs_module.dart' as _i1055;
 import 'modules/shared_preferences_module.dart' as _i813;
 import 'modules/tts_module.dart' as _i983;
 
@@ -66,6 +76,8 @@ extension GetItInjectableX on _i174.GetIt {
     final ttsModule = _$TtsModule();
     final sharedPreferencesModule = _$SharedPreferencesModule();
     final dataModule = _$DataModule(this);
+    final dioModule = _$DioModule();
+    final gcsModule = _$GcsModule();
     await gh.factoryAsync<_i982.FirebaseApp>(
       () => firebaseModule.firebaseApp,
       preResolve: true,
@@ -82,14 +94,26 @@ extension GetItInjectableX on _i174.GetIt {
       () => sharedPreferencesModule.sharedPreferences,
       preResolve: true,
     );
+    gh.factory<_i770.ExerciseBloc>(() => _i770.ExerciseBloc());
     gh.lazySingleton<_i197.WordListRepository>(
-      () => dataModule.wordListRepository,
+      () => dataModule.wordListRepositoryImpl,
     );
     gh.lazySingleton<_i582.LearningCategoryRepository>(
-      () => dataModule.learningCategoryRepository,
+      () => dataModule.learningCategoryRepositoryImpl,
+    );
+    gh.lazySingleton<_i361.Dio>(
+      () => dioModule.dio,
+      instanceName: 'model_download',
+    );
+    gh.lazySingleton<_i33.ImageRepository>(
+      () => dataModule.imageRepositoryImpl,
     );
     gh.lazySingleton<_i190.AppUpdateCheckRepository>(
       () => dataModule.appUpdateCheckRepositoryImpl,
+    );
+    gh.factory<String>(
+      () => gcsModule.gemmaGcsBucketName,
+      instanceName: 'model_gcs_bucket',
     );
     gh.lazySingleton<_i192.AppLocalSettingsRepository>(
       () => dataModule.appLocalSettingsRepositoryImpl,
@@ -97,7 +121,6 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i686.CheckAppUpdateUseCase>(
       () => _i686.CheckAppUpdateUseCase(gh<_i190.AppUpdateCheckRepository>()),
     );
-    gh.lazySingleton<_i33.ImageRepository>(() => dataModule.imageRepository);
     gh.factory<_i268.LearningCategoryUsecase>(
       () =>
           _i268.LearningCategoryUsecase(gh<_i582.LearningCategoryRepository>()),
@@ -118,6 +141,9 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i192.AppLocalSettingsRepository>(),
       ),
     );
+    gh.lazySingleton<_i784.ModelDataSource>(
+      () => dataModule.modelDataSourceImpl,
+    );
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
     );
@@ -127,8 +153,14 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i322.ImageUsecase>(),
       ),
     );
+    gh.lazySingleton<_i96.ModelRepository>(
+      () => dataModule.modelRepositoryImpl,
+    );
     gh.factory<_i675.AppUpdateInfoBloc>(
       () => _i675.AppUpdateInfoBloc(gh<_i513.SaveLastSkippedVersionUseCase>()),
+    );
+    gh.factory<_i565.ModelUsecase>(
+      () => _i565.ModelUsecase(gh<_i96.ModelRepository>()),
     );
     gh.factory<_i401.AppUpdateCheckBloc>(
       () => _i401.AppUpdateCheckBloc(
@@ -152,12 +184,16 @@ class _$DataModule extends _i742.DataModule {
   final _i174.GetIt _getIt;
 
   @override
-  _i968.WordListRepositoryImpl get wordListRepository =>
+  _i968.WordListRepositoryImpl get wordListRepositoryImpl =>
       _i968.WordListRepositoryImpl();
 
   @override
-  _i942.LearningCategoryRepositoryImpl get learningCategoryRepository =>
+  _i942.LearningCategoryRepositoryImpl get learningCategoryRepositoryImpl =>
       _i942.LearningCategoryRepositoryImpl();
+
+  @override
+  _i34.ImageRepositoryImpl get imageRepositoryImpl =>
+      _i34.ImageRepositoryImpl();
 
   @override
   _i226.AppUpdateCheckRepositoryImpl get appUpdateCheckRepositoryImpl =>
@@ -168,6 +204,17 @@ class _$DataModule extends _i742.DataModule {
       _i680.AppLocalSettingsRepositoryImpl(_getIt<_i460.SharedPreferences>());
 
   @override
-  _i794.ImageRepositoryImpls get imageRepository =>
-      _i794.ImageRepositoryImpls();
+  _i338.ModelDataSourceImpl get modelDataSourceImpl =>
+      _i338.ModelDataSourceImpl(
+        _getIt<String>(instanceName: 'model_gcs_bucket'),
+        _getIt<_i361.Dio>(instanceName: 'model_download'),
+      );
+
+  @override
+  _i411.ModelRepositoryImpl get modelRepositoryImpl =>
+      _i411.ModelRepositoryImpl(_getIt<_i784.ModelDataSource>());
 }
+
+class _$DioModule extends _i983.DioModule {}
+
+class _$GcsModule extends _i1055.GcsModule {}
