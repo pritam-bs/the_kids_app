@@ -77,6 +77,13 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard> {
 
     widget.onAnswerSubmitted(_isCorrect!, ExerciseType.spellWord);
 
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(_isCorrect! ? 'Correct!' : 'Try again!'),
+        backgroundColor: _isCorrect! ? Colors.green : Colors.red,
+        duration: const Duration(seconds: 2),
+      ),
+    );
   }
 
   Color _getScrambledLetterButtonColor(String letter, ColorScheme colorScheme) {
@@ -264,8 +271,8 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 10,
+                      horizontal: 25,
+                      vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
                   ),
@@ -282,8 +289,26 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 10,
+                      horizontal: 25,
+                      vertical: 15,
+                    ),
+                    textStyle: Theme.of(context).textTheme.titleMedium,
+                  ),
+                ),
+                // Reset Button - Now consistent in size and padding
+                ElevatedButton.icon(
+                  onPressed: _resetExercise,
+                  icon: const Icon(Icons.refresh),
+                  label: const Text('Reset'),
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: colorScheme.onSurfaceVariant,
+                    backgroundColor: colorScheme.surfaceContainerHighest,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 25,
+                      vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
                   ),

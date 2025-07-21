@@ -1,29 +1,26 @@
-// lib/src/presentation/features/exercise/ui/exercise_card_widgets/listen_choose_exercise_card.dart
-
 import 'package:flutter/material.dart';
-import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/core/di/injection.dart';
+import 'package:the_kids_app/src/core/di/injection.dart'; // For TtsService
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
+import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // Assuming you have TtsService
 
-class ListenChooseExerciseCard extends StatefulWidget {
-  final ListenChooseExerciseEntity data;
+class MatchWordExerciseCard extends StatefulWidget {
+  final MatchWordExerciseEntity data;
   final Function(bool isCorrect, ExerciseType type) onAnswerSubmitted;
 
-  const ListenChooseExerciseCard({
+  const MatchWordExerciseCard({
     super.key,
     required this.data,
     required this.onAnswerSubmitted,
   });
 
   @override
-  State<ListenChooseExerciseCard> createState() =>
-      _ListenChooseExerciseCardState();
+  State<MatchWordExerciseCard> createState() => _MatchWordExerciseCardState();
 }
 
-class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
-  String? _selectedGermanWord;
-  bool? _isCorrect;
+class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
+  String? _selectedEnglishWord;
+  bool? _isCorrect; // null: not answered, true: correct, false: incorrect
   bool _isAnswered = false;
   final TtsService _ttsService = getIt<TtsService>();
 
@@ -32,14 +29,14 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     if (!_isAnswered) {
       return colorScheme.secondaryContainer; // Default color before answer
     }
-    if (option == widget.data.targetGermanWord) {
-      return Colors.green.shade400; // Correct answer color
+    if (option == widget.data.correctEnglishWord) {
+      return colorScheme.primary; // Correct answer color
     }
-    if (option == _selectedGermanWord && !_isCorrect!) {
-      return Colors.red.shade400; // Incorrect selected answer color
+    if (option == _selectedEnglishWord && !_isCorrect!) {
+      return colorScheme.error; // Incorrect selected answer color
     }
-    return colorScheme.secondaryContainer.withOpacity(
-      0.5,
+    return colorScheme.secondaryContainer.withValues(
+      alpha: 0.5,
     ); // Other options after answer
   }
 
@@ -48,40 +45,25 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     if (!_isAnswered) {
       return colorScheme.onSecondaryContainer;
     }
-    if (option == widget.data.targetGermanWord) {
+    if (option == widget.data.correctEnglishWord) {
       return Colors.white;
     }
-    if (option == _selectedGermanWord && !_isCorrect!) {
+    if (option == _selectedEnglishWord && !_isCorrect!) {
       return Colors.white;
     }
-    return colorScheme.onSecondaryContainer.withOpacity(0.5);
+    return colorScheme.onSecondaryContainer.withValues(alpha: 0.5);
   }
 
   void _onOptionSelected(String selectedWord) {
     if (_isAnswered) return; // Prevent multiple selections
 
     setState(() {
-      _selectedGermanWord = selectedWord;
-      _isCorrect = (selectedWord == widget.data.targetGermanWord);
+      _selectedEnglishWord = selectedWord;
+      _isCorrect = (selectedWord == widget.data.correctEnglishWord);
       _isAnswered = true;
     });
 
-    // Trigger the callback
-    if (widget.onAnswerSubmitted != null) {
-      widget.onAnswerSubmitted!(
-        _isCorrect!,
-        ExerciseType.listenChoose,
-      ); // Pass feedback and type
-    }
-
-    // Optional: Show SnackBar feedback
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(_isCorrect! ? 'Correct!' : 'Try again!'),
-        backgroundColor: _isCorrect! ? Colors.green : Colors.red,
-        duration: const Duration(seconds: 2),
-      ),
-    );
+    widget.onAnswerSubmitted(_isCorrect!, ExerciseType.matchWord);
   }
 
   @override
@@ -91,7 +73,8 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     final bool isLargeScreen = screenSize.width > 600;
 
     return Card(
-      color: colorScheme.surface,
+      color:
+          colorScheme.surface, // Use surface color for the main card background
       elevation: 8,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       margin: const EdgeInsets.all(16),
@@ -101,20 +84,22 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Prompt Text
+            // Target German Word
             Text(
-              'Listen to the word and select the correct word from below:',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: colorScheme.onSurface,
-                fontSize: isLargeScreen ? 28 : 20,
+              widget.data.targetGermanWord,
+              style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: colorScheme.primary,
+                fontSize: isLargeScreen ? 72 : 48, // Responsive font size
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
 
             // Speaker Button
             FloatingActionButton(
-              heroTag: null,
+              heroTag:
+                  null, // Set heroTag to null to avoid tag conflicts in PageView
               onPressed: () async {
                 await _ttsService.speak(
                   widget.data.targetGermanWord,
@@ -128,29 +113,26 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
             ),
             const SizedBox(height: 40),
 
-            // List of German Words (Options)
+            // List of English Words (Options)
             GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
+              shrinkWrap: true, // Important for GridView inside Column
+              physics:
+                  const NeverScrollableScrollPhysics(), // Disable GridView's own scrolling
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: isLargeScreen ? 3 : 1,
-                childAspectRatio: isLargeScreen ? 3 : 5,
+                crossAxisCount: isLargeScreen
+                    ? 3
+                    : 1, // 3 columns on large screens, 1 on small
+                childAspectRatio: isLargeScreen ? 3 : 5, // Adjust aspect ratio
                 crossAxisSpacing: 16.0,
                 mainAxisSpacing: 16.0,
               ),
-              itemCount: widget.data.germanOptions.length,
+              itemCount: widget.data.englishOptions.length,
               itemBuilder: (context, index) {
-                final option = widget.data.germanOptions[index];
+                final option = widget.data.englishOptions[index];
                 return ElevatedButton(
-                  onPressed: _isAnswered
-                      ? null
-                      : () => _onOptionSelected(option),
+                  onPressed: () => _onOptionSelected(option),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _getButtonColor(option, colorScheme),
-                    foregroundColor: _getButtonTextColor(
-                      option,
-                      colorScheme,
-                    ), // Explicitly set foreground
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -159,9 +141,6 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
                       horizontal: 20,
                       vertical: 15,
                     ),
-                    overlayColor: Colors.transparent, // Prevent default overlay
-                    surfaceTintColor:
-                        Colors.transparent, // Prevent default tint
                   ),
                   child: Text(
                     option,
@@ -169,7 +148,7 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: _getButtonTextColor(option, colorScheme),
                       fontWeight: FontWeight.bold,
-                      fontSize: isLargeScreen ? 24 : 20,
+                      fontSize: isLargeScreen ? 24 : 20, // Responsive font size
                     ),
                   ),
                 );
@@ -182,7 +161,3 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     );
   }
 }
-
-// --- Other Exercise Cards (Remain as placeholders for now) ---
-// ... (your other exercise card widgets like SpellWordExerciseCard, SentenceScrambleExerciseCard, BuildSentenceExerciseCard)
-// Ensure they also accept the onAnswerSubmitted callback in their constructors.

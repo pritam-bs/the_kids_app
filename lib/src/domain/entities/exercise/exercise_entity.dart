@@ -14,13 +14,17 @@ sealed class ExerciseEntity with _$ExerciseEntity {
 
   // Data for "Listen and Choose" exercise
   const factory ExerciseEntity.listenChoose({
-    required WordEntity targetWord,
-    required List<WordEntity> options,
+    required String targetGermanWord, // The German word to be spoken
+    required List<String> germanOptions, // List of 3 German words (options)
   }) = ListenChooseExerciseEntity;
 
   // Data for "Spell the Word" exercise
-  const factory ExerciseEntity.spellWord({required WordEntity wordToSpell}) =
-      SpellWordExerciseEntity;
+  // Data for "Spell the Word" exercise - UPDATED
+  const factory ExerciseEntity.spellWord({
+    required String targetGermanWord, // The German word to be spelled
+    required List<String>
+    scrambledLetters, // Scrambled letters (includes extra)
+  }) = SpellWordExerciseEntity;
 
   // Data for "Sentence Scramble" exercise
   const factory ExerciseEntity.sentenceScramble({
