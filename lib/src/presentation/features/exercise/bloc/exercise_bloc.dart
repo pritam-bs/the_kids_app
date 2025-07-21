@@ -37,11 +37,13 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
         ),
         ExerciseEntity.spellWord(
           targetGermanWord: 'Apfel',
-          scrambledLetters: ['A', 'p', 'f', 'e', 'l', 'x', 'z'],
+          englishTranslation: 'Apple',
+          scrambledLetters: ['l', 'A', 'f', 'x', 'e', 'z', 'p'],
         ),
         ExerciseEntity.sentenceScramble(
-          scrambledSentenceDe: 'ist / Das / Buch / ein',
-          correctSentenceEn: 'That is a book.',
+          targetGermanSentence: 'Das ist ein Buch.',
+          englishTranslation: 'That is a book.',
+          scrambledWords: ['ist', 'Das', 'ein', 'Buch.'], // Scrambled words
         ),
         ExerciseEntity.buildSentence(
           availableWords: ['Ich', 'habe', 'einen', 'Hund'],

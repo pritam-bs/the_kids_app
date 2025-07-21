@@ -19,18 +19,19 @@ sealed class ExerciseEntity with _$ExerciseEntity {
   }) = ListenChooseExerciseEntity;
 
   // Data for "Spell the Word" exercise
-  // Data for "Spell the Word" exercise - UPDATED
   const factory ExerciseEntity.spellWord({
-    required String targetGermanWord, // The German word to be spelled
+    required String targetGermanWord,
+    required String englishTranslation, // The German word to be spelled
     required List<String>
     scrambledLetters, // Scrambled letters (includes extra)
   }) = SpellWordExerciseEntity;
 
   // Data for "Sentence Scramble" exercise
   const factory ExerciseEntity.sentenceScramble({
-    required String scrambledSentenceDe,
-    required String correctSentenceEn,
-    // Add more properties like audio, image, etc.
+    required String targetGermanSentence, // The correct German sentence
+    required String englishTranslation, // English translation of the sentence
+    required List<String>
+    scrambledWords, // Scrambled words to construct the sentence
   }) = SentenceScrambleExerciseEntity;
 
   // Data for "Build a Sentence" exercise
