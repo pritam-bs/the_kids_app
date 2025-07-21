@@ -26,25 +26,72 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
       // In a real app, this would come from your backend or a data source.
       // We'll create a list of different exercise data types.
       final List<ExerciseEntity> dummyExercises = [
+        // --- MatchWordExerciseEntity Examples ---
         ExerciseEntity.matchWord(
           targetGermanWord: 'Mutter',
-          englishOptions: ['Father', 'Mother', 'Sister'], // Example options
+          englishOptions: ['Father', 'Mother', 'Sister'],
           correctEnglishWord: 'Mother',
         ),
+        ExerciseEntity.matchWord(
+          targetGermanWord: 'Vater',
+          englishOptions: ['Mother', 'Brother', 'Father'],
+          correctEnglishWord: 'Father',
+        ),
+        ExerciseEntity.matchWord(
+          targetGermanWord: 'Haus',
+          englishOptions: ['Car', 'House', 'Tree'],
+          correctEnglishWord: 'House',
+        ),
+
+        // --- ListenChooseExerciseEntity Examples ---
         ExerciseEntity.listenChoose(
           targetGermanWord: 'Hund',
-          germanOptions: ['Hund', 'Katze', 'Vogel'], // German options
+          germanOptions: ['Hund', 'Katze', 'Vogel'],
         ),
+        ExerciseEntity.listenChoose(
+          targetGermanWord: 'Katze',
+          germanOptions: ['Hund', 'Maus', 'Katze'],
+        ),
+        ExerciseEntity.listenChoose(
+          targetGermanWord: 'Baum',
+          germanOptions: ['Blume', 'Baum', 'Stein'],
+        ),
+
+        // --- SpellWordExerciseEntity Examples ---
         ExerciseEntity.spellWord(
           targetGermanWord: 'Apfel',
+          scrambledLetters: ['A', 'p', 'f', 'e', 'l', 'x', 'z'],
           englishTranslation: 'Apple',
-          scrambledLetters: ['l', 'A', 'f', 'x', 'e', 'z', 'p'],
         ),
+        ExerciseEntity.spellWord(
+          targetGermanWord: 'Tisch',
+          scrambledLetters: ['T', 'i', 's', 'c', 'h', 'k', 'l'],
+          englishTranslation: 'Table',
+        ),
+        ExerciseEntity.spellWord(
+          targetGermanWord: 'Wasser',
+          scrambledLetters: ['W', 'a', 's', 's', 'e', 'r', 't', 'u'],
+          englishTranslation: 'Water',
+        ),
+
+        // --- SentenceScrambleExerciseEntity Examples ---
         ExerciseEntity.sentenceScramble(
           targetGermanSentence: 'Das ist ein Buch.',
           englishTranslation: 'That is a book.',
-          scrambledWords: ['ist', 'Das', 'ein', 'Buch.'], // Scrambled words
+          scrambledWords: ['ist', 'Das', 'ein', 'Buch.'],
         ),
+        ExerciseEntity.sentenceScramble(
+          targetGermanSentence: 'Ich liebe Deutsch.',
+          englishTranslation: 'I love German.',
+          scrambledWords: ['liebe', 'Ich', 'Deutsch.'],
+        ),
+        ExerciseEntity.sentenceScramble(
+          targetGermanSentence: 'Sie trinkt Wasser.',
+          englishTranslation: 'She drinks water.',
+          scrambledWords: ['trinkt', 'Sie', 'Wasser.'],
+        ),
+
+        // --- BuildSentenceExerciseEntity Examples ---
         ExerciseEntity.buildSentence(
           targetGermanSentence: 'Ich habe einen Hund.',
           englishTranslation: 'I have a dog.',
@@ -58,6 +105,13 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
           sentenceWithMissingWord: ['Der', '', 'ist', 'rot.'],
           optionsForMissingWord: ['Banane', 'Apfel', 'Birne'],
           correctAnswerWord: 'Apfel',
+        ),
+        ExerciseEntity.buildSentence(
+          targetGermanSentence: 'Wir spielen im Park.',
+          englishTranslation: 'We play in the park.',
+          sentenceWithMissingWord: ['Wir', 'spielen', '', 'Park.'],
+          optionsForMissingWord: ['Haus', 'Garten', 'im'],
+          correctAnswerWord: 'im',
         ),
       ];
 

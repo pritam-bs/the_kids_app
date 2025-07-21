@@ -3,8 +3,7 @@ import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'dart:math';
-
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // For BoxConstraints
 
 class SentenceScrambleExerciseCard extends StatefulWidget {
   final SentenceScrambleExerciseEntity data;
@@ -98,22 +97,30 @@ class _SentenceScrambleExerciseCardState
     });
   }
 
+  String _normalizeSentence(String sentence) {
+    String normalized = sentence.toLowerCase().trim();
+    normalized = normalized.replaceAll(RegExp(r'\s+'), ' ');
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'\s([.,!?;:])'),
+      (match) => match.group(1)!,
+    );
+    return normalized;
+  }
+
   void _checkAnswer() async {
     if (_isAnswered) return;
 
-    final String constructedSentence = _constructedWords
-        .join(' ')
-        .trim()
-        .replaceAll(RegExp(r'\s+'), ' ');
-    final String targetSentence = widget.data.targetGermanSentence
-        .trim()
-        .replaceAll(RegExp(r'\s+'), ' ');
+    final String constructedSentenceRaw = _constructedWords.join(' ');
+    final String normalizedConstructedSentence = _normalizeSentence(
+      constructedSentenceRaw,
+    );
+    final String normalizedTargetSentence = _normalizeSentence(
+      widget.data.targetGermanSentence,
+    );
 
     setState(() {
-      _isCorrect =
-          (constructedSentence.toLowerCase() == targetSentence.toLowerCase());
-      _isAnswered =
-          true; // Set to true here to show translation and color feedback
+      _isCorrect = (normalizedConstructedSentence == normalizedTargetSentence);
+      _isAnswered = true;
     });
 
     if (widget.onAnswerSubmitted != null) {
@@ -121,6 +128,9 @@ class _SentenceScrambleExerciseCardState
     }
 
     if (!_isCorrect!) {
+      await Future.delayed(
+        const Duration(milliseconds: 1600),
+      ); // Delay before showing correct answer
       setState(() {
         _showCorrectSentenceAnimation = true;
       });
@@ -199,7 +209,6 @@ class _SentenceScrambleExerciseCardState
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Prompt Text
             Text(
               'Make a sentence using the words below:',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -210,44 +219,14 @@ class _SentenceScrambleExerciseCardState
             ),
             const SizedBox(height: 30),
 
-            // Sentence Construction Box
             LayoutBuilder(
               builder: (BuildContext context, BoxConstraints constraints) {
                 final double containerWidth = isLargeScreen
                     ? 600
                     : constraints.maxWidth - (24.0 * 2);
-                final double innerContentWidth = containerWidth - (10.0 * 2);
-
-                final double effectiveWordChipWidthWithSpacing =
-                    wordChipWidth + spacing;
-                int wordsPerRow = 1;
-                if (effectiveWordChipWidthWithSpacing > 0) {
-                  wordsPerRow =
-                      (innerContentWidth / effectiveWordChipWidthWithSpacing)
-                          .floor();
-                  if (wordsPerRow == 0) wordsPerRow = 1;
-                }
-
-                int numRows = 1;
-                if (wordsPerRow > 0) {
-                  numRows =
-                      ((_showCorrectSentenceAnimation
-                                  ? widget.data.targetGermanSentence
-                                        .split(' ')
-                                        .length
-                                  : _constructedWords.length) /
-                              wordsPerRow)
-                          .ceil();
-                  if (numRows == 0) numRows = 1;
-                }
-                final double calculatedHeight =
-                    (numRows * (wordChipHeight + spacing)) -
-                    spacing +
-                    (5.0 * 2);
 
                 return Container(
                   width: containerWidth,
-                  height: max(minConstructionBoxHeight, calculatedHeight),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                     vertical: 5,
@@ -262,76 +241,88 @@ class _SentenceScrambleExerciseCardState
                   ),
                   child: InkWell(
                     onTap: _removeLastWord,
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 300),
-                        transitionBuilder:
-                            (Widget child, Animation<double> animation) {
-                              return FadeTransition(
-                                opacity: animation,
-                                child: child,
-                              );
-                            },
-                        child: _showCorrectSentenceAnimation
-                            ? Text(
-                                widget.data.targetGermanSentence,
-                                key: const ValueKey('correctSentence'),
-                                textAlign: TextAlign.center,
-                                style: Theme.of(context).textTheme.headlineSmall
-                                    ?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                      color: _getConstructionBoxTextColor(
-                                        colorScheme,
-                                      ),
-                                      fontSize: wordChipFontSize,
-                                    ),
-                              )
-                            : Wrap(
-                                key: const ValueKey('constructedWords'),
-                                alignment: WrapAlignment.center,
-                                spacing: spacing,
-                                runSpacing: spacing,
-                                children: _constructedWords.map((word) {
-                                  return Chip(
-                                    label: Text(
-                                      word,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleLarge
-                                          ?.copyWith(
-                                            fontWeight: FontWeight.bold,
-                                            color: colorScheme.onSurfaceVariant,
-                                          ),
-                                    ),
-                                    backgroundColor: colorScheme.surface,
-                                    padding: const EdgeInsets.all(8),
+                    child: ConstrainedBox(
+                      // Added ConstrainedBox
+                      constraints: BoxConstraints(
+                        minHeight: minConstructionBoxHeight,
+                      ),
+                      child: Column(
+                        // Added Column with MainAxisSize.min
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 300),
+                            transitionBuilder:
+                                (Widget child, Animation<double> animation) {
+                                  return FadeTransition(
+                                    opacity: animation,
+                                    child: child,
                                   );
-                                }).toList(),
-                              ),
+                                },
+                            child: _showCorrectSentenceAnimation
+                                ? Text(
+                                    widget.data.targetGermanSentence,
+                                    key: const ValueKey('correctSentence'),
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineSmall
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                          color: _getConstructionBoxTextColor(
+                                            colorScheme,
+                                          ),
+                                          fontSize: wordChipFontSize,
+                                        ),
+                                  )
+                                : Wrap(
+                                    key: const ValueKey('constructedWords'),
+                                    alignment: WrapAlignment.center,
+                                    spacing: spacing,
+                                    runSpacing: spacing,
+                                    children: _constructedWords.map((word) {
+                                      return Chip(
+                                        label: Text(
+                                          word,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .titleLarge
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: colorScheme
+                                                    .onSurfaceVariant,
+                                              ),
+                                        ),
+                                        backgroundColor: colorScheme.surface,
+                                        padding: const EdgeInsets.all(8),
+                                      );
+                                    }).toList(),
+                                  ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 );
               },
             ),
-            const SizedBox(height: 10), // Reduced spacing to fit translation
-            // NEW: English Translation Display
-            if (_isAnswered) // Only show if an answer has been submitted
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Text(
-                  widget.data.englishTranslation,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: colorScheme.onSurfaceVariant,
-                    fontStyle: FontStyle.italic,
-                    fontSize: isLargeScreen ? 20 : 16,
-                  ),
+            const SizedBox(height: 10),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Text(
+                widget.data.englishTranslation,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  color: colorScheme.onSurfaceVariant,
+                  fontStyle: FontStyle.italic,
+                  fontSize: isLargeScreen ? 20 : 16,
                 ),
               ),
-            const SizedBox(height: 30), // Increased spacing after translation
-            // Scrambled Words List
+            ),
+            const SizedBox(height: 30),
+
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -387,7 +378,6 @@ class _SentenceScrambleExerciseCardState
             ),
             const SizedBox(height: 30),
 
-            // Check, Remove Last, and Reset Buttons
             Wrap(
               alignment: WrapAlignment.center,
               spacing: 12.0,

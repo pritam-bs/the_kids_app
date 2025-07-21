@@ -142,9 +142,7 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
               itemBuilder: (context, index) {
                 final option = widget.data.germanOptions[index];
                 return ElevatedButton(
-                  onPressed: _isAnswered
-                      ? null
-                      : () => _onOptionSelected(option),
+                  onPressed: () => _onOptionSelected(option),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _getButtonColor(option, colorScheme),
                     foregroundColor: _getButtonTextColor(

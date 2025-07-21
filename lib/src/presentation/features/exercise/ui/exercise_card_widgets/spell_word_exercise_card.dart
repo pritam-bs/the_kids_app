@@ -3,7 +3,7 @@ import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'dart:math';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // For BoxConstraints
 
 class SpellWordExerciseCard extends StatefulWidget {
   final SpellWordExerciseEntity data;
@@ -30,28 +30,22 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
   bool _isAnswered = false;
   bool? _isCorrect;
 
-  // Animation related for showing correct word
   bool _showCorrectWordAnimation = false;
   late AnimationController _animationController;
   late CurvedAnimation _curvedAnimation;
 
-  // GlobalKeys for animating individual letter chips (though we're using AnimatedSwitcher now)
-  // Keeping this for potential future granular letter animations if needed,
-  // but AnimatedSwitcher handles the primary transition.
-  // final Map<String, GlobalKey> _letterKeys = {}; // Not strictly needed for AnimatedSwitcher transition
-  final List<String> _correctWordLetters =
-      []; // Letters of the target German word
+  final List<String> _correctWordLetters = [];
 
   @override
   void initState() {
     super.initState();
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 800), // Animation duration
+      duration: const Duration(milliseconds: 800),
     );
     _curvedAnimation = CurvedAnimation(
       parent: _animationController,
-      curve: Curves.easeInOutBack, // A nice bouncy curve for rearrangement
+      curve: Curves.easeInOutBack,
     );
 
     _correctWordLetters.addAll(widget.data.targetGermanWord.split(''));
@@ -77,24 +71,22 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
   void _resetExercise() {
     setState(() {
       _constructedLetters.clear();
-      // Create a mutable copy and shuffle it for a fresh start
       _scrambledLettersPool = List.from(widget.data.scrambledLetters)
         ..shuffle(Random());
       _originalScrambledIndicesUsed.clear();
       _isAnswered = false;
       _isCorrect = null;
-      _showCorrectWordAnimation = false; // Reset animation state
-      _animationController.reset(); // Reset animation controller
-      // _letterKeys.clear(); // No longer generating keys for AnimatedPositioned directly
+      _showCorrectWordAnimation = false;
+      _animationController.reset();
     });
   }
 
   void _addLetter(String letter, int originalIndexInPool) {
-    if (_isAnswered) return; // Prevent interaction after answer
+    if (_isAnswered) return;
 
     setState(() {
       _constructedLetters.add(letter);
-      _scrambledLettersPool[originalIndexInPool] = ''; // Mark as used/empty
+      _scrambledLettersPool[originalIndexInPool] = '';
       _originalScrambledIndicesUsed.add(originalIndexInPool);
     });
   }
@@ -105,32 +97,31 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     setState(() {
       final removedLetter = _constructedLetters.removeLast();
       final originalIndex = _originalScrambledIndicesUsed.removeLast();
-      _scrambledLettersPool[originalIndex] = removedLetter; // Return to pool
+      _scrambledLettersPool[originalIndex] = removedLetter;
     });
   }
 
   void _checkAnswer() async {
-    // Made async for animation delay
-    if (_isAnswered) return; // Prevent re-checking
+    if (_isAnswered) return;
 
     final String constructedWord = _constructedLetters.join().toLowerCase();
     final String targetWord = widget.data.targetGermanWord.toLowerCase();
 
     setState(() {
       _isCorrect = (constructedWord == targetWord);
-      _isAnswered =
-          true; // Set to true here to show translation and color feedback
+      _isAnswered = true;
     });
 
     widget.onAnswerSubmitted(_isCorrect!, ExerciseType.spellWord);
 
     if (!_isCorrect!) {
-      // If incorrect, trigger animation to show correct word
+      await Future.delayed(
+        const Duration(milliseconds: 1600),
+      ); // Delay before showing correct answer
       setState(() {
         _showCorrectWordAnimation = true;
       });
-      _animationController.forward(from: 0.0); // Start the animation
-      // Optionally, wait for animation to complete before showing SnackBar
+      _animationController.forward(from: 0.0);
       await Future.delayed(
         _animationController.duration! + const Duration(milliseconds: 200),
       );
@@ -145,21 +136,16 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     );
   }
 
-  // Helper to get button color for scrambled letters
   Color _getScrambledLetterButtonColor(String letter, ColorScheme colorScheme) {
     if (letter.isEmpty) {
-      // If the letter is marked as used
-      return colorScheme.surfaceContainerHighest.withOpacity(
-        0.3,
-      ); // Faded/disabled
+      return colorScheme.surfaceContainerHighest.withOpacity(0.3);
     }
     if (_isAnswered) {
       return colorScheme.secondaryContainer.withOpacity(0.5);
     }
-    return colorScheme.secondaryContainer; // Default active color
+    return colorScheme.secondaryContainer;
   }
 
-  // Helper to get text color for scrambled letters
   Color _getScrambledLetterButtonTextColor(
     String letter,
     ColorScheme colorScheme,
@@ -173,18 +159,16 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     return colorScheme.onSecondaryContainer;
   }
 
-  // Helper to get the construction box border/text color based on answer
   Color _getConstructionBoxColor(ColorScheme colorScheme) {
     if (!_isAnswered) {
-      return colorScheme.outline; // Default border color
+      return colorScheme.outline;
     }
     return _isCorrect! ? Colors.green.shade400 : Colors.red.shade400;
   }
 
-  // Helper to get the construction box text color based on answer
   Color _getConstructionBoxTextColor(ColorScheme colorScheme) {
     if (!_isAnswered) {
-      return colorScheme.onSurfaceVariant; // Default text color
+      return colorScheme.onSurfaceVariant;
     }
     return _isCorrect! ? Colors.green.shade800 : Colors.red.shade800;
   }
@@ -196,7 +180,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     final bool isLargeScreen = screenSize.width > 600;
 
     final double minConstructionBoxHeight = isLargeScreen ? 80 : 60;
-    // Estimated chip dimensions for position calculation (used for calculated height)
+    // These estimates are still used for GridView sizing and general spacing consistency
     final double estimatedChipFontSize =
         Theme.of(context).textTheme.headlineSmall!.fontSize! *
         (isLargeScreen ? 1.0 : 0.8);
@@ -216,7 +200,6 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Prompt Text
             Text(
               'Listen to the word and spell it:',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -227,7 +210,6 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
             ),
             const SizedBox(height: 30),
 
-            // Speaker Button
             FloatingActionButton(
               heroTag: null,
               onPressed: () async {
@@ -243,44 +225,20 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
             ),
             const SizedBox(height: 40),
 
-            // Word Construction Box
             LayoutBuilder(
               builder: (BuildContext context, BoxConstraints constraints) {
                 final double containerWidth = isLargeScreen
                     ? 500
                     : constraints.maxWidth - (24.0 * 2); // Card padding
-                final double innerContentWidth =
-                    containerWidth - (10.0 * 2); // Container's own padding
-
-                // Calculate required height based on content
-                final double effectiveChipWidthWithSpacing =
-                    estimatedChipWidth + spacing;
-                int lettersPerRow = 1;
-                if (effectiveChipWidthWithSpacing > 0) {
-                  lettersPerRow =
-                      (innerContentWidth / effectiveChipWidthWithSpacing)
-                          .floor();
-                  if (lettersPerRow == 0) lettersPerRow = 1;
-                }
-
-                int numRows = 1;
-                if (lettersPerRow > 0) {
-                  numRows =
-                      ((_showCorrectWordAnimation
-                                  ? _correctWordLetters.length
-                                  : _constructedLetters.length) /
-                              lettersPerRow)
-                          .ceil();
-                  if (numRows == 0) numRows = 1;
-                }
-                final double calculatedHeight =
-                    (numRows * (estimatedChipHeight + spacing)) -
-                    spacing +
-                    (5.0 * 2);
+                // The Container itself will now shrink-wrap its child (Column),
+                // and the Column will shrink-wrap the Wrap.
+                // We only need to ensure the minHeight.
 
                 return Container(
                   width: containerWidth,
-                  height: max(minConstructionBoxHeight, calculatedHeight),
+                  // REMOVED fixed height calculation here.
+                  // Height will be determined by its child (Column with MainAxisSize.min)
+                  // combined with ConstrainedBox for minHeight.
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                     vertical: 5,
@@ -291,70 +249,81 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                     border: Border.all(
                       color: _getConstructionBoxColor(colorScheme),
                       width: 2,
-                    ), // Dynamic border color
+                    ),
                   ),
                   child: InkWell(
                     onTap: _removeLastLetter,
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: AnimatedSwitcher(
-                        // Use AnimatedSwitcher for smooth transition
-                        duration: const Duration(milliseconds: 300),
-                        transitionBuilder:
-                            (Widget child, Animation<double> animation) {
-                              return FadeTransition(
-                                opacity: animation,
-                                child: child,
-                              );
-                            },
-                        child: _showCorrectWordAnimation
-                            ? Text(
-                                widget.data.targetGermanWord,
-                                key: const ValueKey(
-                                  'correctWord',
-                                ), // Unique key for AnimatedSwitcher
-                                textAlign: TextAlign.center,
-                                style: Theme.of(context).textTheme.headlineSmall
-                                    ?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                      color: _getConstructionBoxTextColor(
-                                        colorScheme,
-                                      ), // Dynamic text color
-                                      fontSize: estimatedChipFontSize,
-                                    ),
-                              )
-                            : Wrap(
-                                key: const ValueKey(
-                                  'constructedLetters',
-                                ), // Unique key for AnimatedSwitcher
-                                alignment: WrapAlignment.center,
-                                spacing: spacing,
-                                runSpacing: spacing,
-                                children: _constructedLetters.map((letter) {
-                                  return Chip(
-                                    label: Text(
-                                      letter,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .headlineSmall
-                                          ?.copyWith(
-                                            fontWeight: FontWeight.bold,
-                                            color: colorScheme.onSurfaceVariant,
-                                          ),
-                                    ),
-                                    backgroundColor: colorScheme.surface,
-                                    padding: const EdgeInsets.all(8),
+                    // Re-introduced ConstrainedBox here to apply minHeight
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        minHeight: minConstructionBoxHeight,
+                      ),
+                      child: Column(
+                        // Use Column to shrink-wrap its content vertically
+                        mainAxisSize: MainAxisSize
+                            .min, // Crucial: Column only takes up needed vertical space
+                        mainAxisAlignment: MainAxisAlignment
+                            .center, // Center content vertically
+                        children: [
+                          AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 300),
+                            transitionBuilder:
+                                (Widget child, Animation<double> animation) {
+                                  return FadeTransition(
+                                    opacity: animation,
+                                    child: child,
                                   );
-                                }).toList(),
-                              ),
+                                },
+                            child: _showCorrectWordAnimation
+                                ? Text(
+                                    widget.data.targetGermanWord,
+                                    key: const ValueKey('correctWord'),
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineSmall
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                          color: _getConstructionBoxTextColor(
+                                            colorScheme,
+                                          ),
+                                          fontSize: estimatedChipFontSize,
+                                        ),
+                                  )
+                                : Wrap(
+                                    key: const ValueKey('constructedLetters'),
+                                    alignment: WrapAlignment.center,
+                                    spacing: spacing,
+                                    runSpacing: spacing,
+                                    children: _constructedLetters.map((letter) {
+                                      return Chip(
+                                        label: Text(
+                                          letter,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headlineSmall
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: colorScheme
+                                                    .onSurfaceVariant,
+                                              ),
+                                        ),
+                                        backgroundColor: colorScheme.surface,
+                                        padding: const EdgeInsets.all(8),
+                                      );
+                                    }).toList(),
+                                  ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 );
               },
             ),
-            const SizedBox(height: 10), // Reduced spacing to fit translation
-            // NEW: English Translation Display
+            const SizedBox(height: 10),
+
+            // English Translation Display
             if (_isAnswered) // Only show if an answer has been submitted
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -368,7 +337,8 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                   ),
                 ),
               ),
-            const SizedBox(height: 30), // Increased spacing after translation
+            const SizedBox(height: 30),
+
             // Scrambled Letters List
             GridView.builder(
               shrinkWrap: true,
@@ -428,7 +398,6 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
               spacing: 12.0,
               runSpacing: 12.0,
               children: [
-                // Check Button
                 ElevatedButton.icon(
                   onPressed: _isAnswered ? null : _checkAnswer,
                   icon: const Icon(Icons.check_circle),
@@ -440,13 +409,12 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25, // Consistent padding
-                      vertical: 15, // Consistent padding
+                      horizontal: 25,
+                      vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
-                // Remove Last Button
                 ElevatedButton.icon(
                   onPressed: _isAnswered ? null : _removeLastLetter,
                   icon: const Icon(Icons.backspace),
@@ -458,13 +426,12 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25, // Consistent padding
-                      vertical: 15, // Consistent padding
+                      horizontal: 25,
+                      vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
-                // Reset Button - Now consistent in size and padding
                 ElevatedButton.icon(
                   onPressed: _resetExercise,
                   icon: const Icon(Icons.refresh),
@@ -476,8 +443,8 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25, // Consistent padding
-                      vertical: 15, // Consistent padding
+                      horizontal: 25,
+                      vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
                   ),

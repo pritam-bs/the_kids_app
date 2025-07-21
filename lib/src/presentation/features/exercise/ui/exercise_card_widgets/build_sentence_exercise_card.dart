@@ -26,7 +26,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
 
   late List<String> _currentSentenceParts;
   late List<String> _optionsPool;
-  int? _selectedOptionIndex; // Index of the selected option in the _optionsPool
+  int? _selectedOptionIndex;
 
   bool _isAnswered = false;
   bool? _isCorrect;
@@ -84,9 +84,6 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
       setState(() {
         _currentSentenceParts[blankIndex] = word;
         _selectedOptionIndex = optionIndex;
-        // Do NOT mark option as used in _optionsPool by setting to '' here.
-        // We need the original word for _clearBlank if the user decides to clear.
-        // The button will be disabled by _selectedOptionIndex != null.
       });
     }
   }
@@ -94,14 +91,12 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
   void _clearBlank() {
     if (_isAnswered || _selectedOptionIndex == null) return;
 
+    // Find the word that was placed in the blank
     final int blankIndex = _currentSentenceParts.indexOf(
       widget.data.optionsForMissingWord[_selectedOptionIndex!],
     );
     if (blankIndex != -1) {
       setState(() {
-        // Restore the word to its original position in the options pool
-        // This assumes _optionsPool is a shuffled copy of the original optionsForMissingWord
-        // and we are restoring the specific word at the selected index.
         _optionsPool[_selectedOptionIndex!] = widget
             .data
             .optionsForMissingWord[_selectedOptionIndex!]; // Restore original word
@@ -114,33 +109,23 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
   void _checkAnswer() async {
     if (_isAnswered) return;
 
-    // Find the word currently in the blank
-    final int blankIndex = _currentSentenceParts.indexOf('');
     String selectedWordInBlank = '';
-    if (blankIndex != -1) {
-      // If blank is still empty, it means no word was selected. This case should be handled by disabling the check button.
-      // If blank is filled, the word is at blankIndex.
-      // However, it's safer to use the _selectedOptionIndex to get the actual word from optionsPool.
-      if (_selectedOptionIndex != null) {
-        selectedWordInBlank =
-            widget.data.optionsForMissingWord[_selectedOptionIndex!];
-      }
+    if (_selectedOptionIndex != null) {
+      selectedWordInBlank =
+          widget.data.optionsForMissingWord[_selectedOptionIndex!];
     } else {
-      // Blank is filled, find the word that filled it.
-      // This is a bit tricky if multiple words could be the same.
-      // A more robust way is to track the actual word that went into the blank.
-      // For now, let's assume _currentSentenceParts has the selected word.
-      // Find the word that replaced the blank.
-      final List<String> tempSentence = List.from(
-        widget.data.sentenceWithMissingWord,
+      // This case should ideally be prevented by disabling the check button
+      // if _selectedOptionIndex is null.
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Please select a word to complete the sentence.'),
+          backgroundColor: Colors.orange,
+          duration: Duration(seconds: 2),
+        ),
       );
-      final int originalBlankIndex = tempSentence.indexOf('');
-      if (originalBlankIndex != -1) {
-        selectedWordInBlank = _currentSentenceParts[originalBlankIndex];
-      }
+      return;
     }
 
-    // NEW: Compare the selected word directly with correctAnswerWord
     setState(() {
       _isCorrect =
           (selectedWordInBlank.toLowerCase() ==
@@ -153,6 +138,9 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     }
 
     if (!_isCorrect!) {
+      await Future.delayed(
+        const Duration(milliseconds: 1600),
+      ); // Delay before showing correct answer
       setState(() {
         _showCorrectSentenceAnimation = true;
       });
@@ -180,18 +168,13 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
       return colorScheme.surfaceContainerHighest.withOpacity(0.3);
     }
     if (_isAnswered) {
-      // If this option was the one selected by the user
       if (optionIndex == _selectedOptionIndex) {
         return _isCorrect! ? Colors.green.shade400 : Colors.red.shade400;
-      }
-      // If this option is the correct answer word (but not necessarily selected by user)
-      else if (word.toLowerCase() ==
+      } else if (word.toLowerCase() ==
           widget.data.correctAnswerWord.toLowerCase()) {
-        return Colors.green.shade400.withOpacity(
-          0.5,
-        ); // Highlight correct answer
+        return Colors.green.shade400.withOpacity(0.5);
       }
-      return colorScheme.secondaryContainer.withOpacity(0.5); // Other options
+      return colorScheme.secondaryContainer.withOpacity(0.5);
     }
     return colorScheme.secondaryContainer;
   }
@@ -285,38 +268,9 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                 final double containerWidth = isLargeScreen
                     ? 600
                     : constraints.maxWidth - (24.0 * 2);
-                final double innerContentWidth = containerWidth - (10.0 * 2);
-
-                final double effectiveWordChipWidthWithSpacing =
-                    wordChipWidth + spacing;
-                int wordsPerRow = 1;
-                if (effectiveWordChipWidthWithSpacing > 0) {
-                  wordsPerRow =
-                      (innerContentWidth / effectiveWordChipWidthWithSpacing)
-                          .floor();
-                  if (wordsPerRow == 0) wordsPerRow = 1;
-                }
-
-                int numRows = 1;
-                if (wordsPerRow > 0) {
-                  numRows =
-                      ((_showCorrectSentenceAnimation
-                                  ? widget.data.targetGermanSentence
-                                        .split(' ')
-                                        .length
-                                  : _currentSentenceParts.length) /
-                              wordsPerRow)
-                          .ceil();
-                  if (numRows == 0) numRows = 1;
-                }
-                final double calculatedHeight =
-                    (numRows * (wordChipHeight + spacing)) -
-                    spacing +
-                    (5.0 * 2);
 
                 return Container(
                   width: containerWidth,
-                  height: max(minConstructionBoxHeight, calculatedHeight),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                     vertical: 5,
@@ -331,80 +285,95 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                   ),
                   child: InkWell(
                     onTap: _clearBlank,
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 300),
-                        transitionBuilder:
-                            (Widget child, Animation<double> animation) {
-                              return FadeTransition(
-                                opacity: animation,
-                                child: child,
-                              );
-                            },
-                        child: _showCorrectSentenceAnimation
-                            ? Text(
-                                widget.data.targetGermanSentence,
-                                key: const ValueKey('correctSentence'),
-                                textAlign: TextAlign.center,
-                                style: Theme.of(context).textTheme.headlineSmall
-                                    ?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                      color: _getConstructionBoxTextColor(
-                                        colorScheme,
-                                      ),
-                                      fontSize: wordChipFontSize,
-                                    ),
-                              )
-                            : Wrap(
-                                key: const ValueKey('currentSentence'),
-                                alignment: WrapAlignment.center,
-                                spacing: spacing,
-                                runSpacing: spacing,
-                                children: _currentSentenceParts.map((word) {
-                                  if (word.isEmpty) {
-                                    return Container(
-                                      width: wordChipWidth,
-                                      height: wordChipHeight,
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: colorScheme.outline
-                                              .withOpacity(0.5),
-                                          style: BorderStyle.solid,
-                                          width: 1.5,
-                                        ),
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                      alignment: Alignment.center,
-                                      child: Text(
-                                        '____',
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .titleLarge
-                                            ?.copyWith(
-                                              color: colorScheme
-                                                  .onSurfaceVariant
-                                                  .withOpacity(0.5),
-                                            ),
-                                      ),
-                                    );
-                                  }
-                                  return Chip(
-                                    label: Text(
-                                      word,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleLarge
-                                          ?.copyWith(
-                                            fontWeight: FontWeight.bold,
-                                            color: colorScheme.onSurfaceVariant,
-                                          ),
-                                    ),
-                                    backgroundColor: colorScheme.surface,
-                                    padding: const EdgeInsets.all(8),
+                    child: ConstrainedBox(
+                      // Added ConstrainedBox
+                      constraints: BoxConstraints(
+                        minHeight: minConstructionBoxHeight,
+                      ),
+                      child: Column(
+                        // Added Column with MainAxisSize.min
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 300),
+                            transitionBuilder:
+                                (Widget child, Animation<double> animation) {
+                                  return FadeTransition(
+                                    opacity: animation,
+                                    child: child,
                                   );
-                                }).toList(),
-                              ),
+                                },
+                            child: _showCorrectSentenceAnimation
+                                ? Text(
+                                    widget.data.targetGermanSentence,
+                                    key: const ValueKey('correctSentence'),
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headlineSmall
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                          color: _getConstructionBoxTextColor(
+                                            colorScheme,
+                                          ),
+                                          fontSize: wordChipFontSize,
+                                        ),
+                                  )
+                                : Wrap(
+                                    key: const ValueKey('currentSentence'),
+                                    alignment: WrapAlignment.center,
+                                    spacing: spacing,
+                                    runSpacing: spacing,
+                                    children: _currentSentenceParts.map((word) {
+                                      if (word.isEmpty) {
+                                        return Container(
+                                          width: wordChipWidth,
+                                          height: wordChipHeight,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: colorScheme.outline
+                                                  .withOpacity(0.5),
+                                              style: BorderStyle.solid,
+                                              width: 1.5,
+                                            ),
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
+                                          alignment: Alignment.center,
+                                          child: Text(
+                                            '____',
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .titleLarge
+                                                ?.copyWith(
+                                                  color: colorScheme
+                                                      .onSurfaceVariant
+                                                      .withOpacity(0.5),
+                                                ),
+                                          ),
+                                        );
+                                      }
+                                      return Chip(
+                                        label: Text(
+                                          word,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .titleLarge
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: colorScheme
+                                                    .onSurfaceVariant,
+                                              ),
+                                        ),
+                                        backgroundColor: colorScheme.surface,
+                                        padding: const EdgeInsets.all(8),
+                                      );
+                                    }).toList(),
+                                  ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -413,7 +382,6 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
             ),
             const SizedBox(height: 30),
 
-            // Options for Missing Word
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -475,7 +443,6 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
             ),
             const SizedBox(height: 30),
 
-            // Check and Reset Buttons
             Wrap(
               alignment: WrapAlignment.center,
               spacing: 12.0,
