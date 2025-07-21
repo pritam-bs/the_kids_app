@@ -46,8 +46,18 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
           scrambledWords: ['ist', 'Das', 'ein', 'Buch.'], // Scrambled words
         ),
         ExerciseEntity.buildSentence(
-          availableWords: ['Ich', 'habe', 'einen', 'Hund'],
-          targetSentenceEn: 'I have a dog.',
+          targetGermanSentence: 'Ich habe einen Hund.',
+          englishTranslation: 'I have a dog.',
+          sentenceWithMissingWord: ['Ich', 'habe', 'einen', '', '.'],
+          optionsForMissingWord: ['Katze', 'Vogel', 'Hund'],
+          correctAnswerWord: 'Hund',
+        ),
+        ExerciseEntity.buildSentence(
+          targetGermanSentence: 'Der Apfel ist rot.',
+          englishTranslation: 'The apple is red.',
+          sentenceWithMissingWord: ['Der', '', 'ist', 'rot.'],
+          optionsForMissingWord: ['Banane', 'Apfel', 'Birne'],
+          correctAnswerWord: 'Apfel',
         ),
       ];
 

@@ -128,14 +128,14 @@ return buildSentence(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String targetGermanWord,  List<String> englishOptions,  String correctEnglishWord)?  matchWord,TResult Function( String targetGermanWord,  List<String> germanOptions)?  listenChoose,TResult Function( String targetGermanWord,  String englishTranslation,  List<String> scrambledLetters)?  spellWord,TResult Function( String targetGermanSentence,  String englishTranslation,  List<String> scrambledWords)?  sentenceScramble,TResult Function( List<String> availableWords,  String targetSentenceEn)?  buildSentence,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String targetGermanWord,  List<String> englishOptions,  String correctEnglishWord)?  matchWord,TResult Function( String targetGermanWord,  List<String> germanOptions)?  listenChoose,TResult Function( String targetGermanWord,  String englishTranslation,  List<String> scrambledLetters)?  spellWord,TResult Function( String targetGermanSentence,  String englishTranslation,  List<String> scrambledWords)?  sentenceScramble,TResult Function( String targetGermanSentence,  String englishTranslation,  List<String> sentenceWithMissingWord,  List<String> optionsForMissingWord,  String correctAnswerWord)?  buildSentence,required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case MatchWordExerciseEntity() when matchWord != null:
 return matchWord(_that.targetGermanWord,_that.englishOptions,_that.correctEnglishWord);case ListenChooseExerciseEntity() when listenChoose != null:
 return listenChoose(_that.targetGermanWord,_that.germanOptions);case SpellWordExerciseEntity() when spellWord != null:
 return spellWord(_that.targetGermanWord,_that.englishTranslation,_that.scrambledLetters);case SentenceScrambleExerciseEntity() when sentenceScramble != null:
 return sentenceScramble(_that.targetGermanSentence,_that.englishTranslation,_that.scrambledWords);case BuildSentenceExerciseEntity() when buildSentence != null:
-return buildSentence(_that.availableWords,_that.targetSentenceEn);case _:
+return buildSentence(_that.targetGermanSentence,_that.englishTranslation,_that.sentenceWithMissingWord,_that.optionsForMissingWord,_that.correctAnswerWord);case _:
   return orElse();
 
 }
@@ -153,14 +153,14 @@ return buildSentence(_that.availableWords,_that.targetSentenceEn);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String targetGermanWord,  List<String> englishOptions,  String correctEnglishWord)  matchWord,required TResult Function( String targetGermanWord,  List<String> germanOptions)  listenChoose,required TResult Function( String targetGermanWord,  String englishTranslation,  List<String> scrambledLetters)  spellWord,required TResult Function( String targetGermanSentence,  String englishTranslation,  List<String> scrambledWords)  sentenceScramble,required TResult Function( List<String> availableWords,  String targetSentenceEn)  buildSentence,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String targetGermanWord,  List<String> englishOptions,  String correctEnglishWord)  matchWord,required TResult Function( String targetGermanWord,  List<String> germanOptions)  listenChoose,required TResult Function( String targetGermanWord,  String englishTranslation,  List<String> scrambledLetters)  spellWord,required TResult Function( String targetGermanSentence,  String englishTranslation,  List<String> scrambledWords)  sentenceScramble,required TResult Function( String targetGermanSentence,  String englishTranslation,  List<String> sentenceWithMissingWord,  List<String> optionsForMissingWord,  String correctAnswerWord)  buildSentence,}) {final _that = this;
 switch (_that) {
 case MatchWordExerciseEntity():
 return matchWord(_that.targetGermanWord,_that.englishOptions,_that.correctEnglishWord);case ListenChooseExerciseEntity():
 return listenChoose(_that.targetGermanWord,_that.germanOptions);case SpellWordExerciseEntity():
 return spellWord(_that.targetGermanWord,_that.englishTranslation,_that.scrambledLetters);case SentenceScrambleExerciseEntity():
 return sentenceScramble(_that.targetGermanSentence,_that.englishTranslation,_that.scrambledWords);case BuildSentenceExerciseEntity():
-return buildSentence(_that.availableWords,_that.targetSentenceEn);}
+return buildSentence(_that.targetGermanSentence,_that.englishTranslation,_that.sentenceWithMissingWord,_that.optionsForMissingWord,_that.correctAnswerWord);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -174,14 +174,14 @@ return buildSentence(_that.availableWords,_that.targetSentenceEn);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String targetGermanWord,  List<String> englishOptions,  String correctEnglishWord)?  matchWord,TResult? Function( String targetGermanWord,  List<String> germanOptions)?  listenChoose,TResult? Function( String targetGermanWord,  String englishTranslation,  List<String> scrambledLetters)?  spellWord,TResult? Function( String targetGermanSentence,  String englishTranslation,  List<String> scrambledWords)?  sentenceScramble,TResult? Function( List<String> availableWords,  String targetSentenceEn)?  buildSentence,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String targetGermanWord,  List<String> englishOptions,  String correctEnglishWord)?  matchWord,TResult? Function( String targetGermanWord,  List<String> germanOptions)?  listenChoose,TResult? Function( String targetGermanWord,  String englishTranslation,  List<String> scrambledLetters)?  spellWord,TResult? Function( String targetGermanSentence,  String englishTranslation,  List<String> scrambledWords)?  sentenceScramble,TResult? Function( String targetGermanSentence,  String englishTranslation,  List<String> sentenceWithMissingWord,  List<String> optionsForMissingWord,  String correctAnswerWord)?  buildSentence,}) {final _that = this;
 switch (_that) {
 case MatchWordExerciseEntity() when matchWord != null:
 return matchWord(_that.targetGermanWord,_that.englishOptions,_that.correctEnglishWord);case ListenChooseExerciseEntity() when listenChoose != null:
 return listenChoose(_that.targetGermanWord,_that.germanOptions);case SpellWordExerciseEntity() when spellWord != null:
 return spellWord(_that.targetGermanWord,_that.englishTranslation,_that.scrambledLetters);case SentenceScrambleExerciseEntity() when sentenceScramble != null:
 return sentenceScramble(_that.targetGermanSentence,_that.englishTranslation,_that.scrambledWords);case BuildSentenceExerciseEntity() when buildSentence != null:
-return buildSentence(_that.availableWords,_that.targetSentenceEn);case _:
+return buildSentence(_that.targetGermanSentence,_that.englishTranslation,_that.sentenceWithMissingWord,_that.optionsForMissingWord,_that.correctAnswerWord);case _:
   return null;
 
 }
@@ -505,17 +505,31 @@ as List<String>,
 
 
 class BuildSentenceExerciseEntity implements ExerciseEntity {
-  const BuildSentenceExerciseEntity({required final  List<String> availableWords, required this.targetSentenceEn}): _availableWords = availableWords;
+  const BuildSentenceExerciseEntity({required this.targetGermanSentence, required this.englishTranslation, required final  List<String> sentenceWithMissingWord, required final  List<String> optionsForMissingWord, required this.correctAnswerWord}): _sentenceWithMissingWord = sentenceWithMissingWord,_optionsForMissingWord = optionsForMissingWord;
   
 
- final  List<String> _availableWords;
- List<String> get availableWords {
-  if (_availableWords is EqualUnmodifiableListView) return _availableWords;
+ final  String targetGermanSentence;
+// The complete correct German sentence
+ final  String englishTranslation;
+// English translation
+ final  List<String> _sentenceWithMissingWord;
+// English translation
+ List<String> get sentenceWithMissingWord {
+  if (_sentenceWithMissingWord is EqualUnmodifiableListView) return _sentenceWithMissingWord;
   // ignore: implicit_dynamic_type
-  return EqualUnmodifiableListView(_availableWords);
+  return EqualUnmodifiableListView(_sentenceWithMissingWord);
 }
 
- final  String targetSentenceEn;
+// German sentence with one '' for the blank
+ final  List<String> _optionsForMissingWord;
+// German sentence with one '' for the blank
+ List<String> get optionsForMissingWord {
+  if (_optionsForMissingWord is EqualUnmodifiableListView) return _optionsForMissingWord;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_optionsForMissingWord);
+}
+
+ final  String correctAnswerWord;
 
 /// Create a copy of ExerciseEntity
 /// with the given fields replaced by the non-null parameter values.
@@ -527,16 +541,16 @@ $BuildSentenceExerciseEntityCopyWith<BuildSentenceExerciseEntity> get copyWith =
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is BuildSentenceExerciseEntity&&const DeepCollectionEquality().equals(other._availableWords, _availableWords)&&(identical(other.targetSentenceEn, targetSentenceEn) || other.targetSentenceEn == targetSentenceEn));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is BuildSentenceExerciseEntity&&(identical(other.targetGermanSentence, targetGermanSentence) || other.targetGermanSentence == targetGermanSentence)&&(identical(other.englishTranslation, englishTranslation) || other.englishTranslation == englishTranslation)&&const DeepCollectionEquality().equals(other._sentenceWithMissingWord, _sentenceWithMissingWord)&&const DeepCollectionEquality().equals(other._optionsForMissingWord, _optionsForMissingWord)&&(identical(other.correctAnswerWord, correctAnswerWord) || other.correctAnswerWord == correctAnswerWord));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_availableWords),targetSentenceEn);
+int get hashCode => Object.hash(runtimeType,targetGermanSentence,englishTranslation,const DeepCollectionEquality().hash(_sentenceWithMissingWord),const DeepCollectionEquality().hash(_optionsForMissingWord),correctAnswerWord);
 
 @override
 String toString() {
-  return 'ExerciseEntity.buildSentence(availableWords: $availableWords, targetSentenceEn: $targetSentenceEn)';
+  return 'ExerciseEntity.buildSentence(targetGermanSentence: $targetGermanSentence, englishTranslation: $englishTranslation, sentenceWithMissingWord: $sentenceWithMissingWord, optionsForMissingWord: $optionsForMissingWord, correctAnswerWord: $correctAnswerWord)';
 }
 
 
@@ -547,7 +561,7 @@ abstract mixin class $BuildSentenceExerciseEntityCopyWith<$Res> implements $Exer
   factory $BuildSentenceExerciseEntityCopyWith(BuildSentenceExerciseEntity value, $Res Function(BuildSentenceExerciseEntity) _then) = _$BuildSentenceExerciseEntityCopyWithImpl;
 @useResult
 $Res call({
- List<String> availableWords, String targetSentenceEn
+ String targetGermanSentence, String englishTranslation, List<String> sentenceWithMissingWord, List<String> optionsForMissingWord, String correctAnswerWord
 });
 
 
@@ -564,10 +578,13 @@ class _$BuildSentenceExerciseEntityCopyWithImpl<$Res>
 
 /// Create a copy of ExerciseEntity
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? availableWords = null,Object? targetSentenceEn = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? targetGermanSentence = null,Object? englishTranslation = null,Object? sentenceWithMissingWord = null,Object? optionsForMissingWord = null,Object? correctAnswerWord = null,}) {
   return _then(BuildSentenceExerciseEntity(
-availableWords: null == availableWords ? _self._availableWords : availableWords // ignore: cast_nullable_to_non_nullable
-as List<String>,targetSentenceEn: null == targetSentenceEn ? _self.targetSentenceEn : targetSentenceEn // ignore: cast_nullable_to_non_nullable
+targetGermanSentence: null == targetGermanSentence ? _self.targetGermanSentence : targetGermanSentence // ignore: cast_nullable_to_non_nullable
+as String,englishTranslation: null == englishTranslation ? _self.englishTranslation : englishTranslation // ignore: cast_nullable_to_non_nullable
+as String,sentenceWithMissingWord: null == sentenceWithMissingWord ? _self._sentenceWithMissingWord : sentenceWithMissingWord // ignore: cast_nullable_to_non_nullable
+as List<String>,optionsForMissingWord: null == optionsForMissingWord ? _self._optionsForMissingWord : optionsForMissingWord // ignore: cast_nullable_to_non_nullable
+as List<String>,correctAnswerWord: null == correctAnswerWord ? _self.correctAnswerWord : correctAnswerWord // ignore: cast_nullable_to_non_nullable
 as String,
   ));
 }

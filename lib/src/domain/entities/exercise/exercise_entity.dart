@@ -36,9 +36,13 @@ sealed class ExerciseEntity with _$ExerciseEntity {
 
   // Data for "Build a Sentence" exercise
   const factory ExerciseEntity.buildSentence({
-    required List<String> availableWords,
-    required String targetSentenceEn,
-    // Add more properties like target structure, audio, etc.
+    required String
+    targetGermanSentence, // The complete correct German sentence
+    required String englishTranslation, // English translation
+    required List<String>
+    sentenceWithMissingWord, // German sentence with one '' for the blank
+    required List<String> optionsForMissingWord,
+    required String correctAnswerWord, // Options to fill the blank
   }) = BuildSentenceExerciseEntity;
 
   // Add more exercise data types as needed
