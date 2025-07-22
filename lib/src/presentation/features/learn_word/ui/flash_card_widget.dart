@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
-import 'dart:math';
-
+import 'package:the_kids_app/src/presentation/colors/kids_colors.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/ui/flash_card_image_widget.dart';
 
 class FlashCardWidget extends StatefulWidget {
@@ -27,27 +26,10 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
   late Color _cardColor;
   final TtsService _ttsService = getIt<TtsService>();
 
-  final List<Color> _kidFriendlyColors = [
-    Colors.lightBlue.shade400,
-    Colors.lightGreen.shade500,
-    Colors.orange.shade300,
-    Colors.purple.shade300,
-    Colors.pink.shade300,
-    Colors.teal.shade300,
-    Colors.amber.shade300,
-    Colors.cyan.shade300,
-    Colors.red.shade300,
-    Colors.indigo.shade300,
-    Colors.lime.shade500,
-    Colors.deepOrange.shade300,
-    Colors.blueGrey.shade400,
-  ];
-
   @override
   void initState() {
     super.initState();
-    _cardColor =
-        _kidFriendlyColors[Random().nextInt(_kidFriendlyColors.length)];
+    _cardColor = KidsColors.getRandomKidFriendlyColor();
   }
 
   @override

@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/router/app_router.gr.dart';
 import 'package:the_kids_app/src/domain/entities/learning_category/learning_category_entity.dart';
+import 'package:the_kids_app/src/presentation/colors/kids_colors.dart';
 import 'package:the_kids_app/src/presentation/features/home/bloc/categoty_selection_bloc.dart';
 import 'package:the_kids_app/src/presentation/features/home/bloc/categoty_selection_event.dart';
 import 'package:the_kids_app/src/presentation/features/home/bloc/categoty_selection_state.dart';
@@ -13,19 +14,7 @@ import 'package:the_kids_app/src/presentation/widgets/initial_error/initial_load
 @RoutePage()
 class CategorySelectionScreen extends StatelessWidget
     implements AutoRouteWrapper {
-  CategorySelectionScreen({super.key});
-
-  // A list of cheerful colors for the text background)
-  final List<Color> cardColors = [
-    Colors.redAccent.shade200,
-    Colors.blueAccent.shade200,
-    Colors.greenAccent.shade200,
-    Colors.orangeAccent.shade200,
-    Colors.purpleAccent.shade200,
-    Colors.tealAccent.shade200,
-    Colors.pinkAccent.shade200,
-    Colors.amberAccent.shade200,
-  ];
+  const CategorySelectionScreen({super.key});
 
   @override
   Widget wrappedRoute(BuildContext context) {
@@ -85,7 +74,7 @@ class CategorySelectionScreen extends StatelessWidget
       itemCount: categories.length,
       itemBuilder: (context, index) {
         final category = categories[index];
-        final color = cardColors[index % cardColors.length];
+        final color = KidsColors.getRandomKidFriendlyColor();
         return CategoryCard(
           iconName: category.iconName,
           title: category.nameEn,
@@ -102,11 +91,7 @@ class CategorySelectionScreen extends StatelessWidget
                 ),
               );
             } else {
-              AutoRouter.of(context).push(
-                LearnWordRoute(
-                  id: category.id
-                ),
-              );
+              AutoRouter.of(context).push(LearnWordRoute(id: category.id));
             }
           },
         );

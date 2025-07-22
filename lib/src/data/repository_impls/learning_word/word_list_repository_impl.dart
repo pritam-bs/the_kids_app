@@ -1,10 +1,9 @@
 import 'package:flutter/services.dart';
+import 'package:the_kids_app/src/core/config/logging_config.dart';
 import 'package:the_kids_app/src/data/dtos/learning_word/word_dto.dart';
 import 'package:the_kids_app/src/data/mappers/learning_word/word_mapper.dart';
 import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
 import 'package:the_kids_app/src/domain/repositories/learning_category/word_list_repository.dart';
-
-import '../../../core/config/logging_config.dart';
 
 class WordListRepositoryImpl implements WordListRepository {
   @override

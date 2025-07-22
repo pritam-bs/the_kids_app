@@ -2,7 +2,7 @@ import 'package:cloudflare_r2/cloudflare_r2.dart';
 import 'package:the_kids_app/src/core/config/logging_config.dart';
 import 'package:the_kids_app/src/domain/repositories/image/image_repository.dart';
 
-class ImageRepositoryImpls implements ImageRepository {
+class ImageRepositoryImpl implements ImageRepository {
   final String _r2AccessKeyId = const String.fromEnvironment(
     'R2_ACCESS_KEY_ID',
   );
@@ -13,7 +13,7 @@ class ImageRepositoryImpls implements ImageRepository {
     'CLOUDFLARE_ACCOUNT_ID',
   );
 
-  ImageRepositoryImpls() {
+  ImageRepositoryImpl() {
     CloudFlareR2.init(
       accountId: _cloudflareAccountId,
       accessKeyId: _r2AccessKeyId,
