@@ -32,7 +32,6 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
 
   bool _showCorrectWordAnimation = false;
   late AnimationController _animationController;
-  late CurvedAnimation _curvedAnimation;
 
   final List<String> _correctWordLetters = [];
 
@@ -42,10 +41,6 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     _animationController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 800),
-    );
-    _curvedAnimation = CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.easeInOutBack,
     );
 
     _correctWordLetters.addAll(widget.data.targetGermanWord.split(''));
@@ -115,33 +110,21 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     widget.onAnswerSubmitted(_isCorrect!, ExerciseType.spellWord);
 
     if (!_isCorrect!) {
-      await Future.delayed(
-        const Duration(milliseconds: 1600),
-      ); // Delay before showing correct answer
+      // Delay before showing correct answer
+      await Future.delayed(const Duration(milliseconds: 1600));
       setState(() {
         _showCorrectWordAnimation = true;
       });
       _animationController.forward(from: 0.0);
-      await Future.delayed(
-        _animationController.duration! + const Duration(milliseconds: 200),
-      );
     }
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(_isCorrect! ? 'Correct!' : 'Try again!'),
-        backgroundColor: _isCorrect! ? Colors.green : Colors.red,
-        duration: const Duration(seconds: 2),
-      ),
-    );
   }
 
   Color _getScrambledLetterButtonColor(String letter, ColorScheme colorScheme) {
     if (letter.isEmpty) {
-      return colorScheme.surfaceContainerHighest.withOpacity(0.3);
+      return colorScheme.surfaceContainerHighest.withValues(alpha: 0.3);
     }
     if (_isAnswered) {
-      return colorScheme.secondaryContainer.withOpacity(0.5);
+      return colorScheme.secondaryContainer.withValues(alpha: 0.5);
     }
     return colorScheme.secondaryContainer;
   }
@@ -151,10 +134,10 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     ColorScheme colorScheme,
   ) {
     if (letter.isEmpty) {
-      return colorScheme.onSurfaceVariant.withOpacity(0.3);
+      return colorScheme.onSurfaceVariant.withValues(alpha: 0.3);
     }
     if (_isAnswered) {
-      return colorScheme.onSecondaryContainer.withOpacity(0.5);
+      return colorScheme.onSecondaryContainer.withValues(alpha: 0.5);
     }
     return colorScheme.onSecondaryContainer;
   }
@@ -163,29 +146,26 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     if (!_isAnswered) {
       return colorScheme.outline;
     }
-    return _isCorrect! ? Colors.green.shade400 : Colors.red.shade400;
+    return _isCorrect! ? colorScheme.primary : colorScheme.error;
   }
 
   Color _getConstructionBoxTextColor(ColorScheme colorScheme) {
     if (!_isAnswered) {
       return colorScheme.onSurfaceVariant;
     }
-    return _isCorrect! ? Colors.green.shade800 : Colors.red.shade800;
+    return _isCorrect! ? colorScheme.primary : colorScheme.error;
   }
 
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final Size screenSize = MediaQuery.of(context).size;
-    final bool isLargeScreen = screenSize.width > 600;
+    final bool isLargeScreen = screenSize.width > 500;
 
     final double minConstructionBoxHeight = isLargeScreen ? 80 : 60;
-    // These estimates are still used for GridView sizing and general spacing consistency
     final double estimatedChipFontSize =
         Theme.of(context).textTheme.headlineSmall!.fontSize! *
         (isLargeScreen ? 1.0 : 0.8);
-    final double estimatedChipHeight = estimatedChipFontSize + 16;
-    final double estimatedChipWidth = estimatedChipFontSize * 1.5 + 16;
     final double spacing = 8.0;
 
     return Card(
@@ -229,16 +209,10 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
               builder: (BuildContext context, BoxConstraints constraints) {
                 final double containerWidth = isLargeScreen
                     ? 500
-                    : constraints.maxWidth - (24.0 * 2); // Card padding
-                // The Container itself will now shrink-wrap its child (Column),
-                // and the Column will shrink-wrap the Wrap.
-                // We only need to ensure the minHeight.
+                    : constraints.maxWidth - (24.0 * 2);
 
                 return Container(
                   width: containerWidth,
-                  // REMOVED fixed height calculation here.
-                  // Height will be determined by its child (Column with MainAxisSize.min)
-                  // combined with ConstrainedBox for minHeight.
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                     vertical: 5,
@@ -253,17 +227,13 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                   ),
                   child: InkWell(
                     onTap: _removeLastLetter,
-                    // Re-introduced ConstrainedBox here to apply minHeight
                     child: ConstrainedBox(
                       constraints: BoxConstraints(
                         minHeight: minConstructionBoxHeight,
                       ),
                       child: Column(
-                        // Use Column to shrink-wrap its content vertically
-                        mainAxisSize: MainAxisSize
-                            .min, // Crucial: Column only takes up needed vertical space
-                        mainAxisAlignment: MainAxisAlignment
-                            .center, // Center content vertically
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           AnimatedSwitcher(
                             duration: const Duration(milliseconds: 300),
@@ -324,7 +294,8 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
             const SizedBox(height: 10),
 
             // English Translation Display
-            if (_isAnswered) // Only show if an answer has been submitted
+            // Only show if an answer has been submitted
+            if (_isAnswered)
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Text(
@@ -392,7 +363,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
             ),
             const SizedBox(height: 30),
 
-            // Check, Remove Last, and Reset Buttons
+            // Check, Remove Last
             Wrap(
               alignment: WrapAlignment.center,
               spacing: 12.0,
@@ -419,23 +390,6 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                   onPressed: _isAnswered ? null : _removeLastLetter,
                   icon: const Icon(Icons.backspace),
                   label: const Text('Remove'),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: colorScheme.onSurfaceVariant,
-                    backgroundColor: colorScheme.surfaceContainerHighest,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
-                      vertical: 15,
-                    ),
-                    textStyle: Theme.of(context).textTheme.titleMedium,
-                  ),
-                ),
-                ElevatedButton.icon(
-                  onPressed: _resetExercise,
-                  icon: const Icon(Icons.refresh),
-                  label: const Text('Reset'),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: colorScheme.onSurfaceVariant,
                     backgroundColor: colorScheme.surfaceContainerHighest,

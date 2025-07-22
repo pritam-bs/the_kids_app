@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
 
 part 'exercise_entity.freezed.dart';
 
@@ -44,6 +43,4 @@ sealed class ExerciseEntity with _$ExerciseEntity {
     required List<String> optionsForMissingWord,
     required String correctAnswerWord, // Options to fill the blank
   }) = BuildSentenceExerciseEntity;
-
-  // Add more exercise data types as needed
 }

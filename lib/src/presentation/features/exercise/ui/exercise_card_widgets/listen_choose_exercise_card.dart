@@ -1,5 +1,3 @@
-// lib/src/presentation/features/exercise/ui/exercise_card_widgets/listen_choose_exercise_card.dart
-
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
@@ -33,13 +31,13 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
       return colorScheme.secondaryContainer; // Default color before answer
     }
     if (option == widget.data.targetGermanWord) {
-      return Colors.green.shade400; // Correct answer color
+      return colorScheme.primary; // Correct answer color
     }
     if (option == _selectedGermanWord && !_isCorrect!) {
-      return Colors.red.shade400; // Incorrect selected answer color
+      return colorScheme.error; // Incorrect selected answer color
     }
-    return colorScheme.secondaryContainer.withOpacity(
-      0.5,
+    return colorScheme.secondaryContainer.withValues(
+      alpha: 0.5,
     ); // Other options after answer
   }
 
@@ -54,7 +52,7 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     if (option == _selectedGermanWord && !_isCorrect!) {
       return Colors.white;
     }
-    return colorScheme.onSecondaryContainer.withOpacity(0.5);
+    return colorScheme.onSecondaryContainer.withValues(alpha: 0.5);
   }
 
   void _onOptionSelected(String selectedWord) {
@@ -67,28 +65,14 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     });
 
     // Trigger the callback
-    if (widget.onAnswerSubmitted != null) {
-      widget.onAnswerSubmitted!(
-        _isCorrect!,
-        ExerciseType.listenChoose,
-      ); // Pass feedback and type
-    }
-
-    // Optional: Show SnackBar feedback
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(_isCorrect! ? 'Correct!' : 'Try again!'),
-        backgroundColor: _isCorrect! ? Colors.green : Colors.red,
-        duration: const Duration(seconds: 2),
-      ),
-    );
+    widget.onAnswerSubmitted(_isCorrect!, ExerciseType.listenChoose);
   }
 
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final Size screenSize = MediaQuery.of(context).size;
-    final bool isLargeScreen = screenSize.width > 600;
+    final bool isLargeScreen = screenSize.width > 500;
 
     return Card(
       color: colorScheme.surface,
@@ -180,7 +164,3 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
     );
   }
 }
-
-// --- Other Exercise Cards (Remain as placeholders for now) ---
-// ... (your other exercise card widgets like SpellWordExerciseCard, SentenceScrambleExerciseCard, BuildSentenceExerciseCard)
-// Ensure they also accept the onAnswerSubmitted callback in their constructors.

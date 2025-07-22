@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/core/di/injection.dart';
-import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'dart:math';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // For BoxConstraints
+import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
 
 class SentenceScrambleExerciseCard extends StatefulWidget {
   final SentenceScrambleExerciseEntity data;
-  final Function(bool isCorrect, ExerciseType type)? onAnswerSubmitted;
+  final Function(bool isCorrect, ExerciseType type) onAnswerSubmitted;
 
   const SentenceScrambleExerciseCard({
     super.key,
     required this.data,
-    this.onAnswerSubmitted,
+    required this.onAnswerSubmitted,
   });
 
   @override
@@ -23,8 +21,6 @@ class SentenceScrambleExerciseCard extends StatefulWidget {
 class _SentenceScrambleExerciseCardState
     extends State<SentenceScrambleExerciseCard>
     with SingleTickerProviderStateMixin {
-  final TtsService _ttsService = getIt<TtsService>();
-
   final List<String> _constructedWords = [];
   List<String> _scrambledWordsPool = [];
   final List<int> _originalScrambledIndicesUsed = [];
@@ -34,7 +30,6 @@ class _SentenceScrambleExerciseCardState
 
   bool _showCorrectSentenceAnimation = false;
   late AnimationController _animationController;
-  late CurvedAnimation _curvedAnimation;
 
   @override
   void initState() {
@@ -42,10 +37,6 @@ class _SentenceScrambleExerciseCardState
     _animationController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 800),
-    );
-    _curvedAnimation = CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.easeInOutBack,
     );
     _resetExercise();
   }
@@ -123,48 +114,34 @@ class _SentenceScrambleExerciseCardState
       _isAnswered = true;
     });
 
-    if (widget.onAnswerSubmitted != null) {
-      widget.onAnswerSubmitted!(_isCorrect!, ExerciseType.sentenceScramble);
-    }
+    widget.onAnswerSubmitted(_isCorrect!, ExerciseType.sentenceScramble);
 
     if (!_isCorrect!) {
-      await Future.delayed(
-        const Duration(milliseconds: 1600),
-      ); // Delay before showing correct answer
+      // Delay before showing correct answer
+      await Future.delayed(const Duration(milliseconds: 1600));
       setState(() {
         _showCorrectSentenceAnimation = true;
       });
       _animationController.forward(from: 0.0);
-      await Future.delayed(
-        _animationController.duration! + const Duration(milliseconds: 200),
-      );
     }
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(_isCorrect! ? 'Correct!' : 'Try again!'),
-        backgroundColor: _isCorrect! ? Colors.green : Colors.red,
-        duration: const Duration(seconds: 2),
-      ),
-    );
   }
 
   Color _getScrambledWordButtonColor(String word, ColorScheme colorScheme) {
     if (word.isEmpty) {
-      return colorScheme.surfaceContainerHighest.withOpacity(0.3);
+      return colorScheme.surfaceContainerHighest.withValues(alpha: 0.3);
     }
     if (_isAnswered) {
-      return colorScheme.secondaryContainer.withOpacity(0.5);
+      return colorScheme.secondaryContainer.withValues(alpha: 0.5);
     }
     return colorScheme.secondaryContainer;
   }
 
   Color _getScrambledWordButtonTextColor(String word, ColorScheme colorScheme) {
     if (word.isEmpty) {
-      return colorScheme.onSurfaceVariant.withOpacity(0.3);
+      return colorScheme.onSurfaceVariant.withValues(alpha: 0.3);
     }
     if (_isAnswered) {
-      return colorScheme.onSecondaryContainer.withOpacity(0.5);
+      return colorScheme.onSecondaryContainer.withValues(alpha: 0.5);
     }
     return colorScheme.onSecondaryContainer;
   }
@@ -173,28 +150,26 @@ class _SentenceScrambleExerciseCardState
     if (!_isAnswered) {
       return colorScheme.outline;
     }
-    return _isCorrect! ? Colors.green.shade400 : Colors.red.shade400;
+    return _isCorrect! ? colorScheme.primary : colorScheme.error;
   }
 
   Color _getConstructionBoxTextColor(ColorScheme colorScheme) {
     if (!_isAnswered) {
       return colorScheme.onSurfaceVariant;
     }
-    return _isCorrect! ? Colors.green.shade800 : Colors.red.shade800;
+    return _isCorrect! ? colorScheme.primary : colorScheme.error;
   }
 
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final Size screenSize = MediaQuery.of(context).size;
-    final bool isLargeScreen = screenSize.width > 600;
+    final bool isLargeScreen = screenSize.width > 500;
 
     final double minConstructionBoxHeight = isLargeScreen ? 120 : 90;
     final double wordChipFontSize =
         Theme.of(context).textTheme.titleLarge!.fontSize! *
         (isLargeScreen ? 1.0 : 0.9);
-    final double wordChipHeight = wordChipFontSize + 24;
-    final double wordChipWidth = wordChipFontSize * 3 + 24;
     final double spacing = 10.0;
 
     return Card(
@@ -404,23 +379,6 @@ class _SentenceScrambleExerciseCardState
                   onPressed: _isAnswered ? null : _removeLastWord,
                   icon: const Icon(Icons.backspace),
                   label: const Text('Remove'),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: colorScheme.onSurfaceVariant,
-                    backgroundColor: colorScheme.surfaceContainerHighest,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
-                      vertical: 15,
-                    ),
-                    textStyle: Theme.of(context).textTheme.titleMedium,
-                  ),
-                ),
-                ElevatedButton.icon(
-                  onPressed: _resetExercise,
-                  icon: const Icon(Icons.refresh),
-                  label: const Text('Reset'),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: colorScheme.onSurfaceVariant,
                     backgroundColor: colorScheme.surfaceContainerHighest,

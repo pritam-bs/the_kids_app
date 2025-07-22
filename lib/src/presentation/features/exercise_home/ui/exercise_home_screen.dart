@@ -12,7 +12,7 @@ class ExerciseHomeScreen extends StatelessWidget {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final Size screenSize = MediaQuery.of(context).size;
     final bool isLargeScreen =
-        screenSize.width > 700; // Define a breakpoint for responsiveness
+        screenSize.width > 500; // Define a breakpoint for responsiveness
 
     // Determine padding and max width for content based on screen size
     final double horizontalPadding = isLargeScreen

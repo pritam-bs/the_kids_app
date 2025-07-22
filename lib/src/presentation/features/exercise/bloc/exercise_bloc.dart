@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_event.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_state.dart';
 

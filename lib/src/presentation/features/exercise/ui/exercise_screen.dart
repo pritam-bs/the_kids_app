@@ -1,5 +1,3 @@
-// lib/src/presentation/features/exercise/exercise_screen.dart
-
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -74,7 +72,8 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                       _buildExerciseCarousel(context, exercises, currentIndex),
 
                       // Animation Overlay
-                      if (lastAnswerCorrect != null) // Only show if feedback is available
+                      // Only show if feedback is available
+                      if (lastAnswerCorrect != null)
                         IgnorePointer(
                           // Prevents interaction with elements behind the overlay
                           child: AnimatedOpacity(
@@ -108,8 +107,8 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
     final PageController pageController = PageController(
       initialPage: currentIndex,
     );
-    final bool isLargeScreen = MediaQuery.of(context).size.width > 800;
-    final double cardMaxWidth = isLargeScreen ? 700 : double.infinity;
+    final bool isLargeScreen = MediaQuery.of(context).size.width > 500;
+    final double cardMaxWidth = isLargeScreen ? 500 : double.infinity;
     final double horizontalPadding = isLargeScreen
         ? (MediaQuery.of(context).size.width - cardMaxWidth) / 2
         : 16.0;
@@ -155,22 +154,22 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                       case ListenChooseExerciseEntity():
                         return ListenChooseExerciseCard(
                           data: exerciseEntity,
-                          onAnswerSubmitted: onAnswerSubmitted, // Pass callback
+                          onAnswerSubmitted: onAnswerSubmitted,
                         );
                       case SpellWordExerciseEntity():
                         return SpellWordExerciseCard(
                           data: exerciseEntity,
-                          onAnswerSubmitted: onAnswerSubmitted, // Pass callback
+                          onAnswerSubmitted: onAnswerSubmitted,
                         );
                       case SentenceScrambleExerciseEntity():
                         return SentenceScrambleExerciseCard(
                           data: exerciseEntity,
-                          onAnswerSubmitted: onAnswerSubmitted, // Pass callback
+                          onAnswerSubmitted: onAnswerSubmitted,
                         );
                       case BuildSentenceExerciseEntity():
                         return BuildSentenceExerciseCard(
                           data: exerciseEntity,
-                          onAnswerSubmitted: onAnswerSubmitted, // Pass callback
+                          onAnswerSubmitted: onAnswerSubmitted,
                         );
                     }
                   },

@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/core/di/injection.dart';
-import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'dart:math';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // For BoxConstraints
+import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
 
 class BuildSentenceExerciseCard extends StatefulWidget {
   final BuildSentenceExerciseEntity data;
-  final Function(bool isCorrect, ExerciseType type)? onAnswerSubmitted;
+  final Function(bool isCorrect, ExerciseType type) onAnswerSubmitted;
 
   const BuildSentenceExerciseCard({
     super.key,
     required this.data,
-    this.onAnswerSubmitted,
+    required this.onAnswerSubmitted,
   });
 
   @override
@@ -22,8 +20,6 @@ class BuildSentenceExerciseCard extends StatefulWidget {
 
 class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     with SingleTickerProviderStateMixin {
-  final TtsService _ttsService = getIt<TtsService>();
-
   late List<String> _currentSentenceParts;
   late List<String> _optionsPool;
   int? _selectedOptionIndex;
@@ -33,7 +29,6 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
 
   bool _showCorrectSentenceAnimation = false;
   late AnimationController _animationController;
-  late CurvedAnimation _curvedAnimation;
 
   @override
   void initState() {
@@ -41,10 +36,6 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     _animationController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 800),
-    );
-    _curvedAnimation = CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.easeInOutBack,
     );
     _resetExercise();
   }
@@ -93,13 +84,10 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
 
     // Find the word that was placed in the blank
     final int blankIndex = _currentSentenceParts.indexOf(
-      widget.data.optionsForMissingWord[_selectedOptionIndex!],
+      _optionsPool[_selectedOptionIndex!],
     );
     if (blankIndex != -1) {
       setState(() {
-        _optionsPool[_selectedOptionIndex!] = widget
-            .data
-            .optionsForMissingWord[_selectedOptionIndex!]; // Restore original word
         _currentSentenceParts[blankIndex] = ''; // Clear the blank
         _selectedOptionIndex = null;
       });
@@ -112,18 +100,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     String selectedWordInBlank = '';
     if (_selectedOptionIndex != null) {
       selectedWordInBlank =
-          widget.data.optionsForMissingWord[_selectedOptionIndex!];
-    } else {
-      // This case should ideally be prevented by disabling the check button
-      // if _selectedOptionIndex is null.
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please select a word to complete the sentence.'),
-          backgroundColor: Colors.orange,
-          duration: Duration(seconds: 2),
-        ),
-      );
-      return;
+          _optionsPool[_selectedOptionIndex!];
     }
 
     setState(() {
@@ -133,30 +110,16 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
       _isAnswered = true;
     });
 
-    if (widget.onAnswerSubmitted != null) {
-      widget.onAnswerSubmitted!(_isCorrect!, ExerciseType.buildSentence);
-    }
+    widget.onAnswerSubmitted(_isCorrect!, ExerciseType.buildSentence);
 
     if (!_isCorrect!) {
-      await Future.delayed(
-        const Duration(milliseconds: 1600),
-      ); // Delay before showing correct answer
+      // Delay before showing correct answer
+      await Future.delayed(const Duration(milliseconds: 1600));
       setState(() {
         _showCorrectSentenceAnimation = true;
       });
       _animationController.forward(from: 0.0);
-      await Future.delayed(
-        _animationController.duration! + const Duration(milliseconds: 200),
-      );
     }
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(_isCorrect! ? 'Correct!' : 'Try again!'),
-        backgroundColor: _isCorrect! ? Colors.green : Colors.red,
-        duration: const Duration(seconds: 2),
-      ),
-    );
   }
 
   Color _getOptionButtonColor(
@@ -165,16 +128,16 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     ColorScheme colorScheme,
   ) {
     if (word.isEmpty) {
-      return colorScheme.surfaceContainerHighest.withOpacity(0.3);
+      return colorScheme.surfaceContainerHighest.withValues(alpha: 0.3);
     }
     if (_isAnswered) {
       if (optionIndex == _selectedOptionIndex) {
-        return _isCorrect! ? Colors.green.shade400 : Colors.red.shade400;
+        return _isCorrect! ? colorScheme.primary : colorScheme.error;
       } else if (word.toLowerCase() ==
           widget.data.correctAnswerWord.toLowerCase()) {
-        return Colors.green.shade400.withOpacity(0.5);
+        return colorScheme.primary.withValues(alpha: 0.5);
       }
-      return colorScheme.secondaryContainer.withOpacity(0.5);
+      return colorScheme.secondaryContainer.withValues(alpha: 0.5);
     }
     return colorScheme.secondaryContainer;
   }
@@ -185,16 +148,16 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     ColorScheme colorScheme,
   ) {
     if (word.isEmpty) {
-      return colorScheme.onSurfaceVariant.withOpacity(0.3);
+      return colorScheme.onSurfaceVariant.withValues(alpha: 0.3);
     }
     if (_isAnswered) {
       if (optionIndex == _selectedOptionIndex) {
         return Colors.white;
       } else if (word.toLowerCase() ==
           widget.data.correctAnswerWord.toLowerCase()) {
-        return Colors.white.withOpacity(0.8);
+        return Colors.white.withValues(alpha: 0.8);
       }
-      return colorScheme.onSecondaryContainer.withOpacity(0.5);
+      return colorScheme.onSecondaryContainer.withValues(alpha: 0.5);
     }
     return colorScheme.onSecondaryContainer;
   }
@@ -203,21 +166,21 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
     if (!_isAnswered) {
       return colorScheme.outline;
     }
-    return _isCorrect! ? Colors.green.shade400 : Colors.red.shade400;
+    return _isCorrect! ? colorScheme.primary : colorScheme.error;
   }
 
   Color _getConstructionBoxTextColor(ColorScheme colorScheme) {
     if (!_isAnswered) {
       return colorScheme.onSurfaceVariant;
     }
-    return _isCorrect! ? Colors.green.shade800 : Colors.red.shade800;
+    return _isCorrect! ? colorScheme.primary : colorScheme.error;
   }
 
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final Size screenSize = MediaQuery.of(context).size;
-    final bool isLargeScreen = screenSize.width > 600;
+    final bool isLargeScreen = screenSize.width > 500;
 
     final double minConstructionBoxHeight = isLargeScreen ? 120 : 90;
     final double wordChipFontSize =
@@ -333,7 +296,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                                           decoration: BoxDecoration(
                                             border: Border.all(
                                               color: colorScheme.outline
-                                                  .withOpacity(0.5),
+                                                  .withValues(alpha: 0.5),
                                               style: BorderStyle.solid,
                                               width: 1.5,
                                             ),
@@ -350,7 +313,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                                                 ?.copyWith(
                                                   color: colorScheme
                                                       .onSurfaceVariant
-                                                      .withOpacity(0.5),
+                                                      .withValues(alpha: 0.5),
                                                 ),
                                           ),
                                         );
@@ -394,15 +357,9 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
               itemCount: _optionsPool.length,
               itemBuilder: (context, index) {
                 final optionWord = _optionsPool[index];
-                final bool isUsedOrSelectedOrAnswered =
-                    optionWord.isEmpty ||
-                    _selectedOptionIndex != null ||
-                    _isAnswered;
 
                 return ElevatedButton(
-                  onPressed: isUsedOrSelectedOrAnswered
-                      ? null
-                      : () => _fillBlank(optionWord, index),
+                  onPressed: () => _fillBlank(optionWord, index),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _getOptionButtonColor(
                       optionWord,
@@ -471,23 +428,6 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                   onPressed: _isAnswered ? null : _clearBlank,
                   icon: const Icon(Icons.backspace),
                   label: const Text('Clear'),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: colorScheme.onSurfaceVariant,
-                    backgroundColor: colorScheme.surfaceContainerHighest,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
-                      vertical: 15,
-                    ),
-                    textStyle: Theme.of(context).textTheme.titleMedium,
-                  ),
-                ),
-                ElevatedButton.icon(
-                  onPressed: _resetExercise,
-                  icon: const Icon(Icons.refresh),
-                  label: const Text('Reset'),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: colorScheme.onSurfaceVariant,
                     backgroundColor: colorScheme.surfaceContainerHighest,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:the_kids_app/src/core/di/injection.dart'; // For TtsService
+import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // Assuming you have TtsService
+import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
 
 class MatchWordExerciseCard extends StatefulWidget {
   final MatchWordExerciseEntity data;
@@ -70,7 +70,7 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final Size screenSize = MediaQuery.of(context).size;
-    final bool isLargeScreen = screenSize.width > 600;
+    final bool isLargeScreen = screenSize.width > 500;
 
     return Card(
       color:
