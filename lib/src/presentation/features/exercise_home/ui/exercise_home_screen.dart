@@ -163,7 +163,7 @@ class _DownloadingUI extends StatelessWidget {
             const SizedBox(height: 16),
             Text('$percentage% complete', style: const TextStyle(fontSize: 16)),
             const SizedBox(height: 32),
-            TextButton(
+            ElevatedButton(
               onPressed: () {
                 context.read<ExerciseHomeBloc>().add(
                   ExerciseHomeEvent.downloadCancelled(),
@@ -318,13 +318,19 @@ class _MainContent extends StatelessWidget {
                   ),
                 ],
               ),
-              // Optional: Add a button to delete the model for testing purposes
+              // Add a button to delete the model
               const SizedBox(height: 48),
               TextButton.icon(
-                onPressed: () {
-                  context.read<ExerciseHomeBloc>().add(
-                    ExerciseHomeEvent.deleteModelRequested(),
+                onPressed: () async {
+                  final bool? confirmed = await _showDeleteConfirmationDialog(
+                    context,
                   );
+
+                  if (confirmed != null && confirmed && context.mounted) {
+                    context.read<ExerciseHomeBloc>().add(
+                      ExerciseHomeEvent.deleteModelRequested(),
+                    );
+                  }
                 },
                 icon: Icon(Icons.delete_forever, color: colorScheme.error),
                 label: Text(
@@ -376,6 +382,38 @@ class _MainContent extends StatelessWidget {
           shadowColor: buttonColor.withValues(alpha: 0.5),
         ),
       ),
+    );
+  }
+
+  // A separate function for the model delete confirmation dialog
+  Future<bool?> _showDeleteConfirmationDialog(BuildContext context) async {
+    return showDialog<bool>(
+      context: context,
+      builder: (BuildContext dialogContext) {
+        return AlertDialog(
+          title: const Text('Confirm Deletion'),
+          content: const Text(
+            'Are you sure you want to delete the AI Tutor Model? Deleting the AI Tutor Model will remove the data necessary for Smart Exercises and the AI tutor functionality. You will need to re-download the model if you wish to use these features again.',
+          ),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.of(dialogContext).pop(false);
+              },
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(dialogContext).pop(true);
+              },
+              child: Text(
+                'Delete',
+                style: TextStyle(color: Theme.of(context).colorScheme.error),
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
