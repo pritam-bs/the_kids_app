@@ -51,6 +51,8 @@ import '../../domain/usecases/llm_model/model_usecase.dart' as _i565;
 import '../../presentation/features/app_update/bloc/app_update_info_bloc.dart'
     as _i675;
 import '../../presentation/features/exercise/bloc/exercise_bloc.dart' as _i770;
+import '../../presentation/features/exercise_home/bloc/exercise_home_bloc.dart'
+    as _i607;
 import '../../presentation/features/home/bloc/categoty_selection_bloc.dart'
     as _i115;
 import '../../presentation/features/learn_word/bloc/learn_word_bloc.dart'
@@ -62,6 +64,7 @@ import 'modules/data_module.dart' as _i742;
 import 'modules/dio_module.dart' as _i983;
 import 'modules/firebase_module.dart' as _i398;
 import 'modules/gcs_module.dart' as _i1055;
+import 'modules/gemma_module.dart' as _i779;
 import 'modules/shared_preferences_module.dart' as _i813;
 import 'modules/tts_module.dart' as _i983;
 
@@ -78,6 +81,7 @@ extension GetItInjectableX on _i174.GetIt {
     final dataModule = _$DataModule(this);
     final dioModule = _$DioModule();
     final gcsModule = _$GcsModule();
+    final gemmaModule = _$GemmaModule();
     await gh.factoryAsync<_i982.FirebaseApp>(
       () => firebaseModule.firebaseApp,
       preResolve: true,
@@ -125,6 +129,14 @@ extension GetItInjectableX on _i174.GetIt {
       () =>
           _i268.LearningCategoryUsecase(gh<_i582.LearningCategoryRepository>()),
     );
+    gh.factory<String>(
+      () => gemmaModule.gemma3nE4BFileName,
+      instanceName: 'gemma-3n-E4B',
+    );
+    gh.factory<String>(
+      () => gemmaModule.gemma3nE2BFileName,
+      instanceName: 'gemma-3n-E2B',
+    );
     gh.factory<_i115.CategorySelectionBloc>(
       () => _i115.CategorySelectionBloc(gh<_i268.LearningCategoryUsecase>()),
     );
@@ -141,11 +153,11 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i192.AppLocalSettingsRepository>(),
       ),
     );
-    gh.lazySingleton<_i784.ModelDataSource>(
-      () => dataModule.modelDataSourceImpl,
-    );
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
+    );
+    gh.lazySingleton<_i784.ModelDataSource>(
+      () => dataModule.modelDataSourceImpl,
     );
     gh.factory<_i298.LearnWordBloc>(
       () => _i298.LearnWordBloc(
@@ -167,6 +179,9 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i686.CheckAppUpdateUseCase>(),
         gh<_i513.GetLastSkippedVersionUseCase>(),
       ),
+    );
+    gh.factory<_i607.ExerciseHomeBloc>(
+      () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
     );
     return this;
   }
@@ -207,7 +222,6 @@ class _$DataModule extends _i742.DataModule {
   _i338.ModelDataSourceImpl get modelDataSourceImpl =>
       _i338.ModelDataSourceImpl(
         _getIt<String>(instanceName: 'model_gcs_bucket'),
-        _getIt<_i361.Dio>(instanceName: 'model_download'),
       );
 
   @override
@@ -218,3 +232,5 @@ class _$DataModule extends _i742.DataModule {
 class _$DioModule extends _i983.DioModule {}
 
 class _$GcsModule extends _i1055.GcsModule {}
+
+class _$GemmaModule extends _i779.GemmaModule {}

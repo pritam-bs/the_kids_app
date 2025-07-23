@@ -98,18 +98,46 @@ class CategorySelectionRoute extends _i8.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.ExerciseHomeScreen]
-class ExerciseHomeRoute extends _i8.PageRouteInfo<void> {
-  const ExerciseHomeRoute({List<_i8.PageRouteInfo>? children})
-    : super(ExerciseHomeRoute.name, initialChildren: children);
+class ExerciseHomeRoute extends _i8.PageRouteInfo<ExerciseHomeRouteArgs> {
+  ExerciseHomeRoute({_i9.Key? key, List<_i8.PageRouteInfo>? children})
+    : super(
+        ExerciseHomeRoute.name,
+        args: ExerciseHomeRouteArgs(key: key),
+        initialChildren: children,
+      );
 
   static const String name = 'ExerciseHomeRoute';
 
   static _i8.PageInfo page = _i8.PageInfo(
     name,
     builder: (data) {
-      return const _i3.ExerciseHomeScreen();
+      final args = data.argsAs<ExerciseHomeRouteArgs>(
+        orElse: () => const ExerciseHomeRouteArgs(),
+      );
+      return _i3.ExerciseHomeScreen(key: args.key);
     },
   );
+}
+
+class ExerciseHomeRouteArgs {
+  const ExerciseHomeRouteArgs({this.key});
+
+  final _i9.Key? key;
+
+  @override
+  String toString() {
+    return 'ExerciseHomeRouteArgs{key: $key}';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    if (other is! ExerciseHomeRouteArgs) return false;
+    return key == other.key;
+  }
+
+  @override
+  int get hashCode => key.hashCode;
 }
 
 /// generated route for
