@@ -14,7 +14,6 @@ import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.da
 import 'package:the_kids_app/src/presentation/features/exercise/ui/answer_feedback_overlay.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/listen_choose_exercise_card.dart';
 
-
 @RoutePage()
 class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
   const ExerciseScreen({super.key});
@@ -111,7 +110,7 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
     final double cardMaxWidth = isLargeScreen ? 500 : double.infinity;
     final double horizontalPadding = isLargeScreen
         ? (MediaQuery.of(context).size.width - cardMaxWidth) / 2
-        : 16.0;
+        : 0.0;
 
     return Padding(
       padding: EdgeInsets.symmetric(
@@ -216,6 +215,7 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                         }
                       : null,
                   icon: const Icon(Icons.arrow_forward),
+                  iconAlignment: IconAlignment.end,
                   label: const Text('Next'),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Theme.of(context).colorScheme.onPrimary,

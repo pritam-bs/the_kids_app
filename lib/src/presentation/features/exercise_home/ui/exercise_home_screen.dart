@@ -69,11 +69,11 @@ class ExerciseHomeScreen extends StatelessWidget implements AutoRouteWrapper {
                 }
               },
               downloading: (progress) {
-                // Show a detailed downloading progress UI.
+                // Downloading progress UI.
                 return _DownloadingUI(progress: progress);
               },
               failure: (message) {
-                // Show a clear error screen with a retry option.
+                // Error screen with a retry option.
                 return _ErrorUI(message: message);
               },
             );
@@ -88,7 +88,7 @@ class ExerciseHomeScreen extends StatelessWidget implements AutoRouteWrapper {
 // Helper Widgets for different UI states
 // -----------------------------------------------------------------------------
 
-/// UI shown when prompting the user to download the model.
+/// UI for prompting the user to download the model.
 class _DownloadPromptUI extends StatelessWidget {
   const _DownloadPromptUI();
 
@@ -133,7 +133,7 @@ class _DownloadPromptUI extends StatelessWidget {
   }
 }
 
-/// UI shown during the download process.
+/// UI for download process.
 class _DownloadingUI extends StatelessWidget {
   final double progress;
 
@@ -178,7 +178,7 @@ class _DownloadingUI extends StatelessWidget {
   }
 }
 
-/// UI for displaying a generic loading indicator.
+/// UI for loading indicator.
 class _LoadingUI extends StatelessWidget {
   final String message;
   const _LoadingUI({required this.message});
@@ -198,7 +198,7 @@ class _LoadingUI extends StatelessWidget {
   }
 }
 
-/// UI for displaying an error message with a retry button.
+/// UI for error message with a retry button.
 class _ErrorUI extends StatelessWidget {
   final String message;
 
@@ -240,13 +240,12 @@ class _ErrorUI extends StatelessWidget {
   }
 }
 
-/// The main content of the screen, which is your original UI.
+/// The main content of the screen.
 class _MainContent extends StatelessWidget {
   const _MainContent();
 
   @override
   Widget build(BuildContext context) {
-    // This is your original UI layout.
     final Size screenSize = MediaQuery.of(context).size;
     final bool isLargeScreen = screenSize.width > 500;
     final double horizontalPadding = isLargeScreen
@@ -267,20 +266,106 @@ class _MainContent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              // Welcome Text
               Text(
                 'Welcome to Exercise Time!',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Theme.of(context).colorScheme.onSurface,
+                  color: colorScheme.onSurface,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16),
+              Text(
+                'Here you can practice German words with fun games or read exciting stories!',
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  color: colorScheme.onSurfaceVariant,
                 ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 48),
+
+              // Section for Individual Exercises
               Text(
                 'Choose an Exercise:',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Theme.of(context).colorScheme.primary,
+                  color: colorScheme.primary,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 24),
+              Wrap(
+                spacing: 20.0, // Horizontal spacing between buttons
+                runSpacing: 20.0, // Vertical spacing between rows of buttons
+                alignment: WrapAlignment.center,
+                children: [
+                  // Match the Word
+                  _buildExerciseButton(
+                    context: context,
+                    label: 'Match the Word',
+                    icon: Icons.link,
+                    onPressed: () {
+                      AutoRouter.of(context).push(ExerciseRoute());
+                    },
+                    buttonWidth: buttonWidth,
+                    // Randomly assign a color
+                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
+                  ),
+                  // Listen and Choose
+                  _buildExerciseButton(
+                    context: context,
+                    label: 'Listen and Choose',
+                    icon: Icons.hearing,
+                    onPressed: () {
+                      AutoRouter.of(context).push(ExerciseRoute());
+                    },
+                    buttonWidth: buttonWidth,
+                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
+                  ),
+                  // Spell the Word
+                  _buildExerciseButton(
+                    context: context,
+                    label: 'Spell the Word',
+                    icon: Icons.spellcheck,
+                    onPressed: () {
+                      AutoRouter.of(context).push(ExerciseRoute());
+                    },
+                    buttonWidth: buttonWidth,
+                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
+                  ),
+                  // Sentence Scramble (Word Order)
+                  _buildExerciseButton(
+                    context: context,
+                    label: 'Sentence Scramble',
+                    icon: Icons.sort_by_alpha,
+                    onPressed: () {
+                      AutoRouter.of(context).push(ExerciseRoute());
+                    },
+                    buttonWidth: buttonWidth,
+                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
+                  ),
+                  // Build a Sentence (Guided)
+                  _buildExerciseButton(
+                    context: context,
+                    label: 'Build a Sentence',
+                    icon: Icons.text_fields,
+                    onPressed: () {
+                      AutoRouter.of(context).push(ExerciseRoute());
+                    },
+                    buttonWidth: buttonWidth,
+                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 48),
+
+              // Section for Story
+              Text(
+                'Explore More:',
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: colorScheme.primary,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -290,24 +375,6 @@ class _MainContent extends StatelessWidget {
                 runSpacing: 20.0,
                 alignment: WrapAlignment.center,
                 children: [
-                  _buildExerciseButton(
-                    context: context,
-                    label: 'Match the Word',
-                    icon: Icons.link,
-                    onPressed: () =>
-                        AutoRouter.of(context).push(ExerciseRoute()),
-                    buttonWidth: buttonWidth,
-                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
-                  ),
-                  _buildExerciseButton(
-                    context: context,
-                    label: 'Listen and Choose',
-                    icon: Icons.hearing,
-                    onPressed: () =>
-                        AutoRouter.of(context).push(ExerciseRoute()),
-                    buttonWidth: buttonWidth,
-                    buttonColor: KidsColors.getRandomKidFriendlyColor(),
-                  ),
                   _buildExerciseButton(
                     context: context,
                     label: 'Read a Story',
@@ -338,6 +405,7 @@ class _MainContent extends StatelessWidget {
                   style: TextStyle(color: colorScheme.error),
                 ),
               ),
+              const SizedBox(height: 24), // Spacing at the bottom
             ],
           ),
         ),

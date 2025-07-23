@@ -139,7 +139,7 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
                     elevation: 4,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
-                      vertical: 15,
+                      vertical: 8,
                     ),
                   ),
                   child: Text(

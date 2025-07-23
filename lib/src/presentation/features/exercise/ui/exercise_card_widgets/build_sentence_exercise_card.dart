@@ -99,8 +99,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
 
     String selectedWordInBlank = '';
     if (_selectedOptionIndex != null) {
-      selectedWordInBlank =
-          _optionsPool[_selectedOptionIndex!];
+      selectedWordInBlank = _optionsPool[_selectedOptionIndex!];
     }
 
     setState(() {
@@ -187,8 +186,8 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
         Theme.of(context).textTheme.titleLarge!.fontSize! *
         (isLargeScreen ? 1.0 : 0.9);
     final double wordChipHeight = wordChipFontSize + 24;
-    final double wordChipWidth = wordChipFontSize * 3 + 24;
-    final double spacing = 10.0;
+    final double wordChipWidth = wordChipFontSize * 3 + 20;
+    final double spacing = 2.0;
 
     return Card(
       color: colorScheme.surface,
@@ -197,7 +196,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
       margin: const EdgeInsets.all(16),
       clipBehavior: Clip.antiAlias,
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -230,13 +229,13 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
               builder: (BuildContext context, BoxConstraints constraints) {
                 final double containerWidth = isLargeScreen
                     ? 600
-                    : constraints.maxWidth - (24.0 * 2);
+                    : constraints.maxWidth;
 
                 return Container(
                   width: containerWidth,
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 5,
+                    horizontal: 4,
+                    vertical: 4,
                   ),
                   decoration: BoxDecoration(
                     color: colorScheme.surfaceContainerHighest,
@@ -331,7 +330,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                                               ),
                                         ),
                                         backgroundColor: colorScheme.surface,
-                                        padding: const EdgeInsets.all(8),
+                                        padding: const EdgeInsets.all(2),
                                       );
                                     }).toList(),
                                   ),
@@ -418,7 +417,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
+                      horizontal: 20,
                       vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
@@ -435,7 +434,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
+                      horizontal: 20,
                       vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,

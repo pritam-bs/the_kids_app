@@ -166,7 +166,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     final double estimatedChipFontSize =
         Theme.of(context).textTheme.headlineSmall!.fontSize! *
         (isLargeScreen ? 1.0 : 0.8);
-    final double spacing = 8.0;
+    final double spacing = 0.0;
 
     return Card(
       color: colorScheme.surface,
@@ -175,7 +175,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
       margin: const EdgeInsets.all(16),
       clipBehavior: Clip.antiAlias,
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -209,13 +209,13 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
               builder: (BuildContext context, BoxConstraints constraints) {
                 final double containerWidth = isLargeScreen
                     ? 500
-                    : constraints.maxWidth - (24.0 * 2);
+                    : constraints.maxWidth;
 
                 return Container(
                   width: containerWidth,
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 5,
+                    horizontal: 4,
+                    vertical: 4,
                   ),
                   decoration: BoxDecoration(
                     color: colorScheme.surfaceContainerHighest,
@@ -279,7 +279,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                                               ),
                                         ),
                                         backgroundColor: colorScheme.surface,
-                                        padding: const EdgeInsets.all(8),
+                                        padding: const EdgeInsets.all(2),
                                       );
                                     }).toList(),
                                   ),
@@ -380,7 +380,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
+                      horizontal: 20,
                       vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
@@ -389,7 +389,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                 ElevatedButton.icon(
                   onPressed: _isAnswered ? null : _removeLastLetter,
                   icon: const Icon(Icons.backspace),
-                  label: const Text('Remove'),
+                  label: const Text('Clear'),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: colorScheme.onSurfaceVariant,
                     backgroundColor: colorScheme.surfaceContainerHighest,
@@ -397,7 +397,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
+                      horizontal: 20,
                       vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
