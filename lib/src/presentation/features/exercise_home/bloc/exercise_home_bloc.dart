@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:the_kids_app/src/core/config/logging_config.dart';
+import 'package:the_kids_app/src/domain/errors/messages/error_messages.dart';
 import 'package:the_kids_app/src/domain/usecases/llm_model/model_usecase.dart';
 import 'exercise_home_event.dart';
 import 'exercise_home_state.dart';
@@ -11,11 +12,11 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
   final ModelUsecase _modelUsecase;
   final String _modelFileName;
   StreamSubscription<double>? _downloadSubscription;
-  String? _currentModelFileName;
-  // final  = getIt<String>(instanceName: 'gemma-3n-E2B');
 
-  ExerciseHomeBloc(this._modelUsecase, @Named('gemma-3n-E2B') this._modelFileName)
-    : super(const ExerciseHomeState.initial()) {
+  ExerciseHomeBloc(
+    this._modelUsecase,
+    @Named('gemma-3n-E2B') this._modelFileName,
+  ) : super(const ExerciseHomeState.initial()) {
     on<CheckModelStatus>(_onCheckModelStatus);
     on<DownloadModelRequested>(_onDownloadModelRequested);
     on<DownloadCancelled>(_onDownloadCancelled);
@@ -25,68 +26,82 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     on<DownloadFailed>(_onDownloadFailed);
   }
 
+  // Cancels any existing stream subscription to prevent memory leaks.
   Future<void> _cancelSubscription() async {
     await _downloadSubscription?.cancel();
     _downloadSubscription = null;
   }
 
+  // The main entry point for the BLoC. It now intelligently decides
+  // whether to reattach to an existing download or check for a completed file.
   Future<void> _onCheckModelStatus(
     CheckModelStatus event,
     Emitter<ExerciseHomeState> emit,
   ) async {
-    _currentModelFileName = event.modelFileName;
-
     emit(const ExerciseHomeState.loading());
     try {
-      final modelInfo = await _modelUsecase.getModelInfo(event.modelFileName);
-      if (modelInfo == null) {
-        emit(
-          const ExerciseHomeState.failure(
-            message: 'Could not retrieve model information.',
-          ),
+      // Check if a download is already in progress.
+      final bool isInProgress = await _modelUsecase.isModelDownloadedInProgress(
+        _modelFileName,
+      );
+
+      if (isInProgress) {
+        // If it is, reattach to its progress stream.
+        AppLogger.i('Download is already in progress. Reattaching...');
+        await _listenToDownloadStream(
+          _modelUsecase.reattachModelDownloading(modelFileName: _modelFileName),
+          emit,
         );
-        return;
+      } else {
+        // If not in progress, check if the file is already downloaded.
+        AppLogger.i(
+          'No download in progress. Checking for existing model file.',
+        );
+        final modelInfo = await _modelUsecase.getModelInfo(_modelFileName);
+        if (modelInfo == null) {
+          emit(
+            const ExerciseHomeState.failure(
+              message: ErrorMessages.unexpectedError,
+            ),
+          );
+          return;
+        }
+        emit(ExerciseHomeState.modelInfoReady(modelInfo: modelInfo));
       }
-      emit(ExerciseHomeState.modelInfoReady(modelInfo: modelInfo));
     } catch (e) {
       emit(ExerciseHomeState.failure(message: e.toString()));
     }
   }
 
+  // Handles the request to start a brand new download.
   Future<void> _onDownloadModelRequested(
     DownloadModelRequested event,
     Emitter<ExerciseHomeState> emit,
   ) async {
-    _currentModelFileName = event.modelFileName;
+    AppLogger.i('New download requested for $_modelFileName.');
+    await _listenToDownloadStream(
+      _modelUsecase.download(modelFileName: _modelFileName),
+      emit,
+    );
+  }
 
-    // Ensure any previous download is cancelled before starting a new one.
+  // A helper method to listen to a download stream, whether it's new or reattached.
+  Future<void> _listenToDownloadStream(
+    Future<Stream<double>> streamFuture,
+    Emitter<ExerciseHomeState> emit,
+  ) async {
     await _cancelSubscription();
-
     emit(const ExerciseHomeState.downloading(progress: 0.0));
-
     try {
-      final progressStream = await _modelUsecase.download(
-        modelFileName: event.modelFileName,
-      );
-
+      final progressStream = await streamFuture;
       _downloadSubscription = progressStream.listen(
-        (progress) {
-          add(ExerciseHomeEvent.downloadProgressUpdated(progress: progress));
-        },
-        onError: (error) {
-          add(ExerciseHomeEvent.downloadFailed(error: error));
-        },
-        onDone: () {
-          add(const ExerciseHomeEvent.downloadCompleted());
-        },
+        (progress) => add(DownloadProgressUpdated(progress: progress)),
+        onError: (error) => add(DownloadFailed(error: error)),
+        onDone: () => add(const DownloadCompleted()),
         cancelOnError: true,
       );
     } catch (e) {
-      emit(
-        ExerciseHomeState.failure(
-          message: 'Failed to start download: ${e.toString()}',
-        ),
-      );
+      add(DownloadFailed(error: e));
     }
   }
 
@@ -94,16 +109,11 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     DownloadCancelled event,
     Emitter<ExerciseHomeState> emit,
   ) async {
-    AppLogger.d('Cancelling download for ${event.modelFileName}');
-
-    // First, stop listening to the stream.
+    AppLogger.d('Cancelling download for $_modelFileName');
     await _cancelSubscription();
-
-    // Then, tell the use case to cancel the underlying task.
-    _modelUsecase.cancelDownload(event.modelFileName);
-
-    // Finally, refresh the UI to show the correct state.
-    add(CheckModelStatus(modelFileName: event.modelFileName));
+    _modelUsecase.cancelDownload(_modelFileName);
+    // After cancellation, re-run the check to update the UI to the correct state.
+    add(CheckModelStatus());
   }
 
   Future<void> _onDeleteModelRequested(
@@ -112,9 +122,8 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
   ) async {
     emit(const ExerciseHomeState.loading());
     try {
-      await _modelUsecase.delete(event.modelFileName);
-      // After deleting, refresh the UI.
-      add(CheckModelStatus(modelFileName: event.modelFileName));
+      await _modelUsecase.delete(_modelFileName);
+      add(CheckModelStatus());
     } catch (e) {
       emit(ExerciseHomeState.failure(message: e.toString()));
     }
@@ -124,25 +133,20 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     DownloadProgressUpdated event,
     Emitter<ExerciseHomeState> emit,
   ) {
-    emit(ExerciseHomeState.downloading(progress: event.progress));
+    // Only update state if we are currently in a downloading state.
+    if (state is Downloading) {
+      emit(ExerciseHomeState.downloading(progress: event.progress));
+    }
   }
 
   Future<void> _onDownloadCompleted(
     DownloadCompleted event,
     Emitter<ExerciseHomeState> emit,
   ) async {
-    AppLogger.d('Download stream completed.');
+    AppLogger.d('Download stream completed successfully.');
     await _cancelSubscription();
-    if (_currentModelFileName != null) {
-      add(CheckModelStatus(modelFileName: _currentModelFileName!));
-    } else {
-      // This is an edge case, but good to handle.
-      emit(
-        const ExerciseHomeState.failure(
-          message: 'Internal Error: Model name was lost after download.',
-        ),
-      );
-    }
+    // After any download completes, always re-check the status to get the final model info.
+    add(CheckModelStatus());
   }
 
   Future<void> _onDownloadFailed(
@@ -152,9 +156,7 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     AppLogger.e('Download failed: ${event.error}');
     await _cancelSubscription();
     emit(
-      ExerciseHomeState.failure(
-        message: 'Download failed: ${event.error.toString()}',
-      ),
+      const ExerciseHomeState.failure(message: ErrorMessages.unexpectedError),
     );
   }
 

@@ -134,13 +134,13 @@ return downloadFailed(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String modelFileName)?  checkModelStatus,TResult Function( String modelFileName)?  downloadModelRequested,TResult Function( String modelFileName)?  downloadCancelled,TResult Function( String modelFileName)?  deleteModelRequested,TResult Function( double progress)?  downloadProgressUpdated,TResult Function()?  downloadCompleted,TResult Function( Object error)?  downloadFailed,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  checkModelStatus,TResult Function()?  downloadModelRequested,TResult Function()?  downloadCancelled,TResult Function()?  deleteModelRequested,TResult Function( double progress)?  downloadProgressUpdated,TResult Function()?  downloadCompleted,TResult Function( Object error)?  downloadFailed,required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case CheckModelStatus() when checkModelStatus != null:
-return checkModelStatus(_that.modelFileName);case DownloadModelRequested() when downloadModelRequested != null:
-return downloadModelRequested(_that.modelFileName);case DownloadCancelled() when downloadCancelled != null:
-return downloadCancelled(_that.modelFileName);case DeleteModelRequested() when deleteModelRequested != null:
-return deleteModelRequested(_that.modelFileName);case DownloadProgressUpdated() when downloadProgressUpdated != null:
+return checkModelStatus();case DownloadModelRequested() when downloadModelRequested != null:
+return downloadModelRequested();case DownloadCancelled() when downloadCancelled != null:
+return downloadCancelled();case DeleteModelRequested() when deleteModelRequested != null:
+return deleteModelRequested();case DownloadProgressUpdated() when downloadProgressUpdated != null:
 return downloadProgressUpdated(_that.progress);case DownloadCompleted() when downloadCompleted != null:
 return downloadCompleted();case DownloadFailed() when downloadFailed != null:
 return downloadFailed(_that.error);case _:
@@ -161,13 +161,13 @@ return downloadFailed(_that.error);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String modelFileName)  checkModelStatus,required TResult Function( String modelFileName)  downloadModelRequested,required TResult Function( String modelFileName)  downloadCancelled,required TResult Function( String modelFileName)  deleteModelRequested,required TResult Function( double progress)  downloadProgressUpdated,required TResult Function()  downloadCompleted,required TResult Function( Object error)  downloadFailed,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  checkModelStatus,required TResult Function()  downloadModelRequested,required TResult Function()  downloadCancelled,required TResult Function()  deleteModelRequested,required TResult Function( double progress)  downloadProgressUpdated,required TResult Function()  downloadCompleted,required TResult Function( Object error)  downloadFailed,}) {final _that = this;
 switch (_that) {
 case CheckModelStatus():
-return checkModelStatus(_that.modelFileName);case DownloadModelRequested():
-return downloadModelRequested(_that.modelFileName);case DownloadCancelled():
-return downloadCancelled(_that.modelFileName);case DeleteModelRequested():
-return deleteModelRequested(_that.modelFileName);case DownloadProgressUpdated():
+return checkModelStatus();case DownloadModelRequested():
+return downloadModelRequested();case DownloadCancelled():
+return downloadCancelled();case DeleteModelRequested():
+return deleteModelRequested();case DownloadProgressUpdated():
 return downloadProgressUpdated(_that.progress);case DownloadCompleted():
 return downloadCompleted();case DownloadFailed():
 return downloadFailed(_that.error);}
@@ -184,13 +184,13 @@ return downloadFailed(_that.error);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String modelFileName)?  checkModelStatus,TResult? Function( String modelFileName)?  downloadModelRequested,TResult? Function( String modelFileName)?  downloadCancelled,TResult? Function( String modelFileName)?  deleteModelRequested,TResult? Function( double progress)?  downloadProgressUpdated,TResult? Function()?  downloadCompleted,TResult? Function( Object error)?  downloadFailed,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  checkModelStatus,TResult? Function()?  downloadModelRequested,TResult? Function()?  downloadCancelled,TResult? Function()?  deleteModelRequested,TResult? Function( double progress)?  downloadProgressUpdated,TResult? Function()?  downloadCompleted,TResult? Function( Object error)?  downloadFailed,}) {final _that = this;
 switch (_that) {
 case CheckModelStatus() when checkModelStatus != null:
-return checkModelStatus(_that.modelFileName);case DownloadModelRequested() when downloadModelRequested != null:
-return downloadModelRequested(_that.modelFileName);case DownloadCancelled() when downloadCancelled != null:
-return downloadCancelled(_that.modelFileName);case DeleteModelRequested() when deleteModelRequested != null:
-return deleteModelRequested(_that.modelFileName);case DownloadProgressUpdated() when downloadProgressUpdated != null:
+return checkModelStatus();case DownloadModelRequested() when downloadModelRequested != null:
+return downloadModelRequested();case DownloadCancelled() when downloadCancelled != null:
+return downloadCancelled();case DeleteModelRequested() when deleteModelRequested != null:
+return deleteModelRequested();case DownloadProgressUpdated() when downloadProgressUpdated != null:
 return downloadProgressUpdated(_that.progress);case DownloadCompleted() when downloadCompleted != null:
 return downloadCompleted();case DownloadFailed() when downloadFailed != null:
 return downloadFailed(_that.error);case _:
@@ -205,265 +205,129 @@ return downloadFailed(_that.error);case _:
 
 
 class CheckModelStatus implements ExerciseHomeEvent {
-  const CheckModelStatus({required this.modelFileName});
+  const CheckModelStatus();
   
 
- final  String modelFileName;
 
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$CheckModelStatusCopyWith<CheckModelStatus> get copyWith => _$CheckModelStatusCopyWithImpl<CheckModelStatus>(this, _$identity);
+
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is CheckModelStatus&&(identical(other.modelFileName, modelFileName) || other.modelFileName == modelFileName));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is CheckModelStatus);
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,modelFileName);
+int get hashCode => runtimeType.hashCode;
 
 @override
 String toString() {
-  return 'ExerciseHomeEvent.checkModelStatus(modelFileName: $modelFileName)';
+  return 'ExerciseHomeEvent.checkModelStatus()';
 }
 
 
 }
 
-/// @nodoc
-abstract mixin class $CheckModelStatusCopyWith<$Res> implements $ExerciseHomeEventCopyWith<$Res> {
-  factory $CheckModelStatusCopyWith(CheckModelStatus value, $Res Function(CheckModelStatus) _then) = _$CheckModelStatusCopyWithImpl;
-@useResult
-$Res call({
- String modelFileName
-});
 
 
-
-
-}
-/// @nodoc
-class _$CheckModelStatusCopyWithImpl<$Res>
-    implements $CheckModelStatusCopyWith<$Res> {
-  _$CheckModelStatusCopyWithImpl(this._self, this._then);
-
-  final CheckModelStatus _self;
-  final $Res Function(CheckModelStatus) _then;
-
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? modelFileName = null,}) {
-  return _then(CheckModelStatus(
-modelFileName: null == modelFileName ? _self.modelFileName : modelFileName // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
-}
-
-
-}
 
 /// @nodoc
 
 
 class DownloadModelRequested implements ExerciseHomeEvent {
-  const DownloadModelRequested({required this.modelFileName});
+  const DownloadModelRequested();
   
 
- final  String modelFileName;
 
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$DownloadModelRequestedCopyWith<DownloadModelRequested> get copyWith => _$DownloadModelRequestedCopyWithImpl<DownloadModelRequested>(this, _$identity);
+
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is DownloadModelRequested&&(identical(other.modelFileName, modelFileName) || other.modelFileName == modelFileName));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is DownloadModelRequested);
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,modelFileName);
+int get hashCode => runtimeType.hashCode;
 
 @override
 String toString() {
-  return 'ExerciseHomeEvent.downloadModelRequested(modelFileName: $modelFileName)';
+  return 'ExerciseHomeEvent.downloadModelRequested()';
 }
 
 
 }
 
-/// @nodoc
-abstract mixin class $DownloadModelRequestedCopyWith<$Res> implements $ExerciseHomeEventCopyWith<$Res> {
-  factory $DownloadModelRequestedCopyWith(DownloadModelRequested value, $Res Function(DownloadModelRequested) _then) = _$DownloadModelRequestedCopyWithImpl;
-@useResult
-$Res call({
- String modelFileName
-});
 
 
-
-
-}
-/// @nodoc
-class _$DownloadModelRequestedCopyWithImpl<$Res>
-    implements $DownloadModelRequestedCopyWith<$Res> {
-  _$DownloadModelRequestedCopyWithImpl(this._self, this._then);
-
-  final DownloadModelRequested _self;
-  final $Res Function(DownloadModelRequested) _then;
-
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? modelFileName = null,}) {
-  return _then(DownloadModelRequested(
-modelFileName: null == modelFileName ? _self.modelFileName : modelFileName // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
-}
-
-
-}
 
 /// @nodoc
 
 
 class DownloadCancelled implements ExerciseHomeEvent {
-  const DownloadCancelled({required this.modelFileName});
+  const DownloadCancelled();
   
 
- final  String modelFileName;
 
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$DownloadCancelledCopyWith<DownloadCancelled> get copyWith => _$DownloadCancelledCopyWithImpl<DownloadCancelled>(this, _$identity);
+
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is DownloadCancelled&&(identical(other.modelFileName, modelFileName) || other.modelFileName == modelFileName));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is DownloadCancelled);
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,modelFileName);
+int get hashCode => runtimeType.hashCode;
 
 @override
 String toString() {
-  return 'ExerciseHomeEvent.downloadCancelled(modelFileName: $modelFileName)';
+  return 'ExerciseHomeEvent.downloadCancelled()';
 }
 
 
 }
 
-/// @nodoc
-abstract mixin class $DownloadCancelledCopyWith<$Res> implements $ExerciseHomeEventCopyWith<$Res> {
-  factory $DownloadCancelledCopyWith(DownloadCancelled value, $Res Function(DownloadCancelled) _then) = _$DownloadCancelledCopyWithImpl;
-@useResult
-$Res call({
- String modelFileName
-});
 
 
-
-
-}
-/// @nodoc
-class _$DownloadCancelledCopyWithImpl<$Res>
-    implements $DownloadCancelledCopyWith<$Res> {
-  _$DownloadCancelledCopyWithImpl(this._self, this._then);
-
-  final DownloadCancelled _self;
-  final $Res Function(DownloadCancelled) _then;
-
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? modelFileName = null,}) {
-  return _then(DownloadCancelled(
-modelFileName: null == modelFileName ? _self.modelFileName : modelFileName // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
-}
-
-
-}
 
 /// @nodoc
 
 
 class DeleteModelRequested implements ExerciseHomeEvent {
-  const DeleteModelRequested({required this.modelFileName});
+  const DeleteModelRequested();
   
 
- final  String modelFileName;
 
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$DeleteModelRequestedCopyWith<DeleteModelRequested> get copyWith => _$DeleteModelRequestedCopyWithImpl<DeleteModelRequested>(this, _$identity);
+
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is DeleteModelRequested&&(identical(other.modelFileName, modelFileName) || other.modelFileName == modelFileName));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is DeleteModelRequested);
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,modelFileName);
+int get hashCode => runtimeType.hashCode;
 
 @override
 String toString() {
-  return 'ExerciseHomeEvent.deleteModelRequested(modelFileName: $modelFileName)';
+  return 'ExerciseHomeEvent.deleteModelRequested()';
 }
 
 
 }
 
-/// @nodoc
-abstract mixin class $DeleteModelRequestedCopyWith<$Res> implements $ExerciseHomeEventCopyWith<$Res> {
-  factory $DeleteModelRequestedCopyWith(DeleteModelRequested value, $Res Function(DeleteModelRequested) _then) = _$DeleteModelRequestedCopyWithImpl;
-@useResult
-$Res call({
- String modelFileName
-});
 
 
-
-
-}
-/// @nodoc
-class _$DeleteModelRequestedCopyWithImpl<$Res>
-    implements $DeleteModelRequestedCopyWith<$Res> {
-  _$DeleteModelRequestedCopyWithImpl(this._self, this._then);
-
-  final DeleteModelRequested _self;
-  final $Res Function(DeleteModelRequested) _then;
-
-/// Create a copy of ExerciseHomeEvent
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') $Res call({Object? modelFileName = null,}) {
-  return _then(DeleteModelRequested(
-modelFileName: null == modelFileName ? _self.modelFileName : modelFileName // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
-}
-
-
-}
 
 /// @nodoc
 

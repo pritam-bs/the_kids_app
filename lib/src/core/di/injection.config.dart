@@ -9,7 +9,7 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:dio/dio.dart' as _i361;
+import 'package:background_downloader/background_downloader.dart' as _i677;
 import 'package:firebase_core/firebase_core.dart' as _i982;
 import 'package:firebase_remote_config/firebase_remote_config.dart' as _i627;
 import 'package:get_it/get_it.dart' as _i174;
@@ -61,7 +61,7 @@ import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc
     as _i401;
 import '../tts/tts_service.dart' as _i369;
 import 'modules/data_module.dart' as _i742;
-import 'modules/dio_module.dart' as _i983;
+import 'modules/file_downloader_module.dart' as _i261;
 import 'modules/firebase_module.dart' as _i398;
 import 'modules/gcs_module.dart' as _i1055;
 import 'modules/gemma_module.dart' as _i779;
@@ -79,7 +79,7 @@ extension GetItInjectableX on _i174.GetIt {
     final ttsModule = _$TtsModule();
     final sharedPreferencesModule = _$SharedPreferencesModule();
     final dataModule = _$DataModule(this);
-    final dioModule = _$DioModule();
+    final fileDownloaderModule = _$FileDownloaderModule();
     final gcsModule = _$GcsModule();
     final gemmaModule = _$GemmaModule();
     await gh.factoryAsync<_i982.FirebaseApp>(
@@ -102,12 +102,12 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i197.WordListRepository>(
       () => dataModule.wordListRepositoryImpl,
     );
+    gh.lazySingleton<_i677.FileDownloader>(
+      () => fileDownloaderModule.fileDownloader,
+      instanceName: 'model_downloader',
+    );
     gh.lazySingleton<_i582.LearningCategoryRepository>(
       () => dataModule.learningCategoryRepositoryImpl,
-    );
-    gh.lazySingleton<_i361.Dio>(
-      () => dioModule.dio,
-      instanceName: 'model_download',
     );
     gh.lazySingleton<_i33.ImageRepository>(
       () => dataModule.imageRepositoryImpl,
@@ -133,6 +133,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => gemmaModule.gemma3nE4BFileName,
       instanceName: 'gemma-3n-E4B',
     );
+    gh.lazySingleton<_i784.ModelDataSource>(
+      () => dataModule.modelDataSourceImpl,
+    );
     gh.factory<String>(
       () => gemmaModule.gemma3nE2BFileName,
       instanceName: 'gemma-3n-E2B',
@@ -156,9 +159,6 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
     );
-    gh.lazySingleton<_i784.ModelDataSource>(
-      () => dataModule.modelDataSourceImpl,
-    );
     gh.factory<_i298.LearnWordBloc>(
       () => _i298.LearnWordBloc(
         gh<_i35.WordListUsecase>(),
@@ -181,7 +181,10 @@ extension GetItInjectableX on _i174.GetIt {
       ),
     );
     gh.factory<_i607.ExerciseHomeBloc>(
-      () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
+      () => _i607.ExerciseHomeBloc(
+        gh<_i565.ModelUsecase>(),
+        gh<String>(instanceName: 'gemma-3n-E2B'),
+      ),
     );
     return this;
   }
@@ -221,7 +224,9 @@ class _$DataModule extends _i742.DataModule {
   @override
   _i338.ModelDataSourceImpl get modelDataSourceImpl =>
       _i338.ModelDataSourceImpl(
+        _getIt<_i677.FileDownloader>(instanceName: 'model_downloader'),
         _getIt<String>(instanceName: 'model_gcs_bucket'),
+        _getIt<_i460.SharedPreferences>(),
       );
 
   @override
@@ -229,7 +234,7 @@ class _$DataModule extends _i742.DataModule {
       _i411.ModelRepositoryImpl(_getIt<_i784.ModelDataSource>());
 }
 
-class _$DioModule extends _i983.DioModule {}
+class _$FileDownloaderModule extends _i261.FileDownloaderModule {}
 
 class _$GcsModule extends _i1055.GcsModule {}
 

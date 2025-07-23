@@ -8,29 +8,18 @@ import 'package:the_kids_app/src/presentation/features/exercise_home/bloc/exerci
 import 'package:the_kids_app/src/presentation/features/exercise_home/bloc/exercise_home_event.dart';
 import 'package:the_kids_app/src/presentation/features/exercise_home/bloc/exercise_home_state.dart';
 
-// Define the model file name as a constant for easy access and modification.
-
 @RoutePage()
-class ExerciseHomeScreen extends StatelessWidget {
-  ExerciseHomeScreen({super.key});
-  final String _modelFileName = getIt<String>(instanceName: 'gemma-3n-E2B');
+class ExerciseHomeScreen extends StatelessWidget implements AutoRouteWrapper {
+  const ExerciseHomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget wrappedRoute(BuildContext context) {
     return BlocProvider(
-      create: (context) => getIt<ExerciseHomeBloc>()
-        ..add(
-          ExerciseHomeEvent.checkModelStatus(
-            modelFileName: _modelFileName,
-          ),
-        ),
-      child: const _ExerciseHomeView(),
+      create: (context) =>
+          getIt<ExerciseHomeBloc>()..add(ExerciseHomeEvent.checkModelStatus()),
+      child: this,
     );
   }
-}
-
-class _ExerciseHomeView extends StatelessWidget {
-  const _ExerciseHomeView();
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +45,7 @@ class _ExerciseHomeView extends StatelessWidget {
                 ..hideCurrentSnackBar()
                 ..showSnackBar(
                   SnackBar(
-                    content: Text('Error: $message'),
+                    content: Text(message),
                     backgroundColor: colorScheme.error,
                   ),
                 );
@@ -66,12 +55,10 @@ class _ExerciseHomeView extends StatelessWidget {
         // BlocBuilder handles rebuilding the UI in response to state changes.
         child: BlocBuilder<ExerciseHomeBloc, ExerciseHomeState>(
           builder: (context, state) {
-            // The `when` method from freezed ensures we handle every possible state,
-            // preventing runtime errors and making the logic clear.
             return state.when(
               initial: () => const _LoadingUI(message: 'Initializing...'),
               loading: () =>
-                  const _LoadingUI(message: 'Checking model status...'),
+                  const _LoadingUI(message: 'Checking AI Tutor status...'),
               modelInfoReady: (modelInfo) {
                 if (modelInfo.isDownloaded) {
                   // If the model is ready, show the main screen content.
@@ -103,8 +90,7 @@ class _ExerciseHomeView extends StatelessWidget {
 
 /// UI shown when prompting the user to download the model.
 class _DownloadPromptUI extends StatelessWidget {
-  _DownloadPromptUI();
-  final String _modelFileName = getIt<String>(instanceName: 'gemma-3n-E2B');
+  const _DownloadPromptUI();
 
   @override
   Widget build(BuildContext context) {
@@ -127,7 +113,7 @@ class _DownloadPromptUI extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             const Text(
-              'To enable the smart exercises, please download the AI model. This is a one-time download.',
+              'To enable the smart exercises, please download the AI Tutor Model. This is a one-time download.',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
@@ -135,12 +121,10 @@ class _DownloadPromptUI extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 context.read<ExerciseHomeBloc>().add(
-                  ExerciseHomeEvent.downloadModelRequested(
-                    modelFileName: _modelFileName,
-                  ),
+                  ExerciseHomeEvent.downloadModelRequested(),
                 );
               },
-              child: const Text('Download Model'),
+              child: const Text('Download'),
             ),
           ],
         ),
@@ -152,12 +136,14 @@ class _DownloadPromptUI extends StatelessWidget {
 /// UI shown during the download process.
 class _DownloadingUI extends StatelessWidget {
   final double progress;
-  final String _modelFileName = getIt<String>(instanceName: 'gemma-3n-E2B');
-  _DownloadingUI({required this.progress});
+
+  const _DownloadingUI({required this.progress});
 
   @override
   Widget build(BuildContext context) {
+    final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final percentage = (progress * 100).toStringAsFixed(0);
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24.0),
@@ -165,26 +151,25 @@ class _DownloadingUI extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Downloading AI Model',
+              'Downloading AI Tutor Model',
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 24),
-            LinearProgressIndicator(value: progress),
+            LinearProgressIndicator(
+              value: progress,
+              backgroundColor: colorScheme.surfaceContainerHighest,
+              color: colorScheme.primary,
+            ),
             const SizedBox(height: 16),
             Text('$percentage% complete', style: const TextStyle(fontSize: 16)),
             const SizedBox(height: 32),
             TextButton(
               onPressed: () {
                 context.read<ExerciseHomeBloc>().add(
-                  ExerciseHomeEvent.downloadCancelled(
-                    modelFileName: _modelFileName,
-                  ),
+                  ExerciseHomeEvent.downloadCancelled(),
                 );
               },
-              child: const Text(
-                'Cancel Download',
-                style: TextStyle(color: Colors.red),
-              ),
+              child: Text('Cancel', style: TextStyle(color: colorScheme.error)),
             ),
           ],
         ),
@@ -216,8 +201,8 @@ class _LoadingUI extends StatelessWidget {
 /// UI for displaying an error message with a retry button.
 class _ErrorUI extends StatelessWidget {
   final String message;
-  final String _modelFileName = getIt<String>(instanceName: 'gemma-3n-E2B');
-  _ErrorUI({required this.message});
+
+  const _ErrorUI({required this.message});
 
   @override
   Widget build(BuildContext context) {
@@ -243,9 +228,7 @@ class _ErrorUI extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 context.read<ExerciseHomeBloc>().add(
-                  ExerciseHomeEvent.checkModelStatus(
-                    modelFileName: _modelFileName,
-                  ),
+                  ExerciseHomeEvent.checkModelStatus(),
                 );
               },
               child: const Text('Retry'),
@@ -259,8 +242,7 @@ class _ErrorUI extends StatelessWidget {
 
 /// The main content of the screen, which is your original UI.
 class _MainContent extends StatelessWidget {
-  final String _modelFileName = getIt<String>(instanceName: 'gemma-3n-E2B');
-  _MainContent();
+  const _MainContent();
 
   @override
   Widget build(BuildContext context) {
@@ -271,6 +253,8 @@ class _MainContent extends StatelessWidget {
         ? screenSize.width * 0.1
         : 16.0;
     final double buttonWidth = isLargeScreen ? 300 : double.infinity;
+
+    final ColorScheme colorScheme = Theme.of(context).colorScheme;
 
     return Padding(
       padding: EdgeInsets.symmetric(
@@ -339,15 +323,13 @@ class _MainContent extends StatelessWidget {
               TextButton.icon(
                 onPressed: () {
                   context.read<ExerciseHomeBloc>().add(
-                    ExerciseHomeEvent.deleteModelRequested(
-                      modelFileName: _modelFileName,
-                    ),
+                    ExerciseHomeEvent.deleteModelRequested(),
                   );
                 },
-                icon: const Icon(Icons.delete_forever, color: Colors.grey),
-                label: const Text(
-                  'Delete AI Model (for testing)',
-                  style: TextStyle(color: Colors.grey),
+                icon: Icon(Icons.delete_forever, color: colorScheme.error),
+                label: Text(
+                  'Delete AI Tutor Model',
+                  style: TextStyle(color: colorScheme.error),
                 ),
               ),
             ],
@@ -391,7 +373,7 @@ class _MainContent extends StatelessWidget {
           ),
           elevation: 8,
           padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
-          shadowColor: buttonColor.withOpacity(0.5),
+          shadowColor: buttonColor.withValues(alpha: 0.5),
         ),
       ),
     );

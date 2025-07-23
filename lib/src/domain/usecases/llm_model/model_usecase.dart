@@ -17,6 +17,27 @@ class ModelUsecase {
     return _modelRepository.downloadModel(modelFileName: modelFileName);
   }
 
+  /// Checks if a download for the model is already in progress.
+  /// This is useful for determining whether to start a new download or reattach.
+  Future<bool> isModelDownloadedInProgress(String modelFileName) {
+    AppLogger.d(
+      'UseCase: Checking if download is in progress for $modelFileName',
+    );
+    return _modelRepository.isModelDownloadedInProgress(modelFileName);
+  }
+
+  /// Reattaches to an existing download and returns a stream of its progress.
+  Future<Stream<double>> reattachModelDownloading({
+    required String modelFileName,
+  }) {
+    AppLogger.d(
+      'UseCase: Reattaching to in-progress download for $modelFileName',
+    );
+    return _modelRepository.reattachModelDownloading(
+      modelFileName: modelFileName,
+    );
+  }
+
   /// Cancels an ongoing download for the specified model.
   void cancelDownload(String modelFileName) {
     AppLogger.d('UseCase: Cancelling download for $modelFileName');
