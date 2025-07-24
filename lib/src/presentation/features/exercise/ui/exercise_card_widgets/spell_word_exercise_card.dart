@@ -3,7 +3,7 @@ import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'dart:math';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart'; // For BoxConstraints
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart'; // For BoxConstraints
 
 class SpellWordExerciseCard extends StatefulWidget {
   final SpellWordExerciseEntity data;

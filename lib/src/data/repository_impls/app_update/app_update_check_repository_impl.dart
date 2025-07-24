@@ -26,7 +26,7 @@ class AppUpdateCheckRepositoryImpl implements AppUpdateCheckRepository {
     return updateInfoDto.toEntity(currentVersion);
   }
 
-  Future<AppUpdateInfoDTO> _getRemoteUpdateInfo() async {
+  Future<AppUpdateInfoDto> _getRemoteUpdateInfo() async {
     try {
       final bool updated = await _remoteConfig.fetchAndActivate();
 
@@ -36,7 +36,6 @@ class AppUpdateCheckRepositoryImpl implements AppUpdateCheckRepository {
         AppLogger.d('Remote Config is already up to date.');
       }
 
-      
       final appUpdateInfoKey = switch (defaultTargetPlatform) {
         TargetPlatform.android => "app_update_info_android",
         TargetPlatform.iOS => "app_update_info_ios",
@@ -55,7 +54,7 @@ class AppUpdateCheckRepositoryImpl implements AppUpdateCheckRepository {
 
       final Map<String, dynamic> jsonMap = jsonDecode(updateInfoJsonString);
 
-      return AppUpdateInfoDTO.fromJson(jsonMap);
+      return AppUpdateInfoDto.fromJson(jsonMap);
     } on FirebaseException catch (e) {
       AppLogger.e(
         "Firebase Remote Config fetch error: ${e.code} - ${e.message}",

@@ -10,12 +10,10 @@ import 'exercise_home_state.dart';
 @injectable
 class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
   final ModelUsecase _modelUsecase;
-  final String _modelFileName;
   StreamSubscription<double>? _downloadSubscription;
 
   ExerciseHomeBloc(
     this._modelUsecase,
-    @Named('gemma-3n-E2B') this._modelFileName,
   ) : super(const ExerciseHomeState.initial()) {
     on<CheckModelStatus>(_onCheckModelStatus);
     on<DownloadModelRequested>(_onDownloadModelRequested);
@@ -42,14 +40,13 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     try {
       // Check if a download is already in progress.
       final bool isInProgress = await _modelUsecase.isModelDownloadedInProgress(
-        _modelFileName,
       );
 
       if (isInProgress) {
         // If it is, reattach to its progress stream.
         AppLogger.i('Download is already in progress. Reattaching...');
         await _listenToDownloadStream(
-          _modelUsecase.reattachModelDownloading(modelFileName: _modelFileName),
+          _modelUsecase.reattachModelDownloading(),
           emit,
         );
       } else {
@@ -57,7 +54,7 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
         AppLogger.i(
           'No download in progress. Checking for existing model file.',
         );
-        final modelInfo = await _modelUsecase.getModelInfo(_modelFileName);
+        final modelInfo = await _modelUsecase.getModelInfo();
         if (modelInfo == null) {
           emit(
             const ExerciseHomeState.failure(
@@ -78,9 +75,9 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     DownloadModelRequested event,
     Emitter<ExerciseHomeState> emit,
   ) async {
-    AppLogger.i('New download requested for $_modelFileName.');
+    AppLogger.i('New model download requested.');
     await _listenToDownloadStream(
-      _modelUsecase.download(modelFileName: _modelFileName),
+      _modelUsecase.download(),
       emit,
     );
   }
@@ -109,9 +106,9 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     DownloadCancelled event,
     Emitter<ExerciseHomeState> emit,
   ) async {
-    AppLogger.d('Cancelling download for $_modelFileName');
+    AppLogger.d('Cancelling model download');
     await _cancelSubscription();
-    _modelUsecase.cancelDownload(_modelFileName);
+    _modelUsecase.cancelDownload();
     // After cancellation, re-run the check to update the UI to the correct state.
     add(CheckModelStatus());
   }
@@ -122,7 +119,7 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
   ) async {
     emit(const ExerciseHomeState.loading());
     try {
-      await _modelUsecase.delete(_modelFileName);
+      await _modelUsecase.delete();
       add(CheckModelStatus());
     } catch (e) {
       emit(ExerciseHomeState.failure(message: e.toString()));

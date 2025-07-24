@@ -10,19 +10,20 @@ import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/match_word_exercise_card.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/sentence_scramble_exercise_card.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/spell_word_exercise_card.dart';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/answer_feedback_overlay.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/listen_choose_exercise_card.dart';
 
 @RoutePage()
 class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
-  const ExerciseScreen({super.key});
+  final ExerciseType type;
+  const ExerciseScreen({super.key, required this.type});
 
   @override
   Widget wrappedRoute(BuildContext context) {
     return BlocProvider(
       create: (context) =>
-          getIt<ExerciseBloc>()..add(const ExerciseEvent.initializeExercises()),
+          getIt<ExerciseBloc>()..add(ExerciseEvent.initializeExercises(exerciseType: type)),
       child: this,
     );
   }

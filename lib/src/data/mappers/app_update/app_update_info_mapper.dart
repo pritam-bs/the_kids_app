@@ -1,7 +1,7 @@
 import 'package:the_kids_app/src/data/dtos/app_update/app_update_info_dto.dart';
 import 'package:the_kids_app/src/domain/entities/app_update/app_update_info_entity.dart';
 
-extension AppUpdateInfoMapper on AppUpdateInfoDTO {
+extension AppUpdateInfoMapper on AppUpdateInfoDto {
   AppUpdateInfoEntity toEntity(String currentVersion) {
     final shouldForceUpdate = _isVersionLower(
       currentVersion,

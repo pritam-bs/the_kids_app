@@ -16,12 +16,18 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
+import '../../data/datasources/llm_inference/gemma_inference_data_source.dart'
+    as _i692;
+import '../../data/datasources/llm_inference/inference_data_source.dart'
+    as _i228;
 import '../../data/datasources/llm_model/mdel_data_source.dart' as _i784;
 import '../../data/datasources/llm_model/mdel_data_source_impl.dart' as _i338;
 import '../../data/repository_impls/app_settings/app_local_settings_repository_impl.dart'
     as _i680;
 import '../../data/repository_impls/app_update/app_update_check_repository_impl.dart'
     as _i226;
+import '../../data/repository_impls/exercise/exercise_repository_impl.dart'
+    as _i411;
 import '../../data/repository_impls/image/image_repository_impl.dart' as _i34;
 import '../../data/repository_impls/learning_category/learning_category_repository_impl.dart'
     as _i942;
@@ -33,6 +39,7 @@ import '../../domain/repositories/app_settings/app_local_settings_repository.dar
     as _i192;
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
     as _i190;
+import '../../domain/repositories/exercise/exercise_repository.dart' as _i278;
 import '../../domain/repositories/image/image_repository.dart' as _i33;
 import '../../domain/repositories/learning_category/learning_category_repository.dart'
     as _i582;
@@ -43,6 +50,7 @@ import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
     as _i513;
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
     as _i686;
+import '../../domain/usecases/exercise/exercise_usecase.dart' as _i969;
 import '../../domain/usecases/image/image_usecase.dart' as _i322;
 import '../../domain/usecases/learning_category/learning_category_usecase.dart'
     as _i268;
@@ -78,10 +86,10 @@ extension GetItInjectableX on _i174.GetIt {
     final firebaseModule = _$FirebaseModule();
     final ttsModule = _$TtsModule();
     final sharedPreferencesModule = _$SharedPreferencesModule();
+    final gemmaModule = _$GemmaModule();
     final dataModule = _$DataModule(this);
     final fileDownloaderModule = _$FileDownloaderModule();
     final gcsModule = _$GcsModule();
-    final gemmaModule = _$GemmaModule();
     await gh.factoryAsync<_i982.FirebaseApp>(
       () => firebaseModule.firebaseApp,
       preResolve: true,
@@ -98,7 +106,10 @@ extension GetItInjectableX on _i174.GetIt {
       () => sharedPreferencesModule.sharedPreferences,
       preResolve: true,
     );
-    gh.factory<_i770.ExerciseBloc>(() => _i770.ExerciseBloc());
+    gh.factory<String>(
+      () => gemmaModule.gemmaModelFileName,
+      instanceName: 'gemma_model_file_name',
+    );
     gh.lazySingleton<_i197.WordListRepository>(
       () => dataModule.wordListRepositoryImpl,
     );
@@ -129,22 +140,17 @@ extension GetItInjectableX on _i174.GetIt {
       () =>
           _i268.LearningCategoryUsecase(gh<_i582.LearningCategoryRepository>()),
     );
-    gh.factory<String>(
-      () => gemmaModule.gemma3nE4BFileName,
-      instanceName: 'gemma-3n-E4B',
-    );
-    gh.lazySingleton<_i784.ModelDataSource>(
-      () => dataModule.modelDataSourceImpl,
-    );
-    gh.factory<String>(
-      () => gemmaModule.gemma3nE2BFileName,
-      instanceName: 'gemma-3n-E2B',
-    );
     gh.factory<_i115.CategorySelectionBloc>(
       () => _i115.CategorySelectionBloc(gh<_i268.LearningCategoryUsecase>()),
     );
     gh.factory<_i322.ImageUsecase>(
       () => _i322.ImageUsecase(gh<_i33.ImageRepository>()),
+    );
+    gh.lazySingleton<_i784.ModelDataSource>(
+      () => dataModule.modelDataSourceImpl,
+    );
+    gh.lazySingleton<_i228.InferenceDataSource>(
+      () => dataModule.gemmaInferenceDataSource,
     );
     gh.factory<_i513.GetLastSkippedVersionUseCase>(
       () => _i513.GetLastSkippedVersionUseCase(
@@ -155,6 +161,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i513.SaveLastSkippedVersionUseCase(
         gh<_i192.AppLocalSettingsRepository>(),
       ),
+    );
+    gh.lazySingleton<_i278.ExerciseRepository>(
+      () => dataModule.exerciseRepositoryImpl,
     );
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
@@ -180,11 +189,14 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i513.GetLastSkippedVersionUseCase>(),
       ),
     );
+    gh.factory<_i969.ExerciseUseCase>(
+      () => _i969.ExerciseUseCase(gh<_i278.ExerciseRepository>()),
+    );
+    gh.factory<_i770.ExerciseBloc>(
+      () => _i770.ExerciseBloc(gh<_i969.ExerciseUseCase>()),
+    );
     gh.factory<_i607.ExerciseHomeBloc>(
-      () => _i607.ExerciseHomeBloc(
-        gh<_i565.ModelUsecase>(),
-        gh<String>(instanceName: 'gemma-3n-E2B'),
-      ),
+      () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
     );
     return this;
   }
@@ -195,6 +207,8 @@ class _$FirebaseModule extends _i398.FirebaseModule {}
 class _$TtsModule extends _i983.TtsModule {}
 
 class _$SharedPreferencesModule extends _i813.SharedPreferencesModule {}
+
+class _$GemmaModule extends _i779.GemmaModule {}
 
 class _$DataModule extends _i742.DataModule {
   _$DataModule(this._getIt);
@@ -226,8 +240,17 @@ class _$DataModule extends _i742.DataModule {
       _i338.ModelDataSourceImpl(
         _getIt<_i677.FileDownloader>(instanceName: 'model_downloader'),
         _getIt<String>(instanceName: 'model_gcs_bucket'),
+        _getIt<String>(instanceName: 'gemma_model_file_name'),
         _getIt<_i460.SharedPreferences>(),
       );
+
+  @override
+  _i692.GemmaInferenceDataSource get gemmaInferenceDataSource =>
+      _i692.GemmaInferenceDataSource(_getIt<_i784.ModelDataSource>());
+
+  @override
+  _i411.ExerciseRepositoryImpl get exerciseRepositoryImpl =>
+      _i411.ExerciseRepositoryImpl(_getIt<_i228.InferenceDataSource>());
 
   @override
   _i411.ModelRepositoryImpl get modelRepositoryImpl =>
@@ -237,5 +260,3 @@ class _$DataModule extends _i742.DataModule {
 class _$FileDownloaderModule extends _i261.FileDownloaderModule {}
 
 class _$GcsModule extends _i1055.GcsModule {}
-
-class _$GemmaModule extends _i779.GemmaModule {}

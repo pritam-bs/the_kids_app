@@ -10,12 +10,11 @@ class ModelRepositoryImpl implements ModelRepository {
   ModelRepositoryImpl(this._remoteDataSource);
 
   @override
-  Future<Stream<double>> downloadModel({required String modelFileName}) async {
+  Future<Stream<double>> downloadModel() async {
     final controller = StreamController<double>();
 
     _remoteDataSource
         .downloadModel(
-          modelFileName: modelFileName,
           onProgress: (progress) {
             if (!controller.isClosed) {
               controller.sink.add(progress);
@@ -45,19 +44,16 @@ class ModelRepositoryImpl implements ModelRepository {
   }
 
   @override
-  Future<bool> isModelDownloadedInProgress(String modelFileName) {
-    return _remoteDataSource.isModelDownloadedInProgress(modelFileName);
+  Future<bool> isModelDownloadedInProgress() {
+    return _remoteDataSource.isModelDownloadedInProgress();
   }
 
   @override
-  Future<Stream<double>> reattachModelDownloading({
-    required String modelFileName,
-  }) async {
+  Future<Stream<double>> reattachModelDownloading() async {
     final controller = StreamController<double>();
 
     _remoteDataSource
         .reattachModelDownloading(
-          modelFileName: modelFileName,
           onProgress: (progress) {
             // The data source's callback feeds our stream.
             if (!controller.isClosed) {
@@ -88,31 +84,29 @@ class ModelRepositoryImpl implements ModelRepository {
   }
 
   @override
-  void cancelDownload(String modelFileName) {
-    _remoteDataSource.cancelDownload(modelFileName);
+  void cancelDownload() {
+    _remoteDataSource.cancelDownload();
   }
 
   @override
-  Future<ModelInfoEntity?> getModelInfo(String modelFileName) async {
+  Future<ModelInfoEntity?> getModelInfo() async {
     final isDownloaded = await _remoteDataSource.isModelDownloaded(
-      modelFileName,
     );
-    final localPath = await _remoteDataSource.getLocalPath(modelFileName);
+    final localPath = await _remoteDataSource.getLocalPath();
 
     return ModelInfoEntity(
-      name: modelFileName,
       localPath: localPath,
       isDownloaded: isDownloaded,
     );
   }
 
   @override
-  Future<void> deleteModel(String modelFileName) {
-    return _remoteDataSource.deleteModel(modelFileName);
+  Future<void> deleteModel() {
+    return _remoteDataSource.deleteModel();
   }
 
   @override
-  Future<String> getModelPath(String modelFileName) {
-    return _remoteDataSource.getLocalPath(modelFileName);
+  Future<String> getModelPath() {
+    return _remoteDataSource.getLocalPath();
   }
 }

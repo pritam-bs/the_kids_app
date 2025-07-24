@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'dart:math';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 
 class BuildSentenceExerciseCard extends StatefulWidget {
   final BuildSentenceExerciseEntity data;

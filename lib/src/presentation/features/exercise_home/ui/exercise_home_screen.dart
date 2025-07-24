@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/router/app_router.gr.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 import 'package:the_kids_app/src/presentation/colors/kids_colors.dart';
 import 'package:the_kids_app/src/presentation/features/exercise_home/bloc/exercise_home_bloc.dart';
 import 'package:the_kids_app/src/presentation/features/exercise_home/bloc/exercise_home_event.dart';
@@ -306,7 +307,7 @@ class _MainContent extends StatelessWidget {
                     label: 'Match the Word',
                     icon: Icons.link,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute());
+                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.matchWord));
                     },
                     buttonWidth: buttonWidth,
                     // Randomly assign a color
@@ -318,7 +319,7 @@ class _MainContent extends StatelessWidget {
                     label: 'Listen and Choose',
                     icon: Icons.hearing,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute());
+                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.listenChoose));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
@@ -329,7 +330,7 @@ class _MainContent extends StatelessWidget {
                     label: 'Spell the Word',
                     icon: Icons.spellcheck,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute());
+                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.spellWord));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
@@ -340,7 +341,7 @@ class _MainContent extends StatelessWidget {
                     label: 'Sentence Scramble',
                     icon: Icons.sort_by_alpha,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute());
+                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.sentenceScramble));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
@@ -351,7 +352,7 @@ class _MainContent extends StatelessWidget {
                     label: 'Build a Sentence',
                     icon: Icons.text_fields,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute());
+                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.buildSentence));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),

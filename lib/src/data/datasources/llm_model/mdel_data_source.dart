@@ -1,17 +1,11 @@
 abstract class ModelDataSource {
-  Future<String?> downloadModel({
-    required String modelFileName,
-    Function(double)? onProgress,
-  });
-  void cancelDownload(String modelFileName);
+  Future<String?> downloadModel({Function(double)? onProgress});
+  void cancelDownload();
 
-  Future<bool> isModelDownloadedInProgress(String modelFileName);
-  Future<String?> reattachModelDownloading({
-    required String modelFileName,
-    Function(double)? onProgress,
-  });
+  Future<bool> isModelDownloadedInProgress();
+  Future<String?> reattachModelDownloading({Function(double)? onProgress});
 
-  Future<bool> isModelDownloaded(String modelFileName);
-  Future<void> deleteModel(String modelFileName);
-  Future<String> getLocalPath(String modelFileName);
+  Future<bool> isModelDownloaded();
+  Future<void> deleteModel();
+  Future<String> getLocalPath();
 }
