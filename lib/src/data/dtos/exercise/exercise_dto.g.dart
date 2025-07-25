@@ -84,9 +84,9 @@ Map<String, dynamic> _$SentenceScrambleExerciseDtoToJson(
   'exerciseType': instance.$type,
 };
 
-BuildSentenceExerciseDto _$BuildSentenceExerciseDtoFromJson(
+FillBlankExerciseDto _$FillBlankExerciseDtoFromJson(
   Map<String, dynamic> json,
-) => BuildSentenceExerciseDto(
+) => FillBlankExerciseDto(
   targetGermanSentence: json['targetGermanSentence'] as String,
   englishTranslation: json['englishTranslation'] as String,
   sentenceWithMissingWord: (json['sentenceWithMissingWord'] as List<dynamic>)
@@ -99,8 +99,8 @@ BuildSentenceExerciseDto _$BuildSentenceExerciseDtoFromJson(
   $type: json['exerciseType'] as String?,
 );
 
-Map<String, dynamic> _$BuildSentenceExerciseDtoToJson(
-  BuildSentenceExerciseDto instance,
+Map<String, dynamic> _$FillBlankExerciseDtoToJson(
+  FillBlankExerciseDto instance,
 ) => <String, dynamic>{
   'targetGermanSentence': instance.targetGermanSentence,
   'englishTranslation': instance.englishTranslation,

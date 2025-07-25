@@ -24,7 +24,7 @@ class GemmaInferenceDataSource implements InferenceDataSource {
     _gemmaInference = await gemma.createModel(
       modelType: ModelType.gemmaIt,
       preferredBackend: PreferredBackend.cpu,
-      maxTokens: 1024,
+      maxTokens: 2048,
       supportImage: false,
     );
 
@@ -35,10 +35,10 @@ class GemmaInferenceDataSource implements InferenceDataSource {
   Future<String> generateText(String prompt) async {
     final gemmaInference = await _getGemmaInference();
     final gemmaSession = await gemmaInference.createSession(
-      temperature: 0.8,
-      randomSeed: 1,
-      topK: 1,
-      topP: 1.0,
+      temperature: 1.0,
+      randomSeed: 0,
+      topK: 32,
+      topP: 0.50,
     );
 
     AppLogger.d('Gemma Raw Prompt:\n$prompt');

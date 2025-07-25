@@ -34,7 +34,7 @@ sealed class ExerciseEntity with _$ExerciseEntity {
   }) = SentenceScrambleExerciseEntity;
 
   // Data for "Build a Sentence" exercise
-  const factory ExerciseEntity.buildSentence({
+  const factory ExerciseEntity.fillBlank({
     required String
     targetGermanSentence, // The complete correct German sentence
     required String englishTranslation, // English translation
@@ -42,5 +42,5 @@ sealed class ExerciseEntity with _$ExerciseEntity {
     sentenceWithMissingWord, // German sentence with one '' for the blank
     required List<String> optionsForMissingWord,
     required String correctAnswerWord, // Options to fill the blank
-  }) = BuildSentenceExerciseEntity;
+  }) = FillBlankExerciseEntity;
 }

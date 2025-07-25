@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'exercise_dto.freezed.dart';
@@ -35,20 +34,18 @@ abstract class ExerciseDto with _$ExerciseDto {
     required List<String> scrambledWords,
   }) = SentenceScrambleExerciseDto;
 
-  @FreezedUnionValue('buildSentence')
-  const factory ExerciseDto.buildSentence({
+  @FreezedUnionValue('fillBlank')
+  const factory ExerciseDto.fillBlank({
     required String targetGermanSentence,
     required String englishTranslation,
     required List<String> sentenceWithMissingWord,
     required List<String> optionsForMissingWord,
     required String correctAnswerWord,
-  }) = BuildSentenceExerciseDto;
+  }) = FillBlankExerciseDto;
 
   factory ExerciseDto.fromJson(Map<String, dynamic> json) =>
       _$ExerciseDtoFromJson(json);
 }
 
 List<ExerciseDto> exerciseListDtoFromJson(List<dynamic> jsonList) =>
-    List<ExerciseDto>.from(
-      jsonList.map((x) => ExerciseDto.fromJson(x)),
-    );
+    List<ExerciseDto>.from(jsonList.map((x) => ExerciseDto.fromJson(x)));

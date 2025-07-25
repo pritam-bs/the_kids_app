@@ -23,8 +23,8 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
         return 'spellWord';
       case ExerciseType.sentenceScramble:
         return 'sentenceScramble';
-      case ExerciseType.buildSentence:
-        return 'buildSentence';
+      case ExerciseType.fillBlank:
+        return 'fillBlank';
     }
   }
 
@@ -35,14 +35,13 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
   }) {
     String basePrompt;
     String exampleJson;
-    String exerciseTypeKey = _getExerciseTypeKey(
-      type,
-    );
+    String exerciseTypeKey = _getExerciseTypeKey(type);
 
     // Context string for the prompt
-    final String contextString = contextWords != null && contextWords.isNotEmpty
-        ? ' Focus on the following German words/concepts: ${contextWords.join(', ')}.'
-        : '';
+    final String contextInstruction =
+        contextWords != null && contextWords.isNotEmpty
+        ? 'Focus on these German words/concepts: ${contextWords.join(', ')}.'
+        : 'Use common beginner-level German vocabulary.';
 
     // Define the prompt and example JSON structure for each exercise type
     switch (type) {
@@ -91,47 +90,45 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
             '''
           {
             "exerciseType": "$exerciseTypeKey",
-            "targetGermanSentence": "Das ist ein Buch.",
-            "englishTranslation": "That is a book.",
-            "scrambledWords": ["ist", "Das", "ein", "Buch."]
+            "targetGermanSentence": "Das ist ein Buch",
+            "englishTranslation": "That is a book",
+            "scrambledWords": ["ist", "Das", "ein", "Buch"]
           }
         ''';
         break;
-      case ExerciseType.buildSentence:
+      case ExerciseType.fillBlank:
         basePrompt =
-            'Generate a "build the sentence" exercise. Each exercise should have a German sentence, its English translation, three options for the missing word, and the correct missing word.';
+            'Generate a "fill in the blanks" exercise. Include a German sentence, its English translation, an array of words, three options for the missing word, and the correct missing word.';
         exampleJson =
             '''
-          {
-            "exerciseType": "$exerciseTypeKey",
-            "targetGermanSentence": "Ich habe einen Hund.",
-            "englishTranslation": "I have a dog.",
-            "sentenceWithMissingWord": ["Ich", "habe", "einen", "", "."],
-            "optionsForMissingWord": ["Katze", "Vogel", "Hund"],
-            "correctAnswerWord": "Hund"
-          }
-        ''';
+            {
+              "exerciseType": "$exerciseTypeKey",
+              "targetGermanSentence": "Ich habe einen Hund",
+              "englishTranslation": "I have a dog",
+              "sentenceWithMissingWord": ["Ich", "habe", "einen", ""],
+              "optionsForMissingWord": ["Katze", "Vogel", "Hund"],
+              "correctAnswerWord": "Hund"
+            }
+            ''';
     }
 
     final fullPrompt =
         '''
-      You are an expert in German-English vocabulary and exercise generation for kids.
-      Your task is to: $basePrompt
-      Generate exactly $numberOfExercises ${type.name} exercises.
-      The output MUST be a JSON array. Each object in the array MUST contain the "exerciseType" field set to "$exerciseTypeKey" and match the structure below.
-
-      Example object structure:
-      $exampleJson
-
-      Ensure the difficulty is suitable for a beginner to intermediate German learner.
-      $contextString
-      Generate the list of exercises now following this exact JSON array format.
-    ''';
+        You are an expert in German-English vocabulary and exercise generation for kids.
+        Instruction:
+        - $basePrompt
+        - Generate exactly $numberOfExercises exercises
+        - $contextInstruction
+        - Difficulty: Beginner to Intermediate.
+        - IMPORTANT: Your output MUST be a single, valid JSON array of objects. Each object in the array MUST contain the "exerciseType" field set to "$exerciseTypeKey" Do NOT include any text, explanation, or markdown
+        
+        JSON Object Example:
+        $exampleJson
+        ''';
     return fullPrompt;
   }
 
   List<ExerciseDto> _parseExerciseResponse(String rawJson, ExerciseType type) {
-    // A robust way to extract the array from potential extra text
     final jsonStartIndex = rawJson.indexOf('[');
     final jsonEndIndex = rawJson.lastIndexOf(']');
 
@@ -147,7 +144,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
     AppLogger.d('Extracted JSON Array for parsing:\n$jsonArrayString');
 
     List<dynamic> jsonList = json.decode(jsonArrayString);
-    
+
     return exerciseListDtoFromJson(jsonList);
   }
 

@@ -23,7 +23,8 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
   Widget wrappedRoute(BuildContext context) {
     return BlocProvider(
       create: (context) =>
-          getIt<ExerciseBloc>()..add(ExerciseEvent.initializeExercises(exerciseType: type)),
+          getIt<ExerciseBloc>()
+            ..add(ExerciseEvent.initializeExercises(exerciseType: type)),
       child: this,
     );
   }
@@ -166,8 +167,8 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                           data: exerciseEntity,
                           onAnswerSubmitted: onAnswerSubmitted,
                         );
-                      case BuildSentenceExerciseEntity():
-                        return BuildSentenceExerciseCard(
+                      case FillBlankExerciseEntity():
+                        return FillBlankExerciseCard(
                           data: exerciseEntity,
                           onAnswerSubmitted: onAnswerSubmitted,
                         );

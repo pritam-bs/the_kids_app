@@ -307,7 +307,9 @@ class _MainContent extends StatelessWidget {
                     label: 'Match the Word',
                     icon: Icons.link,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.matchWord));
+                      AutoRouter.of(
+                        context,
+                      ).push(ExerciseRoute(type: ExerciseType.matchWord));
                     },
                     buttonWidth: buttonWidth,
                     // Randomly assign a color
@@ -319,7 +321,9 @@ class _MainContent extends StatelessWidget {
                     label: 'Listen and Choose',
                     icon: Icons.hearing,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.listenChoose));
+                      AutoRouter.of(
+                        context,
+                      ).push(ExerciseRoute(type: ExerciseType.listenChoose));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
@@ -330,7 +334,9 @@ class _MainContent extends StatelessWidget {
                     label: 'Spell the Word',
                     icon: Icons.spellcheck,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.spellWord));
+                      AutoRouter.of(
+                        context,
+                      ).push(ExerciseRoute(type: ExerciseType.spellWord));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
@@ -341,7 +347,9 @@ class _MainContent extends StatelessWidget {
                     label: 'Sentence Scramble',
                     icon: Icons.sort_by_alpha,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.sentenceScramble));
+                      AutoRouter.of(context).push(
+                        ExerciseRoute(type: ExerciseType.sentenceScramble),
+                      );
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
@@ -352,7 +360,9 @@ class _MainContent extends StatelessWidget {
                     label: 'Build a Sentence',
                     icon: Icons.text_fields,
                     onPressed: () {
-                      AutoRouter.of(context).push(ExerciseRoute(type: ExerciseType.buildSentence));
+                      AutoRouter.of(
+                        context,
+                      ).push(ExerciseRoute(type: ExerciseType.fillBlank));
                     },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),

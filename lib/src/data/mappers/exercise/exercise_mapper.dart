@@ -1,4 +1,3 @@
-
 import 'package:the_kids_app/src/data/dtos/exercise/exercise_dto.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 
@@ -30,14 +29,14 @@ extension ExerciseDtoMapper on ExerciseDto {
                 englishTranslation: englishTranslation,
                 scrambledWords: scrambledWords,
               ),
-      buildSentence:
+      fillBlank:
           (
             targetGermanSentence,
             englishTranslation,
             sentenceWithMissingWord,
             optionsForMissingWord,
             correctAnswerWord,
-          ) => ExerciseEntity.buildSentence(
+          ) => ExerciseEntity.fillBlank(
             targetGermanSentence: targetGermanSentence,
             englishTranslation: englishTranslation,
             sentenceWithMissingWord: sentenceWithMissingWord,

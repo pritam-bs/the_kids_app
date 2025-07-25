@@ -3,22 +3,21 @@ import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'dart:math';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 
-class BuildSentenceExerciseCard extends StatefulWidget {
-  final BuildSentenceExerciseEntity data;
+class FillBlankExerciseCard extends StatefulWidget {
+  final FillBlankExerciseEntity data;
   final Function(bool isCorrect, ExerciseType type) onAnswerSubmitted;
 
-  const BuildSentenceExerciseCard({
+  const FillBlankExerciseCard({
     super.key,
     required this.data,
     required this.onAnswerSubmitted,
   });
 
   @override
-  State<BuildSentenceExerciseCard> createState() =>
-      _BuildSentenceExerciseCardState();
+  State<FillBlankExerciseCard> createState() => _FillBlankExerciseCardState();
 }
 
-class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
+class _FillBlankExerciseCardState extends State<FillBlankExerciseCard>
     with SingleTickerProviderStateMixin {
   late List<String> _currentSentenceParts;
   late List<String> _optionsPool;
@@ -41,7 +40,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
   }
 
   @override
-  void didUpdateWidget(covariant BuildSentenceExerciseCard oldWidget) {
+  void didUpdateWidget(covariant FillBlankExerciseCard oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.data != oldWidget.data) {
       _resetExercise();
@@ -109,7 +108,7 @@ class _BuildSentenceExerciseCardState extends State<BuildSentenceExerciseCard>
       _isAnswered = true;
     });
 
-    widget.onAnswerSubmitted(_isCorrect!, ExerciseType.buildSentence);
+    widget.onAnswerSubmitted(_isCorrect!, ExerciseType.fillBlank);
 
     if (!_isCorrect!) {
       // Delay before showing correct answer
