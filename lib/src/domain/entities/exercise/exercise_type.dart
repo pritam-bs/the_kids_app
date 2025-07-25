@@ -3,5 +3,5 @@ enum ExerciseType {
   listenChoose,
   spellWord,
   sentenceScramble,
-  buildSentence,
+  fillBlank,
 }

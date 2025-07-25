@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 
 class MatchWordExerciseCard extends StatefulWidget {
   final MatchWordExerciseEntity data;
@@ -139,7 +139,7 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
                     elevation: 4,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
-                      vertical: 15,
+                      vertical: 8,
                     ),
                   ),
                   child: Text(

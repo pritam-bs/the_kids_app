@@ -125,10 +125,10 @@ return clearAnswerFeedback(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  initializeExercises,TResult Function( int newIndex)?  changeExercise,TResult Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult Function()?  clearAnswerFeedback,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( ExerciseType exerciseType)?  initializeExercises,TResult Function( int newIndex)?  changeExercise,TResult Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult Function()?  clearAnswerFeedback,required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case InitializeExercises() when initializeExercises != null:
-return initializeExercises();case ChangeExercise() when changeExercise != null:
+return initializeExercises(_that.exerciseType);case ChangeExercise() when changeExercise != null:
 return changeExercise(_that.newIndex);case ExerciseAnswered() when exerciseAnswered != null:
 return exerciseAnswered(_that.isCorrect,_that.exerciseType);case ClearAnswerFeedback() when clearAnswerFeedback != null:
 return clearAnswerFeedback();case _:
@@ -149,10 +149,10 @@ return clearAnswerFeedback();case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  initializeExercises,required TResult Function( int newIndex)  changeExercise,required TResult Function( bool isCorrect,  ExerciseType exerciseType)  exerciseAnswered,required TResult Function()  clearAnswerFeedback,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( ExerciseType exerciseType)  initializeExercises,required TResult Function( int newIndex)  changeExercise,required TResult Function( bool isCorrect,  ExerciseType exerciseType)  exerciseAnswered,required TResult Function()  clearAnswerFeedback,}) {final _that = this;
 switch (_that) {
 case InitializeExercises():
-return initializeExercises();case ChangeExercise():
+return initializeExercises(_that.exerciseType);case ChangeExercise():
 return changeExercise(_that.newIndex);case ExerciseAnswered():
 return exerciseAnswered(_that.isCorrect,_that.exerciseType);case ClearAnswerFeedback():
 return clearAnswerFeedback();}
@@ -169,10 +169,10 @@ return clearAnswerFeedback();}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  initializeExercises,TResult? Function( int newIndex)?  changeExercise,TResult? Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult? Function()?  clearAnswerFeedback,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( ExerciseType exerciseType)?  initializeExercises,TResult? Function( int newIndex)?  changeExercise,TResult? Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult? Function()?  clearAnswerFeedback,}) {final _that = this;
 switch (_that) {
 case InitializeExercises() when initializeExercises != null:
-return initializeExercises();case ChangeExercise() when changeExercise != null:
+return initializeExercises(_that.exerciseType);case ChangeExercise() when changeExercise != null:
 return changeExercise(_that.newIndex);case ExerciseAnswered() when exerciseAnswered != null:
 return exerciseAnswered(_that.isCorrect,_that.exerciseType);case ClearAnswerFeedback() when clearAnswerFeedback != null:
 return clearAnswerFeedback();case _:
@@ -187,33 +187,67 @@ return clearAnswerFeedback();case _:
 
 
 class InitializeExercises implements ExerciseEvent {
-  const InitializeExercises();
+  const InitializeExercises({required this.exerciseType});
   
 
+ final  ExerciseType exerciseType;
 
-
+/// Create a copy of ExerciseEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$InitializeExercisesCopyWith<InitializeExercises> get copyWith => _$InitializeExercisesCopyWithImpl<InitializeExercises>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is InitializeExercises);
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is InitializeExercises&&(identical(other.exerciseType, exerciseType) || other.exerciseType == exerciseType));
 }
 
 
 @override
-int get hashCode => runtimeType.hashCode;
+int get hashCode => Object.hash(runtimeType,exerciseType);
 
 @override
 String toString() {
-  return 'ExerciseEvent.initializeExercises()';
+  return 'ExerciseEvent.initializeExercises(exerciseType: $exerciseType)';
 }
 
 
 }
 
+/// @nodoc
+abstract mixin class $InitializeExercisesCopyWith<$Res> implements $ExerciseEventCopyWith<$Res> {
+  factory $InitializeExercisesCopyWith(InitializeExercises value, $Res Function(InitializeExercises) _then) = _$InitializeExercisesCopyWithImpl;
+@useResult
+$Res call({
+ ExerciseType exerciseType
+});
 
 
+
+
+}
+/// @nodoc
+class _$InitializeExercisesCopyWithImpl<$Res>
+    implements $InitializeExercisesCopyWith<$Res> {
+  _$InitializeExercisesCopyWithImpl(this._self, this._then);
+
+  final InitializeExercises _self;
+  final $Res Function(InitializeExercises) _then;
+
+/// Create a copy of ExerciseEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? exerciseType = null,}) {
+  return _then(InitializeExercises(
+exerciseType: null == exerciseType ? _self.exerciseType : exerciseType // ignore: cast_nullable_to_non_nullable
+as ExerciseType,
+  ));
+}
+
+
+}
 
 /// @nodoc
 

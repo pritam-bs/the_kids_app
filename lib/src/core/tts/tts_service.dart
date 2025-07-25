@@ -256,13 +256,16 @@ class TtsService {
   Future<T> _addToOperationQueue<T>(Future<T> Function() operation) {
     final completer = Completer<T>();
     _operationQueue = _operationQueue
-        .then((_) {
-          operation()
-              .then(completer.complete)
-              .catchError(completer.completeError);
-          return completer.future;
+        .then((_) async {
+          try {
+            final result = await operation();
+            completer.complete(result);
+          } catch (e, st) {
+            completer.completeError(e, st);
+          }
         })
-        .catchError((_) {
+        .catchError((e) {
+          debugPrint('TTS error: $e');
           // Prevents a single failure from blocking the entire queue.
         });
     return completer.future;
@@ -314,24 +317,28 @@ class TtsService {
       final String quality = getVoiceAttribute(voice, 'quality');
 
       if (kIsWeb || defaultTargetPlatform == TargetPlatform.android) {
-        if (name.contains('wavenet') || name.contains('neural'))
+        if (name.contains('wavenet') || name.contains('neural')) {
           currentScore += 100;
+        }
       }
       if (defaultTargetPlatform == TargetPlatform.iOS) {
         if (name.contains('siri') &&
-            (quality.contains('enhanced') || quality.contains('premium')))
+            (quality.contains('enhanced') || quality.contains('premium'))) {
           currentScore += 100;
+        }
         if (name.contains('premium')) currentScore += 90;
       }
-      if (quality.contains('enhanced') || quality.contains('premium'))
+      if (quality.contains('enhanced') || quality.contains('premium')) {
         currentScore += 50;
+      }
       if (quality.contains('high')) currentScore += 40;
       if (name.contains('google')) currentScore += 20;
       if (name.contains('apple') || name.contains('siri')) currentScore += 20;
       if (name.contains('microsoft')) currentScore += 15;
       if (getVoiceAttribute(voice, 'gender') == 'female') currentScore += 5;
-      if (name.contains('default') || name.contains('system'))
+      if (name.contains('default') || name.contains('system')) {
         currentScore += 1;
+      }
 
       if (currentScore > highestScore) {
         highestScore = currentScore;

@@ -14,7 +14,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$ModelInfoEntity {
 
- String get name; String get localPath; bool get isDownloaded;
+ String get localPath; bool get isDownloaded;
 /// Create a copy of ModelInfoEntity
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -25,16 +25,16 @@ $ModelInfoEntityCopyWith<ModelInfoEntity> get copyWith => _$ModelInfoEntityCopyW
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ModelInfoEntity&&(identical(other.name, name) || other.name == name)&&(identical(other.localPath, localPath) || other.localPath == localPath)&&(identical(other.isDownloaded, isDownloaded) || other.isDownloaded == isDownloaded));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ModelInfoEntity&&(identical(other.localPath, localPath) || other.localPath == localPath)&&(identical(other.isDownloaded, isDownloaded) || other.isDownloaded == isDownloaded));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,name,localPath,isDownloaded);
+int get hashCode => Object.hash(runtimeType,localPath,isDownloaded);
 
 @override
 String toString() {
-  return 'ModelInfoEntity(name: $name, localPath: $localPath, isDownloaded: $isDownloaded)';
+  return 'ModelInfoEntity(localPath: $localPath, isDownloaded: $isDownloaded)';
 }
 
 
@@ -45,7 +45,7 @@ abstract mixin class $ModelInfoEntityCopyWith<$Res>  {
   factory $ModelInfoEntityCopyWith(ModelInfoEntity value, $Res Function(ModelInfoEntity) _then) = _$ModelInfoEntityCopyWithImpl;
 @useResult
 $Res call({
- String name, String localPath, bool isDownloaded
+ String localPath, bool isDownloaded
 });
 
 
@@ -62,10 +62,9 @@ class _$ModelInfoEntityCopyWithImpl<$Res>
 
 /// Create a copy of ModelInfoEntity
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? name = null,Object? localPath = null,Object? isDownloaded = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? localPath = null,Object? isDownloaded = null,}) {
   return _then(_self.copyWith(
-name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
-as String,localPath: null == localPath ? _self.localPath : localPath // ignore: cast_nullable_to_non_nullable
+localPath: null == localPath ? _self.localPath : localPath // ignore: cast_nullable_to_non_nullable
 as String,isDownloaded: null == isDownloaded ? _self.isDownloaded : isDownloaded // ignore: cast_nullable_to_non_nullable
 as bool,
   ));
@@ -152,10 +151,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String name,  String localPath,  bool isDownloaded)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String localPath,  bool isDownloaded)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _ModelInfoEntity() when $default != null:
-return $default(_that.name,_that.localPath,_that.isDownloaded);case _:
+return $default(_that.localPath,_that.isDownloaded);case _:
   return orElse();
 
 }
@@ -173,10 +172,10 @@ return $default(_that.name,_that.localPath,_that.isDownloaded);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name,  String localPath,  bool isDownloaded)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String localPath,  bool isDownloaded)  $default,) {final _that = this;
 switch (_that) {
 case _ModelInfoEntity():
-return $default(_that.name,_that.localPath,_that.isDownloaded);case _:
+return $default(_that.localPath,_that.isDownloaded);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -193,10 +192,10 @@ return $default(_that.name,_that.localPath,_that.isDownloaded);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String name,  String localPath,  bool isDownloaded)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String localPath,  bool isDownloaded)?  $default,) {final _that = this;
 switch (_that) {
 case _ModelInfoEntity() when $default != null:
-return $default(_that.name,_that.localPath,_that.isDownloaded);case _:
+return $default(_that.localPath,_that.isDownloaded);case _:
   return null;
 
 }
@@ -208,10 +207,9 @@ return $default(_that.name,_that.localPath,_that.isDownloaded);case _:
 
 
 class _ModelInfoEntity implements ModelInfoEntity {
-  const _ModelInfoEntity({required this.name, required this.localPath, required this.isDownloaded});
+  const _ModelInfoEntity({required this.localPath, required this.isDownloaded});
   
 
-@override final  String name;
 @override final  String localPath;
 @override final  bool isDownloaded;
 
@@ -225,16 +223,16 @@ _$ModelInfoEntityCopyWith<_ModelInfoEntity> get copyWith => __$ModelInfoEntityCo
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ModelInfoEntity&&(identical(other.name, name) || other.name == name)&&(identical(other.localPath, localPath) || other.localPath == localPath)&&(identical(other.isDownloaded, isDownloaded) || other.isDownloaded == isDownloaded));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ModelInfoEntity&&(identical(other.localPath, localPath) || other.localPath == localPath)&&(identical(other.isDownloaded, isDownloaded) || other.isDownloaded == isDownloaded));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,name,localPath,isDownloaded);
+int get hashCode => Object.hash(runtimeType,localPath,isDownloaded);
 
 @override
 String toString() {
-  return 'ModelInfoEntity(name: $name, localPath: $localPath, isDownloaded: $isDownloaded)';
+  return 'ModelInfoEntity(localPath: $localPath, isDownloaded: $isDownloaded)';
 }
 
 
@@ -245,7 +243,7 @@ abstract mixin class _$ModelInfoEntityCopyWith<$Res> implements $ModelInfoEntity
   factory _$ModelInfoEntityCopyWith(_ModelInfoEntity value, $Res Function(_ModelInfoEntity) _then) = __$ModelInfoEntityCopyWithImpl;
 @override @useResult
 $Res call({
- String name, String localPath, bool isDownloaded
+ String localPath, bool isDownloaded
 });
 
 
@@ -262,10 +260,9 @@ class __$ModelInfoEntityCopyWithImpl<$Res>
 
 /// Create a copy of ModelInfoEntity
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? name = null,Object? localPath = null,Object? isDownloaded = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? localPath = null,Object? isDownloaded = null,}) {
   return _then(_ModelInfoEntity(
-name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
-as String,localPath: null == localPath ? _self.localPath : localPath // ignore: cast_nullable_to_non_nullable
+localPath: null == localPath ? _self.localPath : localPath // ignore: cast_nullable_to_non_nullable
 as String,isDownloaded: null == isDownloaded ? _self.isDownloaded : isDownloaded // ignore: cast_nullable_to_non_nullable
 as bool,
   ));

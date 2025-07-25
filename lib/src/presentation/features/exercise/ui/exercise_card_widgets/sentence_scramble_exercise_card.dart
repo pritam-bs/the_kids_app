@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'dart:math';
-import 'package:the_kids_app/src/presentation/features/exercise/exercise_type.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 
 class SentenceScrambleExerciseCard extends StatefulWidget {
   final SentenceScrambleExerciseEntity data;
@@ -170,7 +170,7 @@ class _SentenceScrambleExerciseCardState
     final double wordChipFontSize =
         Theme.of(context).textTheme.titleLarge!.fontSize! *
         (isLargeScreen ? 1.0 : 0.9);
-    final double spacing = 10.0;
+    final double spacing = 0.0;
 
     return Card(
       color: colorScheme.surface,
@@ -179,7 +179,7 @@ class _SentenceScrambleExerciseCardState
       margin: const EdgeInsets.all(16),
       clipBehavior: Clip.antiAlias,
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -198,13 +198,13 @@ class _SentenceScrambleExerciseCardState
               builder: (BuildContext context, BoxConstraints constraints) {
                 final double containerWidth = isLargeScreen
                     ? 600
-                    : constraints.maxWidth - (24.0 * 2);
+                    : constraints.maxWidth;
 
                 return Container(
                   width: containerWidth,
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 5,
+                    horizontal: 4,
+                    vertical: 4,
                   ),
                   decoration: BoxDecoration(
                     color: colorScheme.surfaceContainerHighest,
@@ -270,7 +270,7 @@ class _SentenceScrambleExerciseCardState
                                               ),
                                         ),
                                         backgroundColor: colorScheme.surface,
-                                        padding: const EdgeInsets.all(8),
+                                        padding: const EdgeInsets.all(4),
                                       );
                                     }).toList(),
                                   ),
@@ -369,7 +369,7 @@ class _SentenceScrambleExerciseCardState
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
+                      horizontal: 20,
                       vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,
@@ -378,7 +378,7 @@ class _SentenceScrambleExerciseCardState
                 ElevatedButton.icon(
                   onPressed: _isAnswered ? null : _removeLastWord,
                   icon: const Icon(Icons.backspace),
-                  label: const Text('Remove'),
+                  label: const Text('Clear'),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: colorScheme.onSurfaceVariant,
                     backgroundColor: colorScheme.surfaceContainerHighest,
@@ -386,7 +386,7 @@ class _SentenceScrambleExerciseCardState
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
+                      horizontal: 20,
                       vertical: 15,
                     ),
                     textStyle: Theme.of(context).textTheme.titleMedium,

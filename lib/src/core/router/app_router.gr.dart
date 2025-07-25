@@ -10,12 +10,14 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i8;
-import 'package:collection/collection.dart' as _i12;
+import 'package:collection/collection.dart' as _i13;
 import 'package:flutter/material.dart' as _i9;
 import 'package:the_kids_app/src/domain/entities/app_update/app_update_info_entity.dart'
     as _i10;
-import 'package:the_kids_app/src/domain/entities/learning_category/learning_category_entity.dart'
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart'
     as _i11;
+import 'package:the_kids_app/src/domain/entities/learning_category/learning_category_entity.dart'
+    as _i12;
 import 'package:the_kids_app/src/presentation/features/app_update/ui/app_update_info_screen.dart'
     as _i1;
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_screen.dart'
@@ -107,25 +109,58 @@ class ExerciseHomeRoute extends _i8.PageRouteInfo<void> {
   static _i8.PageInfo page = _i8.PageInfo(
     name,
     builder: (data) {
-      return const _i3.ExerciseHomeScreen();
+      return _i8.WrappedRoute(child: const _i3.ExerciseHomeScreen());
     },
   );
 }
 
 /// generated route for
 /// [_i4.ExerciseScreen]
-class ExerciseRoute extends _i8.PageRouteInfo<void> {
-  const ExerciseRoute({List<_i8.PageRouteInfo>? children})
-    : super(ExerciseRoute.name, initialChildren: children);
+class ExerciseRoute extends _i8.PageRouteInfo<ExerciseRouteArgs> {
+  ExerciseRoute({
+    _i9.Key? key,
+    required _i11.ExerciseType type,
+    List<_i8.PageRouteInfo>? children,
+  }) : super(
+         ExerciseRoute.name,
+         args: ExerciseRouteArgs(key: key, type: type),
+         initialChildren: children,
+       );
 
   static const String name = 'ExerciseRoute';
 
   static _i8.PageInfo page = _i8.PageInfo(
     name,
     builder: (data) {
-      return _i8.WrappedRoute(child: const _i4.ExerciseScreen());
+      final args = data.argsAs<ExerciseRouteArgs>();
+      return _i8.WrappedRoute(
+        child: _i4.ExerciseScreen(key: args.key, type: args.type),
+      );
     },
   );
+}
+
+class ExerciseRouteArgs {
+  const ExerciseRouteArgs({this.key, required this.type});
+
+  final _i9.Key? key;
+
+  final _i11.ExerciseType type;
+
+  @override
+  String toString() {
+    return 'ExerciseRouteArgs{key: $key, type: $type}';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    if (other is! ExerciseRouteArgs) return false;
+    return key == other.key && type == other.type;
+  }
+
+  @override
+  int get hashCode => key.hashCode ^ type.hashCode;
 }
 
 /// generated route for
@@ -200,7 +235,7 @@ class SubcategorySelectionRoute
   SubcategorySelectionRoute({
     _i9.Key? key,
     required String title,
-    required List<_i11.LearningCategoryEntity> subcategories,
+    required List<_i12.LearningCategoryEntity> subcategories,
     required _i9.Color cardColor,
     List<_i8.PageRouteInfo>? children,
   }) : super(
@@ -242,7 +277,7 @@ class SubcategorySelectionRouteArgs {
 
   final String title;
 
-  final List<_i11.LearningCategoryEntity> subcategories;
+  final List<_i12.LearningCategoryEntity> subcategories;
 
   final _i9.Color cardColor;
 
@@ -257,7 +292,7 @@ class SubcategorySelectionRouteArgs {
     if (other is! SubcategorySelectionRouteArgs) return false;
     return key == other.key &&
         title == other.title &&
-        const _i12.ListEquality().equals(subcategories, other.subcategories) &&
+        const _i13.ListEquality().equals(subcategories, other.subcategories) &&
         cardColor == other.cardColor;
   }
 
@@ -265,6 +300,6 @@ class SubcategorySelectionRouteArgs {
   int get hashCode =>
       key.hashCode ^
       title.hashCode ^
-      const _i12.ListEquality().hash(subcategories) ^
+      const _i13.ListEquality().hash(subcategories) ^
       cardColor.hashCode;
 }
