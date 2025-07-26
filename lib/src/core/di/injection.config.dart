@@ -17,6 +17,10 @@ import 'package:injectable/injectable.dart' as _i526;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 import '../../../objectbox.g.dart' as _i941;
+import '../../data/datasources/exercise_store/exercise_store_datasource.dart'
+    as _i1033;
+import '../../data/datasources/exercise_store/exercise_store_datasource_impl.dart'
+    as _i172;
 import '../../data/datasources/learned_word/learned_word_data_source.dart'
     as _i47;
 import '../../data/datasources/learned_word/learned_word_data_source_impl.dart'
@@ -27,13 +31,17 @@ import '../../data/datasources/llm_inference/inference_data_source.dart'
     as _i228;
 import '../../data/datasources/llm_model/mdel_data_source.dart' as _i784;
 import '../../data/datasources/llm_model/mdel_data_source_impl.dart' as _i338;
+import '../../data/dtos/exercise/exercise_store_dto.dart' as _i188;
 import '../../data/dtos/learned_word/learned_word_dto.dart' as _i502;
+import '../../data/exercise_generator/exercise_generator.dart' as _i697;
 import '../../data/repository_impls/app_settings/app_local_settings_repository_impl.dart'
     as _i680;
 import '../../data/repository_impls/app_update/app_update_check_repository_impl.dart'
     as _i226;
 import '../../data/repository_impls/exercise/exercise_repository_impl.dart'
     as _i411;
+import '../../data/repository_impls/exercise_store/exercise_store_repository_impl.dart'
+    as _i607;
 import '../../data/repository_impls/image/image_repository_impl.dart' as _i34;
 import '../../data/repository_impls/learned_word/learned_word_repository_impl.dart'
     as _i579;
@@ -48,6 +56,8 @@ import '../../domain/repositories/app_settings/app_local_settings_repository.dar
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
     as _i190;
 import '../../domain/repositories/exercise/exercise_repository.dart' as _i278;
+import '../../domain/repositories/exercise_store/exercise_store_repository.dart'
+    as _i357;
 import '../../domain/repositories/image/image_repository.dart' as _i33;
 import '../../domain/repositories/learned_word/learned_word_repository.dart'
     as _i143;
@@ -80,6 +90,7 @@ import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc
     as _i401;
 import '../tts/tts_service.dart' as _i369;
 import 'modules/data_module.dart' as _i742;
+import 'modules/exercise_generator_module.dart' as _i443;
 import 'modules/file_downloader_module.dart' as _i261;
 import 'modules/firebase_module.dart' as _i398;
 import 'modules/gcs_module.dart' as _i1055;
@@ -103,6 +114,7 @@ extension GetItInjectableX on _i174.GetIt {
     final dataModule = _$DataModule(this);
     final fileDownloaderModule = _$FileDownloaderModule();
     final gcsModule = _$GcsModule();
+    final exerciseGeneratorModule = _$ExerciseGeneratorModule();
     await gh.factoryAsync<_i982.FirebaseApp>(
       () => firebaseModule.firebaseApp,
       preResolve: true,
@@ -169,6 +181,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i941.Box<_i502.LearnedWordDto>>(
       () => injectionModule.getLearnedWordBox(gh<_i941.Store>()),
     );
+    gh.lazySingleton<_i941.Box<_i188.ExerciseStoreDto>>(
+      () => injectionModule.getExerciseStoreBox(gh<_i941.Store>()),
+    );
     gh.lazySingleton<_i228.InferenceDataSource>(
       () => dataModule.gemmaInferenceDataSource,
     );
@@ -194,8 +209,14 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i675.AppUpdateInfoBloc>(
       () => _i675.AppUpdateInfoBloc(gh<_i513.SaveLastSkippedVersionUseCase>()),
     );
+    gh.lazySingleton<_i1033.ExerciseStoreDatasource>(
+      () => dataModule.exerciseStoreDatasource,
+    );
     gh.factory<_i565.ModelUsecase>(
       () => _i565.ModelUsecase(gh<_i96.ModelRepository>()),
+    );
+    gh.lazySingleton<_i357.ExerciseStoreRepository>(
+      () => dataModule.exerciseStoreRepository,
     );
     gh.lazySingleton<_i47.LearnedWordDataSource>(
       () => dataModule.learnedWordDataSource,
@@ -220,6 +241,14 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i607.ExerciseHomeBloc>(
       () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
+    );
+    gh.singleton<_i697.ExerciseGenerator>(
+      () => exerciseGeneratorModule.getExerciseGenerator(
+        gh<_i47.LearnedWordDataSource>(),
+        gh<_i1033.ExerciseStoreDatasource>(),
+        gh<_i784.ModelDataSource>(),
+        gh<_i228.InferenceDataSource>(),
+      ),
     );
     gh.factory<_i298.LearnWordBloc>(
       () => _i298.LearnWordBloc(
@@ -289,6 +318,18 @@ class _$DataModule extends _i742.DataModule {
       _i411.ModelRepositoryImpl(_getIt<_i784.ModelDataSource>());
 
   @override
+  _i172.ExerciseStoreDatasourceImpl get exerciseStoreDatasource =>
+      _i172.ExerciseStoreDatasourceImpl(
+        _getIt<_i941.Box<_i188.ExerciseStoreDto>>(),
+      );
+
+  @override
+  _i607.ExerciseStoreRepositoryImpl get exerciseStoreRepository =>
+      _i607.ExerciseStoreRepositoryImpl(
+        _getIt<_i1033.ExerciseStoreDatasource>(),
+      );
+
+  @override
   _i187.LearnedWordDataSourceImpl get learnedWordDataSource =>
       _i187.LearnedWordDataSourceImpl(
         _getIt<_i941.Box<_i502.LearnedWordDto>>(),
@@ -302,3 +343,5 @@ class _$DataModule extends _i742.DataModule {
 class _$FileDownloaderModule extends _i261.FileDownloaderModule {}
 
 class _$GcsModule extends _i1055.GcsModule {}
+
+class _$ExerciseGeneratorModule extends _i443.ExerciseGeneratorModule {}

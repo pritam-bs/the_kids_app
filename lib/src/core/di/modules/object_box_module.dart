@@ -2,6 +2,7 @@ import 'package:injectable/injectable.dart';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
 import 'package:the_kids_app/objectbox.g.dart';
+import 'package:the_kids_app/src/data/dtos/exercise/exercise_store_dto.dart';
 import 'package:the_kids_app/src/data/dtos/learned_word/learned_word_dto.dart';
 
 @module
@@ -18,4 +19,8 @@ abstract class InjectionModule {
   @lazySingleton
   Box<LearnedWordDto> getLearnedWordBox(Store store) =>
       store.box<LearnedWordDto>();
+
+  @lazySingleton
+  Box<ExerciseStoreDto> getExerciseStoreBox(Store store) =>
+      store.box<ExerciseStoreDto>();
 }

@@ -7,4 +7,5 @@ abstract class LearnedWordDataSource {
   Future<void> updateSeenCount(String word, int newCount);
   Future<void> updateExerciseCount(String word, int newCount);
   Future<void> deleteWord(String word);
+  Stream<LearnedWordDto> get onNewWordAdded;
 }

@@ -12,22 +12,6 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
 
   ExerciseRepositoryImpl(this._inferenceDataSource);
 
-  String _getExerciseTypeKey(ExerciseType type) {
-    // Helper to get the string key for the Freezed union
-    switch (type) {
-      case ExerciseType.matchWord:
-        return 'matchWord';
-      case ExerciseType.listenChoose:
-        return 'listenChoose';
-      case ExerciseType.spellWord:
-        return 'spellWord';
-      case ExerciseType.sentenceScramble:
-        return 'sentenceScramble';
-      case ExerciseType.fillBlank:
-        return 'fillBlank';
-    }
-  }
-
   String _generatePromptForExerciseType({
     required ExerciseType type,
     required int numberOfExercises,
@@ -35,7 +19,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
   }) {
     String basePrompt;
     String exampleJson;
-    String exerciseTypeKey = _getExerciseTypeKey(type);
+    String exerciseTypeKey = type.key;
 
     // Context string for the prompt
     final String contextInstruction =
@@ -51,7 +35,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
         exampleJson =
             '''
           {
-            "exerciseType": "$exerciseTypeKey",
+            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
             "targetGermanWord": "Haus",
             "englishOptions": ["house", "cat", "car"],
             "correctEnglishWord": "house"
@@ -64,7 +48,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
         exampleJson =
             '''
           {
-            "exerciseType": "$exerciseTypeKey",
+            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
             "targetGermanWord": "Hund",
             "germanOptions": ["Hund", "Katze", "Vogel"]
           }
@@ -76,7 +60,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
         exampleJson =
             '''
           {
-            "exerciseType": "$exerciseTypeKey",
+            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
             "targetGermanWord": "Apfel",
             "scrambledLetters": ["A", "p", "f", "e", "l", "x", "z"],
             "englishTranslation": "Apple"
@@ -89,7 +73,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
         exampleJson =
             '''
           {
-            "exerciseType": "$exerciseTypeKey",
+            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
             "targetGermanSentence": "Das ist ein Buch",
             "englishTranslation": "That is a book",
             "scrambledWords": ["ist", "Das", "ein", "Buch"]
@@ -102,7 +86,7 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
         exampleJson =
             '''
             {
-              "exerciseType": "$exerciseTypeKey",
+              "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
               "targetGermanSentence": "Ich habe einen Hund",
               "englishTranslation": "I have a dog",
               "sentenceWithMissingWord": ["Ich", "habe", "einen", ""],

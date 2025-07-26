@@ -14,6 +14,7 @@ import 'package:objectbox/internal.dart'
 import 'package:objectbox/objectbox.dart' as obx;
 import 'package:objectbox_flutter_libs/objectbox_flutter_libs.dart';
 
+import 'src/data/dtos/exercise/exercise_store_dto.dart';
 import 'src/data/dtos/learned_word/learned_word_dto.dart';
 
 export 'package:objectbox/objectbox.dart'; // so that callers only have to import this file
@@ -53,6 +54,34 @@ final _entities = <obx_int.ModelEntity>[
         id: const obx_int.IdUid(5, 2670898210283975493),
         name: 'exerciseCount',
         type: 6,
+        flags: 0,
+      ),
+    ],
+    relations: <obx_int.ModelRelation>[],
+    backlinks: <obx_int.ModelBacklink>[],
+  ),
+  obx_int.ModelEntity(
+    id: const obx_int.IdUid(2, 5221871103982835752),
+    name: 'ExerciseStoreDto',
+    lastPropertyId: const obx_int.IdUid(3, 8590352075993328948),
+    flags: 0,
+    properties: <obx_int.ModelProperty>[
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(1, 3745134515628992499),
+        name: 'id',
+        type: 6,
+        flags: 1,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(2, 6468066045194937601),
+        name: 'exerciseType',
+        type: 9,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(3, 8590352075993328948),
+        name: 'jsonContent',
+        type: 9,
         flags: 0,
       ),
     ],
@@ -99,7 +128,7 @@ Future<obx.Store> openStore({
 obx_int.ModelDefinition getObjectBoxModel() {
   final model = obx_int.ModelInfo(
     entities: _entities,
-    lastEntityId: const obx_int.IdUid(1, 725523412170617825),
+    lastEntityId: const obx_int.IdUid(2, 5221871103982835752),
     lastIndexId: const obx_int.IdUid(0, 0),
     lastRelationId: const obx_int.IdUid(0, 0),
     lastSequenceId: const obx_int.IdUid(0, 0),
@@ -171,6 +200,48 @@ obx_int.ModelDefinition getObjectBoxModel() {
         return object;
       },
     ),
+    ExerciseStoreDto: obx_int.EntityDefinition<ExerciseStoreDto>(
+      model: _entities[1],
+      toOneRelations: (ExerciseStoreDto object) => [],
+      toManyRelations: (ExerciseStoreDto object) => {},
+      getId: (ExerciseStoreDto object) => object.id,
+      setId: (ExerciseStoreDto object, int id) {
+        object.id = id;
+      },
+      objectToFB: (ExerciseStoreDto object, fb.Builder fbb) {
+        final exerciseTypeOffset = fbb.writeString(object.exerciseType);
+        final jsonContentOffset = fbb.writeString(object.jsonContent);
+        fbb.startTable(4);
+        fbb.addInt64(0, object.id);
+        fbb.addOffset(1, exerciseTypeOffset);
+        fbb.addOffset(2, jsonContentOffset);
+        fbb.finish(fbb.endTable());
+        return object.id;
+      },
+      objectFromFB: (obx.Store store, ByteData fbData) {
+        final buffer = fb.BufferContext(fbData);
+        final rootOffset = buffer.derefObject(0);
+        final idParam = const fb.Int64Reader().vTableGet(
+          buffer,
+          rootOffset,
+          4,
+          0,
+        );
+        final exerciseTypeParam = const fb.StringReader(
+          asciiOptimization: true,
+        ).vTableGet(buffer, rootOffset, 6, '');
+        final jsonContentParam = const fb.StringReader(
+          asciiOptimization: true,
+        ).vTableGet(buffer, rootOffset, 8, '');
+        final object = ExerciseStoreDto(
+          id: idParam,
+          exerciseType: exerciseTypeParam,
+          jsonContent: jsonContentParam,
+        );
+
+        return object;
+      },
+    ),
   };
 
   return obx_int.ModelDefinition(model, bindings);
@@ -201,5 +272,23 @@ class LearnedWordDto_ {
   /// See [LearnedWordDto.exerciseCount].
   static final exerciseCount = obx.QueryIntegerProperty<LearnedWordDto>(
     _entities[0].properties[4],
+  );
+}
+
+/// [ExerciseStoreDto] entity fields to define ObjectBox queries.
+class ExerciseStoreDto_ {
+  /// See [ExerciseStoreDto.id].
+  static final id = obx.QueryIntegerProperty<ExerciseStoreDto>(
+    _entities[1].properties[0],
+  );
+
+  /// See [ExerciseStoreDto.exerciseType].
+  static final exerciseType = obx.QueryStringProperty<ExerciseStoreDto>(
+    _entities[1].properties[1],
+  );
+
+  /// See [ExerciseStoreDto.jsonContent].
+  static final jsonContent = obx.QueryStringProperty<ExerciseStoreDto>(
+    _entities[1].properties[2],
   );
 }

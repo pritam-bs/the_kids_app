@@ -78,4 +78,7 @@ class LearnedWordDataSourceImpl implements LearnedWordDataSource {
       _learnedWordBox.remove(existingWord.id);
     }
   }
+  
+  @override
+  Stream<LearnedWordDto> get onNewWordAdded => _newWordsController.stream;
 }

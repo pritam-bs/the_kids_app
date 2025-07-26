@@ -11,6 +11,7 @@ part of 'learned_word_dto.dart';
 
 // dart format off
 T _$identity<T>(T value) => value;
+
 /// @nodoc
 mixin _$LearnedWordDto {
 
@@ -21,6 +22,8 @@ mixin _$LearnedWordDto {
 @pragma('vm:prefer-inline')
 $LearnedWordDtoCopyWith<LearnedWordDto> get copyWith => _$LearnedWordDtoCopyWithImpl<LearnedWordDto>(this as LearnedWordDto, _$identity);
 
+  /// Serializes this LearnedWordDto to a JSON map.
+  Map<String, dynamic> toJson();
 
 
 @override
@@ -28,7 +31,7 @@ bool operator ==(Object other) {
   return identical(this, other) || (other.runtimeType == runtimeType&&other is LearnedWordDto&&(identical(other.id, id) || other.id == id)&&(identical(other.word, word) || other.word == word)&&(identical(other.category, category) || other.category == category)&&(identical(other.seenCount, seenCount) || other.seenCount == seenCount)&&(identical(other.exerciseCount, exerciseCount) || other.exerciseCount == exerciseCount));
 }
 
-
+@JsonKey(includeFromJson: false, includeToJson: false)
 @override
 int get hashCode => Object.hash(runtimeType,id,word,category,seenCount,exerciseCount);
 
@@ -207,11 +210,11 @@ return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exercis
 }
 
 /// @nodoc
-
+@JsonSerializable()
 @Entity(realClass: LearnedWordDto)
 class _LearnedWordDto implements LearnedWordDto {
    _LearnedWordDto({@Id() this.id = 0, required this.word, required this.category, this.seenCount = 0, this.exerciseCount = 0});
-  
+  factory _LearnedWordDto.fromJson(Map<String, dynamic> json) => _$LearnedWordDtoFromJson(json);
 
 @override@JsonKey()@Id()  int id;
 @override  String word;
@@ -225,14 +228,17 @@ class _LearnedWordDto implements LearnedWordDto {
 @pragma('vm:prefer-inline')
 _$LearnedWordDtoCopyWith<_LearnedWordDto> get copyWith => __$LearnedWordDtoCopyWithImpl<_LearnedWordDto>(this, _$identity);
 
-
+@override
+Map<String, dynamic> toJson() {
+  return _$LearnedWordDtoToJson(this, );
+}
 
 @override
 bool operator ==(Object other) {
   return identical(this, other) || (other.runtimeType == runtimeType&&other is _LearnedWordDto&&(identical(other.id, id) || other.id == id)&&(identical(other.word, word) || other.word == word)&&(identical(other.category, category) || other.category == category)&&(identical(other.seenCount, seenCount) || other.seenCount == seenCount)&&(identical(other.exerciseCount, exerciseCount) || other.exerciseCount == exerciseCount));
 }
 
-
+@JsonKey(includeFromJson: false, includeToJson: false)
 @override
 int get hashCode => Object.hash(runtimeType,id,word,category,seenCount,exerciseCount);
 
