@@ -71,6 +71,8 @@ import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
     as _i686;
 import '../../domain/usecases/exercise/exercise_usecase.dart' as _i969;
+import '../../domain/usecases/exercise_store/exercise_store_usecase.dart'
+    as _i412;
 import '../../domain/usecases/image/image_usecase.dart' as _i322;
 import '../../domain/usecases/learned_word/learned_word_usecase.dart' as _i728;
 import '../../domain/usecases/learning_category/learning_category_usecase.dart'
@@ -221,6 +223,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i47.LearnedWordDataSource>(
       () => dataModule.learnedWordDataSource,
     );
+    gh.factory<_i412.ExerciseStoreUseCase>(
+      () => _i412.ExerciseStoreUseCase(gh<_i357.ExerciseStoreRepository>()),
+    );
     gh.factory<_i401.AppUpdateCheckBloc>(
       () => _i401.AppUpdateCheckBloc(
         gh<_i686.CheckAppUpdateUseCase>(),
@@ -234,7 +239,7 @@ extension GetItInjectableX on _i174.GetIt {
       () => dataModule.learnedWordRepository,
     );
     gh.factory<_i770.ExerciseBloc>(
-      () => _i770.ExerciseBloc(gh<_i969.ExerciseUseCase>()),
+      () => _i770.ExerciseBloc(gh<_i412.ExerciseStoreUseCase>()),
     );
     gh.factory<_i728.LearnedWordUsecase>(
       () => _i728.LearnedWordUsecase(gh<_i143.LearnedWordRepository>()),
