@@ -75,7 +75,7 @@ class LearnedWordDataSourceImpl implements LearnedWordDataSource {
     query.close();
 
     if (existingWord != null) {
-      _learnedWordBox.remove(existingWord.id!);
+      _learnedWordBox.remove(existingWord.id);
     }
   }
 }

@@ -12,6 +12,10 @@ class LearnedWordUsecase {
     await _learnedWordRepository.addWord(learnedWord);
   }
 
+  Future<void> incrementSeenCount(String learnedWord) async {
+    await _learnedWordRepository.incrementSeenCount(learnedWord);
+  }
+
   Future<List<LearnedWordEntity>> getAllLearnedWords() async {
     final allWords = await _learnedWordRepository.getAllWords();
     return allWords;

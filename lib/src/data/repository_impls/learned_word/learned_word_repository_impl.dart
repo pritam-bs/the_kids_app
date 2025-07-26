@@ -20,10 +20,7 @@ class LearnedWordRepositoryImpl implements LearnedWordRepository {
     final existingWordDto = await _dataSource.getWord(word);
     if (existingWordDto != null) {
       final updatedSeenCount = existingWordDto.seenCount + 1;
-      final updatedWordDto = existingWordDto.copyWith(
-        seenCount: updatedSeenCount,
-      );
-      await _dataSource.insertWord(updatedWordDto);
+      await _dataSource.updateSeenCount(word, updatedSeenCount);
     } else {
       AppLogger.d('Cannot increment seen count: Word "$word" not found.');
     }
@@ -34,12 +31,7 @@ class LearnedWordRepositoryImpl implements LearnedWordRepository {
     final existingWordDto = await _dataSource.getWord(word);
     if (existingWordDto != null) {
       final updatedexErciseCount = existingWordDto.exerciseCount + 1;
-      final updatedWordDto = existingWordDto.copyWith(
-        exerciseCount: updatedexErciseCount,
-      );
-      await _dataSource.insertWord(
-        updatedWordDto,
-      );
+      await _dataSource.updateExerciseCount(word, updatedexErciseCount);
     } else {
       AppLogger.d('Cannot increment exercise count: Word "$word" not found.');
     }

@@ -28,6 +28,7 @@ class LearnWordBloc extends Bloc<LearnWordEvent, LearnWordState> {
         initialize: (e) => _onInitialize(e, emit),
         fetchImageUrl: (e) => _onFetchImageUrl(e, emit),
         changeWord: (e) => _onChangeWord(e, emit),
+        wordLearned: (e) => _onWordLearned(e, emit),
       );
     });
   }
@@ -100,17 +101,23 @@ class LearnWordBloc extends Bloc<LearnWordEvent, LearnWordState> {
             wordId: loadedState.wordList[newIndex].id,
           ),
         );
-
-        final wordEntity = wordList[newIndex];
-        final learnWordEntity = LearnedWordEntity(
-          word: wordEntity.wordDe,
-          category: categoryId,
-        );
-        _learnedWordUsecase.addWord(learnWordEntity);
-
-        final allLearnedWords = await _learnedWordUsecase.getAllLearnedWords();
-        AppLogger.d(allLearnedWords);
       }
     }
+  }
+
+  Future<void> _onWordLearned(
+    WordLearned event,
+    Emitter<LearnWordState> emit,
+  ) async {
+    final learnWordEntity = LearnedWordEntity(
+      word: event.word,
+      category: event.categoryId,
+    );
+
+    await _learnedWordUsecase.addWord(learnWordEntity);
+    await _learnedWordUsecase.incrementSeenCount(event.word);
+
+    final allLearnedWords = await _learnedWordUsecase.getAllLearnedWords();
+    AppLogger.d(allLearnedWords);
   }
 }

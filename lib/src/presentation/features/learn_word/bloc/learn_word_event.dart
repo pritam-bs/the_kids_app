@@ -10,4 +10,6 @@ sealed class LearnWordEvent with _$LearnWordEvent {
     required String wordId,
   }) = FetchImageUrl;
   const factory LearnWordEvent.changeWord(int newIndex) = ChangeWord;
+  const factory LearnWordEvent.wordLearned(String word, String categoryId) =
+      WordLearned;
 }

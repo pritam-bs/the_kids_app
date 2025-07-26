@@ -147,6 +147,11 @@ class LearnWordScreen extends StatelessWidget implements AutoRouteWrapper {
                           word: word,
                           categoryId: categoryId,
                           imageUrl: displayImageUrl,
+                          onWordSeen: (word, categoryId) {
+                            context.read<LearnWordBloc>().add(
+                              WordLearned(word, categoryId),
+                            );
+                          },
                         );
                       },
                     ),
