@@ -2,13 +2,13 @@ import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
-import 'package:the_kids_app/src/domain/usecases/exercise/exercise_usecase.dart';
+import 'package:the_kids_app/src/domain/usecases/exercise_store/exercise_store_usecase.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_event.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_state.dart';
 
 @injectable
 class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
-  final ExerciseUseCase _exerciseUseCase;
+  final ExerciseStoreUseCase _exerciseUseCase;
   final numberOfExercises = 10;
 
   ExerciseBloc(this._exerciseUseCase) : super(const ExerciseState.initial()) {
@@ -26,8 +26,6 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
     try {
       final List<ExerciseEntity> exercises = await _exerciseUseCase(
         type: event.exerciseType,
-        numberOfExercises: numberOfExercises,
-        contextWords: [],
       );
       emit(ExerciseState.loaded(exercises: exercises, currentIndex: 0));
     } catch (e) {

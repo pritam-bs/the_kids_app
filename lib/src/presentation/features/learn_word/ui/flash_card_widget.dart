@@ -9,11 +9,13 @@ class FlashCardWidget extends StatefulWidget {
   final WordEntity word;
   final String categoryId;
   final String? imageUrl;
+  final Function(String word, String categoryId) onWordSeen;
 
   const FlashCardWidget({
     super.key,
     required this.word,
     required this.categoryId,
+    required this.onWordSeen,
     this.imageUrl,
   });
 
@@ -30,6 +32,9 @@ class _FlashCardWidgetState extends State<FlashCardWidget> {
   void initState() {
     super.initState();
     _cardColor = KidsColors.getRandomKidFriendlyColor();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      widget.onWordSeen(widget.word.wordDe, widget.categoryId);
+    });
   }
 
   @override

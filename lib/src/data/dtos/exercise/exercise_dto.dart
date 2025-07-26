@@ -1,40 +1,41 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 
 part 'exercise_dto.freezed.dart';
 part 'exercise_dto.g.dart';
 
-@Freezed(unionKey: 'exerciseType')
+@Freezed(unionKey: ExerciseConstants.exerciseType)
 abstract class ExerciseDto with _$ExerciseDto {
   const ExerciseDto._();
 
-  @FreezedUnionValue('matchWord')
+  @FreezedUnionValue(ExerciseConstants.matchWord)
   const factory ExerciseDto.matchWord({
     required String targetGermanWord,
     required List<String> englishOptions,
     required String correctEnglishWord,
   }) = MatchWordExerciseDto;
 
-  @FreezedUnionValue('listenChoose')
+  @FreezedUnionValue(ExerciseConstants.listenChoose)
   const factory ExerciseDto.listenChoose({
     required String targetGermanWord,
     required List<String> germanOptions,
   }) = ListenChooseExerciseDto;
 
-  @FreezedUnionValue('spellWord')
+  @FreezedUnionValue(ExerciseConstants.spellWord)
   const factory ExerciseDto.spellWord({
     required String targetGermanWord,
     required List<String> scrambledLetters,
     required String englishTranslation,
   }) = SpellWordExerciseDto;
 
-  @FreezedUnionValue('sentenceScramble')
+  @FreezedUnionValue(ExerciseConstants.sentenceScramble)
   const factory ExerciseDto.sentenceScramble({
     required String targetGermanSentence,
     required String englishTranslation,
     required List<String> scrambledWords,
   }) = SentenceScrambleExerciseDto;
 
-  @FreezedUnionValue('fillBlank')
+  @FreezedUnionValue(ExerciseConstants.fillBlank)
   const factory ExerciseDto.fillBlank({
     required String targetGermanSentence,
     required String englishTranslation,

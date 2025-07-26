@@ -55,13 +55,14 @@ extension LearnWordEventPatterns on LearnWordEvent {
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Initialize value)?  initialize,TResult Function( FetchImageUrl value)?  fetchImageUrl,TResult Function( ChangeWord value)?  changeWord,required TResult orElse(),}){
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Initialize value)?  initialize,TResult Function( FetchImageUrl value)?  fetchImageUrl,TResult Function( ChangeWord value)?  changeWord,TResult Function( WordLearned value)?  wordLearned,required TResult orElse(),}){
 final _that = this;
 switch (_that) {
 case Initialize() when initialize != null:
 return initialize(_that);case FetchImageUrl() when fetchImageUrl != null:
 return fetchImageUrl(_that);case ChangeWord() when changeWord != null:
-return changeWord(_that);case _:
+return changeWord(_that);case WordLearned() when wordLearned != null:
+return wordLearned(_that);case _:
   return orElse();
 
 }
@@ -79,13 +80,14 @@ return changeWord(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Initialize value)  initialize,required TResult Function( FetchImageUrl value)  fetchImageUrl,required TResult Function( ChangeWord value)  changeWord,}){
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Initialize value)  initialize,required TResult Function( FetchImageUrl value)  fetchImageUrl,required TResult Function( ChangeWord value)  changeWord,required TResult Function( WordLearned value)  wordLearned,}){
 final _that = this;
 switch (_that) {
 case Initialize():
 return initialize(_that);case FetchImageUrl():
 return fetchImageUrl(_that);case ChangeWord():
-return changeWord(_that);}
+return changeWord(_that);case WordLearned():
+return wordLearned(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -99,13 +101,14 @@ return changeWord(_that);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Initialize value)?  initialize,TResult? Function( FetchImageUrl value)?  fetchImageUrl,TResult? Function( ChangeWord value)?  changeWord,}){
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Initialize value)?  initialize,TResult? Function( FetchImageUrl value)?  fetchImageUrl,TResult? Function( ChangeWord value)?  changeWord,TResult? Function( WordLearned value)?  wordLearned,}){
 final _that = this;
 switch (_that) {
 case Initialize() when initialize != null:
 return initialize(_that);case FetchImageUrl() when fetchImageUrl != null:
 return fetchImageUrl(_that);case ChangeWord() when changeWord != null:
-return changeWord(_that);case _:
+return changeWord(_that);case WordLearned() when wordLearned != null:
+return wordLearned(_that);case _:
   return null;
 
 }
@@ -122,12 +125,13 @@ return changeWord(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String categoryId)?  initialize,TResult Function( String categoryId,  String wordId)?  fetchImageUrl,TResult Function( int newIndex)?  changeWord,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String categoryId)?  initialize,TResult Function( String categoryId,  String wordId)?  fetchImageUrl,TResult Function( int newIndex)?  changeWord,TResult Function( String word,  String categoryId)?  wordLearned,required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case Initialize() when initialize != null:
 return initialize(_that.categoryId);case FetchImageUrl() when fetchImageUrl != null:
 return fetchImageUrl(_that.categoryId,_that.wordId);case ChangeWord() when changeWord != null:
-return changeWord(_that.newIndex);case _:
+return changeWord(_that.newIndex);case WordLearned() when wordLearned != null:
+return wordLearned(_that.word,_that.categoryId);case _:
   return orElse();
 
 }
@@ -145,12 +149,13 @@ return changeWord(_that.newIndex);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String categoryId)  initialize,required TResult Function( String categoryId,  String wordId)  fetchImageUrl,required TResult Function( int newIndex)  changeWord,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String categoryId)  initialize,required TResult Function( String categoryId,  String wordId)  fetchImageUrl,required TResult Function( int newIndex)  changeWord,required TResult Function( String word,  String categoryId)  wordLearned,}) {final _that = this;
 switch (_that) {
 case Initialize():
 return initialize(_that.categoryId);case FetchImageUrl():
 return fetchImageUrl(_that.categoryId,_that.wordId);case ChangeWord():
-return changeWord(_that.newIndex);}
+return changeWord(_that.newIndex);case WordLearned():
+return wordLearned(_that.word,_that.categoryId);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -164,12 +169,13 @@ return changeWord(_that.newIndex);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String categoryId)?  initialize,TResult? Function( String categoryId,  String wordId)?  fetchImageUrl,TResult? Function( int newIndex)?  changeWord,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String categoryId)?  initialize,TResult? Function( String categoryId,  String wordId)?  fetchImageUrl,TResult? Function( int newIndex)?  changeWord,TResult? Function( String word,  String categoryId)?  wordLearned,}) {final _that = this;
 switch (_that) {
 case Initialize() when initialize != null:
 return initialize(_that.categoryId);case FetchImageUrl() when fetchImageUrl != null:
 return fetchImageUrl(_that.categoryId,_that.wordId);case ChangeWord() when changeWord != null:
-return changeWord(_that.newIndex);case _:
+return changeWord(_that.newIndex);case WordLearned() when wordLearned != null:
+return wordLearned(_that.word,_that.categoryId);case _:
   return null;
 
 }
@@ -371,6 +377,74 @@ class _$ChangeWordCopyWithImpl<$Res>
   return _then(ChangeWord(
 null == newIndex ? _self.newIndex : newIndex // ignore: cast_nullable_to_non_nullable
 as int,
+  ));
+}
+
+
+}
+
+/// @nodoc
+
+
+class WordLearned implements LearnWordEvent {
+  const WordLearned(this.word, this.categoryId);
+  
+
+ final  String word;
+ final  String categoryId;
+
+/// Create a copy of LearnWordEvent
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$WordLearnedCopyWith<WordLearned> get copyWith => _$WordLearnedCopyWithImpl<WordLearned>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is WordLearned&&(identical(other.word, word) || other.word == word)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,word,categoryId);
+
+@override
+String toString() {
+  return 'LearnWordEvent.wordLearned(word: $word, categoryId: $categoryId)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $WordLearnedCopyWith<$Res> implements $LearnWordEventCopyWith<$Res> {
+  factory $WordLearnedCopyWith(WordLearned value, $Res Function(WordLearned) _then) = _$WordLearnedCopyWithImpl;
+@useResult
+$Res call({
+ String word, String categoryId
+});
+
+
+
+
+}
+/// @nodoc
+class _$WordLearnedCopyWithImpl<$Res>
+    implements $WordLearnedCopyWith<$Res> {
+  _$WordLearnedCopyWithImpl(this._self, this._then);
+
+  final WordLearned _self;
+  final $Res Function(WordLearned) _then;
+
+/// Create a copy of LearnWordEvent
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? word = null,Object? categoryId = null,}) {
+  return _then(WordLearned(
+null == word ? _self.word : word // ignore: cast_nullable_to_non_nullable
+as String,null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
+as String,
   ));
 }
 
