@@ -1,0 +1,16 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:objectbox/objectbox.dart';
+
+part 'learned_word_dto.freezed.dart';
+
+@Freezed(addImplicitFinal: false)
+abstract class LearnedWordDto with _$LearnedWordDto {
+  @Entity(realClass: LearnedWordDto)
+  factory LearnedWordDto({
+    @Default(0) @Id() int id,
+    required String word,
+    required String category,
+    @Default(0) int seenCount,
+    @Default(0) int exerciseCount,
+  }) = _LearnedWordDto;
+}

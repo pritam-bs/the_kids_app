@@ -1,8 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:the_kids_app/src/core/config/logging_config.dart';
+import 'package:the_kids_app/src/domain/entities/learned_word/learned_word_entity.dart';
+import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
 import 'package:the_kids_app/src/domain/errors/messages/error_messages.dart';
 import 'package:the_kids_app/src/domain/usecases/image/image_usecase.dart';
+import 'package:the_kids_app/src/domain/usecases/learned_word/learned_word_usecase.dart';
 import 'package:the_kids_app/src/domain/usecases/learning_word/word_list_usecase.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_word_event.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_word_state.dart';
@@ -11,10 +14,15 @@ import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_wor
 class LearnWordBloc extends Bloc<LearnWordEvent, LearnWordState> {
   final WordListUsecase _wordListUsecase;
   final ImageUsecase _imageUsecase;
+  final LearnedWordUsecase _learnedWordUsecase;
   late String categoryId;
+  late List<WordEntity> wordList;
 
-  LearnWordBloc(this._wordListUsecase, this._imageUsecase)
-    : super(const Initial()) {
+  LearnWordBloc(
+    this._wordListUsecase,
+    this._imageUsecase,
+    this._learnedWordUsecase,
+  ) : super(const Initial()) {
     on<LearnWordEvent>((event, emit) async {
       await event.map(
         initialize: (e) => _onInitialize(e, emit),
@@ -30,7 +38,7 @@ class LearnWordBloc extends Bloc<LearnWordEvent, LearnWordState> {
   ) async {
     try {
       categoryId = event.categoryId;
-      final wordList = await _wordListUsecase.fetch(event.categoryId);
+      wordList = await _wordListUsecase.fetch(event.categoryId);
       if (wordList.isEmpty) {
         emit(const InitialError(ErrorMessages.noLearningCategories));
         return;
@@ -92,6 +100,16 @@ class LearnWordBloc extends Bloc<LearnWordEvent, LearnWordState> {
             wordId: loadedState.wordList[newIndex].id,
           ),
         );
+
+        final wordEntity = wordList[newIndex];
+        final learnWordEntity = LearnedWordEntity(
+          word: wordEntity.wordDe,
+          category: categoryId,
+        );
+        _learnedWordUsecase.addWord(learnWordEntity);
+
+        final allLearnedWords = await _learnedWordUsecase.getAllLearnedWords();
+        AppLogger.d(allLearnedWords);
       }
     }
   }

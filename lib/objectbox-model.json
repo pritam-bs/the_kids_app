@@ -1,0 +1,52 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:725523412170617825",
+      "lastPropertyId": "5:2670898210283975493",
+      "name": "LearnedWordDto",
+      "properties": [
+        {
+          "id": "1:1606731236105225511",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7874128429129372026",
+          "name": "word",
+          "type": 9
+        },
+        {
+          "id": "3:1313751514869386558",
+          "name": "category",
+          "type": 9
+        },
+        {
+          "id": "4:4531644472347452069",
+          "name": "seenCount",
+          "type": 6
+        },
+        {
+          "id": "5:2670898210283975493",
+          "name": "exerciseCount",
+          "type": 6
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:725523412170617825",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
