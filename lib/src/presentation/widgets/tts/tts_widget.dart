@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_kids_app/src/presentation/widgets/tts/sentence_splitter.dart';
 import 'package:the_kids_app/src/presentation/widgets/tts/tts_controller.dart'; // Ensure this path is correct
 
 /// A widget that displays text and visually highlights sentences as they are spoken.
@@ -20,6 +21,9 @@ class TtsWidget extends StatefulWidget {
   /// If provided, this style takes precedence over [highlightColor].
   final TextStyle? highlightedTextStyle;
 
+  /// How the text should be aligned horizontally.
+  final TextAlign textAlign;
+
   /// The background color for the highlighted sentence.
   /// This is only used if [highlightedTextStyle] is `null`.
   /// Defaults to `Colors.yellow`.
@@ -31,6 +35,7 @@ class TtsWidget extends StatefulWidget {
     required this.controller,
     this.textStyle,
     this.highlightedTextStyle,
+    this.textAlign = TextAlign.start,
     this.highlightColor = Colors.yellow,
   });
 
@@ -78,7 +83,19 @@ class _TtsWidgetState extends State<TtsWidget> {
             start < 0 ||
             end <= start ||
             end > widget.text.length) {
-          return Text(widget.text, style: defaultTextStyle);
+          return RichText(
+            textAlign: widget.textAlign,
+            text: TextSpan(
+              style: defaultTextStyle,
+              children: <InlineSpan>[
+                for (TextSegment sentence
+                    in widget.controller.sentenceList) ...[
+                  TextSpan(text: sentence.text, style: defaultTextStyle),
+                  TextSpan(text: ' '),
+                ],
+              ],
+            ),
+          );
         }
 
         // --- Text Segmentation ---
@@ -97,9 +114,10 @@ class _TtsWidgetState extends State<TtsWidget> {
         // --- Build RichText ---
         // Use RichText to combine the styled and unstyled parts.
         return RichText(
+          textAlign: widget.textAlign,
           text: TextSpan(
             style: defaultTextStyle,
-            children: <TextSpan>[
+            children: <InlineSpan>[
               TextSpan(text: before),
               TextSpan(text: marked, style: effectiveHighlightedStyle),
               TextSpan(text: after),

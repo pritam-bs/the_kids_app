@@ -31,6 +31,8 @@ import '../../data/datasources/llm_inference/inference_data_source.dart'
     as _i228;
 import '../../data/datasources/llm_model/mdel_data_source.dart' as _i784;
 import '../../data/datasources/llm_model/mdel_data_source_impl.dart' as _i338;
+import '../../data/datasources/story/story_data_source.dart' as _i325;
+import '../../data/datasources/story/story_data_source_impl.dart' as _i505;
 import '../../data/dtos/exercise/exercise_store_dto.dart' as _i188;
 import '../../data/dtos/learned_word/learned_word_dto.dart' as _i502;
 import '../../data/exercise_generator/exercise_generator.dart' as _i697;
@@ -51,6 +53,7 @@ import '../../data/repository_impls/learning_word/word_list_repository_impl.dart
     as _i968;
 import '../../data/repository_impls/llm_model/model_repository_impl.dart'
     as _i411;
+import '../../data/repository_impls/story/story_repository_impl.dart' as _i915;
 import '../../domain/repositories/app_settings/app_local_settings_repository.dart'
     as _i192;
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
@@ -66,6 +69,7 @@ import '../../domain/repositories/learning_category/learning_category_repository
 import '../../domain/repositories/learning_category/word_list_repository.dart'
     as _i197;
 import '../../domain/repositories/llm_model/model_repository.dart' as _i96;
+import '../../domain/repositories/story/story_repository.dart' as _i949;
 import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
     as _i513;
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
@@ -79,6 +83,7 @@ import '../../domain/usecases/learning_category/learning_category_usecase.dart'
     as _i268;
 import '../../domain/usecases/learning_word/word_list_usecase.dart' as _i35;
 import '../../domain/usecases/llm_model/model_usecase.dart' as _i565;
+import '../../domain/usecases/story/story_usecase.dart' as _i1071;
 import '../../presentation/features/app_update/bloc/app_update_info_bloc.dart'
     as _i675;
 import '../../presentation/features/exercise/bloc/exercise_bloc.dart' as _i770;
@@ -90,6 +95,7 @@ import '../../presentation/features/learn_word/bloc/learn_word_bloc.dart'
     as _i298;
 import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc.dart'
     as _i401;
+import '../../presentation/features/story/bloc/story_bloc.dart' as _i995;
 import '../tts/tts_service.dart' as _i369;
 import 'modules/data_module.dart' as _i742;
 import 'modules/exercise_generator_module.dart' as _i443;
@@ -202,6 +208,8 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i278.ExerciseRepository>(
       () => dataModule.exerciseRepositoryImpl,
     );
+    gh.lazySingleton<_i325.StoryDataSource>(() => dataModule.storyDataSource);
+    gh.lazySingleton<_i949.StoryRepository>(() => dataModule.storyRepository);
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
     );
@@ -210,6 +218,9 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i675.AppUpdateInfoBloc>(
       () => _i675.AppUpdateInfoBloc(gh<_i513.SaveLastSkippedVersionUseCase>()),
+    );
+    gh.factory<_i1071.StoryUsecase>(
+      () => _i1071.StoryUsecase(gh<_i949.StoryRepository>()),
     );
     gh.lazySingleton<_i1033.ExerciseStoreDatasource>(
       () => dataModule.exerciseStoreDatasource,
@@ -243,6 +254,9 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i728.LearnedWordUsecase>(
       () => _i728.LearnedWordUsecase(gh<_i143.LearnedWordRepository>()),
+    );
+    gh.factory<_i995.StoryBloc>(
+      () => _i995.StoryBloc(gh<_i1071.StoryUsecase>()),
     );
     gh.factory<_i607.ExerciseHomeBloc>(
       () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
@@ -317,6 +331,14 @@ class _$DataModule extends _i742.DataModule {
   @override
   _i411.ExerciseRepositoryImpl get exerciseRepositoryImpl =>
       _i411.ExerciseRepositoryImpl(_getIt<_i228.InferenceDataSource>());
+
+  @override
+  _i505.StoryDataSourceImpl get storyDataSource =>
+      _i505.StoryDataSourceImpl(_getIt<_i228.InferenceDataSource>());
+
+  @override
+  _i915.StoryRepositoryImpl get storyRepository =>
+      _i915.StoryRepositoryImpl(_getIt<_i325.StoryDataSource>());
 
   @override
   _i411.ModelRepositoryImpl get modelRepositoryImpl =>

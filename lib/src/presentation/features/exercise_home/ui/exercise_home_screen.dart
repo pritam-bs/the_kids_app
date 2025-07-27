@@ -390,7 +390,9 @@ class _MainContent extends StatelessWidget {
                     context: context,
                     label: 'Read a Story',
                     icon: Icons.book,
-                    onPressed: () {},
+                    onPressed: () {
+                      AutoRouter.of(context).push(StoryRoute());
+                    },
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
                   ),
