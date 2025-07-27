@@ -7,6 +7,7 @@ abstract class StoryEntity with _$StoryEntity {
   const factory StoryEntity({
     required String title,
     required String content,
-    required String englishTranslation,
+    required String titleEnglish,
+    required String contentEnglish,
   }) = _StoryEntity;
 }

@@ -118,12 +118,10 @@ class _StoryScreenState extends State<StoryScreen> {
         Expanded(
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(10.0),
-            // NEW: Changed crossAxisAlignment to CrossAxisAlignment.start
             child: Column(
-              crossAxisAlignment:
-                  CrossAxisAlignment.start, // Align children to the left
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // NEW: Wrap the title with Center if you want it centered
+                // German
                 Center(
                   child: Text(
                     story.title,
@@ -132,15 +130,12 @@ class _StoryScreenState extends State<StoryScreen> {
                       color: colorScheme.primary,
                       fontSize: isLargeScreen ? 32 : 24,
                     ),
-                    textAlign: TextAlign
-                        .center, // Text alignment within its own bounds
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 const SizedBox(height: 24),
-                // REMOVED Align widget, Container will now fill width and align left due to parent Column
                 Container(
-                  width: double
-                      .infinity, // Ensure container takes full width available
+                  width: double.infinity,
                   padding: const EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
                     color: colorScheme.surfaceContainerHighest,
@@ -161,6 +156,38 @@ class _StoryScreenState extends State<StoryScreen> {
                           fontSize: isLargeScreen ? 22 : 20,
                         ),
                     textAlign: TextAlign.start,
+                  ),
+                ),
+                const SizedBox(height: 24),
+                // English
+                Center(
+                  child: Text(
+                    story.titleEnglish,
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: colorScheme.primary,
+                      fontSize: isLargeScreen ? 32 : 24,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16.0),
+                  decoration: BoxDecoration(
+                    color: colorScheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: RichText(
+                    text: TextSpan(
+                      text: story.contentEnglish,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: colorScheme.onSurface,
+                        height: 1.5,
+                        fontSize: isLargeScreen ? 22 : 20,
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 24),

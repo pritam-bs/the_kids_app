@@ -6,7 +6,8 @@ extension StoryDtoMapper on StoryDto {
     return StoryEntity(
       title: titleGerman,
       content: contentGerman,
-      englishTranslation: contentEnglish,
+      titleEnglish: titleEnglish,
+      contentEnglish: contentEnglish,
     );
   }
 }

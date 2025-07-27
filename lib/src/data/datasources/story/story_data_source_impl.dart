@@ -69,7 +69,7 @@ class StoryDataSourceImpl implements StoryDataSource {
       Instruction:
       - Generate a short, simple children's story in German, along with its English translation.
       - The story should be about ${topic.description}
-      - Difficulty: Beginner to Intermediate German vocabulary.
+      - Difficulty: Beginner German vocabulary.
       - IMPORTANT: Your output MUST be a single, valid JSON object. Do NOT include any text, explanation, or markdown outside the JSON.
       - Output JSON structure: {"titleGerman": "", "contentGerman": "", "titleEnglish": "", "contentEnglish": ""}
       - Ensure all string values within the JSON are properly escaped for JSON format. Specifically, double quotes inside the string values (e.g., in dialogue) MUST be escaped with a backslash (\\").
