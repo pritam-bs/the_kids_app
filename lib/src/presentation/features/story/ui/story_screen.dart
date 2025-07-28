@@ -1,11 +1,13 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lottie/lottie.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/domain/entities/story/story_entity.dart';
 import 'package:the_kids_app/src/presentation/features/story/bloc/story_bloc.dart';
 import 'package:the_kids_app/src/presentation/features/story/bloc/story_event.dart';
 import 'package:the_kids_app/src/presentation/features/story/bloc/story_state.dart';
+import 'package:the_kids_app/src/presentation/features/story/ui/loading_game.dart';
 import 'package:the_kids_app/src/presentation/widgets/tts/tts_controller.dart';
 import 'package:the_kids_app/src/presentation/widgets/tts/tts_widget.dart';
 
@@ -46,65 +48,61 @@ class _StoryScreenState extends State<StoryScreen> {
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Read a Story',
-          style: Theme.of(
-            context,
-          ).textTheme.headlineSmall?.copyWith(color: colorScheme.primary),
+    return BlocProvider(
+      create: (context) =>
+          getIt<StoryBloc>()..add(const StoryEvent.loadStory()),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Read a Story',
+            style: Theme.of(
+              context,
+            ).textTheme.headlineSmall?.copyWith(color: colorScheme.primary),
+          ),
+          centerTitle: true,
+          backgroundColor: colorScheme.surface,
+          elevation: 0,
         ),
-        centerTitle: true,
-        backgroundColor: colorScheme.surface,
-        elevation: 0,
-      ),
-      body: BlocConsumer<StoryBloc, StoryState>(
-        listener: (context, state) {
-          state.whenOrNull(
-            error: (message) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(message), backgroundColor: Colors.red),
-              );
-            },
-          );
-        },
-        builder: (context, state) {
-          return state.when(
-            initial: () => const Center(child: Text('Initializing story...')),
-            loading: () => const Center(child: CircularProgressIndicator()),
-            loaded: (story) => _buildLoadedStoryContent(context, story),
-            error: (message) => Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.error_outline, color: Colors.red, size: 60),
-                  const SizedBox(height: 16),
-                  Text(
-                    'Error: $message',
-                    textAlign: TextAlign.center,
-                    style: Theme.of(
-                      context,
-                    ).textTheme.titleMedium?.copyWith(color: Colors.red),
-                  ),
-                  const SizedBox(height: 16),
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      context.read<StoryBloc>().add(
-                        const StoryEvent.loadStory(),
-                      );
-                    },
-                    icon: const Icon(Icons.refresh),
-                    label: const Text('Retry Load Story'),
-                  ),
-                ],
+        body: BlocBuilder<StoryBloc, StoryState>(
+          builder: (context, state) {
+            return state.when(
+              initial: () => const Center(child: Text('Initializing story...')),
+              loading: () => const LoadingGame(),
+              loaded: (story) => _buildLoadedStoryContent(context, story),
+              error: (message) => Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.error_outline, color: Colors.red, size: 60),
+                    const SizedBox(height: 16),
+                    Text(
+                      'Error: $message',
+                      textAlign: TextAlign.center,
+                      style: Theme.of(
+                        context,
+                      ).textTheme.titleMedium?.copyWith(color: Colors.red),
+                    ),
+                    const SizedBox(height: 16),
+                    ElevatedButton.icon(
+                      onPressed: () {
+                        context.read<StoryBloc>().add(
+                          const StoryEvent.loadStory(),
+                        );
+                      },
+                      icon: const Icon(Icons.refresh),
+                      label: const Text('Retry Load Story'),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          );
-        },
-      ),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: _buildPlaybackControls(context),
+            );
+          },
+        ),
+        bottomNavigationBar: BlocBuilder<StoryBloc, StoryState>(
+          builder: (context, state) {
+            return _buildBottomContent(context, state);
+          },
+        ),
       ),
     );
   }
@@ -196,6 +194,31 @@ class _StoryScreenState extends State<StoryScreen> {
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildBottomContent(BuildContext context, StoryState storyState) {
+    final ColorScheme colorScheme = Theme.of(context).colorScheme;
+    final bool isLargeScreen = MediaQuery.of(context).size.width > 500;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
+      color: colorScheme.surface,
+      child: storyState.when(
+        initial: () => const SizedBox.shrink(),
+        loading: () => SizedBox(
+          height: isLargeScreen ? 150 : 100,
+          width: isLargeScreen ? 356 : 236,
+          child: Center(
+            child: Lottie.asset(
+              'assets/lottie/cat_playing.json',
+              fit: BoxFit.contain,
+            ),
+          ),
+        ),
+        loaded: (story) => _buildPlaybackControls(context),
+        error: (message) => const SizedBox.shrink(),
+      ),
     );
   }
 
