@@ -22,15 +22,22 @@ final RegExp _sentenceRegex = _buildSentenceRegex();
 RegExp _buildSentenceRegex() {
   // Create a regex pattern from the abbreviations list.
   // This will look like: (Mr|Mrs|Ms|Dr...)
-  final abbreviationsPattern = _abbreviations.join('|');
+  // final abbreviationsPattern = _abbreviations.join('|');
+  final String abbreviationsPattern = _abbreviations
+      .map((abbr) => RegExp.escape(abbr))
+      .join('|');
 
   // The regex finds punctuation (.?!) followed by whitespace and an uppercase letter.
   // It uses a negative lookbehind `(?<!...)` to ensure the character preceding
   // the punctuation is NOT one of the abbreviations in our list.
-  return RegExp(
-    r'(?<!\b(' + abbreviationsPattern + r'))(?<=[.?!])\s+(?=[A-Z])',
-    caseSensitive: false,
+  final RegExp sentenceSplitterRegExp = RegExp(
+    r'''(?<!\b(''' +
+        abbreviationsPattern +
+        r'''))(?<=[.?!]["']?)\s+(?=[A-Z"'])''',
+    caseSensitive: true,
   );
+
+  return sentenceSplitterRegExp;
 }
 
 /// Represents a segment of text, typically a sentence, with its content

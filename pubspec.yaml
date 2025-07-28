@@ -88,14 +88,19 @@ dependencies:
   # Downloader
   background_downloader: ^9.2.3
 
+  # Animation
+  lottie: ^3.3.1
+
+  # Data store
+  objectbox: ^4.3.0
+  objectbox_flutter_libs: ^4.3.0
+
   # Utils
   shared_preferences: ^2.5.3
   package_info_plus: ^8.3.0
   url_launcher: ^6.3.1
   cloudflare_r2: ^0.0.14
   equatable: ^2.0.7
-  objectbox: ^4.3.0
-  objectbox_flutter_libs: ^4.3.0
   path: ^1.9.1
 
 dev_dependencies:
@@ -129,6 +134,7 @@ flutter:
   assets:
     - assets/json/
     - assets/category_subcategory_imgs/
+    - assets/lottie/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -308,7 +308,6 @@ class ExerciseGenerator {
   }
 
   /// Parses the raw JSON string from the LLM.
-  /// (Logic from ExerciseRepositoryImpl)
   List<ExerciseDto> _parseExerciseResponse(String rawJson) {
     // Clean the response to find the JSON array
     final jsonStartIndex = rawJson.indexOf('[');

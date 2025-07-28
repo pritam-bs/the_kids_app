@@ -7,6 +7,8 @@ import 'package:the_kids_app/src/data/datasources/llm_inference/gemma_inference_
 import 'package:the_kids_app/src/data/datasources/llm_inference/inference_data_source.dart';
 import 'package:the_kids_app/src/data/datasources/llm_model/mdel_data_source.dart';
 import 'package:the_kids_app/src/data/datasources/llm_model/mdel_data_source_impl.dart';
+import 'package:the_kids_app/src/data/datasources/story/story_data_source.dart';
+import 'package:the_kids_app/src/data/datasources/story/story_data_source_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/app_settings/app_local_settings_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/app_update/app_update_check_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/exercise/exercise_repository_impl.dart';
@@ -16,6 +18,7 @@ import 'package:the_kids_app/src/data/repository_impls/learned_word/learned_word
 import 'package:the_kids_app/src/data/repository_impls/learning_category/learning_category_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/learning_word/word_list_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/llm_model/model_repository_impl.dart';
+import 'package:the_kids_app/src/data/repository_impls/story/story_repository_impl.dart';
 import 'package:the_kids_app/src/domain/repositories/app_settings/app_local_settings_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/app_update/app_update_check_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/exercise/exercise_repository.dart';
@@ -25,6 +28,7 @@ import 'package:the_kids_app/src/domain/repositories/learned_word/learned_word_r
 import 'package:the_kids_app/src/domain/repositories/learning_category/learning_category_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/learning_category/word_list_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/llm_model/model_repository.dart';
+import 'package:the_kids_app/src/domain/repositories/story/story_repository.dart';
 
 @module
 abstract class DataModule {
@@ -40,6 +44,9 @@ abstract class DataModule {
 
   @LazySingleton(as: LearnedWordDataSource)
   LearnedWordDataSourceImpl get learnedWordDataSource;
+
+  @LazySingleton(as: StoryDataSource)
+  StoryDataSourceImpl get storyDataSource;
 
   // Repositories
   @LazySingleton(as: AppLocalSettingsRepository)
@@ -68,4 +75,7 @@ abstract class DataModule {
 
   @LazySingleton(as: ExerciseStoreRepository)
   ExerciseStoreRepositoryImpl get exerciseStoreRepository;
+
+  @LazySingleton(as: StoryRepository)
+  StoryRepositoryImpl get storyRepository;
 }

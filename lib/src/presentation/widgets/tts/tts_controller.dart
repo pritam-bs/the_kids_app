@@ -21,6 +21,7 @@ class TtsController extends ChangeNotifier {
   TtsState _ttsState = TtsState.initial;
   String? _errorMessage;
   String _text = '';
+  List<TextSegment> _sentenceList = [];
   String _languageCode; // The target language for this controller instance.
 
   // --- Highlighting State ---
@@ -38,6 +39,7 @@ class TtsController extends ChangeNotifier {
   String? get initializationError => _ttsService.initializationError;
   String? get errorMessage => _errorMessage;
   String get languageCode => _languageCode;
+  List<TextSegment> get sentenceList => _sentenceList;
 
   // --- Getters for highlighting ---
   int get highlightStartOffset => _highlightStartOffset;
@@ -53,8 +55,7 @@ class TtsController extends ChangeNotifier {
   /// Creates a TtsController.
   ///
   /// [languageCode]: The BCP 47 language code (e.g., 'en-US') to be used for speech.
-  TtsController({required String languageCode})
-    : _languageCode = languageCode {
+  TtsController({required String languageCode}) : _languageCode = languageCode {
     // Register callbacks to listen to events from the TtsService.
     _ttsService.onStart = _handleStart;
     _ttsService.onCompletion = _handleCompletion;
@@ -116,6 +117,7 @@ class TtsController extends ChangeNotifier {
   void setTextToSpeak(String newText) {
     if (_text == newText) return;
     _text = newText;
+    _sentenceList = splitIntoSentences(_text);
 
     if (isPlaying || isPaused) {
       stop(); // Stop and reset if the text changes during playback.
@@ -245,6 +247,10 @@ class TtsController extends ChangeNotifier {
     // We do not dispose the TtsService here, as it might be shared
     // across multiple controllers. The creator of the TtsService is responsible
     // for its lifecycle.
+    _ttsService.onStart = null;
+    _ttsService.onCompletion = null;
+    _ttsService.onError = null;
+    _ttsService.onVoicesChanged = null;
     super.dispose();
   }
 }
