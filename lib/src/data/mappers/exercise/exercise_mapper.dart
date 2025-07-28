@@ -29,20 +29,6 @@ extension ExerciseDtoMapper on ExerciseDto {
                 englishTranslation: englishTranslation,
                 scrambledWords: scrambledWords,
               ),
-      fillBlank:
-          (
-            targetGermanSentence,
-            englishTranslation,
-            sentenceWithMissingWord,
-            optionsForMissingWord,
-            correctAnswerWord,
-          ) => ExerciseEntity.fillBlank(
-            targetGermanSentence: targetGermanSentence,
-            englishTranslation: englishTranslation,
-            sentenceWithMissingWord: sentenceWithMissingWord,
-            optionsForMissingWord: optionsForMissingWord,
-            correctAnswerWord: correctAnswerWord,
-          ),
     );
   }
 }

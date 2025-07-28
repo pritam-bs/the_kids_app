@@ -208,8 +208,6 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i278.ExerciseRepository>(
       () => dataModule.exerciseRepositoryImpl,
     );
-    gh.lazySingleton<_i325.StoryDataSource>(() => dataModule.storyDataSource);
-    gh.lazySingleton<_i949.StoryRepository>(() => dataModule.storyRepository);
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
     );
@@ -218,9 +216,6 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i675.AppUpdateInfoBloc>(
       () => _i675.AppUpdateInfoBloc(gh<_i513.SaveLastSkippedVersionUseCase>()),
-    );
-    gh.factory<_i1071.StoryUsecase>(
-      () => _i1071.StoryUsecase(gh<_i949.StoryRepository>()),
     );
     gh.lazySingleton<_i1033.ExerciseStoreDatasource>(
       () => dataModule.exerciseStoreDatasource,
@@ -255,9 +250,6 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i728.LearnedWordUsecase>(
       () => _i728.LearnedWordUsecase(gh<_i143.LearnedWordRepository>()),
     );
-    gh.factory<_i995.StoryBloc>(
-      () => _i995.StoryBloc(gh<_i1071.StoryUsecase>()),
-    );
     gh.factory<_i607.ExerciseHomeBloc>(
       () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
     );
@@ -269,12 +261,20 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i228.InferenceDataSource>(),
       ),
     );
+    gh.lazySingleton<_i325.StoryDataSource>(() => dataModule.storyDataSource);
     gh.factory<_i298.LearnWordBloc>(
       () => _i298.LearnWordBloc(
         gh<_i35.WordListUsecase>(),
         gh<_i322.ImageUsecase>(),
         gh<_i728.LearnedWordUsecase>(),
       ),
+    );
+    gh.lazySingleton<_i949.StoryRepository>(() => dataModule.storyRepository);
+    gh.factory<_i1071.StoryUsecase>(
+      () => _i1071.StoryUsecase(gh<_i949.StoryRepository>()),
+    );
+    gh.factory<_i995.StoryBloc>(
+      () => _i995.StoryBloc(gh<_i1071.StoryUsecase>()),
     );
     return this;
   }
@@ -333,14 +333,6 @@ class _$DataModule extends _i742.DataModule {
       _i411.ExerciseRepositoryImpl(_getIt<_i228.InferenceDataSource>());
 
   @override
-  _i505.StoryDataSourceImpl get storyDataSource =>
-      _i505.StoryDataSourceImpl(_getIt<_i228.InferenceDataSource>());
-
-  @override
-  _i915.StoryRepositoryImpl get storyRepository =>
-      _i915.StoryRepositoryImpl(_getIt<_i325.StoryDataSource>());
-
-  @override
   _i411.ModelRepositoryImpl get modelRepositoryImpl =>
       _i411.ModelRepositoryImpl(_getIt<_i784.ModelDataSource>());
 
@@ -365,6 +357,16 @@ class _$DataModule extends _i742.DataModule {
   @override
   _i579.LearnedWordRepositoryImpl get learnedWordRepository =>
       _i579.LearnedWordRepositoryImpl(_getIt<_i47.LearnedWordDataSource>());
+
+  @override
+  _i505.StoryDataSourceImpl get storyDataSource => _i505.StoryDataSourceImpl(
+    _getIt<_i228.InferenceDataSource>(),
+    _getIt<_i697.ExerciseGenerator>(),
+  );
+
+  @override
+  _i915.StoryRepositoryImpl get storyRepository =>
+      _i915.StoryRepositoryImpl(_getIt<_i325.StoryDataSource>());
 }
 
 class _$FileDownloaderModule extends _i261.FileDownloaderModule {}

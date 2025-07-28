@@ -13,6 +13,10 @@ abstract class LearnedWordDto with _$LearnedWordDto {
     required String category,
     @Default(0) int seenCount,
     @Default(0) int exerciseCount,
+    @Default(false) bool isMatchWordGenerated,
+    @Default(false) bool isListenChooseGenerated,
+    @Default(false) bool isSpellWordGenerated,
+    @Default(false) bool isSentenceScrambleGenerated,
   }) = _LearnedWordDto;
 
   factory LearnedWordDto.fromJson(Map<String, dynamic> json) =>

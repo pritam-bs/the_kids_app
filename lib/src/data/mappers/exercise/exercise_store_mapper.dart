@@ -21,7 +21,6 @@ extension ExerciseMapper on ExerciseDto {
         listenChoose: (_) => ExerciseType.listenChoose.key,
         spellWord: (_) => ExerciseType.spellWord.key,
         sentenceScramble: (_) => ExerciseType.sentenceScramble.key,
-        fillBlank: (_) => ExerciseType.fillBlank.key,
       ),
       jsonContent: jsonEncode(toJson()),
     );

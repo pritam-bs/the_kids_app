@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_gemma/core/model.dart';
 import 'package:flutter_gemma/flutter_gemma.dart';
 import 'package:flutter_gemma/pigeon.g.dart';
@@ -8,6 +10,7 @@ import 'package:the_kids_app/src/data/datasources/llm_model/mdel_data_source.dar
 class GemmaInferenceDataSource implements InferenceDataSource {
   final ModelDataSource _modelDataSource;
   InferenceModel? _gemmaInference;
+  Completer<void>? _lock;
 
   GemmaInferenceDataSource(this._modelDataSource);
 
@@ -33,17 +36,26 @@ class GemmaInferenceDataSource implements InferenceDataSource {
 
   @override
   Future<String> generateText(String prompt) async {
-    final gemmaInference = await _getGemmaInference();
-    final gemmaSession = await gemmaInference.createSession(
-      temperature: 1.0,
-      randomSeed: 0,
-      topK: 32,
-      topP: 0.50,
-    );
-
-    AppLogger.d('Gemma Raw Prompt:\n$prompt');
+    // Acquire the lock
+    while (_lock != null) {
+      AppLogger.d('Waiting for previous Gemma session to complete...');
+      // Wait until the previous operation completes
+      await _lock!.future; 
+    }
+    // Set the lock
+    _lock = Completer<void>(); 
 
     try {
+      final gemmaInference = await _getGemmaInference();
+      final gemmaSession = await gemmaInference.createSession(
+        temperature: 1.0,
+        randomSeed: 0,
+        topK: 32,
+        topP: 0.50,
+      );
+
+      AppLogger.d('Gemma Raw Prompt:\n$prompt');
+
       // Add the prompt to the session as a user message
       await gemmaSession.addQueryChunk(
         Message.text(text: prompt, isUser: true),
@@ -61,6 +73,10 @@ class GemmaInferenceDataSource implements InferenceDataSource {
       AppLogger.e('Error during Gemma inference: $e\n$st');
       // Re-throw the error
       throw Exception('Failed to get raw text from LLM: $e');
+    } finally {
+      // Release the lock
+      _lock?.complete();
+      _lock = null;
     }
   }
 }

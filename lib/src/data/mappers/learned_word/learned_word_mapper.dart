@@ -8,9 +8,12 @@ extension LearnedWordDtoMapper on LearnedWordDto {
     category: category,
     seenCount: seenCount,
     exerciseCount: exerciseCount,
+    isMatchWordGenerated: isMatchWordGenerated,
+    isListenChooseGenerated: isListenChooseGenerated,
+    isSpellWordGenerated: isSpellWordGenerated,
+    isSentenceScrambleGenerated: isSentenceScrambleGenerated,
   );
 }
-
 
 extension LearnedWordEntityMapper on LearnedWordEntity {
   LearnedWordDto toDto() => LearnedWordDto(
@@ -18,5 +21,9 @@ extension LearnedWordEntityMapper on LearnedWordEntity {
     category: category,
     seenCount: seenCount,
     exerciseCount: exerciseCount,
+    isMatchWordGenerated: isMatchWordGenerated,
+    isListenChooseGenerated: isListenChooseGenerated,
+    isSpellWordGenerated: isSpellWordGenerated,
+    isSentenceScrambleGenerated: isSentenceScrambleGenerated,
   );
 }

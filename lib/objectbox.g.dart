@@ -21,46 +21,6 @@ export 'package:objectbox/objectbox.dart'; // so that callers only have to impor
 
 final _entities = <obx_int.ModelEntity>[
   obx_int.ModelEntity(
-    id: const obx_int.IdUid(1, 725523412170617825),
-    name: 'LearnedWordDto',
-    lastPropertyId: const obx_int.IdUid(5, 2670898210283975493),
-    flags: 0,
-    properties: <obx_int.ModelProperty>[
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(1, 1606731236105225511),
-        name: 'id',
-        type: 6,
-        flags: 1,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(2, 7874128429129372026),
-        name: 'word',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(3, 1313751514869386558),
-        name: 'category',
-        type: 9,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(4, 4531644472347452069),
-        name: 'seenCount',
-        type: 6,
-        flags: 0,
-      ),
-      obx_int.ModelProperty(
-        id: const obx_int.IdUid(5, 2670898210283975493),
-        name: 'exerciseCount',
-        type: 6,
-        flags: 0,
-      ),
-    ],
-    relations: <obx_int.ModelRelation>[],
-    backlinks: <obx_int.ModelBacklink>[],
-  ),
-  obx_int.ModelEntity(
     id: const obx_int.IdUid(2, 5221871103982835752),
     name: 'ExerciseStoreDto',
     lastPropertyId: const obx_int.IdUid(3, 8590352075993328948),
@@ -82,6 +42,70 @@ final _entities = <obx_int.ModelEntity>[
         id: const obx_int.IdUid(3, 8590352075993328948),
         name: 'jsonContent',
         type: 9,
+        flags: 0,
+      ),
+    ],
+    relations: <obx_int.ModelRelation>[],
+    backlinks: <obx_int.ModelBacklink>[],
+  ),
+  obx_int.ModelEntity(
+    id: const obx_int.IdUid(3, 4782035910515783715),
+    name: 'LearnedWordDto',
+    lastPropertyId: const obx_int.IdUid(10, 3437944950519997566),
+    flags: 0,
+    properties: <obx_int.ModelProperty>[
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(1, 7462820605691519990),
+        name: 'id',
+        type: 6,
+        flags: 1,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(2, 644328035591147219),
+        name: 'word',
+        type: 9,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(3, 6619852648821044105),
+        name: 'category',
+        type: 9,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(4, 710499965575854570),
+        name: 'seenCount',
+        type: 6,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(5, 4285445396724260851),
+        name: 'exerciseCount',
+        type: 6,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(7, 1189825974059735989),
+        name: 'isMatchWordGenerated',
+        type: 1,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(8, 6814667837123945715),
+        name: 'isListenChooseGenerated',
+        type: 1,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(9, 4575710372249023277),
+        name: 'isSpellWordGenerated',
+        type: 1,
+        flags: 0,
+      ),
+      obx_int.ModelProperty(
+        id: const obx_int.IdUid(10, 3437944950519997566),
+        name: 'isSentenceScrambleGenerated',
+        type: 1,
         flags: 0,
       ),
     ],
@@ -128,13 +152,21 @@ Future<obx.Store> openStore({
 obx_int.ModelDefinition getObjectBoxModel() {
   final model = obx_int.ModelInfo(
     entities: _entities,
-    lastEntityId: const obx_int.IdUid(2, 5221871103982835752),
+    lastEntityId: const obx_int.IdUid(3, 4782035910515783715),
     lastIndexId: const obx_int.IdUid(0, 0),
     lastRelationId: const obx_int.IdUid(0, 0),
     lastSequenceId: const obx_int.IdUid(0, 0),
-    retiredEntityUids: const [],
+    retiredEntityUids: const [725523412170617825],
     retiredIndexUids: const [],
-    retiredPropertyUids: const [],
+    retiredPropertyUids: const [
+      1606731236105225511,
+      7874128429129372026,
+      1313751514869386558,
+      4531644472347452069,
+      2670898210283975493,
+      7910490258205230046,
+      3040147420366792947,
+    ],
     retiredRelationUids: const [],
     modelVersion: 5,
     modelVersionParserMinimum: 5,
@@ -142,66 +174,8 @@ obx_int.ModelDefinition getObjectBoxModel() {
   );
 
   final bindings = <Type, obx_int.EntityDefinition>{
-    LearnedWordDto: obx_int.EntityDefinition<LearnedWordDto>(
-      model: _entities[0],
-      toOneRelations: (LearnedWordDto object) => [],
-      toManyRelations: (LearnedWordDto object) => {},
-      getId: (LearnedWordDto object) => object.id,
-      setId: (LearnedWordDto object, int id) {
-        object.id = id;
-      },
-      objectToFB: (LearnedWordDto object, fb.Builder fbb) {
-        final wordOffset = fbb.writeString(object.word);
-        final categoryOffset = fbb.writeString(object.category);
-        fbb.startTable(6);
-        fbb.addInt64(0, object.id);
-        fbb.addOffset(1, wordOffset);
-        fbb.addOffset(2, categoryOffset);
-        fbb.addInt64(3, object.seenCount);
-        fbb.addInt64(4, object.exerciseCount);
-        fbb.finish(fbb.endTable());
-        return object.id;
-      },
-      objectFromFB: (obx.Store store, ByteData fbData) {
-        final buffer = fb.BufferContext(fbData);
-        final rootOffset = buffer.derefObject(0);
-        final idParam = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          4,
-          0,
-        );
-        final wordParam = const fb.StringReader(
-          asciiOptimization: true,
-        ).vTableGet(buffer, rootOffset, 6, '');
-        final categoryParam = const fb.StringReader(
-          asciiOptimization: true,
-        ).vTableGet(buffer, rootOffset, 8, '');
-        final seenCountParam = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          10,
-          0,
-        );
-        final exerciseCountParam = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          12,
-          0,
-        );
-        final object = LearnedWordDto(
-          id: idParam,
-          word: wordParam,
-          category: categoryParam,
-          seenCount: seenCountParam,
-          exerciseCount: exerciseCountParam,
-        );
-
-        return object;
-      },
-    ),
     ExerciseStoreDto: obx_int.EntityDefinition<ExerciseStoreDto>(
-      model: _entities[1],
+      model: _entities[0],
       toOneRelations: (ExerciseStoreDto object) => [],
       toManyRelations: (ExerciseStoreDto object) => {},
       getId: (ExerciseStoreDto object) => object.id,
@@ -242,53 +216,157 @@ obx_int.ModelDefinition getObjectBoxModel() {
         return object;
       },
     ),
+    LearnedWordDto: obx_int.EntityDefinition<LearnedWordDto>(
+      model: _entities[1],
+      toOneRelations: (LearnedWordDto object) => [],
+      toManyRelations: (LearnedWordDto object) => {},
+      getId: (LearnedWordDto object) => object.id,
+      setId: (LearnedWordDto object, int id) {
+        object.id = id;
+      },
+      objectToFB: (LearnedWordDto object, fb.Builder fbb) {
+        final wordOffset = fbb.writeString(object.word);
+        final categoryOffset = fbb.writeString(object.category);
+        fbb.startTable(11);
+        fbb.addInt64(0, object.id);
+        fbb.addOffset(1, wordOffset);
+        fbb.addOffset(2, categoryOffset);
+        fbb.addInt64(3, object.seenCount);
+        fbb.addInt64(4, object.exerciseCount);
+        fbb.addBool(6, object.isMatchWordGenerated);
+        fbb.addBool(7, object.isListenChooseGenerated);
+        fbb.addBool(8, object.isSpellWordGenerated);
+        fbb.addBool(9, object.isSentenceScrambleGenerated);
+        fbb.finish(fbb.endTable());
+        return object.id;
+      },
+      objectFromFB: (obx.Store store, ByteData fbData) {
+        final buffer = fb.BufferContext(fbData);
+        final rootOffset = buffer.derefObject(0);
+        final idParam = const fb.Int64Reader().vTableGet(
+          buffer,
+          rootOffset,
+          4,
+          0,
+        );
+        final wordParam = const fb.StringReader(
+          asciiOptimization: true,
+        ).vTableGet(buffer, rootOffset, 6, '');
+        final categoryParam = const fb.StringReader(
+          asciiOptimization: true,
+        ).vTableGet(buffer, rootOffset, 8, '');
+        final seenCountParam = const fb.Int64Reader().vTableGet(
+          buffer,
+          rootOffset,
+          10,
+          0,
+        );
+        final exerciseCountParam = const fb.Int64Reader().vTableGet(
+          buffer,
+          rootOffset,
+          12,
+          0,
+        );
+        final isMatchWordGeneratedParam = const fb.BoolReader().vTableGet(
+          buffer,
+          rootOffset,
+          16,
+          false,
+        );
+        final isListenChooseGeneratedParam = const fb.BoolReader().vTableGet(
+          buffer,
+          rootOffset,
+          18,
+          false,
+        );
+        final isSpellWordGeneratedParam = const fb.BoolReader().vTableGet(
+          buffer,
+          rootOffset,
+          20,
+          false,
+        );
+        final isSentenceScrambleGeneratedParam = const fb.BoolReader()
+            .vTableGet(buffer, rootOffset, 22, false);
+        final object = LearnedWordDto(
+          id: idParam,
+          word: wordParam,
+          category: categoryParam,
+          seenCount: seenCountParam,
+          exerciseCount: exerciseCountParam,
+          isMatchWordGenerated: isMatchWordGeneratedParam,
+          isListenChooseGenerated: isListenChooseGeneratedParam,
+          isSpellWordGenerated: isSpellWordGeneratedParam,
+          isSentenceScrambleGenerated: isSentenceScrambleGeneratedParam,
+        );
+
+        return object;
+      },
+    ),
   };
 
   return obx_int.ModelDefinition(model, bindings);
-}
-
-/// [LearnedWordDto] entity fields to define ObjectBox queries.
-class LearnedWordDto_ {
-  /// See [LearnedWordDto.id].
-  static final id = obx.QueryIntegerProperty<LearnedWordDto>(
-    _entities[0].properties[0],
-  );
-
-  /// See [LearnedWordDto.word].
-  static final word = obx.QueryStringProperty<LearnedWordDto>(
-    _entities[0].properties[1],
-  );
-
-  /// See [LearnedWordDto.category].
-  static final category = obx.QueryStringProperty<LearnedWordDto>(
-    _entities[0].properties[2],
-  );
-
-  /// See [LearnedWordDto.seenCount].
-  static final seenCount = obx.QueryIntegerProperty<LearnedWordDto>(
-    _entities[0].properties[3],
-  );
-
-  /// See [LearnedWordDto.exerciseCount].
-  static final exerciseCount = obx.QueryIntegerProperty<LearnedWordDto>(
-    _entities[0].properties[4],
-  );
 }
 
 /// [ExerciseStoreDto] entity fields to define ObjectBox queries.
 class ExerciseStoreDto_ {
   /// See [ExerciseStoreDto.id].
   static final id = obx.QueryIntegerProperty<ExerciseStoreDto>(
-    _entities[1].properties[0],
+    _entities[0].properties[0],
   );
 
   /// See [ExerciseStoreDto.exerciseType].
   static final exerciseType = obx.QueryStringProperty<ExerciseStoreDto>(
-    _entities[1].properties[1],
+    _entities[0].properties[1],
   );
 
   /// See [ExerciseStoreDto.jsonContent].
   static final jsonContent = obx.QueryStringProperty<ExerciseStoreDto>(
+    _entities[0].properties[2],
+  );
+}
+
+/// [LearnedWordDto] entity fields to define ObjectBox queries.
+class LearnedWordDto_ {
+  /// See [LearnedWordDto.id].
+  static final id = obx.QueryIntegerProperty<LearnedWordDto>(
+    _entities[1].properties[0],
+  );
+
+  /// See [LearnedWordDto.word].
+  static final word = obx.QueryStringProperty<LearnedWordDto>(
+    _entities[1].properties[1],
+  );
+
+  /// See [LearnedWordDto.category].
+  static final category = obx.QueryStringProperty<LearnedWordDto>(
     _entities[1].properties[2],
   );
+
+  /// See [LearnedWordDto.seenCount].
+  static final seenCount = obx.QueryIntegerProperty<LearnedWordDto>(
+    _entities[1].properties[3],
+  );
+
+  /// See [LearnedWordDto.exerciseCount].
+  static final exerciseCount = obx.QueryIntegerProperty<LearnedWordDto>(
+    _entities[1].properties[4],
+  );
+
+  /// See [LearnedWordDto.isMatchWordGenerated].
+  static final isMatchWordGenerated = obx.QueryBooleanProperty<LearnedWordDto>(
+    _entities[1].properties[5],
+  );
+
+  /// See [LearnedWordDto.isListenChooseGenerated].
+  static final isListenChooseGenerated =
+      obx.QueryBooleanProperty<LearnedWordDto>(_entities[1].properties[6]);
+
+  /// See [LearnedWordDto.isSpellWordGenerated].
+  static final isSpellWordGenerated = obx.QueryBooleanProperty<LearnedWordDto>(
+    _entities[1].properties[7],
+  );
+
+  /// See [LearnedWordDto.isSentenceScrambleGenerated].
+  static final isSentenceScrambleGenerated =
+      obx.QueryBooleanProperty<LearnedWordDto>(_entities[1].properties[8]);
 }

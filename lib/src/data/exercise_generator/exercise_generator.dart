@@ -53,10 +53,9 @@ class ExerciseGenerator {
   Future<void> start() async {
     if (await _modelDataSource.isModelDownloaded()) {
       final allWords = await _learnedWordDataSource.getAllWords();
-      // For this simple check, we'll just see which words have no exercises yet.
-      // A more robust check might be needed depending on your exact requirements.
+      // Just check which words have no exercises yet.
       final wordsToProcess = allWords
-          .where((word) => word.exerciseCount == 0)
+          .where((word) => word.exerciseCount < ExerciseType.values.length)
           .toList();
 
       if (wordsToProcess.isNotEmpty) {
@@ -96,13 +95,15 @@ class ExerciseGenerator {
 
   // --- Private Helper Methods ---
 
-  void _handleNewWord(LearnedWordDto newWord) {
-    // Only queue the word if it hasn't been processed
-    if (newWord.exerciseCount == 0 &&
-        !_wordQueue.any((w) => w.word == newWord.word)) {
-      AppLogger.d('New word received: ${newWord.word}. Adding to queue.');
-      _wordQueue.add(newWord);
-      _startIsolateIfNeeded();
+  Future<void> _handleNewWord(LearnedWordDto newWord) async {
+    if (await _modelDataSource.isModelDownloaded()) {
+      // Only queue the word if it hasn't been processed
+      if (newWord.exerciseCount < ExerciseType.values.length &&
+          !_wordQueue.any((w) => w.word == newWord.word)) {
+        AppLogger.d('New word received: ${newWord.word}. Adding to queue.');
+        _wordQueue.add(newWord);
+        _startIsolateIfNeeded();
+      }
     }
   }
 
@@ -155,20 +156,45 @@ class ExerciseGenerator {
   /// Generates a suite of different exercises for a single learned word.
   Future<void> _generateAndStoreAllExercisesForWord(LearnedWordDto word) async {
     AppLogger.d("Starting exercise generation for word: '${word.word}'");
+
+    // Fetch the latest word status from the database to check generated flags
+    final LearnedWordDto? wordFromDb = await _learnedWordDataSource.getWord(
+      word.word,
+    );
+
+    if (wordFromDb == null) {
+      AppLogger.e(
+        "Word '${word.word}' not found in database for exercise generation. Skipping.",
+      );
+      _sendPort?.send({
+        'type': 'generation_complete',
+      }); // Signal completion for this word
+      return;
+    }
+
     int successfullyGeneratedCount = 0;
 
     // Define which exercise types to generate for each word
-    final exerciseTypesToGenerate = [
-      ExerciseType.matchWord,
-      ExerciseType.spellWord,
-      ExerciseType.listenChoose,
-    ];
+    List<ExerciseType> exerciseTypesToGenerate = [];
+
+    // Skipping fillBlank type for now
+    if (!wordFromDb.isMatchWordGenerated) {
+      exerciseTypesToGenerate.add(ExerciseType.matchWord);
+    } else if (!wordFromDb.isListenChooseGenerated) {
+      exerciseTypesToGenerate.add(ExerciseType.listenChoose);
+    } else if (!wordFromDb.isSpellWordGenerated) {
+      exerciseTypesToGenerate.add(ExerciseType.spellWord);
+    } else if (!wordFromDb.isSentenceScrambleGenerated) {
+      exerciseTypesToGenerate.add(ExerciseType.sentenceScramble);
+    }
+
+    exerciseTypesToGenerate.shuffle();
 
     for (final type in exerciseTypesToGenerate) {
       try {
         final prompt = _generatePromptForExerciseType(
           type: type,
-          numberOfExercises: 1, // We want one exercise of this type
+          numberOfExercises: 1, // One exercise per type
           contextWords: [word.word],
         );
 
@@ -179,13 +205,18 @@ class ExerciseGenerator {
         );
 
         if (exerciseDtos.isNotEmpty) {
-          final exerciseDto = exerciseDtos.first; // We only asked for one
+          final exerciseDto = exerciseDtos.first;
           final exerciseStoreDto = ExerciseStoreDto(
             exerciseType: type.key,
             jsonContent: jsonEncode(exerciseDto.toJson()),
           );
           await _exerciseStoreDatasource.addExercise(exerciseStoreDto);
           successfullyGeneratedCount++;
+          await _updateExerciseGenerationStatus(
+            word: word,
+            successfullyGeneratedCount: successfullyGeneratedCount,
+            successfullyGeneratedTypes: type,
+          );
           AppLogger.d(
             "Successfully generated '${type.key}' exercise for '${word.word}'.",
           );
@@ -198,19 +229,60 @@ class ExerciseGenerator {
       }
     }
 
+    // Notify the isolate that this word is done, so it can process the next one.
+    _sendPort?.send({'type': 'generation_complete'});
+  }
+
+  // Method for updating exercise count and generation flags
+  Future<void> _updateExerciseGenerationStatus({
+    required LearnedWordDto word,
+    required int successfullyGeneratedCount,
+    required ExerciseType successfullyGeneratedTypes,
+  }) async {
     if (successfullyGeneratedCount > 0) {
       await _learnedWordDataSource.updateExerciseCount(
         word.word,
         successfullyGeneratedCount,
       );
+      AppLogger.d(
+        "Updated total exercise count for '${word.word}' to $successfullyGeneratedCount.",
+      );
+    } else {
+      AppLogger.d(
+        "No new exercises generated for '${word.word}'. Exercise count not updated.",
+      );
     }
 
-    // Notify the isolate that this word is done, so it can process the next one.
-    _sendPort?.send({'type': 'generation_complete'});
+    // Update individual exercise generation flags
+    switch (successfullyGeneratedTypes) {
+      case ExerciseType.matchWord:
+        await _learnedWordDataSource.updateMatchWordGenerated(word.word, true);
+        AppLogger.d("Flagged 'matchWord' as generated for '${word.word}'.");
+        break;
+      case ExerciseType.listenChoose:
+        await _learnedWordDataSource.updateListenChooseGenerated(
+          word.word,
+          true,
+        );
+        AppLogger.d("Flagged 'listenChoose' as generated for '${word.word}'.");
+        break;
+      case ExerciseType.spellWord:
+        await _learnedWordDataSource.updateSpellWordGenerated(word.word, true);
+        AppLogger.d("Flagged 'spellWord' as generated for '${word.word}'.");
+        break;
+      case ExerciseType.sentenceScramble:
+        await _learnedWordDataSource.updateSentenceScrambleGenerated(
+          word.word,
+          true,
+        );
+        AppLogger.d(
+          "Flagged 'sentenceScramble' as generated for '${word.word}'.",
+        );
+        break;
+    }
   }
 
   /// Generates the prompt for Gemma based on the desired exercise type.
-  /// (Logic from ExerciseRepositoryImpl)
   String _generatePromptForExerciseType({
     required ExerciseType type,
     required int numberOfExercises,
@@ -259,7 +331,7 @@ class ExerciseGenerator {
           {
             "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
             "targetGermanWord": "Apfel",
-            "scrambledLetters": ["A", "p", "f", "e", "l", "x", "z"],
+            "scrambledLetters": ["A", "f", "p", "e", "l", "x", "z"],
             "englishTranslation": "Apple"
           }
         ''';
@@ -277,20 +349,6 @@ class ExerciseGenerator {
           }
         ''';
         break;
-      case ExerciseType.fillBlank:
-        basePrompt =
-            'Generate a "fill in the blanks" exercise. Include a German sentence, its English translation, an array of words, three options for the missing word, and the correct missing word.';
-        exampleJson =
-            '''
-            {
-              "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
-              "targetGermanSentence": "Ich habe einen Hund",
-              "englishTranslation": "I have a dog",
-              "sentenceWithMissingWord": ["Ich", "habe", "einen", ""],
-              "optionsForMissingWord": ["Katze", "Vogel", "Hund"],
-              "correctAnswerWord": "Hund"
-            }
-            ''';
     }
 
     return '''

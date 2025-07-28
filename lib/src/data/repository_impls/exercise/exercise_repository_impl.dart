@@ -80,20 +80,20 @@ class ExerciseRepositoryImpl implements ExerciseRepository {
           }
         ''';
         break;
-      case ExerciseType.fillBlank:
-        basePrompt =
-            'Generate a "fill in the blanks" exercise. Include a German sentence, its English translation, an array of words, three options for the missing word, and the correct missing word.';
-        exampleJson =
-            '''
-            {
-              "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
-              "targetGermanSentence": "Ich habe einen Hund",
-              "englishTranslation": "I have a dog",
-              "sentenceWithMissingWord": ["Ich", "habe", "einen", ""],
-              "optionsForMissingWord": ["Katze", "Vogel", "Hund"],
-              "correctAnswerWord": "Hund"
-            }
-            ''';
+      // case ExerciseType.fillBlank:
+      //   basePrompt =
+      //       'Generate a "fill in the blanks" exercise. Include a German sentence, its English translation, an array of words, three options for the missing word, and the correct missing word.';
+      //   exampleJson =
+      //       '''
+      //       {
+      //         "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
+      //         "targetGermanSentence": "Ich habe einen Hund",
+      //         "englishTranslation": "I have a dog",
+      //         "sentenceWithMissingWord": ["Ich", "habe", "einen", ""],
+      //         "optionsForMissingWord": ["Katze", "Vogel", "Hund"],
+      //         "correctAnswerWord": "Hund"
+      //       }
+      //       ''';
     }
 
     final fullPrompt =

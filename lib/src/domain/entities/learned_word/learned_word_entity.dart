@@ -10,5 +10,9 @@ abstract class LearnedWordEntity with _$LearnedWordEntity {
     required String category,
     @Default(0) int seenCount,
     @Default(0) int exerciseCount,
+    @Default(false) bool isMatchWordGenerated,
+    @Default(false) bool isListenChooseGenerated,
+    @Default(false) bool isSpellWordGenerated,
+    @Default(false) bool isSentenceScrambleGenerated,
   }) = _LearnedWordEntity;
 }

@@ -6,7 +6,6 @@ import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_bloc.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_event.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_state.dart';
-import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/build_sentence_exercise_card.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/match_word_exercise_card.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/sentence_scramble_exercise_card.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/spell_word_exercise_card.dart';
@@ -164,11 +163,6 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                         );
                       case SentenceScrambleExerciseEntity():
                         return SentenceScrambleExerciseCard(
-                          data: exerciseEntity,
-                          onAnswerSubmitted: onAnswerSubmitted,
-                        );
-                      case FillBlankExerciseEntity():
-                        return FillBlankExerciseCard(
                           data: exerciseEntity,
                           onAnswerSubmitted: onAnswerSubmitted,
                         );
