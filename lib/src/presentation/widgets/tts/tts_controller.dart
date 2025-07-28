@@ -247,6 +247,10 @@ class TtsController extends ChangeNotifier {
     // We do not dispose the TtsService here, as it might be shared
     // across multiple controllers. The creator of the TtsService is responsible
     // for its lifecycle.
+    _ttsService.onStart = null;
+    _ttsService.onCompletion = null;
+    _ttsService.onError = null;
+    _ttsService.onVoicesChanged = null;
     super.dispose();
   }
 }
