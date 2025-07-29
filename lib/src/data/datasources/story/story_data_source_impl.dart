@@ -5,13 +5,11 @@ import 'package:the_kids_app/src/data/datasources/llm_inference/inference_data_s
 import 'package:the_kids_app/src/data/datasources/story/story_data_source.dart';
 import 'package:the_kids_app/src/data/datasources/story/story_topic.dart';
 import 'package:the_kids_app/src/data/dtos/story/story_dto.dart';
-import 'package:the_kids_app/src/data/exercise_generator/exercise_generator.dart';
 
 class StoryDataSourceImpl implements StoryDataSource {
   final InferenceDataSource _inferenceDataSource;
-  final ExerciseGenerator _exerciseGenerator;
 
-  StoryDataSourceImpl(this._inferenceDataSource, this._exerciseGenerator);
+  StoryDataSourceImpl(this._inferenceDataSource,);
 
   @override
   Future<StoryDto> fetchStory() async {
@@ -22,8 +20,6 @@ class StoryDataSourceImpl implements StoryDataSource {
         StoryTopic.values[random.nextInt(StoryTopic.values.length)];
 
     final String prompt = _generateStoryPrompt(randomTopic);
-    // Pause the Exercise Generator to make the Gemma available for story
-    _exerciseGenerator.pause();
     // Call Gemma with the JSON-formatted prompt
     final String jsonResponse = await _inferenceDataSource.generateText(prompt);
 
@@ -37,9 +33,7 @@ class StoryDataSourceImpl implements StoryDataSource {
     } catch (e) {
       AppLogger.e('An unexpected error occurred: $e');
       rethrow;
-    } finally {
-      _exerciseGenerator.resume();
-    }
+    } 
   }
 
   StoryDto _parseStoryResponse(String rawJson) {

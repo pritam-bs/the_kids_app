@@ -11,7 +11,7 @@ import 'package:the_kids_app/src/data/datasources/story/story_data_source.dart';
 import 'package:the_kids_app/src/data/datasources/story/story_data_source_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/app_settings/app_local_settings_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/app_update/app_update_check_repository_impl.dart';
-import 'package:the_kids_app/src/data/repository_impls/exercise/exercise_repository_impl.dart';
+import 'package:the_kids_app/src/data/repository_impls/exercise_generator/exercise_generator_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/exercise_store/exercise_store_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/image/image_repository_impl.dart';
 import 'package:the_kids_app/src/data/repository_impls/learned_word/learned_word_repository_impl.dart';
@@ -21,7 +21,7 @@ import 'package:the_kids_app/src/data/repository_impls/llm_model/model_repositor
 import 'package:the_kids_app/src/data/repository_impls/story/story_repository_impl.dart';
 import 'package:the_kids_app/src/domain/repositories/app_settings/app_local_settings_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/app_update/app_update_check_repository.dart';
-import 'package:the_kids_app/src/domain/repositories/exercise/exercise_repository.dart';
+import 'package:the_kids_app/src/domain/repositories/exercise_generator/exercise_generator_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/exercise_store/exercise_store_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/image/image_repository.dart';
 import 'package:the_kids_app/src/domain/repositories/learned_word/learned_word_repository.dart';
@@ -67,8 +67,8 @@ abstract class DataModule {
   @LazySingleton(as: ModelRepository)
   ModelRepositoryImpl get modelRepositoryImpl;
 
-  @LazySingleton(as: ExerciseRepository)
-  ExerciseRepositoryImpl get exerciseRepositoryImpl;
+  @LazySingleton(as: ExerciseGeneratorRepository)
+  ExerciseGeneratorRepositoryImpl get exerciseRepositoryImpl;
 
   @LazySingleton(as: LearnedWordRepository)
   LearnedWordRepositoryImpl get learnedWordRepository;

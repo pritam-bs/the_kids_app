@@ -40,8 +40,8 @@ import '../../data/repository_impls/app_settings/app_local_settings_repository_i
     as _i680;
 import '../../data/repository_impls/app_update/app_update_check_repository_impl.dart'
     as _i226;
-import '../../data/repository_impls/exercise/exercise_repository_impl.dart'
-    as _i411;
+import '../../data/repository_impls/exercise_generator/exercise_generator_repository_impl.dart'
+    as _i86;
 import '../../data/repository_impls/exercise_store/exercise_store_repository_impl.dart'
     as _i607;
 import '../../data/repository_impls/image/image_repository_impl.dart' as _i34;
@@ -58,7 +58,8 @@ import '../../domain/repositories/app_settings/app_local_settings_repository.dar
     as _i192;
 import '../../domain/repositories/app_update/app_update_check_repository.dart'
     as _i190;
-import '../../domain/repositories/exercise/exercise_repository.dart' as _i278;
+import '../../domain/repositories/exercise_generator/exercise_generator_repository.dart'
+    as _i339;
 import '../../domain/repositories/exercise_store/exercise_store_repository.dart'
     as _i357;
 import '../../domain/repositories/image/image_repository.dart' as _i33;
@@ -74,7 +75,8 @@ import '../../domain/usecases/app_settings/app_local_settings_usecase.dart'
     as _i513;
 import '../../domain/usecases/app_update/check_app_update_usecase.dart'
     as _i686;
-import '../../domain/usecases/exercise/exercise_usecase.dart' as _i969;
+import '../../domain/usecases/exercise_generator/exercise_generator_usecase.dart'
+    as _i862;
 import '../../domain/usecases/exercise_store/exercise_store_usecase.dart'
     as _i412;
 import '../../domain/usecases/image/image_usecase.dart' as _i322;
@@ -205,9 +207,8 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i192.AppLocalSettingsRepository>(),
       ),
     );
-    gh.lazySingleton<_i278.ExerciseRepository>(
-      () => dataModule.exerciseRepositoryImpl,
-    );
+    gh.lazySingleton<_i325.StoryDataSource>(() => dataModule.storyDataSource);
+    gh.lazySingleton<_i949.StoryRepository>(() => dataModule.storyRepository);
     gh.factory<_i35.WordListUsecase>(
       () => _i35.WordListUsecase(gh<_i197.WordListRepository>()),
     );
@@ -216,6 +217,9 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i675.AppUpdateInfoBloc>(
       () => _i675.AppUpdateInfoBloc(gh<_i513.SaveLastSkippedVersionUseCase>()),
+    );
+    gh.factory<_i1071.StoryUsecase>(
+      () => _i1071.StoryUsecase(gh<_i949.StoryRepository>()),
     );
     gh.lazySingleton<_i1033.ExerciseStoreDatasource>(
       () => dataModule.exerciseStoreDatasource,
@@ -238,20 +242,11 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i513.GetLastSkippedVersionUseCase>(),
       ),
     );
-    gh.factory<_i969.ExerciseUseCase>(
-      () => _i969.ExerciseUseCase(gh<_i278.ExerciseRepository>()),
-    );
     gh.lazySingleton<_i143.LearnedWordRepository>(
       () => dataModule.learnedWordRepository,
     );
     gh.factory<_i770.ExerciseBloc>(
       () => _i770.ExerciseBloc(gh<_i412.ExerciseStoreUseCase>()),
-    );
-    gh.factory<_i728.LearnedWordUsecase>(
-      () => _i728.LearnedWordUsecase(gh<_i143.LearnedWordRepository>()),
-    );
-    gh.factory<_i607.ExerciseHomeBloc>(
-      () => _i607.ExerciseHomeBloc(gh<_i565.ModelUsecase>()),
     );
     gh.singleton<_i697.ExerciseGenerator>(
       () => exerciseGeneratorModule.getExerciseGenerator(
@@ -261,7 +256,9 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i228.InferenceDataSource>(),
       ),
     );
-    gh.lazySingleton<_i325.StoryDataSource>(() => dataModule.storyDataSource);
+    gh.factory<_i728.LearnedWordUsecase>(
+      () => _i728.LearnedWordUsecase(gh<_i143.LearnedWordRepository>()),
+    );
     gh.factory<_i298.LearnWordBloc>(
       () => _i298.LearnWordBloc(
         gh<_i35.WordListUsecase>(),
@@ -269,12 +266,25 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i728.LearnedWordUsecase>(),
       ),
     );
-    gh.lazySingleton<_i949.StoryRepository>(() => dataModule.storyRepository);
-    gh.factory<_i1071.StoryUsecase>(
-      () => _i1071.StoryUsecase(gh<_i949.StoryRepository>()),
+    gh.lazySingleton<_i339.ExerciseGeneratorRepository>(
+      () => dataModule.exerciseRepositoryImpl,
+    );
+    gh.factory<_i862.ExerciseGeneratorUsecase>(
+      () => _i862.ExerciseGeneratorUsecase(
+        gh<_i339.ExerciseGeneratorRepository>(),
+      ),
     );
     gh.factory<_i995.StoryBloc>(
-      () => _i995.StoryBloc(gh<_i1071.StoryUsecase>()),
+      () => _i995.StoryBloc(
+        gh<_i1071.StoryUsecase>(),
+        gh<_i862.ExerciseGeneratorUsecase>(),
+      ),
+    );
+    gh.factory<_i607.ExerciseHomeBloc>(
+      () => _i607.ExerciseHomeBloc(
+        gh<_i565.ModelUsecase>(),
+        gh<_i862.ExerciseGeneratorUsecase>(),
+      ),
     );
     return this;
   }
@@ -329,8 +339,12 @@ class _$DataModule extends _i742.DataModule {
       _i692.GemmaInferenceDataSource(_getIt<_i784.ModelDataSource>());
 
   @override
-  _i411.ExerciseRepositoryImpl get exerciseRepositoryImpl =>
-      _i411.ExerciseRepositoryImpl(_getIt<_i228.InferenceDataSource>());
+  _i505.StoryDataSourceImpl get storyDataSource =>
+      _i505.StoryDataSourceImpl(_getIt<_i228.InferenceDataSource>());
+
+  @override
+  _i915.StoryRepositoryImpl get storyRepository =>
+      _i915.StoryRepositoryImpl(_getIt<_i325.StoryDataSource>());
 
   @override
   _i411.ModelRepositoryImpl get modelRepositoryImpl =>
@@ -359,14 +373,8 @@ class _$DataModule extends _i742.DataModule {
       _i579.LearnedWordRepositoryImpl(_getIt<_i47.LearnedWordDataSource>());
 
   @override
-  _i505.StoryDataSourceImpl get storyDataSource => _i505.StoryDataSourceImpl(
-    _getIt<_i228.InferenceDataSource>(),
-    _getIt<_i697.ExerciseGenerator>(),
-  );
-
-  @override
-  _i915.StoryRepositoryImpl get storyRepository =>
-      _i915.StoryRepositoryImpl(_getIt<_i325.StoryDataSource>());
+  _i86.ExerciseGeneratorRepositoryImpl get exerciseRepositoryImpl =>
+      _i86.ExerciseGeneratorRepositoryImpl(_getIt<_i697.ExerciseGenerator>());
 }
 
 class _$FileDownloaderModule extends _i261.FileDownloaderModule {}

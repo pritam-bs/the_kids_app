@@ -4,17 +4,18 @@ import 'package:the_kids_app/src/data/datasources/learned_word/learned_word_data
 import 'package:the_kids_app/src/data/datasources/llm_inference/inference_data_source.dart';
 import 'package:the_kids_app/src/data/datasources/llm_model/mdel_data_source.dart';
 import 'package:the_kids_app/src/data/exercise_generator/exercise_generator.dart';
+import 'package:the_kids_app/src/data/exercise_generator/exercise_generator_impl.dart';
 
 @module
 abstract class ExerciseGeneratorModule {
-  @singleton
-  ExerciseGenerator getExerciseGenerator(
+  @Singleton(as: ExerciseGenerator)
+  ExerciseGeneratorImpl getExerciseGenerator(
     LearnedWordDataSource learnedWordDataSource,
     ExerciseStoreDatasource exerciseStoreDatasource,
     ModelDataSource modelDataSource,
     InferenceDataSource inferenceDataSource,
   ) {
-    final exerciseGenerator = ExerciseGenerator(
+    final exerciseGenerator = ExerciseGeneratorImpl(
       learnedWordDataSource,
       exerciseStoreDatasource,
       modelDataSource,
