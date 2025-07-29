@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_kids_app/src/core/haptics/haptic_service.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
@@ -22,6 +23,7 @@ class SpellWordExerciseCard extends StatefulWidget {
 class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
     with SingleTickerProviderStateMixin {
   final TtsService _ttsService = getIt<TtsService>();
+  final _hapticService = getIt<HapticService>();
 
   final List<String> _constructedLetters = [];
   List<String> _scrambledLettersPool = [];
@@ -193,6 +195,7 @@ class _SpellWordExerciseCardState extends State<SpellWordExerciseCard>
             FloatingActionButton(
               heroTag: null,
               onPressed: () async {
+                _hapticService.playSelectionFeedback();
                 await _ttsService.speak(
                   widget.data.targetGermanWord,
                   languageCode: 'de-DE',

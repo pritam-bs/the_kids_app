@@ -98,13 +98,17 @@ import '../../presentation/features/learn_word/bloc/learn_word_bloc.dart'
 import '../../presentation/features/splash/bloc/app_update/app_update_check_bloc.dart'
     as _i401;
 import '../../presentation/features/story/bloc/story_bloc.dart' as _i995;
+import '../audio/sound_service.dart' as _i369;
+import '../haptics/haptic_service.dart' as _i1047;
 import '../tts/tts_service.dart' as _i369;
+import 'modules/audio_module.dart' as _i948;
 import 'modules/data_module.dart' as _i742;
 import 'modules/exercise_generator_module.dart' as _i443;
 import 'modules/file_downloader_module.dart' as _i261;
 import 'modules/firebase_module.dart' as _i398;
 import 'modules/gcs_module.dart' as _i1055;
 import 'modules/gemma_module.dart' as _i779;
+import 'modules/haptics_module.dart' as _i342;
 import 'modules/object_box_module.dart' as _i18;
 import 'modules/shared_preferences_module.dart' as _i813;
 import 'modules/tts_module.dart' as _i983;
@@ -120,6 +124,8 @@ extension GetItInjectableX on _i174.GetIt {
     final ttsModule = _$TtsModule();
     final sharedPreferencesModule = _$SharedPreferencesModule();
     final injectionModule = _$InjectionModule();
+    final audioModule = _$AudioModule();
+    final audioHapticsModule = _$AudioHapticsModule();
     final gemmaModule = _$GemmaModule();
     final dataModule = _$DataModule(this);
     final fileDownloaderModule = _$FileDownloaderModule();
@@ -144,6 +150,10 @@ extension GetItInjectableX on _i174.GetIt {
     await gh.factoryAsync<_i941.Store>(
       () => injectionModule.store,
       preResolve: true,
+    );
+    gh.lazySingleton<_i369.SoundService>(() => audioModule.soundService);
+    gh.lazySingleton<_i1047.HapticService>(
+      () => audioHapticsModule.hapticService,
     );
     gh.factory<String>(
       () => gemmaModule.gemmaModelFileName,
@@ -297,6 +307,10 @@ class _$TtsModule extends _i983.TtsModule {}
 class _$SharedPreferencesModule extends _i813.SharedPreferencesModule {}
 
 class _$InjectionModule extends _i18.InjectionModule {}
+
+class _$AudioModule extends _i948.AudioModule {}
+
+class _$AudioHapticsModule extends _i342.AudioHapticsModule {}
 
 class _$GemmaModule extends _i779.GemmaModule {}
 

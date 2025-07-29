@@ -67,7 +67,7 @@ class _StoryScreenState extends State<StoryScreen> {
           builder: (context, state) {
             return state.when(
               initial: () => const Center(child: Text('Initializing story...')),
-              loading: () => const LoadingGame(),
+              loading: () => LoadingGame(),
               loaded: (story) => _buildLoadedStoryContent(context, story),
               error: (message) => Center(
                 child: Column(

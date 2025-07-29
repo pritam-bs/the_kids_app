@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:the_kids_app/src/core/audio/sound_service.dart';
 import 'dart:math';
 import 'dart:async';
+
+import 'package:the_kids_app/src/core/di/injection.dart';
+import 'package:the_kids_app/src/core/haptics/haptic_service.dart';
 
 class FallingStar {
   final Key key;
@@ -35,7 +39,9 @@ class FallingStar {
 }
 
 class LoadingGame extends StatefulWidget {
-  const LoadingGame({super.key});
+  LoadingGame({super.key});
+  final _hapticService = getIt<HapticService>();
+  final _soundService = getIt<SoundService>();
 
   @override
   State<LoadingGame> createState() => _LoadingGameState();
@@ -113,9 +119,10 @@ class _LoadingGameState extends State<LoadingGame>
     });
   }
 
-  void _onStarTapped(FallingStar star) {
+  void _onStarTapped(FallingStar star) async {
     if (!star.isCaught) {
-      HapticFeedback.lightImpact();
+      widget._hapticService.playCorrectFeedback();
+      widget._soundService.playPopSound();
       setState(() {
         star.isCaught = true;
         _score++;

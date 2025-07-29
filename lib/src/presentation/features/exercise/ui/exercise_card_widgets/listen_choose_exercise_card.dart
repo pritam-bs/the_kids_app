@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_kids_app/src/core/haptics/haptic_service.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
@@ -24,6 +25,7 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
   bool? _isCorrect;
   bool _isAnswered = false;
   final TtsService _ttsService = getIt<TtsService>();
+  final _hapticService = getIt<HapticService>();
 
   // Helper to get button color based on state
   Color _getButtonColor(String option, ColorScheme colorScheme) {
@@ -79,8 +81,8 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
       elevation: 8,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       margin: const EdgeInsets.all(16),
-      child: Padding(
-        padding: const EdgeInsets.all(24.0),
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -100,6 +102,7 @@ class _ListenChooseExerciseCardState extends State<ListenChooseExerciseCard> {
             FloatingActionButton(
               heroTag: null,
               onPressed: () async {
+                _hapticService.playSelectionFeedback();
                 await _ttsService.speak(
                   widget.data.targetGermanWord,
                   languageCode: 'de-DE',

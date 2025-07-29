@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
+import 'package:the_kids_app/src/core/haptics/haptic_service.dart';
 import 'package:the_kids_app/src/core/tts/tts_service.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
@@ -23,6 +24,7 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
   bool? _isCorrect; // null: not answered, true: correct, false: incorrect
   bool _isAnswered = false;
   final TtsService _ttsService = getIt<TtsService>();
+  final _hapticService = getIt<HapticService>();
 
   // Helper to get button color based on state
   Color _getButtonColor(String option, ColorScheme colorScheme) {
@@ -78,8 +80,8 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
       elevation: 8,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       margin: const EdgeInsets.all(16),
-      child: Padding(
-        padding: const EdgeInsets.all(24.0),
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -90,7 +92,7 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
               style: Theme.of(context).textTheme.displayMedium?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: colorScheme.primary,
-                fontSize: isLargeScreen ? 72 : 48, // Responsive font size
+                fontSize: isLargeScreen ? 70 : 40, // Responsive font size
               ),
               textAlign: TextAlign.center,
             ),
@@ -101,6 +103,7 @@ class _MatchWordExerciseCardState extends State<MatchWordExerciseCard> {
               heroTag:
                   null, // Set heroTag to null to avoid tag conflicts in PageView
               onPressed: () async {
+                _hapticService.playSelectionFeedback();
                 await _ttsService.speak(
                   widget.data.targetGermanWord,
                   languageCode: 'de-DE',
