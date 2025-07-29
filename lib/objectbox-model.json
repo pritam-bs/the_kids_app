@@ -4,40 +4,6 @@
   "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
   "entities": [
     {
-      "id": "1:725523412170617825",
-      "lastPropertyId": "5:2670898210283975493",
-      "name": "LearnedWordDto",
-      "properties": [
-        {
-          "id": "1:1606731236105225511",
-          "name": "id",
-          "type": 6,
-          "flags": 1
-        },
-        {
-          "id": "2:7874128429129372026",
-          "name": "word",
-          "type": 9
-        },
-        {
-          "id": "3:1313751514869386558",
-          "name": "category",
-          "type": 9
-        },
-        {
-          "id": "4:4531644472347452069",
-          "name": "seenCount",
-          "type": 6
-        },
-        {
-          "id": "5:2670898210283975493",
-          "name": "exerciseCount",
-          "type": 6
-        }
-      ],
-      "relations": []
-    },
-    {
       "id": "2:5221871103982835752",
       "lastPropertyId": "3:8590352075993328948",
       "name": "ExerciseStoreDto",
@@ -60,17 +26,81 @@
         }
       ],
       "relations": []
+    },
+    {
+      "id": "3:4782035910515783715",
+      "lastPropertyId": "10:3437944950519997566",
+      "name": "LearnedWordDto",
+      "properties": [
+        {
+          "id": "1:7462820605691519990",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:644328035591147219",
+          "name": "word",
+          "type": 9
+        },
+        {
+          "id": "3:6619852648821044105",
+          "name": "category",
+          "type": 9
+        },
+        {
+          "id": "4:710499965575854570",
+          "name": "seenCount",
+          "type": 6
+        },
+        {
+          "id": "5:4285445396724260851",
+          "name": "exerciseCount",
+          "type": 6
+        },
+        {
+          "id": "7:1189825974059735989",
+          "name": "isMatchWordGenerated",
+          "type": 1
+        },
+        {
+          "id": "8:6814667837123945715",
+          "name": "isListenChooseGenerated",
+          "type": 1
+        },
+        {
+          "id": "9:4575710372249023277",
+          "name": "isSpellWordGenerated",
+          "type": 1
+        },
+        {
+          "id": "10:3437944950519997566",
+          "name": "isSentenceScrambleGenerated",
+          "type": 1
+        }
+      ],
+      "relations": []
     }
   ],
-  "lastEntityId": "2:5221871103982835752",
+  "lastEntityId": "3:4782035910515783715",
   "lastIndexId": "0:0",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
   "modelVersion": 5,
   "modelVersionParserMinimum": 5,
-  "retiredEntityUids": [],
+  "retiredEntityUids": [
+    725523412170617825
+  ],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    1606731236105225511,
+    7874128429129372026,
+    1313751514869386558,
+    4531644472347452069,
+    2670898210283975493,
+    7910490258205230046,
+    3040147420366792947
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

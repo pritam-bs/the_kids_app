@@ -35,15 +35,6 @@ abstract class ExerciseDto with _$ExerciseDto {
     required List<String> scrambledWords,
   }) = SentenceScrambleExerciseDto;
 
-  @FreezedUnionValue(ExerciseConstants.fillBlank)
-  const factory ExerciseDto.fillBlank({
-    required String targetGermanSentence,
-    required String englishTranslation,
-    required List<String> sentenceWithMissingWord,
-    required List<String> optionsForMissingWord,
-    required String correctAnswerWord,
-  }) = FillBlankExerciseDto;
-
   factory ExerciseDto.fromJson(Map<String, dynamic> json) =>
       _$ExerciseDtoFromJson(json);
 }

@@ -6,6 +6,13 @@ abstract class LearnedWordDataSource {
   Future<List<LearnedWordDto>> getAllWords();
   Future<void> updateSeenCount(String word, int newCount);
   Future<void> updateExerciseCount(String word, int newCount);
+  
+  // Methods for updating individual exercise generation flags
+  Future<void> updateMatchWordGenerated(String word, bool isGenerated);
+  Future<void> updateListenChooseGenerated(String word, bool isGenerated);
+  Future<void> updateSpellWordGenerated(String word, bool isGenerated);
+  Future<void> updateSentenceScrambleGenerated(String word, bool isGenerated);
+
   Future<void> deleteWord(String word);
   Stream<LearnedWordDto> get onNewWordAdded;
 }

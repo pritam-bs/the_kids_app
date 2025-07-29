@@ -1,11 +1,3 @@
-enum ExerciseType {
-  matchWord,
-  listenChoose,
-  spellWord,
-  sentenceScramble,
-  fillBlank,
-}
-
 abstract class ExerciseConstants {
   static const exerciseType = 'exerciseType';
   static const matchWord = 'matchWord';
@@ -15,6 +7,9 @@ abstract class ExerciseConstants {
   static const fillBlank = 'fillBlank';
 }
 
+enum ExerciseType { matchWord, listenChoose, spellWord, sentenceScramble }
+
+// Extension on the enum to get its value as a string
 extension ExerciseTypeExtension on ExerciseType {
   String get key {
     switch (this) {
@@ -26,8 +21,6 @@ extension ExerciseTypeExtension on ExerciseType {
         return ExerciseConstants.spellWord;
       case ExerciseType.sentenceScramble:
         return ExerciseConstants.sentenceScramble;
-      case ExerciseType.fillBlank:
-        return ExerciseConstants.fillBlank;
     }
   }
 
@@ -41,8 +34,6 @@ extension ExerciseTypeExtension on ExerciseType {
         return ExerciseType.spellWord;
       case ExerciseConstants.sentenceScramble:
         return ExerciseType.sentenceScramble;
-      case ExerciseConstants.fillBlank:
-        return ExerciseType.fillBlank;
       default:
         throw ArgumentError('Invalid exercise key: $key');
     }

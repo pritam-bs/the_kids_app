@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:the_kids_app/src/core/config/logging_config.dart';
 import 'package:the_kids_app/src/domain/errors/messages/error_messages.dart';
+import 'package:the_kids_app/src/domain/usecases/exercise_generator/exercise_generator_usecase.dart';
 import 'package:the_kids_app/src/domain/usecases/llm_model/model_usecase.dart';
 import 'exercise_home_event.dart';
 import 'exercise_home_state.dart';
@@ -10,11 +11,11 @@ import 'exercise_home_state.dart';
 @injectable
 class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
   final ModelUsecase _modelUsecase;
+  final ExerciseGeneratorUsecase _exerciseGeneratorUsecase;
   StreamSubscription<double>? _downloadSubscription;
 
-  ExerciseHomeBloc(
-    this._modelUsecase,
-  ) : super(const ExerciseHomeState.initial()) {
+  ExerciseHomeBloc(this._modelUsecase, this._exerciseGeneratorUsecase)
+    : super(const ExerciseHomeState.initial()) {
     on<CheckModelStatus>(_onCheckModelStatus);
     on<DownloadModelRequested>(_onDownloadModelRequested);
     on<DownloadCancelled>(_onDownloadCancelled);
@@ -39,8 +40,8 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     emit(const ExerciseHomeState.loading());
     try {
       // Check if a download is already in progress.
-      final bool isInProgress = await _modelUsecase.isModelDownloadedInProgress(
-      );
+      final bool isInProgress = await _modelUsecase
+          .isModelDownloadedInProgress();
 
       if (isInProgress) {
         // If it is, reattach to its progress stream.
@@ -76,10 +77,7 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     Emitter<ExerciseHomeState> emit,
   ) async {
     AppLogger.i('New model download requested.');
-    await _listenToDownloadStream(
-      _modelUsecase.download(),
-      emit,
-    );
+    await _listenToDownloadStream(_modelUsecase.download(), emit);
   }
 
   // A helper method to listen to a download stream, whether it's new or reattached.
@@ -144,6 +142,8 @@ class ExerciseHomeBloc extends Bloc<ExerciseHomeEvent, ExerciseHomeState> {
     await _cancelSubscription();
     // After any download completes, always re-check the status to get the final model info.
     add(CheckModelStatus());
+
+    await _exerciseGeneratorUsecase.handleModelDownloadCompletion();
   }
 
   Future<void> _onDownloadFailed(

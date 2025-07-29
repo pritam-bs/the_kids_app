@@ -14,7 +14,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$LearnedWordEntity {
 
- int? get id; String get word; String get category; int get seenCount; int get exerciseCount;
+ int? get id; String get word; String get category; int get seenCount; int get exerciseCount; bool get isMatchWordGenerated; bool get isListenChooseGenerated; bool get isSpellWordGenerated; bool get isSentenceScrambleGenerated;
 /// Create a copy of LearnedWordEntity
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -25,16 +25,16 @@ $LearnedWordEntityCopyWith<LearnedWordEntity> get copyWith => _$LearnedWordEntit
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is LearnedWordEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.word, word) || other.word == word)&&(identical(other.category, category) || other.category == category)&&(identical(other.seenCount, seenCount) || other.seenCount == seenCount)&&(identical(other.exerciseCount, exerciseCount) || other.exerciseCount == exerciseCount));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is LearnedWordEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.word, word) || other.word == word)&&(identical(other.category, category) || other.category == category)&&(identical(other.seenCount, seenCount) || other.seenCount == seenCount)&&(identical(other.exerciseCount, exerciseCount) || other.exerciseCount == exerciseCount)&&(identical(other.isMatchWordGenerated, isMatchWordGenerated) || other.isMatchWordGenerated == isMatchWordGenerated)&&(identical(other.isListenChooseGenerated, isListenChooseGenerated) || other.isListenChooseGenerated == isListenChooseGenerated)&&(identical(other.isSpellWordGenerated, isSpellWordGenerated) || other.isSpellWordGenerated == isSpellWordGenerated)&&(identical(other.isSentenceScrambleGenerated, isSentenceScrambleGenerated) || other.isSentenceScrambleGenerated == isSentenceScrambleGenerated));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,id,word,category,seenCount,exerciseCount);
+int get hashCode => Object.hash(runtimeType,id,word,category,seenCount,exerciseCount,isMatchWordGenerated,isListenChooseGenerated,isSpellWordGenerated,isSentenceScrambleGenerated);
 
 @override
 String toString() {
-  return 'LearnedWordEntity(id: $id, word: $word, category: $category, seenCount: $seenCount, exerciseCount: $exerciseCount)';
+  return 'LearnedWordEntity(id: $id, word: $word, category: $category, seenCount: $seenCount, exerciseCount: $exerciseCount, isMatchWordGenerated: $isMatchWordGenerated, isListenChooseGenerated: $isListenChooseGenerated, isSpellWordGenerated: $isSpellWordGenerated, isSentenceScrambleGenerated: $isSentenceScrambleGenerated)';
 }
 
 
@@ -45,7 +45,7 @@ abstract mixin class $LearnedWordEntityCopyWith<$Res>  {
   factory $LearnedWordEntityCopyWith(LearnedWordEntity value, $Res Function(LearnedWordEntity) _then) = _$LearnedWordEntityCopyWithImpl;
 @useResult
 $Res call({
- int? id, String word, String category, int seenCount, int exerciseCount
+ int? id, String word, String category, int seenCount, int exerciseCount, bool isMatchWordGenerated, bool isListenChooseGenerated, bool isSpellWordGenerated, bool isSentenceScrambleGenerated
 });
 
 
@@ -62,14 +62,18 @@ class _$LearnedWordEntityCopyWithImpl<$Res>
 
 /// Create a copy of LearnedWordEntity
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? word = null,Object? category = null,Object? seenCount = null,Object? exerciseCount = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? word = null,Object? category = null,Object? seenCount = null,Object? exerciseCount = null,Object? isMatchWordGenerated = null,Object? isListenChooseGenerated = null,Object? isSpellWordGenerated = null,Object? isSentenceScrambleGenerated = null,}) {
   return _then(_self.copyWith(
 id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int?,word: null == word ? _self.word : word // ignore: cast_nullable_to_non_nullable
 as String,category: null == category ? _self.category : category // ignore: cast_nullable_to_non_nullable
 as String,seenCount: null == seenCount ? _self.seenCount : seenCount // ignore: cast_nullable_to_non_nullable
 as int,exerciseCount: null == exerciseCount ? _self.exerciseCount : exerciseCount // ignore: cast_nullable_to_non_nullable
-as int,
+as int,isMatchWordGenerated: null == isMatchWordGenerated ? _self.isMatchWordGenerated : isMatchWordGenerated // ignore: cast_nullable_to_non_nullable
+as bool,isListenChooseGenerated: null == isListenChooseGenerated ? _self.isListenChooseGenerated : isListenChooseGenerated // ignore: cast_nullable_to_non_nullable
+as bool,isSpellWordGenerated: null == isSpellWordGenerated ? _self.isSpellWordGenerated : isSpellWordGenerated // ignore: cast_nullable_to_non_nullable
+as bool,isSentenceScrambleGenerated: null == isSentenceScrambleGenerated ? _self.isSentenceScrambleGenerated : isSentenceScrambleGenerated // ignore: cast_nullable_to_non_nullable
+as bool,
   ));
 }
 
@@ -154,10 +158,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? id,  String word,  String category,  int seenCount,  int exerciseCount)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? id,  String word,  String category,  int seenCount,  int exerciseCount,  bool isMatchWordGenerated,  bool isListenChooseGenerated,  bool isSpellWordGenerated,  bool isSentenceScrambleGenerated)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _LearnedWordEntity() when $default != null:
-return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exerciseCount);case _:
+return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exerciseCount,_that.isMatchWordGenerated,_that.isListenChooseGenerated,_that.isSpellWordGenerated,_that.isSentenceScrambleGenerated);case _:
   return orElse();
 
 }
@@ -175,10 +179,10 @@ return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exercis
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? id,  String word,  String category,  int seenCount,  int exerciseCount)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? id,  String word,  String category,  int seenCount,  int exerciseCount,  bool isMatchWordGenerated,  bool isListenChooseGenerated,  bool isSpellWordGenerated,  bool isSentenceScrambleGenerated)  $default,) {final _that = this;
 switch (_that) {
 case _LearnedWordEntity():
-return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exerciseCount);case _:
+return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exerciseCount,_that.isMatchWordGenerated,_that.isListenChooseGenerated,_that.isSpellWordGenerated,_that.isSentenceScrambleGenerated);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -195,10 +199,10 @@ return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exercis
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? id,  String word,  String category,  int seenCount,  int exerciseCount)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? id,  String word,  String category,  int seenCount,  int exerciseCount,  bool isMatchWordGenerated,  bool isListenChooseGenerated,  bool isSpellWordGenerated,  bool isSentenceScrambleGenerated)?  $default,) {final _that = this;
 switch (_that) {
 case _LearnedWordEntity() when $default != null:
-return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exerciseCount);case _:
+return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exerciseCount,_that.isMatchWordGenerated,_that.isListenChooseGenerated,_that.isSpellWordGenerated,_that.isSentenceScrambleGenerated);case _:
   return null;
 
 }
@@ -210,7 +214,7 @@ return $default(_that.id,_that.word,_that.category,_that.seenCount,_that.exercis
 
 
 class _LearnedWordEntity implements LearnedWordEntity {
-  const _LearnedWordEntity({this.id, required this.word, required this.category, this.seenCount = 0, this.exerciseCount = 0});
+  const _LearnedWordEntity({this.id, required this.word, required this.category, this.seenCount = 0, this.exerciseCount = 0, this.isMatchWordGenerated = false, this.isListenChooseGenerated = false, this.isSpellWordGenerated = false, this.isSentenceScrambleGenerated = false});
   
 
 @override final  int? id;
@@ -218,6 +222,10 @@ class _LearnedWordEntity implements LearnedWordEntity {
 @override final  String category;
 @override@JsonKey() final  int seenCount;
 @override@JsonKey() final  int exerciseCount;
+@override@JsonKey() final  bool isMatchWordGenerated;
+@override@JsonKey() final  bool isListenChooseGenerated;
+@override@JsonKey() final  bool isSpellWordGenerated;
+@override@JsonKey() final  bool isSentenceScrambleGenerated;
 
 /// Create a copy of LearnedWordEntity
 /// with the given fields replaced by the non-null parameter values.
@@ -229,16 +237,16 @@ _$LearnedWordEntityCopyWith<_LearnedWordEntity> get copyWith => __$LearnedWordEn
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LearnedWordEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.word, word) || other.word == word)&&(identical(other.category, category) || other.category == category)&&(identical(other.seenCount, seenCount) || other.seenCount == seenCount)&&(identical(other.exerciseCount, exerciseCount) || other.exerciseCount == exerciseCount));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _LearnedWordEntity&&(identical(other.id, id) || other.id == id)&&(identical(other.word, word) || other.word == word)&&(identical(other.category, category) || other.category == category)&&(identical(other.seenCount, seenCount) || other.seenCount == seenCount)&&(identical(other.exerciseCount, exerciseCount) || other.exerciseCount == exerciseCount)&&(identical(other.isMatchWordGenerated, isMatchWordGenerated) || other.isMatchWordGenerated == isMatchWordGenerated)&&(identical(other.isListenChooseGenerated, isListenChooseGenerated) || other.isListenChooseGenerated == isListenChooseGenerated)&&(identical(other.isSpellWordGenerated, isSpellWordGenerated) || other.isSpellWordGenerated == isSpellWordGenerated)&&(identical(other.isSentenceScrambleGenerated, isSentenceScrambleGenerated) || other.isSentenceScrambleGenerated == isSentenceScrambleGenerated));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,id,word,category,seenCount,exerciseCount);
+int get hashCode => Object.hash(runtimeType,id,word,category,seenCount,exerciseCount,isMatchWordGenerated,isListenChooseGenerated,isSpellWordGenerated,isSentenceScrambleGenerated);
 
 @override
 String toString() {
-  return 'LearnedWordEntity(id: $id, word: $word, category: $category, seenCount: $seenCount, exerciseCount: $exerciseCount)';
+  return 'LearnedWordEntity(id: $id, word: $word, category: $category, seenCount: $seenCount, exerciseCount: $exerciseCount, isMatchWordGenerated: $isMatchWordGenerated, isListenChooseGenerated: $isListenChooseGenerated, isSpellWordGenerated: $isSpellWordGenerated, isSentenceScrambleGenerated: $isSentenceScrambleGenerated)';
 }
 
 
@@ -249,7 +257,7 @@ abstract mixin class _$LearnedWordEntityCopyWith<$Res> implements $LearnedWordEn
   factory _$LearnedWordEntityCopyWith(_LearnedWordEntity value, $Res Function(_LearnedWordEntity) _then) = __$LearnedWordEntityCopyWithImpl;
 @override @useResult
 $Res call({
- int? id, String word, String category, int seenCount, int exerciseCount
+ int? id, String word, String category, int seenCount, int exerciseCount, bool isMatchWordGenerated, bool isListenChooseGenerated, bool isSpellWordGenerated, bool isSentenceScrambleGenerated
 });
 
 
@@ -266,14 +274,18 @@ class __$LearnedWordEntityCopyWithImpl<$Res>
 
 /// Create a copy of LearnedWordEntity
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? word = null,Object? category = null,Object? seenCount = null,Object? exerciseCount = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? word = null,Object? category = null,Object? seenCount = null,Object? exerciseCount = null,Object? isMatchWordGenerated = null,Object? isListenChooseGenerated = null,Object? isSpellWordGenerated = null,Object? isSentenceScrambleGenerated = null,}) {
   return _then(_LearnedWordEntity(
 id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int?,word: null == word ? _self.word : word // ignore: cast_nullable_to_non_nullable
 as String,category: null == category ? _self.category : category // ignore: cast_nullable_to_non_nullable
 as String,seenCount: null == seenCount ? _self.seenCount : seenCount // ignore: cast_nullable_to_non_nullable
 as int,exerciseCount: null == exerciseCount ? _self.exerciseCount : exerciseCount // ignore: cast_nullable_to_non_nullable
-as int,
+as int,isMatchWordGenerated: null == isMatchWordGenerated ? _self.isMatchWordGenerated : isMatchWordGenerated // ignore: cast_nullable_to_non_nullable
+as bool,isListenChooseGenerated: null == isListenChooseGenerated ? _self.isListenChooseGenerated : isListenChooseGenerated // ignore: cast_nullable_to_non_nullable
+as bool,isSpellWordGenerated: null == isSpellWordGenerated ? _self.isSpellWordGenerated : isSpellWordGenerated // ignore: cast_nullable_to_non_nullable
+as bool,isSentenceScrambleGenerated: null == isSentenceScrambleGenerated ? _self.isSentenceScrambleGenerated : isSentenceScrambleGenerated // ignore: cast_nullable_to_non_nullable
+as bool,
   ));
 }
 

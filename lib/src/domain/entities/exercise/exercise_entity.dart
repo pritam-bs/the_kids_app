@@ -32,15 +32,4 @@ sealed class ExerciseEntity with _$ExerciseEntity {
     required List<String>
     scrambledWords, // Scrambled words to construct the sentence
   }) = SentenceScrambleExerciseEntity;
-
-  // Data for "Build a Sentence" exercise
-  const factory ExerciseEntity.fillBlank({
-    required String
-    targetGermanSentence, // The complete correct German sentence
-    required String englishTranslation, // English translation
-    required List<String>
-    sentenceWithMissingWord, // German sentence with one '' for the blank
-    required List<String> optionsForMissingWord,
-    required String correctAnswerWord, // Options to fill the blank
-  }) = FillBlankExerciseEntity;
 }

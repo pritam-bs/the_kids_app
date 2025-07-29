@@ -67,6 +67,72 @@ class LearnedWordDataSourceImpl implements LearnedWordDataSource {
   }
 
   @override
+  Future<void> updateMatchWordGenerated(String word, bool isGenerated) async {
+    final query = _learnedWordBox
+        .query(LearnedWordDto_.word.equals(word))
+        .build();
+    final existingWord = query.findFirst();
+    query.close();
+
+    if (existingWord != null) {
+      _learnedWordBox.put(
+        existingWord.copyWith(isMatchWordGenerated: isGenerated),
+      );
+    }
+  }
+
+  @override
+  Future<void> updateListenChooseGenerated(
+    String word,
+    bool isGenerated,
+  ) async {
+    final query = _learnedWordBox
+        .query(LearnedWordDto_.word.equals(word))
+        .build();
+    final existingWord = query.findFirst();
+    query.close();
+
+    if (existingWord != null) {
+      _learnedWordBox.put(
+        existingWord.copyWith(isListenChooseGenerated: isGenerated),
+      );
+    }
+  }
+
+  @override
+  Future<void> updateSpellWordGenerated(String word, bool isGenerated) async {
+    final query = _learnedWordBox
+        .query(LearnedWordDto_.word.equals(word))
+        .build();
+    final existingWord = query.findFirst();
+    query.close();
+
+    if (existingWord != null) {
+      _learnedWordBox.put(
+        existingWord.copyWith(isSpellWordGenerated: isGenerated),
+      );
+    }
+  }
+
+  @override
+  Future<void> updateSentenceScrambleGenerated(
+    String word,
+    bool isGenerated,
+  ) async {
+    final query = _learnedWordBox
+        .query(LearnedWordDto_.word.equals(word))
+        .build();
+    final existingWord = query.findFirst();
+    query.close();
+
+    if (existingWord != null) {
+      _learnedWordBox.put(
+        existingWord.copyWith(isSentenceScrambleGenerated: isGenerated),
+      );
+    }
+  }
+
+  @override
   Future<void> deleteWord(String word) async {
     final query = _learnedWordBox
         .query(LearnedWordDto_.word.equals(word))
@@ -78,7 +144,7 @@ class LearnedWordDataSourceImpl implements LearnedWordDataSource {
       _learnedWordBox.remove(existingWord.id);
     }
   }
-  
+
   @override
   Stream<LearnedWordDto> get onNewWordAdded => _newWordsController.stream;
 }

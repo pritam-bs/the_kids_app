@@ -9,7 +9,7 @@ import 'package:the_kids_app/src/data/dtos/story/story_dto.dart';
 class StoryDataSourceImpl implements StoryDataSource {
   final InferenceDataSource _inferenceDataSource;
 
-  StoryDataSourceImpl(this._inferenceDataSource);
+  StoryDataSourceImpl(this._inferenceDataSource,);
 
   @override
   Future<StoryDto> fetchStory() async {
@@ -20,7 +20,6 @@ class StoryDataSourceImpl implements StoryDataSource {
         StoryTopic.values[random.nextInt(StoryTopic.values.length)];
 
     final String prompt = _generateStoryPrompt(randomTopic);
-
     // Call Gemma with the JSON-formatted prompt
     final String jsonResponse = await _inferenceDataSource.generateText(prompt);
 
@@ -34,7 +33,7 @@ class StoryDataSourceImpl implements StoryDataSource {
     } catch (e) {
       AppLogger.e('An unexpected error occurred: $e');
       rethrow;
-    }
+    } 
   }
 
   StoryDto _parseStoryResponse(String rawJson) {
