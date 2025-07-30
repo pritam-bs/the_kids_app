@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kühe",
-    "pluralEn": "Cows",
-    "imagePrompt": "Cartoon style, friendly cow standing, white background, for children's learning."
+    "pluralEn": "Cows"
   },
   {
     "exampleSentenceDe": "Das Schwein grunzt laut.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Schweine",
-    "pluralEn": "Pigs",
-    "imagePrompt": "Pink pig smiling, cartoon style, white background, for children's learning."
+    "pluralEn": "Pigs"
   },
   {
     "exampleSentenceDe": "Das Schaf frisst Gras.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Schafe",
-    "pluralEn": "Sheep",
-    "imagePrompt": "Fluffy white sheep eating green grass, cartoon style, white background, for children's learning."
+    "pluralEn": "Sheep"
   },
   {
     "exampleSentenceDe": "Der Hahn kräht am Morgen.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hähne",
-    "pluralEn": "Roosters",
-    "imagePrompt": "\"Cartoon rooster crowing, bright colors, white background, for children's learning.\""
+    "pluralEn": "Roosters"
   },
   {
     "exampleSentenceDe": "Das Huhn legt ein Ei.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Hühner",
-    "pluralEn": "Hens",
-    "imagePrompt": "Cartoon hen laying a brown egg, white background, for children's learning."
+    "pluralEn": "Hens"
   },
   {
     "exampleSentenceDe": "Das Pferd wiehert.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Pferde",
-    "pluralEn": "Horses",
-    "imagePrompt": "Cartoon horse standing, happy, white background, for children's learning."
+    "pluralEn": "Horses"
   },
   {
     "exampleSentenceDe": "Die Ente schwimmt im Teich.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Enten",
-    "pluralEn": "Ducks",
-    "imagePrompt": "Cartoon duck swimming, white background, for children's learning."
+    "pluralEn": "Ducks"
   },
   {
     "exampleSentenceDe": "Die Ziege klettert auf den Baumstumpf.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Ziegen",
-    "pluralEn": "Goats",
-    "imagePrompt": "A happy goat standing on green grass, cartoon style, white background, for children's learning."
+    "pluralEn": "Goats"
   },
   {
     "exampleSentenceDe": "Der Esel ist grau.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Esel",
-    "pluralEn": "Donkeys",
-    "imagePrompt": "Cartoon style grey donkey standing, white background, for children's learning."
+    "pluralEn": "Donkeys"
   },
   {
     "exampleSentenceDe": "Das Küken ist klein und gelb.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Küken",
-    "pluralEn": "Chicks",
-    "imagePrompt": "Cartoon yellow baby bird standing, white background, for children's learning."
+    "pluralEn": "Chicks"
   },
   {
     "exampleSentenceDe": "Der Truthahn hat ein buntes Gefieder.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Truthähne",
-    "pluralEn": "Turkeys",
-    "imagePrompt": "Cartoon turkey with colorful feathers, white background, for children's learning."
+    "pluralEn": "Turkeys"
   },
   {
     "exampleSentenceDe": "Die Katze jagt die Maus auf dem Bauernhof.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Katzen",
-    "pluralEn": "Cats",
-    "imagePrompt": "Cartoon cat sitting, white background, for children's learning."
+    "pluralEn": "Cats"
   },
   {
     "exampleSentenceDe": "Der Hund bewacht den Bauernhof.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hunde",
-    "pluralEn": "Dogs",
-    "imagePrompt": "Cartoon style image of a happy brown puppy sitting, white background, for children's learning."
+    "pluralEn": "Dogs"
   },
   {
     "exampleSentenceDe": "Das Kalb trinkt Milch.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Kälber",
-    "pluralEn": "Calves",
-    "imagePrompt": "Cartoon baby cow drinking from a bottle, white background, for children's learning."
+    "pluralEn": "Calves"
   },
   {
     "exampleSentenceDe": "Das Fohlen rennt auf der Wiese.",
@@ -191,21 +177,19 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Fohlen",
-    "pluralEn": "Foals",
-    "imagePrompt": "\"A baby horse running in a green field, cartoon style, white background, for children's learning.\""
+    "pluralEn": "Foals"
   },
   {
     "exampleSentenceDe": "Das Lamm ist sehr klein.",
     "exampleSentenceEn": "The lamb is very small.",
     "id": "farm_animals_lamm_16",
-    "ipa": "lam",
+    "ipa": "/lam/",
     "wordDe": "Lamm",
     "wordEn": "Lamb",
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Lämmer",
-    "pluralEn": "Lambs",
-    "imagePrompt": "A fluffy baby sheep standing on grass, cartoon style, white background, for children's learning."
+    "pluralEn": "Lambs"
   },
   {
     "exampleSentenceDe": "Die Gans schnattert laut.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Gänse",
-    "pluralEn": "Geese",
-    "imagePrompt": "Cartoon goose standing, white background, for children's learning."
+    "pluralEn": "Geese"
   },
   {
     "exampleSentenceDe": "Der Bauer kümmert sich um die Tiere.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bauern",
-    "pluralEn": "Farmers",
-    "imagePrompt": "Cartoon farmer with overalls, holding a rake, white background, for children's learning."
+    "pluralEn": "Farmers"
   },
   {
     "exampleSentenceDe": "Die Bäuerin füttert die Hühner.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Bäuerinnen",
-    "pluralEn": "Farmers' wives",
-    "imagePrompt": "Smiling woman in overalls feeding chickens, cartoon style, white background, for children's learning."
+    "pluralEn": "Farmers' wives"
   },
   {
     "exampleSentenceDe": "Der Stall ist sauber.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Ställe",
-    "pluralEn": "Stables",
-    "imagePrompt": "Cartoon style horse inside a wooden barn, white background, for children's learning."
+    "pluralEn": "Stables"
   },
   {
     "exampleSentenceDe": "Die Weide ist grün.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Weiden",
-    "pluralEn": "Pastures",
-    "imagePrompt": "Cartoon cow eating grass in a green field, white background, for children's learning."
+    "pluralEn": "Pastures"
   },
   {
     "exampleSentenceDe": "Die Tiere sind auf dem Bauernhof.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bauernhöfe",
-    "pluralEn": "Farms",
-    "imagePrompt": "Cartoon style farm with animals, white background, for children's learning."
+    "pluralEn": "Farms"
   },
   {
     "exampleSentenceDe": "Der Traktor ist rot.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Traktoren",
-    "pluralEn": "Tractors",
-    "imagePrompt": "Cartoon style red tractor on a white background, for children's learning."
+    "pluralEn": "Tractors"
   },
   {
     "exampleSentenceDe": "Die Melkmaschine hilft beim Melken der Kühe.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Melkmaschinen",
-    "pluralEn": "Milking machines",
-    "imagePrompt": "Cartoon style milking machine attaching to a cow's udder, white background, for children's learning."
+    "pluralEn": "Milking machines"
   },
   {
     "exampleSentenceDe": "Das Heu ist Futter für die Kühe.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Pile of yellow straw, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Wolle vom Schaf ist weich.",
@@ -334,7 +309,6 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, fluffy white sheep with wool, white background, for children's learning."
+    "pluralEn": null
   }
 ]

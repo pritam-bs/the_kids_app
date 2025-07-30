@@ -6,11 +6,10 @@
     "ipa": "haˈloː",
     "wordDe": "Hallo",
     "wordEn": "Hello",
-    "wordType": "noun",
-    "article": "das",
-    "pluralDe": "Hallos",
-    "pluralEn": "Hellos",
-    "imagePrompt": "Smiling cartoon sun waving, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Guten Morgen! Die Sonne scheint.",
@@ -19,11 +18,10 @@
     "ipa": "ˈɡuːtn̩ ˈmɔʁɡən",
     "wordDe": "Guten Morgen",
     "wordEn": "Good morning",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "Guten Morgen",
-    "pluralEn": "Good mornings",
-    "imagePrompt": "Cartoon style, sun smiling, rising over houses, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Guten Tag! Was machst du?",
@@ -32,11 +30,10 @@
     "ipa": "ˈɡuːtn̩ ˈtaːk",
     "wordDe": "Guten Tag",
     "wordEn": "Good day",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "Guten Tage",
-    "pluralEn": "Good days",
-    "imagePrompt": "Smiling sun character waving hello, cartoon style, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Guten Abend! Schlaf gut.",
@@ -45,11 +42,10 @@
     "ipa": "ˈɡuːtn̩ ˈaːbn̩t",
     "wordDe": "Guten Abend",
     "wordEn": "Good evening",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "Guten Abende",
-    "pluralEn": "Good evenings",
-    "imagePrompt": "Cartoon style, smiling sun setting, happy children waving, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Gute Nacht! Träum süß.",
@@ -58,11 +54,10 @@
     "ipa": "ˈɡuːtə ˈnaχt",
     "wordDe": "Gute Nacht",
     "wordEn": "Good night",
-    "wordType": "noun",
-    "article": "die",
-    "pluralDe": "Guten Nächte",
-    "pluralEn": "Good nights",
-    "imagePrompt": "Cartoon style, child sleeping in bed under blanket, moon and stars, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Auf Wiedersehen! Bis bald.",
@@ -71,11 +66,10 @@
     "ipa": "aʊ̯f ˈviːdɐˌzeːən",
     "wordDe": "Auf Wiedersehen",
     "wordEn": "Goodbye",
-    "wordType": "noun",
-    "article": "das",
+    "wordType": "phrase",
+    "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon waving hand saying bye, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Tschüss! Wir sehen uns.",
@@ -84,11 +78,10 @@
     "ipa": "t͡ʃʏs",
     "wordDe": "Tschüss",
     "wordEn": "Bye",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "Tschüss",
-    "pluralEn": "Byes",
-    "imagePrompt": "Cartoon waving hand saying goodbye, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Bis bald! Spiel schön.",
@@ -97,11 +90,10 @@
     "ipa": "bɪs ˈbalt",
     "wordDe": "Bis bald",
     "wordEn": "See you soon",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon friends waving goodbye, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Danke! Das ist nett.",
@@ -110,11 +102,10 @@
     "ipa": "ˈdaŋkə",
     "wordDe": "Danke",
     "wordEn": "Thank you",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "Danke",
-    "pluralEn": "Thanks",
-    "imagePrompt": "Cartoon style, a happy child giving a gift, white background, for children's learning."
+    "wordType": "adverb",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Bitte! Gern geschehen.",
@@ -123,11 +114,10 @@
     "ipa": "ˈbɪtə",
     "wordDe": "Bitte",
     "wordEn": "Please/You're welcome",
-    "wordType": "noun",
-    "article": "die",
-    "pluralDe": "Bitten",
-    "pluralEn": "Pleas",
-    "imagePrompt": "A smiling child gives a present to another child, cartoon style, white background, for children's learning."
+    "wordType": "adverb",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Entschuldigung! Ich habe es nicht gehört.",
@@ -136,11 +126,10 @@
     "ipa": "ɛntˈʃʊldɪɡʊŋ",
     "wordDe": "Entschuldigung",
     "wordEn": "Excuse me/Sorry",
-    "wordType": "noun",
-    "article": "die",
-    "pluralDe": "Entschuldigungen",
-    "pluralEn": "Apologies",
-    "imagePrompt": "Cartoon rabbit saying \"Oops!\" with spilled juice, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ja, bitte!",
@@ -152,8 +141,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Happy kid nodding head 'yes', cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Nein, danke!",
@@ -165,8 +153,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a happy girl shaking her head, with a big red X over her head, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Gern geschehen!",
@@ -175,11 +162,10 @@
     "ipa": "ˈɡɛʁn ɡəˈʃeːən",
     "wordDe": "Gern geschehen",
     "wordEn": "You're welcome",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling girl giving a present, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Prost! Auf die Freundschaft!",
@@ -188,11 +174,10 @@
     "ipa": "pʁoːst",
     "wordDe": "Prost",
     "wordEn": "Cheers",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "Proste",
-    "pluralEn": "Cheers",
-    "imagePrompt": "Two cartoon mugs smiling, clinking together, white background, for children's learning."
+    "wordType": "other",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Herzlich willkommen! Komm herein.",
@@ -201,11 +186,10 @@
     "ipa": "ˈhɛʁt͡slɪç ˈvɪlkɔmən",
     "wordDe": "Herzlich willkommen",
     "wordEn": "Welcome",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"A friendly cartoon doorway with open arms inviting someone inside, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie geht es dir?",
@@ -214,37 +198,34 @@
     "ipa": "viː ˈɡeːt ɛs diːɐ̯",
     "wordDe": "Wie geht es dir?",
     "wordEn": "How are you?",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon face smiling and waving, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Mir geht es gut, danke!",
     "exampleSentenceEn": "I am fine, thank you!",
     "id": "greetings_mirGehtsGut_18",
-    "ipa": "miːɐ̯ ˈɡeːt ɛs ˈɡuːt ˈdaŋkə",
+    "ipa": "miːɐ̯ ˈɡeːt ɛs ˈɡuːt",
     "wordDe": "Mir geht es gut",
     "wordEn": "I'm fine",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling cartoon face with thumbs up, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es freut mich, dich kennenzulernen!",
     "exampleSentenceEn": "Nice to meet you!",
     "id": "greetings_freutMich_19",
-    "ipa": "ɛs ˈfʁɔɪ̯t mɪç dɪç ˈkɛnənˌt͡suːˌlɛʁnən",
+    "ipa": "ɛs ˈfʁɔɪ̯t mɪç",
     "wordDe": "Es freut mich",
     "wordEn": "Nice to meet you",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two happy children shaking hands, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Bis später!",
@@ -253,10 +234,9 @@
     "ipa": "bɪs ˈʃpɛːtɐ",
     "wordDe": "Bis später",
     "wordEn": "See you later",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style. Two kids waving goodbye, smiling, white background, for children's learning."
+    "pluralEn": null
   }
 ]

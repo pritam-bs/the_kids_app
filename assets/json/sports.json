@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Fußbälle",
-    "pluralEn": "Footballs",
-    "imagePrompt": "Cartoon style soccer ball on a white background, for children's learning."
+    "pluralEn": "Footballs"
   },
   {
     "exampleSentenceDe": "Wir spielen Basketball in der Halle.",
@@ -22,21 +21,19 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Basketbälle",
-    "pluralEn": "Basketballs",
-    "imagePrompt": "Orange ball going into a net, cartoon style, white background, for children's learning."
+    "pluralEn": "Basketballs"
   },
   {
     "exampleSentenceDe": "Sie schwimmt sehr schnell.",
     "exampleSentenceEn": "She swims very fast.",
     "id": "sports_schwimmen_03",
     "ipa": "ˈʃvɪmən",
-    "wordDe": "Schwimmen",
-    "wordEn": "Swimming",
-    "wordType": "noun",
-    "article": "das",
+    "wordDe": "schwimmen",
+    "wordEn": "to swim",
+    "wordType": "verb",
+    "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl swimming in a pool, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Er fährt gern Fahrrad.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Fahrräder",
-    "pluralEn": "Bicycles",
-    "imagePrompt": "Cartoon bicycle with a basket, white background, for children's learning."
+    "pluralEn": "Bicycles"
   },
   {
     "exampleSentenceDe": "Ich tanze gern Ballett.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ballette",
-    "pluralEn": "Ballets",
-    "imagePrompt": "Girl in pink tutu dancing, cartoon style, white background, for children's learning."
+    "pluralEn": "Ballets"
   },
   {
     "exampleSentenceDe": "Wir spielen Tennis im Park.",
@@ -74,25 +69,23 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon-style tennis racket hitting a yellow ball, white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sie reitet auf einem Pferd.",
     "exampleSentenceEn": "She rides on a horse.",
     "id": "sports_reiten_07",
     "ipa": "ˈʁaɪ̯tn̩",
-    "wordDe": "Reiten",
-    "wordEn": "Riding",
-    "wordType": "noun",
-    "article": "das",
+    "wordDe": "reiten",
+    "wordEn": "ride",
+    "wordType": "verb",
+    "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl riding a happy horse, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Er mag es, zu joggen.",
-    "exampleSentenceEn": "He likes to jog.",
+    "exampleSentenceDe": "Joggen macht Spaß!",
+    "exampleSentenceEn": "Jogging is fun!",
     "id": "sports_joggen_08",
     "ipa": "ˈdʒɔɡən",
     "wordDe": "Joggen",
@@ -100,21 +93,19 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style person running, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich klettere gern auf Bäume.",
     "exampleSentenceEn": "I like to climb trees.",
     "id": "sports_klettern_09",
     "ipa": "ˈklɛtɐn",
-    "wordDe": "Klettern",
-    "wordEn": "Climbing",
-    "wordType": "noun",
-    "article": "das",
+    "wordDe": "klettern",
+    "wordEn": "to climb",
+    "wordType": "verb",
+    "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy kid climbing a colorful ladder, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir machen Yoga am Morgen.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl stretching in yoga pose, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich spiele gern.",
@@ -139,8 +129,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style kids playing in playground, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin sportlich.",
@@ -152,8 +141,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon of a happy child running fast, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist ein Ball.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bälle",
-    "pluralEn": "Balls",
-    "imagePrompt": "Cartoon style, colorful round ball, white background, for children's learning."
+    "pluralEn": "Balls"
   },
   {
     "exampleSentenceDe": "Ich mag Sport.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Sportarten",
-    "pluralEn": "Sports",
-    "imagePrompt": "Cartoon style, kids playing soccer, white background, for children's learning."
+    "pluralEn": "Sports"
   },
   {
     "exampleSentenceDe": "Ich gewinne das Spiel.",
@@ -191,8 +177,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child winning a race, holding a trophy, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir verlieren das Spiel nicht!",
@@ -204,8 +189,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a sad child with a dropped ice cream cone, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist die Mannschaft.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mannschaften",
-    "pluralEn": "Teams",
-    "imagePrompt": "Cartoon style illustration of a diverse group of kids playing soccer together, white background, for children's learning."
+    "pluralEn": "Teams"
   },
   {
     "exampleSentenceDe": "Ich trainiere jeden Tag.",
@@ -230,8 +213,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon dog doing push-ups, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich laufe schnell.",
@@ -243,8 +225,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl running fast, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich springe hoch.",
@@ -256,8 +237,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl happily jumping up in cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist ein Tor.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Tore",
-    "pluralEn": "Goals",
-    "imagePrompt": "Soccer ball going into a net, cartoon style, white background, for children's learning."
+    "pluralEn": "Goals"
   },
   {
     "exampleSentenceDe": "Der Schiedsrichter pfeift.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Schiedsrichter",
-    "pluralEn": "Referees",
-    "imagePrompt": "Cartoon referee blowing a whistle, black and white stripes, white background, for children's learning."
+    "pluralEn": "Referees"
   },
   {
     "exampleSentenceDe": "Wir machen einen Wettkampf.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Wettkämpfe",
-    "pluralEn": "Competitions",
-    "imagePrompt": "Cartoon style race with kids running, white background, for children's learning."
+    "pluralEn": "Competitions"
   },
   {
     "exampleSentenceDe": "Das Stadion ist groß.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Stadien",
-    "pluralEn": "Stadiums",
-    "imagePrompt": "\"Cartoon style sports arena, white background, for children's learning\""
+    "pluralEn": "Stadiums"
   },
   {
     "exampleSentenceDe": "Ich habe einen Helm.",
@@ -321,21 +297,19 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Helme",
-    "pluralEn": "Helmets",
-    "imagePrompt": "Cartoon style yellow construction worker hard hat on white background, for children's learning."
+    "pluralEn": "Helmets"
   },
   {
-    "exampleSentenceDe": "Wir brauchen Sportschuhe.",
-    "exampleSentenceEn": "We need sports shoes.",
+    "exampleSentenceDe": "Das ist mein Sportschuh.",
+    "exampleSentenceEn": "That is my sports shoe.",
     "id": "sports_sportschuhe_26",
-    "ipa": "ˈʃpɔɐ̯tˌʃuːə",
-    "wordDe": "Sportschuhe",
-    "wordEn": "Sports shoes",
+    "ipa": "ˈʃpɔɐ̯tˌʃuː",
+    "wordDe": "Sportschuh",
+    "wordEn": "Sports shoe",
     "wordType": "noun",
-    "article": "die",
+    "article": "der",
     "pluralDe": "Sportschuhe",
-    "pluralEn": "Sports shoes",
-    "imagePrompt": "Cartoon style, two colorful running shoes, white background, for children's learning."
+    "pluralEn": "Sports shoes"
   },
   {
     "exampleSentenceDe": "Er hat eine Medaille gewonnen.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Medaillen",
-    "pluralEn": "Medals",
-    "imagePrompt": "A shiny gold circle with a star, cartoon style, white background, for children's learning."
+    "pluralEn": "Medals"
   },
   {
     "exampleSentenceDe": "Ich mag Eishockey.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style illustration of a kid playing ice hockey, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir fahren Ski im Winter.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Ski",
-    "pluralEn": "Skis",
-    "imagePrompt": "Cartoon style, a child skiing downhill, white background, for children's learning."
+    "pluralEn": "Skis"
   },
   {
     "exampleSentenceDe": "Ich mag Gymnastik.",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl doing a cartwheel, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir machen Leichtathletik.",
@@ -399,8 +369,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy child running a race, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Bist du fit?",
@@ -412,8 +381,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a happy child running, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir sind schnell.",
@@ -425,8 +393,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"A cheetah running very quickly, cartoon style, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin ein Athlet.",
@@ -438,8 +405,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Athleten",
-    "pluralEn": "Athletes",
-    "imagePrompt": "Cartoon style boy running fast, white background, for children's learning."
+    "pluralEn": "Athletes"
   },
   {
     "exampleSentenceDe": "Ich brauche eine Pause.",
@@ -451,8 +417,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Pausen",
-    "pluralEn": "Breaks",
-    "imagePrompt": "Cartoon style, white background: A smiling child resting under a tree, for children's learning."
+    "pluralEn": "Breaks"
   },
   {
     "exampleSentenceDe": "Wir machen eine Übung.",
@@ -464,8 +429,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Übungen",
-    "pluralEn": "Exercises",
-    "imagePrompt": "Cartoon child jumping, white background, for children's learning."
+    "pluralEn": "Exercises"
   },
   {
     "exampleSentenceDe": "Ich schwimme im See.",
@@ -477,8 +441,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Seen",
-    "pluralEn": "Lakes",
-    "imagePrompt": "Cartoon style, calm water with a small blue boat, white background, for children's learning."
+    "pluralEn": "Lakes"
   },
   {
     "exampleSentenceDe": "Wir wandern im Wald.",
@@ -490,8 +453,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Wälder",
-    "pluralEn": "Forests",
-    "imagePrompt": "Tall green trees, cartoon style, white background, for children's learning."
+    "pluralEn": "Forests"
   },
   {
     "exampleSentenceDe": "Ich bin aktiv.",
@@ -503,8 +465,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style child running happily, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Er ist stark.",
@@ -516,8 +477,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, muscular superhero lifting a heavy barbell, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich brauche Wasser.",
@@ -528,9 +488,8 @@
     "wordEn": "Water",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a clear glass filled with water, white background, for children's learning."
+    "pluralDe": "Wässer",
+    "pluralEn": "waters"
   },
   {
     "exampleSentenceDe": "Ich bin müde.",
@@ -542,8 +501,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a sleepy bear yawning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich erhole mich.",
@@ -555,21 +513,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon of a child sleeping peacefully in a hammock, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir spielen Badminton.",
     "exampleSentenceEn": "We play badminton.",
     "id": "sports_badminton_44",
-    "ipa": "ˈbædmɪntən",
+    "ipa": "ˈbaːdmɪntɔn",
     "wordDe": "Badminton",
     "wordEn": "Badminton",
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style shuttlecock and rackets on white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich mag Radfahren.",
@@ -581,8 +537,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl riding a bicycle, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Er macht Kampfsport.",
@@ -594,8 +549,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Kampfsportarten",
-    "pluralEn": "Martial arts",
-    "imagePrompt": "Cartoon child practicing karate, white background, for children's learning."
+    "pluralEn": "Martial arts"
   },
   {
     "exampleSentenceDe": "Ich schwimme im Pool.",
@@ -607,20 +561,18 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pools",
-    "pluralEn": "Pools",
-    "imagePrompt": "Cartoon style swimming pool, blue water, white background, for children's learning."
+    "pluralEn": "Pools"
   },
   {
-    "exampleSentenceDe": "Wir machen einen Ausflug.",
-    "exampleSentenceEn": "We take a trip.",
-    "id": "sports_ausflug_48",
-    "ipa": "ˈaʊ̯sˌfluːk",
-    "wordDe": "Ausflug",
-    "wordEn": "Excursion",
+    "exampleSentenceDe": "Ich spiele mit dem Ball.",
+    "exampleSentenceEn": "I play with the ball.",
+    "id": "sports_ball_48",
+    "ipa": "bal",
+    "wordDe": "Ball",
+    "wordEn": "Ball",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "Ausflüge",
-    "pluralEn": "Excursions",
-    "imagePrompt": "Cartoon family having a picnic in a park, white background, for children's learning."
+    "pluralDe": "Bälle",
+    "pluralEn": "Balls"
   }
 ]

@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hunde",
-    "pluralEn": "dogs",
-    "imagePrompt": "Cartoon dog sitting, white background, for children's learning."
+    "pluralEn": "dogs"
   },
   {
     "exampleSentenceDe": "Die Katze spielt mit dem Ball.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Katzen",
-    "pluralEn": "cats",
-    "imagePrompt": "Cartoon style cat playing with a yarn ball, white background, for children's learning."
+    "pluralEn": "cats"
   },
   {
     "exampleSentenceDe": "Der Hamster frisst Sonnenblumenkerne.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hamster",
-    "pluralEn": "hamsters",
-    "imagePrompt": "Cartoon hamster eating sunflower seeds, white background, for children's learning."
+    "pluralEn": "hamsters"
   },
   {
     "exampleSentenceDe": "Das Meerschweinchen piepst.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Meerschweinchen",
-    "pluralEn": "guinea pigs",
-    "imagePrompt": "Cute cartoon guinea pig sitting, white background, for children's learning."
+    "pluralEn": "guinea pigs"
   },
   {
     "exampleSentenceDe": "Der Papagei kann sprechen.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Papageien",
-    "pluralEn": "parrots",
-    "imagePrompt": "Colorful cartoon parrot sitting on a branch, white background, for children's learning."
+    "pluralEn": "parrots"
   },
   {
     "exampleSentenceDe": "Der Fisch schwimmt im Aquarium.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Fische",
-    "pluralEn": "fish",
-    "imagePrompt": "Cartoon yellow fish swimming, white background, for children's learning."
+    "pluralEn": "fish"
   },
   {
     "exampleSentenceDe": "Die Schildkröte ist langsam.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schildkröten",
-    "pluralEn": "turtles",
-    "imagePrompt": "Cartoon turtle smiling, green shell, white background, for children's learning."
+    "pluralEn": "turtles"
   },
   {
     "exampleSentenceDe": "Der Hase knabbert an der Karotte.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hasen",
-    "pluralEn": "rabbits",
-    "imagePrompt": "Cartoon rabbit eating a carrot, white background, for children's learning."
+    "pluralEn": "rabbits"
   },
   {
     "exampleSentenceDe": "Die Maus ist klein.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mäuse",
-    "pluralEn": "mice",
-    "imagePrompt": "Cartoon style, a small gray mouse, white background, for children's learning."
+    "pluralEn": "mice"
   },
   {
     "exampleSentenceDe": "Der Vogel singt schön.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Vögel",
-    "pluralEn": "birds",
-    "imagePrompt": "Cartoon bird flying, happy, white background, for children's learning."
+    "pluralEn": "birds"
   },
   {
     "exampleSentenceDe": "Der Hund ist treu.",
@@ -139,8 +129,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, happy dog sitting next to a smiling child, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Katze ist verspielt.",
@@ -152,8 +141,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy cat playing with a ball of yarn, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir füttern den Fisch.",
@@ -165,8 +153,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child feeding fish in a bowl, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Hund spielt gern.",
@@ -178,8 +165,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Happy dog chasing a red ball in a park, cartoon style, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Futter ist im Napf.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Näpfe",
-    "pluralEn": "bowls",
-    "imagePrompt": "Cartoon style, empty red dish, white background, for children's learning."
+    "pluralEn": "bowls"
   },
   {
     "exampleSentenceDe": "Der Käfig ist sauber.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Käfige",
-    "pluralEn": "cages",
-    "imagePrompt": "Cartoon style metal cage with a yellow bird inside, white background, for children's learning."
+    "pluralEn": "cages"
   },
   {
     "exampleSentenceDe": "Das Halsband ist rot.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Halsbänder",
-    "pluralEn": "collars",
-    "imagePrompt": "Cartoon dog wearing a blue collar, white background, for children's learning."
+    "pluralEn": "collars"
   },
   {
     "exampleSentenceDe": "Die Leine ist lang.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Leinen",
-    "pluralEn": "leashes",
-    "imagePrompt": "Cartoon dog on a leash held by a child, white background, for children's learning."
+    "pluralEn": "leashes"
   },
   {
     "exampleSentenceDe": "Wir gehen mit dem Hund spazieren.",
@@ -243,8 +225,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Happy family walking dog in park, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Katze schläft im Korb.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Körbe",
-    "pluralEn": "baskets",
-    "imagePrompt": "Cartoon style woven basket with colorful toys, white background, for children's learning."
+    "pluralEn": "baskets"
   },
   {
     "exampleSentenceDe": "Der Tierarzt hilft den Tieren.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Tierärzte",
-    "pluralEn": "veterinarians",
-    "imagePrompt": "Cartoon style drawing of a doctor examining a happy dog, white background, for children's learning."
+    "pluralEn": "veterinarians"
   },
   {
     "exampleSentenceDe": "Die Katze miaut.",
@@ -282,8 +261,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat meowing, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Hund bellt.",
@@ -295,8 +273,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon dog barking loudly, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Goldfisch schwimmt.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Goldfische",
-    "pluralEn": "goldfish",
-    "imagePrompt": "Cartoon orange fish swimming, white background, for children's learning."
+    "pluralEn": "goldfish"
   },
   {
     "exampleSentenceDe": "Das Aquarium ist groß.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Aquarien",
-    "pluralEn": "aquariums",
-    "imagePrompt": "Cartoon fish swimming in a glass tank, white background, for children's learning."
+    "pluralEn": "aquariums"
   },
   {
     "exampleSentenceDe": "Die Katze schnurrt leise.",
@@ -334,8 +309,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy cat with closed eyes, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Hund wedelt mit dem Schwanz.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Schwänze",
-    "pluralEn": "tails",
-    "imagePrompt": "Cartoon dog wagging its furry tail, white background, for children's learning."
+    "pluralEn": "tails"
   },
   {
     "exampleSentenceDe": "Das Fell des Hundes ist weich.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Felle",
-    "pluralEn": "furs",
-    "imagePrompt": "Cartoon style close-up of fluffy animal fur texture, white background, for children's learning."
+    "pluralEn": "furs"
   },
   {
     "exampleSentenceDe": "Das Kaninchen hat lange Ohren.",
@@ -373,12 +345,11 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ohren",
-    "pluralEn": "ears",
-    "imagePrompt": "Cartoon rabbit with big ears, white background, for children's learning."
+    "pluralEn": "ears"
   },
   {
-    "exampleSentenceDe": "Die Katze hat scharfe Krallen.",
-    "exampleSentenceEn": "The cat has sharp claws.",
+    "exampleSentenceDe": "Die Katze hat eine scharfe Kralle.",
+    "exampleSentenceEn": "The cat has a sharp claw.",
     "id": "pets_kralle_30",
     "ipa": "ˈkʁalə",
     "wordDe": "Kralle",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Krallen",
-    "pluralEn": "claws",
-    "imagePrompt": "Cartoon animal paw with sharp nails, white background, for children's learning."
+    "pluralEn": "claws"
   },
   {
     "exampleSentenceDe": "Der Hund braucht viel Auslauf.",
@@ -399,8 +369,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Ausläufe",
-    "pluralEn": "exercises",
-    "imagePrompt": "Cartoon dog running happily in a park, white background, for children's learning."
+    "pluralEn": "exercises"
   },
   {
     "exampleSentenceDe": "Das Pony ist ein kleines Pferd.",
@@ -412,8 +381,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ponys",
-    "pluralEn": "ponies",
-    "imagePrompt": "Small horse with a short mane, cartoon style, white background, for children's learning."
+    "pluralEn": "ponies"
   },
   {
     "exampleSentenceDe": "Wir putzen den Stall.",
@@ -425,8 +393,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Ställe",
-    "pluralEn": "stables",
-    "imagePrompt": "Cartoon style horse inside a barn, white background, for children's learning."
+    "pluralEn": "stables"
   },
   {
     "exampleSentenceDe": "Die Katze jagt die Maus.",
@@ -438,8 +405,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style cat chasing a happy mouse, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir streicheln den Hund.",
@@ -451,7 +417,6 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Happy child gently petting a fluffy dog, cartoon style, white background, for children's learning."
+    "pluralEn": null
   }
 ]

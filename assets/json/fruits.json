@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Äpfel",
-    "pluralEn": "Apples",
-    "imagePrompt": "A red apple, cartoon style, white background, for children's learning."
+    "pluralEn": "Apples"
   },
   {
     "exampleSentenceDe": "Ich mag Bananen.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Bananen",
-    "pluralEn": "Bananas",
-    "imagePrompt": "Cartoon yellow banana, smiling, white background, for children's learning."
+    "pluralEn": "Bananas"
   },
   {
     "exampleSentenceDe": "Die Orange ist saftig.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Orangen",
-    "pluralEn": "Oranges",
-    "imagePrompt": "A single, bright orange fruit, cartoon style, white background, for children's learning."
+    "pluralEn": "Oranges"
   },
   {
     "exampleSentenceDe": "Erdbeeren sind lecker.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Erdbeeren",
-    "pluralEn": "Strawberries",
-    "imagePrompt": "Cartoon style, red strawberry with green leaves, white background, for children's learning."
+    "pluralEn": "Strawberries"
   },
   {
     "exampleSentenceDe": "Ich esse eine Birne.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Birnen",
-    "pluralEn": "Pears",
-    "imagePrompt": "A single green pear, cartoon style, white background, for children's learning."
+    "pluralEn": "Pears"
   },
   {
     "exampleSentenceDe": "Die Zitrone ist sauer.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Zitronen",
-    "pluralEn": "Lemons",
-    "imagePrompt": "Cartoon style, a bright yellow lemon smiling, white background, for children's learning."
+    "pluralEn": "Lemons"
   },
   {
     "exampleSentenceDe": "Ich mag Weintrauben.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Weintrauben",
-    "pluralEn": "Grapes",
-    "imagePrompt": "Cartoon bunch of green grapes, white background, for children's learning."
+    "pluralEn": "Grapes"
   },
   {
     "exampleSentenceDe": "Die Kirsche ist rot.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kirschen",
-    "pluralEn": "Cherries",
-    "imagePrompt": "Two red cherries on a short branch, cartoon style, white background, for children's learning."
+    "pluralEn": "Cherries"
   },
   {
     "exampleSentenceDe": "Die Wassermelone ist groß.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wassermelonen",
-    "pluralEn": "Watermelons",
-    "imagePrompt": "Cartoon style, large watermelon slice, white background, for children's learning."
+    "pluralEn": "Watermelons"
   },
   {
     "exampleSentenceDe": "Die Pflaume ist süß.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Pflaumen",
-    "pluralEn": "Plums",
-    "imagePrompt": "A single purple fruit, cartoon style, white background, for children's learning."
+    "pluralEn": "Plums"
   },
   {
     "exampleSentenceDe": "Eine Mango ist lecker.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mangos",
-    "pluralEn": "Mangos",
-    "imagePrompt": "Cartoon style mango fruit, bright colors, white background, for children's learning."
+    "pluralEn": "Mangos"
   },
   {
     "exampleSentenceDe": "Die Himbeere ist klein.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Himbeeren",
-    "pluralEn": "Raspberries",
-    "imagePrompt": "Cartoon raspberry, bright red, white background, for children's learning."
+    "pluralEn": "Raspberries"
   },
   {
     "exampleSentenceDe": "Die Ananas ist gelb.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Ananas",
-    "pluralEn": "Pineapples",
-    "imagePrompt": "Cartoon pineapple, yellow, happy face, white background, for children's learning."
+    "pluralEn": "Pineapples"
   },
   {
     "exampleSentenceDe": "Ich liebe Blaubeeren.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Blaubeeren",
-    "pluralEn": "Blueberries",
-    "imagePrompt": "\"A small pile of round, purple berries in cartoon style, white background, for children's learning.\""
+    "pluralEn": "Blueberries"
   },
   {
     "exampleSentenceDe": "Die Kiwi ist grün.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kiwis",
-    "pluralEn": "Kiwis",
-    "imagePrompt": "Cartoon style, sliced green fruit, white background, for children's learning."
+    "pluralEn": "Kiwis"
   },
   {
     "exampleSentenceDe": "Ich esse eine Mandarine.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mandarinen",
-    "pluralEn": "Tangerines",
-    "imagePrompt": "Cartoon style, orange citrus fruit, peeled, white background, for children's learning."
+    "pluralEn": "Tangerines"
   },
   {
     "exampleSentenceDe": "Die Avocado ist cremig.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Avocados",
-    "pluralEn": "Avocados",
-    "imagePrompt": "Cartoon style, a happy green avocado with a pit, white background, for children's learning."
+    "pluralEn": "Avocados"
   },
   {
     "exampleSentenceDe": "Die Honigmelone ist süß.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Honigmelonen",
-    "pluralEn": "Honeydew melons",
-    "imagePrompt": "Cartoon-style green melon slice on a white background, for children's learning."
+    "pluralEn": "Honeydew melons"
   },
   {
     "exampleSentenceDe": "Die Grapefruit ist bitter.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Grapefruits",
-    "pluralEn": "Grapefruits",
-    "imagePrompt": "A large pink citrus fruit, cartoon style, white background, for children's learning."
+    "pluralEn": "Grapefruits"
   },
   {
     "exampleSentenceDe": "Die Brombeere ist dunkel.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Brombeeren",
-    "pluralEn": "Blackberries",
-    "imagePrompt": "\"A single, big, juicy dark purple berry on a white background, cartoon style, for children's learning.\""
+    "pluralEn": "Blackberries"
   },
   {
     "exampleSentenceDe": "Die Johannisbeere ist rot.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Johannisbeeren",
-    "pluralEn": "Currants",
-    "imagePrompt": "A bunch of small, round red berries on a branch, cartoon style, white background, for children's learning."
+    "pluralEn": "Currants"
   },
   {
     "exampleSentenceDe": "Die Nektarine ist glatt.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Nektarinen",
-    "pluralEn": "Nectarines",
-    "imagePrompt": "Cartoon style nectarine fruit, smooth skin, bright colors, white background, for children's learning."
+    "pluralEn": "Nectarines"
   },
   {
     "exampleSentenceDe": "Die Limette ist grün.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Limetten",
-    "pluralEn": "Limes",
-    "imagePrompt": "Cartoon style, a bright green lime cut in half, white background, for children's learning."
+    "pluralEn": "Limes"
   },
   {
     "exampleSentenceDe": "Die Heidelbeere ist blau.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Heidelbeeren",
-    "pluralEn": "Bilberries",
-    "imagePrompt": "Small, round blue berries in cartoon style on a bush, white background, for children's learning."
+    "pluralEn": "Bilberries"
   },
   {
     "exampleSentenceDe": "Ich mag Preiselbeeren.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Preiselbeeren",
-    "pluralEn": "Lingonberries",
-    "imagePrompt": "Cartoon style: Pile of small red berries, white background, for children's learning."
+    "pluralEn": "Lingonberries"
   },
   {
     "exampleSentenceDe": "Die Stachelbeere ist stachelig.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Stachelbeeren",
-    "pluralEn": "Gooseberries",
-    "imagePrompt": "Cartoon style, spiky green berry on a branch, white background, for children's learning."
+    "pluralEn": "Gooseberries"
   },
   {
     "exampleSentenceDe": "Die Aprikose ist orange.",
@@ -347,7 +321,6 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Aprikosen",
-    "pluralEn": "Apricots",
-    "imagePrompt": "An orange fruit with a leaf, cartoon style, white background, for children's learning."
+    "pluralEn": "Apricots"
   }
 ]

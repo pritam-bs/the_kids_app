@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Januare",
-    "pluralEn": "Januaries",
-    "imagePrompt": "Cartoon calendar showing number one, snowman, white background, for children's learning."
+    "pluralEn": "Januaries"
   },
   {
     "exampleSentenceDe": "Im Februar feiern wir Karneval.",
@@ -21,9 +20,8 @@
     "wordEn": "February",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "Februare",
-    "pluralEn": "Februaries",
-    "imagePrompt": "Cartoon calendar page showing February with hearts, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der März ist oft windig.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Märze",
-    "pluralEn": "Marches",
-    "imagePrompt": "Cartoon style, windy day, leaves blowing, white background, for children's learning."
+    "pluralEn": "Marches"
   },
   {
     "exampleSentenceDe": "Im April blühen die Blumen.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Aprile",
-    "pluralEn": "Aprils",
-    "imagePrompt": "Blooming flowers in springtime, cartoon style, white background, for children's learning."
+    "pluralEn": "Aprils"
   },
   {
     "exampleSentenceDe": "Der Mai ist ein schöner Monat.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Mai",
-    "pluralEn": "Mays",
-    "imagePrompt": "Cartoon style image of blooming flowers and a smiling sun, white background, for children's learning."
+    "pluralEn": "Mays"
   },
   {
     "exampleSentenceDe": "Im Juni beginnt der Sommer.",
@@ -73,9 +68,8 @@
     "wordEn": "June",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "Junis",
-    "pluralEn": "Junes",
-    "imagePrompt": "Cartoon calendar page for children's learning, showing the number 6, white background."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Juli ist oft sehr warm.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Julis",
-    "pluralEn": "Julies",
-    "imagePrompt": "Cartoon calendar page showing July with a sun, white background, for children's learning."
+    "pluralEn": "Julys"
   },
   {
     "exampleSentenceDe": "Im August fahren wir in Urlaub.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Auguste",
-    "pluralEn": "Augusts",
-    "imagePrompt": "Cartoon sun with sunglasses, calendar showing 'August', white background, for children's learning."
+    "pluralEn": "Augusts"
   },
   {
     "exampleSentenceDe": "Der September ist der Beginn des Herbstes.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "September",
-    "pluralEn": "Septembers",
-    "imagePrompt": "Cartoon style calendar page showing the number nine with falling leaves, white background, for children's learning."
+    "pluralEn": "Septembers"
   },
   {
     "exampleSentenceDe": "Im Oktober werden die Blätter bunt.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Oktober",
-    "pluralEn": "Octobers",
-    "imagePrompt": "Falling colorful leaves, cartoon style, white background, for children's learning."
+    "pluralEn": "Octobers"
   },
   {
     "exampleSentenceDe": "Der November ist oft grau.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "November",
-    "pluralEn": "Novembers",
-    "imagePrompt": "A cartoon calendar showing autumn leaves falling, white background, for children's learning."
+    "pluralEn": "Novembers"
   },
   {
     "exampleSentenceDe": "Im Dezember feiern wir Weihnachten.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Dezember",
-    "pluralEn": "Decembers",
-    "imagePrompt": "Cartoon style snowman next to a Christmas tree on white background for children's learning."
+    "pluralEn": "Decembers"
   },
   {
     "exampleSentenceDe": "Wann hast du Geburtstag?",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Geburtstage",
-    "pluralEn": "Birthdays",
-    "imagePrompt": "Cartoon birthday cake with candles, white background, for children's learning."
+    "pluralEn": "Birthdays"
   },
   {
     "exampleSentenceDe": "Mein Geburtstag ist im Mai.",
@@ -178,21 +165,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style teddy bear inside a gift box, white background, for children's learning."
-  },
-  {
-    "exampleSentenceDe": "Ich feiere meinen Geburtstag.",
-    "exampleSentenceEn": "I am celebrating my birthday.",
-    "id": "months_feiern_15",
-    "ipa": "ˈfaɪ̯ɐn",
-    "wordDe": "feiern",
-    "wordEn": "to celebrate",
-    "wordType": "verb",
-    "article": null,
-    "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, kids celebrating with balloons, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Fest findet im Juli statt.",
@@ -204,21 +177,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Feste",
-    "pluralEn": "Celebrations",
-    "imagePrompt": "Cartoon style image of kids having a party with balloons, on a white background, for children's learning."
-  },
-  {
-    "exampleSentenceDe": "Welcher Monat ist dein liebster?",
-    "exampleSentenceEn": "Which month is your favorite?",
-    "id": "months_liebster_17",
-    "ipa": "ˈliːpstɐ",
-    "wordDe": "liebster",
-    "wordEn": "favorite",
-    "wordType": "adjective",
-    "article": null,
-    "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon heart with a gold star on it, white background, for children's learning."
+    "pluralEn": "Celebrations"
   },
   {
     "exampleSentenceDe": "Weihnachten ist immer im Dezember.",
@@ -229,9 +188,8 @@
     "wordEn": "Christmas",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style Christmas tree with presents underneath, white background, for children's learning."
+    "pluralDe": "Weihnachten",
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Kalender zeigt die Monate.",
@@ -243,8 +201,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Kalender",
-    "pluralEn": "Calendars",
-    "imagePrompt": "Cartoon calendar with big numbers on a white background, for children's learning."
+    "pluralEn": "Calendars"
   },
   {
     "exampleSentenceDe": "Welches Datum haben wir heute?",
@@ -256,7 +213,6 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Daten",
-    "pluralEn": "Dates",
-    "imagePrompt": "Calendar page showing today's date, cartoon style, white background, for children's learning."
+    "pluralEn": "Dates"
   }
 ]

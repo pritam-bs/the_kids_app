@@ -9,34 +9,31 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two children playing with a ball in a park, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist mein Freund.",
     "exampleSentenceEn": "This is my friend.",
     "id": "playing_friends_freund_02",
     "ipa": "fʁɔɪ̯nt",
-    "wordDe": "der Freund",
+    "wordDe": "Freund",
     "wordEn": "friend (male)",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Freunde",
-    "pluralEn": "friends",
-    "imagePrompt": "Smiling boy waving, cartoon style, white background, for children's learning."
+    "pluralDe": "Freunde",
+    "pluralEn": "friends"
   },
   {
     "exampleSentenceDe": "Das ist meine Freundin.",
     "exampleSentenceEn": "This is my friend (female).",
     "id": "playing_friends_freundin_03",
     "ipa": "ˈfʁɔɪ̯ndɪn",
-    "wordDe": "die Freundin",
+    "wordDe": "Freundin",
     "wordEn": "friend (female)",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Freundinnen",
-    "pluralEn": "friends",
-    "imagePrompt": "Two smiling girls hugging, cartoon style, white background, for children's learning."
+    "pluralDe": "Freundinnen",
+    "pluralEn": "friends"
   },
   {
     "exampleSentenceDe": "Wollen wir zusammen spielen?",
@@ -48,8 +45,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two cartoon children playing with building blocks, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich teile mein Spielzeug.",
@@ -61,8 +57,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, two children sharing a toy car, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Kann ich mitspielen?",
@@ -74,8 +69,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon kids playing together, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Gib mir bitte den Ball.",
@@ -87,8 +81,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child giving a red ball to another child, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir bauen einen Turm.",
@@ -100,21 +93,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, children building a tower with colorful blocks, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist mein Lieblingsspielzeug.",
     "exampleSentenceEn": "That is my favorite toy.",
     "id": "playing_friends_lieblingsspielzeug_09",
     "ipa": "ˈliːplɪŋsˌʃpiːlˌt͡sɔɪ̯k",
-    "wordDe": "das Lieblingsspielzeug",
+    "wordDe": "Lieblingsspielzeug",
     "wordEn": "favorite toy",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Lieblingsspielzeuge",
-    "pluralEn": "favorite toys",
-    "imagePrompt": "Cartoon style, a smiling teddy bear with a red heart, white background, for children's learning."
+    "pluralDe": "Lieblingsspielzeuge",
+    "pluralEn": "favorite toys"
   },
   {
     "exampleSentenceDe": "Ich lache mit meinen Freunden.",
@@ -126,8 +117,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling kid with happy eyes, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sei nicht traurig!",
@@ -139,21 +129,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon face with downturned mouth, big tears, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es macht Spaß!",
     "exampleSentenceEn": "It's fun!",
     "id": "playing_friends_spass_12",
     "ipa": "ʃpaːs",
-    "wordDe": "der Spaß",
+    "wordDe": "Spaß",
     "wordEn": "fun",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Späße",
-    "pluralEn": "fun",
-    "imagePrompt": "Cartoon children laughing and playing together, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin glücklich.",
@@ -165,8 +153,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling cartoon face with big eyes, on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Pass auf!",
@@ -175,11 +162,10 @@
     "ipa": "ˈpas ˈaʊ̯f",
     "wordDe": "Pass auf!",
     "wordEn": "Watch out!",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat tripping over a banana peel, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir rennen schnell.",
@@ -191,21 +177,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy dog running fast, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist mein Ball.",
     "exampleSentenceEn": "This is my ball.",
     "id": "playing_friends_ball_16",
     "ipa": "bal",
-    "wordDe": "der Ball",
+    "wordDe": "Ball",
     "wordEn": "ball",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Bälle",
-    "pluralEn": "balls",
-    "imagePrompt": "Cartoon style, red bouncy ball, white background, for children's learning."
+    "pluralDe": "Bälle",
+    "pluralEn": "balls"
   },
   {
     "exampleSentenceDe": "Ich mag dich.",
@@ -217,47 +201,43 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: A child happily hugging a fluffy puppy, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Entschuldigung!",
     "exampleSentenceEn": "Sorry!",
     "id": "playing_friends_entschuldigung_18",
     "ipa": "ɛntˈʃʊldɪɡʊŋ",
-    "wordDe": "Entschuldigung!",
-    "wordEn": "Sorry!",
-    "wordType": "noun",
-    "article": "die",
-    "pluralDe": "die Entschuldigungen",
-    "pluralEn": "apologies",
-    "imagePrompt": "Cartoon-style puppy dog saying \"I'm sorry\" with big eyes, white background, for children's learning."
+    "wordDe": "Entschuldigung",
+    "wordEn": "Sorry",
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Bitte schön!",
-    "exampleSentenceEn": "You're welcome!",
+    "exampleSentenceDe": "Hier ist dein Ball, bitte schön!",
+    "exampleSentenceEn": "Here is your ball, you're welcome!",
     "id": "playing_friends_bitte_schoen_19",
     "ipa": "ˈbɪtə ʃøːn",
     "wordDe": "Bitte schön!",
     "wordEn": "You're welcome!",
-    "wordType": "adverb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a happy child giving a gift, saying thank you, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Danke!",
-    "exampleSentenceEn": "Thank you!",
+    "exampleSentenceDe": "Danke für das Geschenk!",
+    "exampleSentenceEn": "Thank you for the gift!",
     "id": "playing_friends_danke_20",
     "ipa": "ˈdaŋkə",
-    "wordDe": "Danke!",
-    "wordEn": "Thank you!",
-    "wordType": "noun",
-    "article": "der",
-    "pluralDe": "die Dankes",
-    "pluralEn": "thanks",
-    "imagePrompt": "Cartoon style, child giving a present with a smiling face, white background, for children's learning."
+    "wordDe": "Danke",
+    "wordEn": "Thank you",
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich helfe dir.",
@@ -269,8 +249,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child helping another child pick up toys, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin dran!",
@@ -279,11 +258,10 @@
     "ipa": "ˈdʁan",
     "wordDe": "dran",
     "wordEn": "turn",
-    "wordType": "adjective",
+    "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy child pointing to themself, waiting, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Du bist dran!",
@@ -292,76 +270,70 @@
     "ipa": "duː bɪst dʁan",
     "wordDe": "Du bist dran!",
     "wordEn": "It's your turn!",
-    "wordType": "adverb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy child pointing at another happy child playing a board game, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir sind Freunde fürs Leben.",
     "exampleSentenceEn": "We are friends for life.",
     "id": "playing_friends_leben_24",
     "ipa": "ˈleːbən",
-    "wordDe": "das Leben",
+    "wordDe": "Leben",
     "wordEn": "life",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Leben",
-    "pluralEn": "lives",
-    "imagePrompt": "Cartoon style growing plant from seed to tall tree, white background, for children's learning."
+    "pluralDe": "Leben",
+    "pluralEn": "lives"
   },
   {
     "exampleSentenceDe": "Wir spielen im Sandkasten.",
     "exampleSentenceEn": "We play in the sandbox.",
     "id": "playing_friends_sandkasten_25",
     "ipa": "ˈzantˌkastən",
-    "wordDe": "der Sandkasten",
+    "wordDe": "Sandkasten",
     "wordEn": "sandbox",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Sandkästen",
-    "pluralEn": "sandboxes",
-    "imagePrompt": "A wooden box filled with sand, shovel, and a red bucket, cartoon style, white background, for children's learning."
+    "pluralDe": "Sandkästen",
+    "pluralEn": "sandboxes"
   },
   {
     "exampleSentenceDe": "Ich mag dein Spielzeug!",
     "exampleSentenceEn": "I like your toy!",
     "id": "playing_friends_spielzeug_26",
     "ipa": "ˈʃpiːlˌt͡sɔɪ̯k",
-    "wordDe": "das Spielzeug",
+    "wordDe": "Spielzeug",
     "wordEn": "toy",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Spielzeuge",
-    "pluralEn": "toys",
-    "imagePrompt": "Cartoon style, a red toy car on a white background, for children's learning."
+    "pluralDe": "Spielzeuge",
+    "pluralEn": "toys"
   },
   {
     "exampleSentenceDe": "Ich hole meine Puppe.",
     "exampleSentenceEn": "I'll get my doll.",
     "id": "playing_friends_puppe_27",
     "ipa": "ˈpʊpə",
-    "wordDe": "die Puppe",
+    "wordDe": "Puppe",
     "wordEn": "doll",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Puppen",
-    "pluralEn": "dolls",
-    "imagePrompt": "Cartoon style toy doll smiling, white background, for children's learning."
+    "pluralDe": "Puppen",
+    "pluralEn": "dolls"
   },
   {
-    "exampleSentenceDe": "Wir spielen verstecken.",
+    "exampleSentenceDe": "Wir spielen Verstecken.",
     "exampleSentenceEn": "We play hide and seek.",
     "id": "playing_friends_verstecken_28",
     "ipa": "fɛɐ̯ˈʃtɛkən",
     "wordDe": "Verstecken",
     "wordEn": "hide-and-seek",
     "wordType": "noun",
-    "article": null,
-    "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, children playing hide-and-seek behind a tree, white background, for children's learning."
+    "article": "das",
+    "pluralDe": "Verstecken",
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Zählen wir bis zehn?",
@@ -373,8 +345,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image: A happy child counting colorful building blocks, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Eins, zwei, drei...",
@@ -386,21 +357,19 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, white background: A single, bright red apple, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir machen eine Pause.",
     "exampleSentenceEn": "We're taking a break.",
     "id": "playing_friends_pause_31",
     "ipa": "ˈpaʊ̯zə",
-    "wordDe": "die Pause",
+    "wordDe": "Pause",
     "wordEn": "break",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Pausen",
-    "pluralEn": "breaks",
-    "imagePrompt": "Cartoon style, kids taking a rest on a bench, white background, for children's learning."
+    "pluralDe": "Pausen",
+    "pluralEn": "breaks"
   },
   {
     "exampleSentenceDe": "Ich habe gewonnen!",
@@ -412,8 +381,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Happy cartoon child holding a golden trophy, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Du hast gut gespielt!",
@@ -425,12 +393,11 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling sun with thumbs up, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Gib mir fünf!",
-    "exampleSentenceEn": "High five!",
+    "exampleSentenceDe": "Ich habe fünf Finger.",
+    "exampleSentenceEn": "I have five fingers.",
     "id": "playing_friends_fuenf_34",
     "ipa": "fʏmf",
     "wordDe": "fünf",
@@ -438,34 +405,31 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, five colorful stars floating, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist unsere Hütte.",
     "exampleSentenceEn": "That's our hut.",
     "id": "playing_friends_huette_35",
     "ipa": "ˈhʏtə",
-    "wordDe": "die Hütte",
+    "wordDe": "Hütte",
     "wordEn": "hut",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Hütten",
-    "pluralEn": "huts",
-    "imagePrompt": "Cartoon style small brown cabin, white background, for children's learning."
+    "pluralDe": "Hütten",
+    "pluralEn": "huts"
   },
   {
     "exampleSentenceDe": "Wir machen Quatsch!",
     "exampleSentenceEn": "We are fooling around!",
     "id": "playing_friends_quatsch_36",
     "ipa": "kvat͡ʃ",
-    "wordDe": "der Quatsch",
+    "wordDe": "Quatsch",
     "wordEn": "nonsense",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Quatsche",
-    "pluralEn": "nonsense",
-    "imagePrompt": "Cartoon style, silly clown juggling rubber chickens, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Hör auf!",
@@ -477,7 +441,6 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, white background, for children's learning: A dog putting its paw up to stop a cat from pulling its tail."
+    "pluralEn": null
   }
 ]

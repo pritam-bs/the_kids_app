@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Kreise",
-    "pluralEn": "Circles",
-    "imagePrompt": "A red circle, cartoon style, white background, for children's learning."
+    "pluralEn": "Circles"
   },
   {
     "exampleSentenceDe": "Das Quadrat hat vier gleiche Seiten.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Quadrate",
-    "pluralEn": "Squares",
-    "imagePrompt": "A colorful square shape with a smiley face, cartoon style, white background, for children's learning."
+    "pluralEn": "Squares"
   },
   {
     "exampleSentenceDe": "Das Dreieck hat drei Ecken.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Dreiecke",
-    "pluralEn": "Triangles",
-    "imagePrompt": "\"Cartoon style, a bright green triangle with smiling face, white background, for children's learning.\""
+    "pluralEn": "Triangles"
   },
   {
     "exampleSentenceDe": "Das Rechteck ist wie ein langes Quadrat.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Rechtecke",
-    "pluralEn": "Rectangles",
-    "imagePrompt": "Cartoon style, a red rectangle, white background, for children's learning."
+    "pluralEn": "Rectangles"
   },
   {
     "exampleSentenceDe": "Der Stern leuchtet hell.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Sterne",
-    "pluralEn": "Stars",
-    "imagePrompt": "Cartoon-style yellow star with a happy face, white background, for children's learning."
+    "pluralEn": "Stars"
   },
   {
     "exampleSentenceDe": "Das Oval ist wie ein gestreckter Kreis.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ovale",
-    "pluralEn": "Ovals",
-    "imagePrompt": "Cartoon style, stretched blue circle on white background, for children's learning."
+    "pluralEn": "Ovals"
   },
   {
     "exampleSentenceDe": "Die Raute sieht aus wie ein schiefer Diamant.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Rauten",
-    "pluralEn": "Rhombuses",
-    "imagePrompt": "Cartoon-style tilted diamond shape, purple, white background, for children's learning."
+    "pluralEn": "Rhombuses"
   },
   {
     "exampleSentenceDe": "Der Halbkreis ist ein halber Kreis.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Halbkreise",
-    "pluralEn": "Semicircles",
-    "imagePrompt": "\"Blue half-circle shape, cartoon style, white background, for children's learning\""
+    "pluralEn": "Semicircles"
   },
   {
     "exampleSentenceDe": "Das Vieleck hat viele Ecken.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Vielecke",
-    "pluralEn": "Polygons",
-    "imagePrompt": "\"Colorful cartoon shape with five sides, white background, for children's learning\""
+    "pluralEn": "Polygons"
   },
   {
     "exampleSentenceDe": "Die Spirale dreht sich immer weiter.",
@@ -126,12 +117,11 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Spiralen",
-    "pluralEn": "Spirals",
-    "imagePrompt": "Cartoon snail with a swirly shell, white background, for children's learning."
+    "pluralEn": "Spirals"
   },
   {
-    "exampleSentenceDe": "Die Form des Herzens ist besonders.",
-    "exampleSentenceEn": "The shape of the heart is special.",
+    "exampleSentenceDe": "Das ist ein Herz.",
+    "exampleSentenceEn": "This is a heart.",
     "id": "shapes_herz_11",
     "ipa": "hɛʁt͡s",
     "wordDe": "Herz",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Herzen",
-    "pluralEn": "Hearts",
-    "imagePrompt": "Cartoon style red heart shape, white background, for children's learning."
+    "pluralEn": "Hearts"
   },
   {
     "exampleSentenceDe": "Der Würfel hat sechs quadratische Flächen.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Würfel",
-    "pluralEn": "Cubes",
-    "imagePrompt": "Colorful cube, cartoon style, white background, for children's learning."
+    "pluralEn": "Cubes"
   },
   {
     "exampleSentenceDe": "Die Kugel rollt sehr gut.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kugeln",
-    "pluralEn": "Spheres",
-    "imagePrompt": "A red ball, cartoon style, white background, for children's learning."
+    "pluralEn": "Spheres"
   },
   {
     "exampleSentenceDe": "Ich zeichne eine Linie.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Linien",
-    "pluralEn": "Lines",
-    "imagePrompt": "Cartoon style, a straight black line drawn on white paper, for children's learning."
+    "pluralEn": "Lines"
   },
   {
     "exampleSentenceDe": "Die Pyramide hat eine dreieckige Seitenfläche.",
@@ -191,7 +177,6 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Pyramiden",
-    "pluralEn": "Pyramids",
-    "imagePrompt": "Cartoon style pyramid, sunny desert, white background, for children's learning."
+    "pluralEn": "Pyramids"
   }
 ]

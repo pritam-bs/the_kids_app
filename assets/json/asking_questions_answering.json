@@ -9,8 +9,7 @@
     "wordType": "pronoun",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A confused cartoon boy scratching his head, question mark above him, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Was ist das?",
@@ -22,8 +21,7 @@
     "wordType": "pronoun",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a confused kid pointing at a question mark, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wo ist mein Teddy?",
@@ -35,8 +33,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, question mark above a confused puppy's head, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Warum bist du traurig?",
@@ -48,8 +45,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl scratching her head, confused, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie geht es dir?",
@@ -61,8 +57,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, little girl shrugging, asking a question, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wann kommt Opa?",
@@ -74,8 +69,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style clock face with pointing hand, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin glücklich.",
@@ -87,21 +81,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy child pointing at themselves, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich weiß es nicht.",
     "exampleSentenceEn": "I don't know.",
     "id": "asking_questions_ich_weiss_nicht_08",
     "ipa": "ɪç vaɪ̯s ɛs nɪçt",
-    "wordDe": "ich weiß nicht",
+    "wordDe": "ich weiß es nicht",
     "wordEn": "I don't know",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy shrugging shoulders, confused, question mark, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ja, ich mag Eis.",
@@ -113,8 +105,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy child nodding, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Nein, ich mag das nicht.",
@@ -126,8 +117,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, red stop sign with a hand gesturing 'stop', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Kannst du mir helfen?",
@@ -136,11 +126,10 @@
     "ipa": "kanst duː",
     "wordDe": "kannst du",
     "wordEn": "can you",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style drawing of a child asking an adult for help, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Darf ich bitte?",
@@ -149,11 +138,10 @@
     "ipa": "daʁf ɪç",
     "wordDe": "darf ich",
     "wordEn": "may I",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A small child politely asking for a cookie, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Bitte.",
@@ -165,8 +153,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling child saying \"please\" with hands together, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Danke.",
@@ -178,8 +165,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling child giving a gift, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Gern geschehen.",
@@ -188,11 +174,10 @@
     "ipa": "ˈɡɛʁn ɡəˈʃeːən",
     "wordDe": "gern geschehen",
     "wordEn": "you're welcome",
-    "wordType": "adverb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy child giving a thumbs-up, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Entschuldigung.",
@@ -201,11 +186,10 @@
     "ipa": "ɛntˈʃʊldɪɡʊŋ",
     "wordDe": "Entschuldigung",
     "wordEn": "excuse me",
-    "wordType": "noun",
-    "article": "die",
-    "pluralDe": "Entschuldigungen",
-    "pluralEn": "excuses",
-    "imagePrompt": "Cartoon style, white background, child politely saying 'oops' with a small spill, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie viel kostet das?",
@@ -217,8 +201,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon scale showing increasing amounts of colorful candies, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie heißt du?",
@@ -227,24 +210,22 @@
     "ipa": "viː haɪ̯st duː",
     "wordDe": "wie heißt du",
     "wordEn": "what's your name",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl asking a friendly robot a question, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich heiße Anna.",
     "exampleSentenceEn": "My name is Anna.",
     "id": "asking_questions_ich_heisse_19",
-    "ipa": "ɪç haɪ̯sə ˈana",
+    "ipa": "ɪç haɪ̯sə",
     "wordDe": "ich heiße",
     "wordEn": "my name is",
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl pointing to herself, saying \"Me!\", white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Was möchtest du?",
@@ -253,11 +234,10 @@
     "ipa": "vas ˈmœçtəst duː",
     "wordDe": "was möchtest du",
     "wordEn": "what would you like",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child pointing to a toy, questioning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich möchte einen Apfel.",
@@ -269,8 +249,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child pointing at a red apple, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Hast du das verstanden?",
@@ -279,11 +258,10 @@
     "ipa": "hast duː fɛɐ̯ˈʃtandən",
     "wordDe": "hast du verstanden",
     "wordEn": "did you understand",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a child with a question mark over their head, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe das verstanden.",
@@ -292,11 +270,10 @@
     "ipa": "ɪç ˈhabə das fɛɐ̯ˈʃtandən",
     "wordDe": "ich habe das verstanden",
     "wordEn": "I understood that",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A cartoon child with a lightbulb over their head, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe das nicht verstanden.",
@@ -305,11 +282,10 @@
     "ipa": "ɪç ˈhabə das nɪçt fɛɐ̯ˈʃtandən",
     "wordDe": "ich habe das nicht verstanden",
     "wordEn": "I didn't understand that",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child scratching head with question mark, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Kannst du das wiederholen?",
@@ -318,11 +294,10 @@
     "ipa": "kanst duː ˈviːdɐˌhoːlən",
     "wordDe": "kannst du wiederholen",
     "wordEn": "can you repeat",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a little girl with a question mark above her head, listening to a friendly bear talking into a microphone, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie bitte?",
@@ -331,11 +306,10 @@
     "ipa": "viː ˈbɪtə",
     "wordDe": "Wie bitte?",
     "wordEn": "Pardon?",
-    "wordType": "adverb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A confused cartoon kid with question mark above head, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Was bedeutet das?",
@@ -344,11 +318,10 @@
     "ipa": "vas bəˈdɔɪ̯tət das",
     "wordDe": "was bedeutet das",
     "wordEn": "what does that mean",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy scratching his head, question mark above him, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das bedeutet Freude.",
@@ -357,11 +330,10 @@
     "ipa": "das bəˈdɔɪ̯tət",
     "wordDe": "das bedeutet",
     "wordEn": "that means",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image for children's learning: A pointing finger leading to a happy face on a white background."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ist das richtig?",
@@ -370,11 +342,10 @@
     "ipa": "ɪst das ˈʁɪçtɪç",
     "wordDe": "ist das richtig",
     "wordEn": "is that correct",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy with question mark above head, looking confused, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist richtig.",
@@ -383,11 +354,10 @@
     "ipa": "das ɪst ˈʁɪçtɪç",
     "wordDe": "das ist richtig",
     "wordEn": "that is correct",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A cartoon child happily pointing to a checkmark, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist falsch.",
@@ -396,24 +366,22 @@
     "ipa": "das ɪst falʃ",
     "wordDe": "das ist falsch",
     "wordEn": "that is wrong",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a big red X mark on a worksheet with a sad face, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Habe ich das richtig gemacht?",
-    "exampleSentenceEn": "Did I do that right?",
+    "exampleSentenceDe": "Mama, habe ich das richtig gemacht?",
+    "exampleSentenceEn": "Mom, did I do that right?",
     "id": "asking_questions_habe_ich_richtig_gemacht_32",
     "ipa": "ˈhaːbə ɪç das ˈʁɪçtɪç ɡəˈmaxt",
     "wordDe": "habe ich das richtig gemacht",
     "wordEn": "did I do that right",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child holding up a drawing, looking questioningly at the viewer, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Können wir spielen?",
@@ -422,11 +390,10 @@
     "ipa": "ˈkœnən viːɐ̯ ˈʃpiːlən",
     "wordDe": "können wir spielen",
     "wordEn": "can we play",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two happy kids holding toys, asking a parent, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wessen Spielzeug ist das?",
@@ -435,11 +402,10 @@
     "ipa": "ˈvɛsn̩ ˈʃpiːltsɔɪ̯k",
     "wordDe": "wessen Spielzeug",
     "wordEn": "whose toy",
-    "wordType": "pronoun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style. Child holding up a red ball, looking confused, on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Welche Farbe hat dein Auto?",
@@ -448,11 +414,10 @@
     "ipa": "ˈvɛlçə ˈfaʁbə",
     "wordDe": "welche Farbe",
     "wordEn": "what color",
-    "wordType": "pronoun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Colorful crayons asking questions, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Darf ich mitspielen?",
@@ -461,10 +426,9 @@
     "ipa": "daʁf ɪç ˈmɪtˌʃpiːlən",
     "wordDe": "darf ich mitspielen",
     "wordEn": "may I play with you",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two children playing building blocks, cartoon style, white background, for children's learning."
+    "pluralEn": null
   }
 ]

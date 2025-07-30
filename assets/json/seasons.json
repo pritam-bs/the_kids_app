@@ -8,9 +8,8 @@
     "wordEn": "Spring",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Frühlinge",
-    "pluralEn": "Springs",
-    "imagePrompt": "Cartoon style, flowers blooming, sunny day, white background, for children's learning."
+    "pluralDe": "Frühlinge",
+    "pluralEn": "Springs"
   },
   {
     "exampleSentenceDe": "Im Sommer ist es heiß.",
@@ -21,9 +20,8 @@
     "wordEn": "Summer",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Sommer",
-    "pluralEn": "Summers",
-    "imagePrompt": "Cartoon sun shining brightly, happy face, white background, for children's learning."
+    "pluralDe": "Sommer",
+    "pluralEn": "Summers"
   },
   {
     "exampleSentenceDe": "Der Herbst ist windig.",
@@ -34,9 +32,8 @@
     "wordEn": "Autumn",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Herbste",
-    "pluralEn": "Autumns",
-    "imagePrompt": "Cartoon style, a red tree with falling leaves, white background, for children's learning."
+    "pluralDe": "Herbste",
+    "pluralEn": "Autumns"
   },
   {
     "exampleSentenceDe": "Im Winter schneit es.",
@@ -47,9 +44,8 @@
     "wordEn": "Winter",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Winter",
-    "pluralEn": "Winters",
-    "imagePrompt": "Cartoon snowman smiling, white background, for children's learning."
+    "pluralDe": "Winter",
+    "pluralEn": "Winters"
   },
   {
     "exampleSentenceDe": "Die Sonne scheint im Sommer.",
@@ -60,35 +56,32 @@
     "wordEn": "Sun",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Sonnen",
-    "pluralEn": "Suns",
-    "imagePrompt": "Smiling yellow sun cartoon, white background, for children's learning."
+    "pluralDe": "Sonnen",
+    "pluralEn": "Suns"
   },
   {
     "exampleSentenceDe": "Im Winter ist es kalt.",
     "exampleSentenceEn": "It is cold in winter.",
     "id": "seasons_kalt_06",
-    "ipa": "kalt",
+    "ipa": "/kalt/",
     "wordDe": "kalt",
     "wordEn": "cold",
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon penguin shivering, snow falling, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Die Blätter fallen im Herbst.",
-    "exampleSentenceEn": "The leaves fall in autumn.",
+    "exampleSentenceDe": "Das Blatt ist grün.",
+    "exampleSentenceEn": "The leaf is green.",
     "id": "seasons_blatt_07",
     "ipa": "blat",
     "wordDe": "Blatt",
     "wordEn": "leaf",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Blätter",
-    "pluralEn": "leaves",
-    "imagePrompt": "Cartoon leaf falling, white background, for children's learning."
+    "pluralDe": "Blätter",
+    "pluralEn": "leaves"
   },
   {
     "exampleSentenceDe": "Die Blumen blühen im Frühling.",
@@ -99,9 +92,8 @@
     "wordEn": "flower",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Blumen",
-    "pluralEn": "flowers",
-    "imagePrompt": "Cartoon style, colorful flower, green stem, white background, for children's learning."
+    "pluralDe": "Blumen",
+    "pluralEn": "flowers"
   },
   {
     "exampleSentenceDe": "Der Vogel singt im Frühling.",
@@ -112,9 +104,8 @@
     "wordEn": "bird",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Vögel",
-    "pluralEn": "birds",
-    "imagePrompt": "Cartoon bird singing on a branch, white background, for children's learning."
+    "pluralDe": "Vögel",
+    "pluralEn": "birds"
   },
   {
     "exampleSentenceDe": "Im Sommer essen wir Eis.",
@@ -125,9 +116,8 @@
     "wordEn": "ice cream",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Eise",
-    "pluralEn": "ice creams",
-    "imagePrompt": "Cartoon style, a smiling ice cream cone with colorful sprinkles, white background, for children's learning."
+    "pluralDe": "Eis",
+    "pluralEn": "ice creams"
   },
   {
     "exampleSentenceDe": "Im Winter bauen wir einen Schneemann.",
@@ -138,22 +128,20 @@
     "wordEn": "snowman",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schneemänner",
-    "pluralEn": "snowmen",
-    "imagePrompt": "Cartoon snowman with carrot nose and scarf, white background, for children's learning."
+    "pluralDe": "Schneemänner",
+    "pluralEn": "snowmen"
   },
   {
-    "exampleSentenceDe": "Im Herbst regnet es oft.",
-    "exampleSentenceEn": "It often rains in autumn.",
+    "exampleSentenceDe": "Im Herbst gibt es viel Regen.",
+    "exampleSentenceEn": "In autumn there is a lot of rain.",
     "id": "seasons_regen_12",
     "ipa": "ˈʁeːɡən",
     "wordDe": "Regen",
     "wordEn": "rain",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Regen",
-    "pluralEn": "rains",
-    "imagePrompt": "Cartoon raindrops falling from a gray cloud, white background, for children's learning."
+    "pluralDe": "Regen",
+    "pluralEn": "rains"
   },
   {
     "exampleSentenceDe": "Die Sonne scheint hell.",
@@ -165,8 +153,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, very bright yellow sun shining, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Im Winter ist der Himmel oft grau.",
@@ -178,8 +165,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A gray cartoon elephant standing on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Blätter sind bunt im Herbst.",
@@ -191,8 +177,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A rainbow over a field of colorful flowers, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Im Sommer ist es warm.",
@@ -204,8 +189,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling, radiating heat, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Im Winter gibt es Schnee.",
@@ -216,9 +200,8 @@
     "wordEn": "snow",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schnee",
-    "pluralEn": "snows",
-    "imagePrompt": "Cartoon style snowflake falling on a smiling snowman, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Im Herbst weht der Wind.",
@@ -229,22 +212,20 @@
     "wordEn": "wind",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Winde",
-    "pluralEn": "winds",
-    "imagePrompt": "Cartoon style, white background: Tree with leaves blowing in the wind, for children's learning."
+    "pluralDe": "Winde",
+    "pluralEn": "winds"
   },
   {
-    "exampleSentenceDe": "Im Frühling regnet es manchmal.",
-    "exampleSentenceEn": "It sometimes rains in spring.",
+    "exampleSentenceDe": "Schau, ein schöner Regenbogen am Himmel!",
+    "exampleSentenceEn": "Look, a beautiful rainbow in the sky!",
     "id": "seasons_regenbogen_19",
     "ipa": "ˈʁeːɡn̩ˌboːɡən",
     "wordDe": "Regenbogen",
     "wordEn": "rainbow",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Regenbögen",
-    "pluralEn": "rainbows",
-    "imagePrompt": "Colorful arch in sky, cartoon style, white background, for children's learning."
+    "pluralDe": "Regenbögen",
+    "pluralEn": "rainbows"
   },
   {
     "exampleSentenceDe": "Wir ernten Äpfel im Herbst.",
@@ -255,22 +236,20 @@
     "wordEn": "apple",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Äpfel",
-    "pluralEn": "apples",
-    "imagePrompt": "Cartoon style, red apple with a leaf, white background, for children's learning."
+    "pluralDe": "Äpfel",
+    "pluralEn": "apples"
   },
   {
-    "exampleSentenceDe": "Es donnert im Sommer.",
-    "exampleSentenceEn": "It thunders in the summer.",
+    "exampleSentenceDe": "Der Donner ist laut.",
+    "exampleSentenceEn": "The thunder is loud.",
     "id": "seasons_donner_21",
     "ipa": "ˈdɔnɐ",
     "wordDe": "Donner",
     "wordEn": "thunder",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Donner",
-    "pluralEn": "thunders",
-    "imagePrompt": "Cartoon style: Gray storm cloud with lightning bolt, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Felder sind grün im Frühling.",
@@ -282,8 +261,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A green apple, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Sonne ist gelb.",
@@ -295,8 +273,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A bright yellow sun, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Blätter werden braun.",
@@ -308,8 +285,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"A cartoon style chocolate teddy bear sitting on a white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Tage werden kürzer im Herbst.",
@@ -321,8 +297,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: A small green caterpillar next to a slightly smaller yellow caterpillar, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Tage sind lang im Sommer.",
@@ -334,8 +309,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very long caterpillar crawling, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Zugvögel fliegen weg.",
@@ -346,9 +320,8 @@
     "wordEn": "migratory bird",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Zugvögel",
-    "pluralEn": "migratory birds",
-    "imagePrompt": "Cartoon style, flying birds in V formation, white background, for children's learning."
+    "pluralDe": "Zugvögel",
+    "pluralEn": "migratory birds"
   },
   {
     "exampleSentenceDe": "Die Ernte ist im Herbst.",
@@ -359,9 +332,8 @@
     "wordEn": "harvest",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Ernten",
-    "pluralEn": "harvests",
-    "imagePrompt": "Cartoon style, white background, for children's learning: A farmer collecting apples in a basket."
+    "pluralDe": "Ernten",
+    "pluralEn": "harvests"
   },
   {
     "exampleSentenceDe": "Im Sommer schwimmen wir im See.",
@@ -372,9 +344,8 @@
     "wordEn": "lake",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Seen",
-    "pluralEn": "lakes",
-    "imagePrompt": "Cartoon lake with a little boat, white background, for children's learning."
+    "pluralDe": "Seen",
+    "pluralEn": "lakes"
   },
   {
     "exampleSentenceDe": "Wir machen ein Picknick.",
@@ -385,9 +356,8 @@
     "wordEn": "picnic",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Picknicks",
-    "pluralEn": "picnics",
-    "imagePrompt": "Cartoon picnic basket with food on a blanket, white background, for children's learning."
+    "pluralDe": "Picknicks",
+    "pluralEn": "picnics"
   },
   {
     "exampleSentenceDe": "Ich mag den Frühling.",
@@ -399,8 +369,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling girl holding a heart, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Sonne scheint.",
@@ -412,8 +381,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling brightly, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es wird wärmer.",
@@ -425,8 +393,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Caterpillar turning into a butterfly, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es regnet.",
@@ -438,8 +405,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon raindrops falling from a cloud, happy face, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es schneit.",
@@ -451,8 +417,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon snowflakes falling from a gray cloud, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Jacke ist warm.",
@@ -463,9 +428,8 @@
     "wordEn": "jacket",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Jacken",
-    "pluralEn": "jackets",
-    "imagePrompt": "Cartoon style, a bright blue jacket, white background, for children's learning."
+    "pluralDe": "Jacken",
+    "pluralEn": "jackets"
   },
   {
     "exampleSentenceDe": "Ich trage einen Schal.",
@@ -476,22 +440,20 @@
     "wordEn": "scarf",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schals",
-    "pluralEn": "scarves",
-    "imagePrompt": "Cartoon style, child wearing a striped neck warmer, white background, for children's learning."
+    "pluralDe": "Schals",
+    "pluralEn": "scarves"
   },
   {
-    "exampleSentenceDe": "Ich habe Handschuhe.",
-    "exampleSentenceEn": "I have gloves.",
+    "exampleSentenceDe": "Das ist ein Handschuh.",
+    "exampleSentenceEn": "This is a glove.",
     "id": "seasons_handschuh_38",
     "ipa": "ˈhantʃuːə",
     "wordDe": "Handschuh",
     "wordEn": "glove",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Handschuhe",
-    "pluralEn": "gloves",
-    "imagePrompt": "Cartoon style, a pair of blue gloves, white background, for children's learning."
+    "pluralDe": "Handschuhe",
+    "pluralEn": "gloves"
   },
   {
     "exampleSentenceDe": "Wir spielen mit dem Ball.",
@@ -502,9 +464,8 @@
     "wordEn": "ball",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Bälle",
-    "pluralEn": "balls",
-    "imagePrompt": "Cartoon style, round colorful toy, white background, for children's learning."
+    "pluralDe": "Bälle",
+    "pluralEn": "balls"
   },
   {
     "exampleSentenceDe": "Ich liebe Erdbeeren.",
@@ -515,9 +476,8 @@
     "wordEn": "strawberry",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Erdbeeren",
-    "pluralEn": "strawberries",
-    "imagePrompt": "\"A bright red strawberry with green leaves, cartoon style, white background, for children's learning.\""
+    "pluralDe": "Erdbeeren",
+    "pluralEn": "strawberries"
   },
   {
     "exampleSentenceDe": "Wir gehen wandern.",
@@ -529,8 +489,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon kids hiking up a green hill, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Kirsche ist rot.",
@@ -541,9 +500,8 @@
     "wordEn": "cherry",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Kirschen",
-    "pluralEn": "cherries",
-    "imagePrompt": "A shiny red cherry with a stem, cartoon style, white background, for children's learning."
+    "pluralDe": "Kirschen",
+    "pluralEn": "cherries"
   },
   {
     "exampleSentenceDe": "Die Sonne wärmt.",
@@ -555,8 +513,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling down on a shivering snowman, melting slightly, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Tage werden länger.",
@@ -568,7 +525,6 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, one snake is short, another snake is much longer, white background, for children's learning."
+    "pluralEn": null
   }
 ]

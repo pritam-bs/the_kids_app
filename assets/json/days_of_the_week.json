@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Montage",
-    "pluralEn": "Mondays",
-    "imagePrompt": "Sad cartoon sun with calendar showing the number one, cartoon style, white background, for children's learning."
+    "pluralEn": "Mondays"
   },
   {
     "exampleSentenceDe": "Dienstag spielen wir Fußball.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Dienstage",
-    "pluralEn": "Tuesdays",
-    "imagePrompt": "Cartoon style, calendar with the second day of the week circled, for children's learning, white background."
+    "pluralEn": "Tuesdays"
   },
   {
     "exampleSentenceDe": "Mittwoch gehen wir in den Zoo.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Mittwoche",
-    "pluralEn": "Wednesdays",
-    "imagePrompt": "Cartoon style, a calendar page showing the middle of the week, white background, for children's learning."
+    "pluralEn": "Wednesdays"
   },
   {
     "exampleSentenceDe": "Donnerstag ist fast Wochenende!",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Donnerstage",
-    "pluralEn": "Thursdays",
-    "imagePrompt": "Thor holding a cartoon hammer with day of the week calendar, Thursday, cartoon style, white background, for children's learning."
+    "pluralEn": "Thursdays"
   },
   {
     "exampleSentenceDe": "Freitag essen wir Pizza.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Freitage",
-    "pluralEn": "Fridays",
-    "imagePrompt": "Cartoon calendar page showing a slice of pizza, white background, for children's learning."
+    "pluralEn": "Fridays"
   },
   {
     "exampleSentenceDe": "Samstag ist Wochenende.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Samstage",
-    "pluralEn": "Saturdays",
-    "imagePrompt": "Cartoon calendar page showing the word \"Saturday\", happy sun, white background, for children's learning."
+    "pluralEn": "Saturdays"
   },
   {
     "exampleSentenceDe": "Sonntag ruhen wir uns aus.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Sonntage",
-    "pluralEn": "Sundays",
-    "imagePrompt": "Cartoon style, sun wearing sunglasses smiling, white background, for children's learning."
+    "pluralEn": "Sundays"
   },
   {
     "exampleSentenceDe": "Die Woche hat sieben Tage.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wochen",
-    "pluralEn": "weeks",
-    "imagePrompt": "Cartoon calendar showing 7 colorful days, white background, for children's learning."
+    "pluralEn": "weeks"
   },
   {
     "exampleSentenceDe": "Am Wochenende spiele ich.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Wochenenden",
-    "pluralEn": "weekends",
-    "imagePrompt": "Cartoon style, happy kids playing outside on Saturday and Sunday, white background, for children's learning."
+    "pluralEn": "weekends"
   },
   {
     "exampleSentenceDe": "Jeden Tag lerne ich etwas Neues.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Tage",
-    "pluralEn": "days",
-    "imagePrompt": "Cartoon style, bright sun smiling in the sky, white background, for children's learning."
+    "pluralEn": "days"
   },
   {
     "exampleSentenceDe": "Ich gehe jeden Morgen zur Schule.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Morgen",
-    "pluralEn": "mornings",
-    "imagePrompt": "Cartoon sun rising over green hills, a rooster crowing, white background, for children's learning."
+    "pluralEn": "mornings"
   },
   {
     "exampleSentenceDe": "Heute ist ein schöner Tag.",
@@ -152,8 +141,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling brightly, calendar marked 'today', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Gestern habe ich mit meinem Freund gespielt.",
@@ -165,8 +153,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style calendar page showing 'Sunday', with a faded drawing of kids playing, on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Morgen gehen wir ins Kino.",
@@ -178,8 +165,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style sunrise over a house, for children's learning, white background."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Was machst du am Montag?",
@@ -191,21 +177,19 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: A happy dog sitting on a big blue ball, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Die Schule beginnt um 8 Uhr.",
-    "exampleSentenceEn": "School starts at 8 o'clock.",
+    "exampleSentenceDe": "Meine Uhr tickt laut.",
+    "exampleSentenceEn": "My clock ticks loudly.",
     "id": "days_of_the_week_uhr_16",
     "ipa": "uːɐ̯",
     "wordDe": "Uhr",
-    "wordEn": "o'clock",
+    "wordEn": "clock",
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Uhren",
-    "pluralEn": "o'clocks",
-    "imagePrompt": "Cartoon clock showing 8:00, white background, for children's learning."
+    "pluralEn": "clocks"
   },
   {
     "exampleSentenceDe": "Wir haben jeden Tag eine Stunde Pause.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Stunden",
-    "pluralEn": "hours",
-    "imagePrompt": "Cartoon clock with big numbers, white background, for children's learning."
+    "pluralEn": "hours"
   },
   {
     "exampleSentenceDe": "Ich habe einen vollen Terminkalender.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Terminkalender",
-    "pluralEn": "schedules",
-    "imagePrompt": "Cartoon calendar with colorful events, white background, for children's learning."
+    "pluralEn": "schedules"
   },
   {
     "exampleSentenceDe": "Ich plane meine Woche.",
@@ -243,8 +225,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A person drawing a calendar with colorful pens, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich spiele jeden Tag.",
@@ -256,7 +237,6 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun rising over a calendar, highlighting all days, white background, for children's learning."
+    "pluralEn": null
   }
 ]

@@ -416,7 +416,7 @@
         "nameEn": "Asking Questions & Answering",
         "descriptionDe": "Lerne grundlegende Fragewörter (wer, was, wo, wann) und wie man einfache Fragen stellt und beantwortet, um mit Freunden zu kommunizieren.",
         "descriptionEn": "Learn basic question words (who, what, where, when) and how to ask and answer simple questions to communicate with friends.",
-        "iconName": "icon_asking_questions_anwering",
+        "iconName": "icon_asking_questions_answering",
         "prompt": "Generate a comprehensive German wordlist for kids for the subcategory 'Asking Questions & Answering' within the 'Social Interaction' category. The wordlist should be a JSON array of objects, where each object represents a word and includes the following fields: 'id' (unique string, e.g., 'asking_questions_wer_01'), 'wordDe' (German word), 'wordEn' (English translation), 'article' (definite article for nouns, null for others), 'pluralDe' (German plural for nouns, null for others), 'pluralEn' (English plural for nouns, null for others), 'wordType' (e.g., 'noun', 'verb', 'adjective', 'preposition', 'number', 'color'), 'ipa' (IPA transcription), 'exampleSentenceDe' (German example sentence), 'exampleSentenceEn' (English example sentence). For non-noun word types, 'article', 'pluralDe', and 'pluralEn' must be null. Focus on basic question words and how to ask and answer simple questions. Aim for approximately 50-100 words, but prioritize quality and relevance. Provide a standard, clear IPA transcription suitable for learners. Example sentences should be simple, directly relevant to the word's meaning, and easily understandable for children. Ensure no duplicate words."
       },
       {

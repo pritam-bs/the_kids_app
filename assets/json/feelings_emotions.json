@@ -9,8 +9,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling child jumping with joy, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Junge ist traurig, weil sein Spielzeug kaputt ist.",
@@ -22,8 +21,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy crying, broken toy on ground, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sie ist wütend, weil ihr Bruder ihr Spielzeug genommen hat.",
@@ -35,8 +33,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a girl with a frown and clenched fists, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das kleine Mädchen ist ängstlich im Dunkeln.",
@@ -48,8 +45,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl hiding behind a teddy bear, scared expression, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Er ist überrascht, weil er ein Geschenk bekommen hat.",
@@ -61,8 +57,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Boy with wide eyes opening a gift box, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sie ist gelangweilt, weil es nichts zu tun gibt.",
@@ -74,8 +69,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style girl yawning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Er ist aufgeregt vor dem Ausflug.",
@@ -87,8 +81,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy jumping with joy, big smile, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich fühle mich wohl in meinem Zuhause.",
@@ -100,8 +93,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling bear sitting on a fluffy armchair, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sie ist stolz auf ihre gute Note.",
@@ -113,11 +105,10 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style drawing of a girl smiling, holding up a drawing with a star on it, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich bin hungrig. ",
+    "exampleSentenceDe": "Ich bin hungrig.",
     "exampleSentenceEn": "I am hungry.",
     "id": "feelings_emotions_hungrig_10",
     "ipa": "ˈhʊŋʁɪç",
@@ -126,8 +117,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon puppy dog with big eyes looking at a large sandwich, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Baby ist müde.",
@@ -139,8 +129,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon baby yawning in bed, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Clown ist lustig.",
@@ -152,8 +141,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A clown tripping over a banana peel, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Kinder haben Angst vor dem Gewitter.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Ängste",
-    "pluralEn": "fears",
-    "imagePrompt": "Cartoon style, a little boy hiding under a blanket, scared, white background, for children's learning."
+    "pluralEn": "fears"
   },
   {
     "exampleSentenceDe": "Freude ist ein schönes Gefühl.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Freuden",
-    "pluralEn": "joys",
-    "imagePrompt": "Cartoon style, happy child jumping, smiling, white background, for children's learning."
+    "pluralEn": "joys"
   },
   {
     "exampleSentenceDe": "Der Ärger verging schnell.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, red face, frowning, steam from ears, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Liebe zwischen Mutter und Kind ist stark.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Lieben",
-    "pluralEn": "loves",
-    "imagePrompt": "Cartoon style, mother hugging child, heart floating, white background, for children's learning."
+    "pluralEn": "loves"
   },
   {
     "exampleSentenceDe": "Fühlst du Hoffnung?",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Hoffnungen",
-    "pluralEn": "hopes",
-    "imagePrompt": "Cartoon style, a child holding a small, glowing star, white background, for children's learning."
+    "pluralEn": "hopes"
   },
   {
     "exampleSentenceDe": "Ich empfinde Ekel vor Spinnen.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon face with green vomit, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Enttäuschung war groß.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Enttäuschungen",
-    "pluralEn": "disappointments",
-    "imagePrompt": "Cartoon style sad face on a cookie, white background, for children's learning."
+    "pluralEn": "disappointments"
   },
   {
     "exampleSentenceDe": "Das ist mir peinlich.",
@@ -256,8 +237,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child with red face hiding behind hands, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Manchmal bin ich einsam.",
@@ -269,8 +249,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style sad cloud floating alone, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin dankbar für meine Familie.",
@@ -282,12 +261,11 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon kid hugging parent, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Die Verwirrung war groß, als ich den Weg nicht fand.",
-    "exampleSentenceEn": "The confusion was great when I couldn't find the way.",
+    "exampleSentenceDe": "Das kleine Kätzchen ist verwirrt.",
+    "exampleSentenceEn": "The little kitten is confused.",
     "id": "feelings_emotions_verwirrt_23",
     "ipa": "fɛɐ̯ˈvɪʁt",
     "wordDe": "verwirrt",
@@ -295,12 +273,11 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Little cartoon girl scratching her head, question marks floating around, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich hasse es, wenn es regnet.",
-    "exampleSentenceEn": "I hate it when it rains.",
+    "exampleSentenceDe": "Hass ist kein gutes Gefühl.",
+    "exampleSentenceEn": "Hate is not a good feeling.",
     "id": "feelings_emotions_hass_24",
     "ipa": "has",
     "wordDe": "Hass",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon angry face with a thundercloud overhead, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin eifersüchtig auf ihr neues Fahrrad.",
@@ -321,12 +297,11 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two cartoon children, one looking sad at the other's ice cream, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich schäme mich für meinen Fehler.",
-    "exampleSentenceEn": "I am ashamed of my mistake.",
+    "exampleSentenceDe": "Manchmal fühlen wir Scham.",
+    "exampleSentenceEn": "Sometimes we feel shame.",
     "id": "feelings_emotions_scham_26",
     "ipa": "ʃaːm",
     "wordDe": "Scham",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child hiding face with hands, sad expression, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Fühlst du dich mutig?",
@@ -347,8 +321,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a small child happily petting a friendly lion, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin frustriert, weil ich das Puzzle nicht lösen kann.",
@@ -360,7 +333,6 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy with furrowed brow, puzzle pieces scattered around him, white background, for children's learning."
+    "pluralEn": null
   }
 ]

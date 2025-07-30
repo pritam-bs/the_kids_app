@@ -9,8 +9,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child getting out of bed, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich wasche mein Gesicht.",
@@ -22,8 +21,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child washing their face with soap, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich putze meine Zähne mit Zahnpasta.",
@@ -35,8 +33,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl brushing teeth with a toothbrush, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kämme meine Haare.",
@@ -48,8 +45,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl combing her long hair, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich ziehe meine Kleidung an.",
@@ -61,12 +57,11 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child putting on a shirt, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich esse Frühstück in der Küche.",
-    "exampleSentenceEn": "I eat breakfast in the kitchen.",
+    "exampleSentenceDe": "Wir frühstücken zusammen.",
+    "exampleSentenceEn": "We have breakfast together.",
     "id": "morning_routine_fruehstuecken_06",
     "ipa": "ˈfʁyːˌʃtʏkən",
     "wordDe": "frühstücken",
@@ -74,8 +69,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, kid eating cereal at a table, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trinke Milch zum Frühstück.",
@@ -87,8 +81,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a kid drinking juice with a straw, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich packe meine Schultasche.",
@@ -100,8 +93,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child putting books in a blue backpack, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gehe zur Schule.",
@@ -113,138 +105,127 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, little girl walking to school with a backpack, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist mein Bett.",
     "exampleSentenceEn": "This is my bed.",
     "id": "morning_routine_bett_10",
     "ipa": "bɛt",
-    "wordDe": "das Bett",
+    "wordDe": "Bett",
     "wordEn": "bed",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Betten",
-    "pluralEn": "beds",
-    "imagePrompt": "Cartoon style bed with a blue blanket on white background, for children's learning."
+    "pluralDe": "Betten",
+    "pluralEn": "beds"
   },
   {
     "exampleSentenceDe": "Die Sonne scheint am Morgen.",
     "exampleSentenceEn": "The sun shines in the morning.",
     "id": "morning_routine_sonne_11",
     "ipa": "ˈzɔnə",
-    "wordDe": "die Sonne",
+    "wordDe": "Sonne",
     "wordEn": "sun",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Sonnen",
-    "pluralEn": "suns",
-    "imagePrompt": "Smiling cartoon sun shining brightly, white background, for children's learning."
+    "pluralDe": "Sonnen",
+    "pluralEn": "suns"
   },
   {
     "exampleSentenceDe": "Ich esse Brot zum Frühstück.",
     "exampleSentenceEn": "I eat bread for breakfast.",
     "id": "morning_routine_brot_12",
     "ipa": "bʁoːt",
-    "wordDe": "das Brot",
+    "wordDe": "Brot",
     "wordEn": "bread",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Brote",
-    "pluralEn": "breads",
-    "imagePrompt": "Cartoon style loaf of bread, white background, for children's learning."
+    "pluralDe": "Brote",
+    "pluralEn": "breads"
   },
   {
     "exampleSentenceDe": "Ich trage Schuhe.",
     "exampleSentenceEn": "I wear shoes.",
     "id": "morning_routine_schuhe_13",
     "ipa": "ˈʃuːə",
-    "wordDe": "die Schuhe",
+    "wordDe": "Schuhe",
     "wordEn": "shoes",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Schuhe",
-    "pluralEn": "shoes",
-    "imagePrompt": "Cartoon style, pair of blue sneakers, white background, for children's learning."
+    "pluralDe": "Schuhe",
+    "pluralEn": "shoes"
   },
   {
     "exampleSentenceDe": "Ich putze meine Zähne mit der Zahnbürste.",
     "exampleSentenceEn": "I brush my teeth with the toothbrush.",
     "id": "morning_routine_zahnbuerste_14",
     "ipa": "ˈt͡saːnˌbʏʁstə",
-    "wordDe": "die Zahnbürste",
+    "wordDe": "Zahnbürste",
     "wordEn": "toothbrush",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Zahnbürsten",
-    "pluralEn": "toothbrushes",
-    "imagePrompt": "A cartoon toothbrush with toothpaste, smiling, on a white background, for children's learning."
+    "pluralDe": "Zahnbürsten",
+    "pluralEn": "toothbrushes"
   },
   {
     "exampleSentenceDe": "Ich brauche Wasser zum Waschen.",
     "exampleSentenceEn": "I need water to wash.",
     "id": "morning_routine_wasser_15",
     "ipa": "ˈvasɐ",
-    "wordDe": "das Wasser",
+    "wordDe": "Wasser",
     "wordEn": "water",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Wässer",
-    "pluralEn": "waters",
-    "imagePrompt": "Cartoon style drawing of a blue water droplet with a smiley face, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe einen Kamm für meine Haare.",
     "exampleSentenceEn": "I have a comb for my hair.",
     "id": "morning_routine_kamm_16",
     "ipa": "kam",
-    "wordDe": "der Kamm",
+    "wordDe": "Kamm",
     "wordEn": "comb",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Kämme",
-    "pluralEn": "combs",
-    "imagePrompt": "A yellow hair comb, cartoon style, white background, for children's learning."
+    "pluralDe": "Kämme",
+    "pluralEn": "combs"
   },
   {
     "exampleSentenceDe": "Ich esse Obst zum Frühstück.",
     "exampleSentenceEn": "I eat fruit for breakfast.",
     "id": "morning_routine_obst_17",
     "ipa": "oːpst",
-    "wordDe": "das Obst",
+    "wordDe": "Obst",
     "wordEn": "fruit",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Obste",
-    "pluralEn": "fruits",
-    "imagePrompt": "Cartoon-style pile of colorful fruits, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trage eine Jacke.",
     "exampleSentenceEn": "I wear a jacket.",
     "id": "morning_routine_jacke_18",
     "ipa": "ˈjakə",
-    "wordDe": "die Jacke",
+    "wordDe": "Jacke",
     "wordEn": "jacket",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Jacken",
-    "pluralEn": "jackets",
-    "imagePrompt": "\"Cartoon style blue jacket on a white background, for children's learning\""
+    "pluralDe": "Jacken",
+    "pluralEn": "jackets"
   },
   {
     "exampleSentenceDe": "Ich gehe die Treppe hinunter.",
     "exampleSentenceEn": "I go down the stairs.",
     "id": "morning_routine_treppe_19",
     "ipa": "ˈtʁɛpə",
-    "wordDe": "die Treppe",
+    "wordDe": "Treppe",
     "wordEn": "stairs",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Treppen",
-    "pluralEn": "stairs",
-    "imagePrompt": "Cartoon style, set of three wooden steps, white background, for children's learning."
+    "pluralDe": "Treppen",
+    "pluralEn": "stairs"
   },
   {
     "exampleSentenceDe": "Ich beeile mich am Morgen.",
@@ -256,8 +237,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon rabbit running fast, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin müde am Morgen.",
@@ -269,8 +249,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon dog yawning, sleeping eyes, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Morgen ist schön.",
@@ -282,8 +261,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, very bright sun smiling, rainbow, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin pünktlich.",
@@ -295,8 +273,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style clock showing 3:00 with a happy kid arriving, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich sage 'Guten Morgen!'",
@@ -305,11 +282,10 @@
     "ipa": "ˌɡuːtn̩ ˈmɔʁɡən",
     "wordDe": "Guten Morgen",
     "wordEn": "Good morning",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun rising over a smiling house, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gehe schnell.",
@@ -321,8 +297,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a cheetah running very fast, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin fast fertig.",
@@ -334,21 +309,19 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child with a backpack, halfway through a door, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trage Socken.",
     "exampleSentenceEn": "I wear socks.",
     "id": "morning_routine_socken_27",
     "ipa": "ˈzɔkn̩",
-    "wordDe": "die Socken",
+    "wordDe": "Socken",
     "wordEn": "socks",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Socken",
-    "pluralEn": "socks",
-    "imagePrompt": "Cartoon style: two colorful socks, white background, for children's learning."
+    "pluralDe": "Socken",
+    "pluralEn": "socks"
   },
   {
     "exampleSentenceDe": "Die Katze schläft noch.",
@@ -360,8 +333,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A cute kitten sleeping in a basket, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich räume mein Zimmer auf.",
@@ -373,8 +345,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a child picking up toys, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich öffne das Fenster.",
@@ -386,8 +357,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl opening a window, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gieße die Blumen.",
@@ -396,11 +366,10 @@
     "ipa": "ˈbluːmən ˈɡiːsn̩",
     "wordDe": "die Blumen gießen",
     "wordEn": "to water the flowers",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl watering colorful flowers with a watering can, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich esse Müsli zum Frühstück.",
@@ -409,167 +378,154 @@
     "ipa": "ˈmyːsli ˈɛsn̩",
     "wordDe": "Müsli essen",
     "wordEn": "to eat cereal",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy eating cereal from a bowl with a spoon, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich lese ein Buch am Morgen.",
     "exampleSentenceEn": "I read a book in the morning.",
     "id": "morning_routine_buch_lesen_33",
-    "ipa": "buːx ˈleːzn̩",
+    "ipa": "aɪn buːx ˈleːzn̩",
     "wordDe": "ein Buch lesen",
     "wordEn": "to read a book",
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child sitting and reading a book, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich frühstücke mit meiner Familie.",
     "exampleSentenceEn": "I have breakfast with my family.",
     "id": "morning_routine_familie_fruehstuecken_34",
-    "ipa": "faˈmiːli̯ə ˈfʁyːˌʃtʏkən",
-    "wordDe": "mit der Familie frühstücken",
-    "wordEn": "to have breakfast with the family",
+    "ipa": "ˈfʁyːʃtʏkn̩",
+    "wordDe": "frühstücken",
+    "wordEn": "to have breakfast",
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Family eating breakfast together at a table, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich helfe meiner Mutter.",
     "exampleSentenceEn": "I help my mother.",
     "id": "morning_routine_mutter_helfen_35",
-    "ipa": "ˈmʊtɐ ˈhɛlfn̩",
+    "ipa": "ˈmaɪ̯nɐ ˈmʊtɐ ˈhɛlfn̩",
     "wordDe": "meiner Mutter helfen",
     "wordEn": "to help my mother",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: Child helping mom with groceries, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gehe die Straße entlang.",
     "exampleSentenceEn": "I go down the street.",
     "id": "morning_routine_strasse_entlang_36",
-    "ipa": "ˈʃtʁaːsə ɛntˈlaŋ",
+    "ipa": "diː ˈʃtʁaːsə ɛntˈlaŋ ˈɡeːən",
     "wordDe": "die Straße entlang gehen",
     "wordEn": "to go down the street",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child walking on a sidewalk, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich begrüße meine Freunde.",
     "exampleSentenceEn": "I greet my friends.",
     "id": "morning_routine_freunde_begruessen_37",
-    "ipa": "ˈfʁɔʏ̯ndə bəˈɡʁyːsn̩",
+    "ipa": "ˈmaɪ̯nə ˈfʁɔʏ̯ndə bəˈɡʁyːsn̩",
     "wordDe": "meine Freunde begrüßen",
     "wordEn": "to greet my friends",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon kids waving hello to each other, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist blau.",
     "exampleSentenceEn": "The sky is blue.",
     "id": "morning_routine_himmel_blau_38",
-    "ipa": "ˈhɪml̩ blaʊ̯",
-    "wordDe": "der Himmel ist blau",
-    "wordEn": "the sky is blue",
-    "wordType": "noun",
+    "ipa": "dɛɐ̯ ˈhɪml̩ ɪst blaʊ̯",
+    "wordDe": "Der Himmel ist blau",
+    "wordEn": "The sky is blue",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Bright blue sky with fluffy white clouds, cartoon style, white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gehe in den Kindergarten.",
     "exampleSentenceEn": "I go to kindergarten.",
     "id": "morning_routine_kindergarten_39",
     "ipa": "ˈkɪndɐˌɡaʁtn̩",
-    "wordDe": "der Kindergarten",
+    "wordDe": "Kindergarten",
     "wordEn": "kindergarten",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Kindergärten",
-    "pluralEn": "kindergartens",
-    "imagePrompt": "Cartoon style image of happy children playing with toys in a colorful classroom, white background, for children's learning."
+    "pluralDe": "Kindergärten",
+    "pluralEn": "kindergartens"
   },
   {
     "exampleSentenceDe": "Ich gehe in die Schule.",
     "exampleSentenceEn": "I go to school.",
     "id": "morning_routine_schule_40",
     "ipa": "ˈʃuːlə",
-    "wordDe": "die Schule",
+    "wordDe": "Schule",
     "wordEn": "school",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Schulen",
-    "pluralEn": "schools",
-    "imagePrompt": "Cartoon school building, colorful, white background, for children's learning."
+    "pluralDe": "Schulen",
+    "pluralEn": "schools"
   },
   {
     "exampleSentenceDe": "Ich putze meine Zähne im Bad.",
     "exampleSentenceEn": "I brush my teeth in the bathroom.",
     "id": "morning_routine_bad_41",
     "ipa": "baːt",
-    "wordDe": "das Bad",
+    "wordDe": "Bad",
     "wordEn": "bathroom",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Bäder",
-    "pluralEn": "bathrooms",
-    "imagePrompt": "Cartoon bathroom with a sink, toothbrush, and rubber duck, white background, for children's learning."
+    "pluralDe": "Bäder",
+    "pluralEn": "bathrooms"
   },
   {
     "exampleSentenceDe": "Ich esse einen Apfel.",
     "exampleSentenceEn": "I eat an apple.",
     "id": "morning_routine_apfel_42",
     "ipa": "ˈapfl̩",
-    "wordDe": "der Apfel",
+    "wordDe": "Apfel",
     "wordEn": "apple",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Äpfel",
-    "pluralEn": "apples",
-    "imagePrompt": "A red apple, cartoon style, white background, for children's learning."
+    "pluralDe": "Äpfel",
+    "pluralEn": "apples"
   },
   {
     "exampleSentenceDe": "Ich ziehe eine Hose an.",
     "exampleSentenceEn": "I put on pants.",
     "id": "morning_routine_hose_43",
     "ipa": "ˈhoːzə",
-    "wordDe": "die Hose",
+    "wordDe": "Hose",
     "wordEn": "pants",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Hosen",
-    "pluralEn": "pants",
-    "imagePrompt": "Blue pants on white background, cartoon style, for children's learning."
+    "pluralDe": "Hosen",
+    "pluralEn": "pants"
   },
   {
     "exampleSentenceDe": "Ich trage ein Hemd.",
     "exampleSentenceEn": "I wear a shirt.",
     "id": "morning_routine_hemd_44",
     "ipa": "hɛmt",
-    "wordDe": "das Hemd",
+    "wordDe": "Hemd",
     "wordEn": "shirt",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Hemden",
-    "pluralEn": "shirts",
-    "imagePrompt": "Blue t-shirt, cartoon style, white background, for children's learning."
+    "pluralDe": "Hemden",
+    "pluralEn": "shirts"
   },
   {
     "exampleSentenceDe": "Ich höre Musik am Morgen.",
@@ -581,8 +537,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy child with headphones listening to music, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich tanze am Morgen.",
@@ -594,8 +549,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Happy girl dancing, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich lache am Morgen.",
@@ -607,8 +561,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl happily giggling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich liebe den Morgen.",
@@ -620,7 +573,6 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, two kids hugging, white background, for children's learning."
+    "pluralEn": null
   }
 ]

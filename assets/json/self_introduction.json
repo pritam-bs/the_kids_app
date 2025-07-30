@@ -6,11 +6,10 @@
     "ipa": "haˈloː",
     "wordDe": "Hallo",
     "wordEn": "Hello",
-    "wordType": "noun",
-    "article": "das",
-    "pluralDe": "Hallos",
-    "pluralEn": "Hellos",
-    "imagePrompt": "A happy child waving, cartoon style, white background, for children's learning."
+    "wordType": "other",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich heiße Anna.",
@@ -22,8 +21,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl introducing herself, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin sieben Jahre alt.",
@@ -35,8 +33,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy child pointing to themself, with the text \"ME\" above them, on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin aus Deutschland.",
@@ -48,8 +45,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style; a small toy train coming out of a bright blue tunnel, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich wohne in Berlin.",
@@ -61,8 +57,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon house with a happy family waving, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich mag Eis.",
@@ -74,8 +69,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling kid with big heart above ice cream, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich spiele gern Fußball.",
@@ -87,8 +81,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Kids playing soccer in a park, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe einen Bruder.",
@@ -100,8 +93,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy holding a red apple, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gehe in die Schule.",
@@ -113,8 +105,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon person walking forward, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie heißt du?",
@@ -126,8 +117,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl asking a cat \"What is your name?\", white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wer bist du?",
@@ -139,8 +129,7 @@
     "wordType": "pronoun",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, several friendly children looking questioningly at each other, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin freundlich.",
@@ -152,8 +141,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two happy cartoon kids waving, colorful clothes, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin lustig.",
@@ -165,8 +153,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A laughing clown wearing a big red nose, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin müde.",
@@ -178,8 +165,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a sleepy bear yawning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin glücklich.",
@@ -191,8 +177,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling child with a star, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe Geburtstag.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Geburtstage",
-    "pluralEn": "birthdays",
-    "imagePrompt": "Cartoon style, a happy child with a birthday cake and balloons, white background, for children's learning."
+    "pluralEn": "birthdays"
   },
   {
     "exampleSentenceDe": "Ich habe eine Schwester.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schwestern",
-    "pluralEn": "sisters",
-    "imagePrompt": "Two smiling girls hugging, cartoon style, white background, for children's learning."
+    "pluralEn": "sisters"
   },
   {
     "exampleSentenceDe": "Ich bin ein Kind.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Kinder",
-    "pluralEn": "children",
-    "imagePrompt": "Cartoon style, happy child waving, white background, for children's learning."
+    "pluralEn": "children"
   },
   {
     "exampleSentenceDe": "Ich lerne Deutsch.",
@@ -243,8 +225,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a happy child reading a book, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kann zählen.",
@@ -256,8 +237,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon boy counting numbers on fingers, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe einen Hund.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hunde",
-    "pluralEn": "dogs",
-    "imagePrompt": "Happy puppy sitting, cartoon style, white background, for children's learning."
+    "pluralEn": "dogs"
   },
   {
     "exampleSentenceDe": "Ich habe eine Katze.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Katzen",
-    "pluralEn": "cats",
-    "imagePrompt": "Cartoon cat sitting, white background, for children's learning."
+    "pluralEn": "cats"
   },
   {
     "exampleSentenceDe": "Ich wohne in einem Haus.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Häuser",
-    "pluralEn": "houses",
-    "imagePrompt": "Cartoon style house with a red roof on a white background, for children's learning."
+    "pluralEn": "houses"
   },
   {
     "exampleSentenceDe": "Ich mag mein Zimmer.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Zimmer",
-    "pluralEn": "rooms",
-    "imagePrompt": "Cartoon style, tidy bedroom with bed, desk, and toys, white background, for children's learning."
+    "pluralEn": "rooms"
   },
   {
     "exampleSentenceDe": "Ich gehe gern raus.",
@@ -321,8 +297,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a smiling girl walking out a door into a sunny garden, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich mag das Buch.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Bücher",
-    "pluralEn": "books",
-    "imagePrompt": "Cartoon style, open book with colorful pictures, white background, for children's learning."
+    "pluralEn": "books"
   },
   {
     "exampleSentenceDe": "Ich esse gern Obst.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style mixed fruits on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trinke gern Saft.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Säfte",
-    "pluralEn": "juices",
-    "imagePrompt": "Cartoon glass of orange liquid with a straw, white background, for children's learning."
+    "pluralEn": "juices"
   },
   {
     "exampleSentenceDe": "Ich mag meine Familie.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Familien",
-    "pluralEn": "families",
-    "imagePrompt": "Cartoon style happy family holding hands, white background, for children's learning."
+    "pluralEn": "families"
   },
   {
     "exampleSentenceDe": "Ich wohne mit meiner Mama.",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mamas",
-    "pluralEn": "moms",
-    "imagePrompt": "A smiling mother hugging her child, cartoon style, white background, for children's learning."
+    "pluralEn": "moms"
   },
   {
     "exampleSentenceDe": "Ich wohne mit meinem Papa.",
@@ -399,8 +369,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Papas",
-    "pluralEn": "dads",
-    "imagePrompt": "Cartoon style, a smiling man holding a child's hand, white background, for children's learning."
+    "pluralEn": "dads"
   },
   {
     "exampleSentenceDe": "Ich bin brav.",
@@ -412,8 +381,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling child sitting quietly at a desk, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin fleißig.",
@@ -425,8 +393,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Busy ant carrying a large leaf, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kann singen.",
@@ -438,8 +405,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl happily singing into a microphone, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kann tanzen.",
@@ -451,8 +417,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl happily dancing, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin ein Junge.",
@@ -464,8 +429,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Jungen",
-    "pluralEn": "boys",
-    "imagePrompt": "Cartoon of a happy smiling boy standing, white background, for children's learning."
+    "pluralEn": "boys"
   },
   {
     "exampleSentenceDe": "Ich bin ein Mädchen.",
@@ -477,8 +441,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Mädchen",
-    "pluralEn": "girls",
-    "imagePrompt": "Cartoon style, a happy girl with pigtails smiling, white background, for children's learning."
+    "pluralEn": "girls"
   },
   {
     "exampleSentenceDe": "Ich gehe in den Kindergarten.",
@@ -490,8 +453,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Kindergärten",
-    "pluralEn": "kindergartens",
-    "imagePrompt": "Cartoon style, children playing with toys in a classroom, white background, for children's learning."
+    "pluralEn": "kindergartens"
   },
   {
     "exampleSentenceDe": "Ich spiele mit Freunden.",
@@ -503,8 +465,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Freunde",
-    "pluralEn": "friends",
-    "imagePrompt": "Two kids smiling, holding hands, cartoon style, white background, for children's learning."
+    "pluralEn": "friends"
   },
   {
     "exampleSentenceDe": "Ich mag Tiere.",
@@ -516,8 +477,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Tiere",
-    "pluralEn": "animals",
-    "imagePrompt": "Cartoon-style smiling dog, cat, bird, white background, for children's learning."
+    "pluralEn": "animals"
   },
   {
     "exampleSentenceDe": "Ich liebe Eis!",
@@ -529,8 +489,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two cartoon children hugging, hearts floating, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich zähle bis zehn.",
@@ -542,8 +501,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child counting on fingers, numbers above head, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich male gern Bilder.",
@@ -555,8 +513,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child happily painting with a paintbrush on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich lache gern.",
@@ -568,8 +525,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl laughing with mouth open, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin sechs Jahre alt.",
@@ -581,8 +537,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Jahre",
-    "pluralEn": "years",
-    "imagePrompt": "Cartoon calendar showing the number 12, white background, for children's learning."
+    "pluralEn": "years"
   },
   {
     "exampleSentenceDe": "Ich bin nett.",
@@ -594,8 +549,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling cartoon girl helping a cat, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe Hunger.",
@@ -607,8 +561,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon drawing of a smiling kid holding an empty bowl, looking longingly, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe Durst.",
@@ -620,7 +573,6 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child drinking water from a bottle, white background, for children's learning."
+    "pluralEn": null
   }
 ]

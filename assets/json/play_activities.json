@@ -9,21 +9,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy child playing with a teddy bear, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Spiel ist lustig.",
     "exampleSentenceEn": "The game is fun.",
     "id": "play_activities_das_spiel_02",
     "ipa": "ʃpiːl",
-    "wordDe": "das Spiel",
+    "wordDe": "Spiel",
     "wordEn": "game",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Spiele",
-    "pluralEn": "games",
-    "imagePrompt": "Cartoon-style board game with colorful pieces on a white background, for children's learning."
+    "pluralDe": "Spiele",
+    "pluralEn": "games"
   },
   {
     "exampleSentenceDe": "Wir basteln ein Haus.",
@@ -35,8 +33,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling kids crafting a house with paper, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich male ein Bild mit Farben.",
@@ -48,8 +45,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child painting with brush, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir singen ein Lied.",
@@ -61,8 +57,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy girl singing into a microphone, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich lese ein Buch.",
@@ -74,8 +69,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a girl reading a book, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir tanzen im Kreis.",
@@ -87,125 +81,115 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy girl dances, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Ball ist rund.",
     "exampleSentenceEn": "The ball is round.",
     "id": "play_activities_der_ball_08",
     "ipa": "bal",
-    "wordDe": "der Ball",
+    "wordDe": "Ball",
     "wordEn": "ball",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Bälle",
-    "pluralEn": "balls",
-    "imagePrompt": "Round, colorful ball, cartoon style, white background, for children's learning."
+    "pluralDe": "Bälle",
+    "pluralEn": "balls"
   },
   {
     "exampleSentenceDe": "Die Puppe hat blonde Haare.",
     "exampleSentenceEn": "The doll has blonde hair.",
     "id": "play_activities_die_puppe_09",
     "ipa": "ˈpʊpə",
-    "wordDe": "die Puppe",
+    "wordDe": "Puppe",
     "wordEn": "doll",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Puppen",
-    "pluralEn": "dolls",
-    "imagePrompt": "Cartoon style doll with a dress, white background, for children's learning."
+    "pluralDe": "Puppen",
+    "pluralEn": "dolls"
   },
   {
     "exampleSentenceDe": "Das Auto fährt schnell.",
     "exampleSentenceEn": "The car drives fast.",
     "id": "play_activities_das_auto_10",
     "ipa": "ˈaʊ̯toː",
-    "wordDe": "das Auto",
+    "wordDe": "Auto",
     "wordEn": "car",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Autos",
-    "pluralEn": "cars",
-    "imagePrompt": "A red cartoon car driving, white background, for children's learning."
+    "pluralDe": "Autos",
+    "pluralEn": "cars"
   },
   {
     "exampleSentenceDe": "Wir bauen einen Turm mit Blöcken.",
     "exampleSentenceEn": "We build a tower with blocks.",
     "id": "play_activities_die_bloecke_11",
     "ipa": "ˈblœkə",
-    "wordDe": "die Blöcke",
+    "wordDe": "Blöcke",
     "wordEn": "blocks",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Blöcke",
-    "pluralEn": "blocks",
-    "imagePrompt": "Colorful building bricks stacked unevenly, cartoon style, white background, for children's learning."
+    "pluralDe": "Blöcke",
+    "pluralEn": "blocks"
   },
   {
     "exampleSentenceDe": "Ich mag mein Kuscheltier.",
     "exampleSentenceEn": "I like my stuffed animal.",
     "id": "play_activities_das_kuscheltier_12",
     "ipa": "ˈkʊʃəltiːɐ̯",
-    "wordDe": "das Kuscheltier",
+    "wordDe": "Kuscheltier",
     "wordEn": "stuffed animal",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Kuscheltiere",
-    "pluralEn": "stuffed animals",
-    "imagePrompt": "A fluffy teddy bear sitting, cartoon style, white background, for children's learning."
+    "pluralDe": "Kuscheltiere",
+    "pluralEn": "stuffed animals"
   },
   {
     "exampleSentenceDe": "Wir machen eine Schatzsuche.",
     "exampleSentenceEn": "We are doing a treasure hunt.",
     "id": "play_activities_die_schatzsuche_13",
     "ipa": "ˈʃat͡sˌzuːχə",
-    "wordDe": "die Schatzsuche",
+    "wordDe": "Schatzsuche",
     "wordEn": "treasure hunt",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Schatzsuchen",
-    "pluralEn": "treasure hunts",
-    "imagePrompt": "Cartoon style, kids searching for buried gold coins with map, white background, for children's learning."
+    "pluralDe": "Schatzsuchen",
+    "pluralEn": "treasure hunts"
   },
   {
     "exampleSentenceDe": "Ich fliege einen Drachen.",
     "exampleSentenceEn": "I fly a kite.",
     "id": "play_activities_der_drachen_14",
     "ipa": "ˈdʁaχən",
-    "wordDe": "der Drachen",
+    "wordDe": "Drachen",
     "wordEn": "kite",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Drachen",
-    "pluralEn": "kites",
-    "imagePrompt": "Cartoon style kite flying high in the sky, white background, for children's learning."
+    "pluralDe": "Drachen",
+    "pluralEn": "kites"
   },
   {
     "exampleSentenceDe": "Wir spielen Verstecken.",
     "exampleSentenceEn": "We play hide-and-seek.",
     "id": "play_activities_verstecken_15",
-    "ipa": "fɛɐ̯ˈʃtɛkən",
+    "ipa": "fɛɐ̯ˈʃtɛkən ˈʃpiːlən",
     "wordDe": "Verstecken spielen",
     "wordEn": "to play hide-and-seek",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon animals playing hide-and-seek behind a tree, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe eine Eisenbahn.",
     "exampleSentenceEn": "I have a toy train.",
     "id": "play_activities_die_eisenbahn_16",
     "ipa": "ˈaɪ̯zn̩ˌbaːn",
-    "wordDe": "die Eisenbahn",
+    "wordDe": "Eisenbahn",
     "wordEn": "toy train",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Eisenbahnen",
-    "pluralEn": "toy trains",
-    "imagePrompt": "Cartoon style toy train on tracks, white background, for children's learning."
+    "pluralDe": "Eisenbahnen",
+    "pluralEn": "toy trains"
   },
   {
     "exampleSentenceDe": "Wir hüpfen Seil.",
@@ -217,21 +201,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl smiling, jumping rope, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich fahre mit dem Roller.",
     "exampleSentenceEn": "I ride the scooter.",
     "id": "play_activities_der_roller_18",
     "ipa": "ˈʁɔlɐ",
-    "wordDe": "der Roller",
+    "wordDe": "Roller",
     "wordEn": "scooter",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Roller",
-    "pluralEn": "scooters",
-    "imagePrompt": "Cartoon style, kid riding a scooter, smiling, white background, for children's learning."
+    "pluralDe": "Roller",
+    "pluralEn": "scooters"
   },
   {
     "exampleSentenceDe": "Wir klettern auf den Baum.",
@@ -243,47 +225,43 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child climbing a wooden ladder, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich rutsche die Rutsche runter.",
     "exampleSentenceEn": "I slide down the slide.",
     "id": "play_activities_die_rutsche_20",
     "ipa": "ˈʁʊt͡ʃə",
-    "wordDe": "die Rutsche",
+    "wordDe": "Rutsche",
     "wordEn": "slide",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Rutschen",
-    "pluralEn": "slides",
-    "imagePrompt": "Cartoon style, a child sliding down a playground slide, white background, for children's learning."
+    "pluralDe": "Rutschen",
+    "pluralEn": "slides"
   },
   {
     "exampleSentenceDe": "Wir schaukeln auf der Schaukel.",
     "exampleSentenceEn": "We swing on the swing.",
     "id": "play_activities_die_schaukel_21",
     "ipa": "ˈʃaʊ̯kəl",
-    "wordDe": "die Schaukel",
+    "wordDe": "Schaukel",
     "wordEn": "swing",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Schaukeln",
-    "pluralEn": "swings",
-    "imagePrompt": "Cartoon style image: Child swinging high on a park swing, white background, for children's learning."
+    "pluralDe": "Schaukeln",
+    "pluralEn": "swings"
   },
   {
     "exampleSentenceDe": "Ich baue ein Schloss aus Sand.",
     "exampleSentenceEn": "I build a sandcastle.",
     "id": "play_activities_das_schloss_22",
     "ipa": "ʃlɔs",
-    "wordDe": "das Schloss",
+    "wordDe": "Schloss",
     "wordEn": "castle",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Schlösser",
-    "pluralEn": "castles",
-    "imagePrompt": "A big cartoon castle with colorful flags, on a white background, for children's learning."
+    "pluralDe": "Schlösser",
+    "pluralEn": "castles"
   },
   {
     "exampleSentenceDe": "Wir planschen im Wasser.",
@@ -295,60 +273,55 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon ducklings splashing in a puddle, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich sammle Steine am Strand.",
     "exampleSentenceEn": "I collect stones on the beach.",
     "id": "play_activities_der_stein_24",
     "ipa": "ʃtaɪ̯n",
-    "wordDe": "der Stein",
+    "wordDe": "Stein",
     "wordEn": "stone",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Steine",
-    "pluralEn": "stones",
-    "imagePrompt": "Cartoon style gray rock, white background, for children's learning."
+    "pluralDe": "Steine",
+    "pluralEn": "stones"
   },
   {
     "exampleSentenceDe": "Wir spielen mit Knete.",
     "exampleSentenceEn": "We play with playdough.",
     "id": "play_activities_die_knete_25",
     "ipa": "ˈkneːtə",
-    "wordDe": "die Knete",
+    "wordDe": "Knete",
     "wordEn": "playdough",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Kneten",
-    "pluralEn": "playdoughs",
-    "imagePrompt": "Colorful cartoon playdough ball, white background, for children's learning."
+    "pluralDe": "Kneten",
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich puzzle gern.",
+    "exampleSentenceDe": "Ich mache gern Puzzles.",
     "exampleSentenceEn": "I like to do puzzles.",
     "id": "play_activities_das_puzzle_26",
     "ipa": "ˈpʊtsəl",
-    "wordDe": "das Puzzle",
+    "wordDe": "Puzzle",
     "wordEn": "puzzle",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Puzzles",
-    "pluralEn": "puzzles",
-    "imagePrompt": "Colorful jigsaw puzzle pieces scattered, cartoon style, white background, for children's learning."
+    "pluralDe": "Puzzles",
+    "pluralEn": "puzzles"
   },
   {
     "exampleSentenceDe": "Wir hören eine Geschichte.",
     "exampleSentenceEn": "We listen to a story.",
     "id": "play_activities_die_geschichte_27",
     "ipa": "ɡəˈʃɪçtə",
-    "wordDe": "die Geschichte",
+    "wordDe": "Geschichte",
     "wordEn": "story",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Geschichten",
-    "pluralEn": "stories",
-    "imagePrompt": "Cartoon style, book with a happy face on the cover, for children's learning, white background."
+    "pluralDe": "Geschichten",
+    "pluralEn": "stories"
   },
   {
     "exampleSentenceDe": "Ich verkleide mich als Prinzessin.",
@@ -360,8 +333,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl putting on a princess crown, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir machen Quatsch!",
@@ -370,37 +342,34 @@
     "ipa": "kvat͡ʃ ˈmaxən",
     "wordDe": "Quatsch machen",
     "wordEn": "to be silly",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two kids making funny faces, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich spiele mit Bauklötzen.",
     "exampleSentenceEn": "I play with building blocks.",
     "id": "play_activities_die_baukloetze_30",
     "ipa": "ˈbaʊ̯ˌklœt͡sə",
-    "wordDe": "die Bauklötze",
+    "wordDe": "Bauklötze",
     "wordEn": "building blocks",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Bauklötze",
-    "pluralEn": "building blocks",
-    "imagePrompt": "Colorful wooden cubes and rectangular prisms stacked, cartoon style, white background, for children's learning."
+    "pluralDe": "Bauklötze",
+    "pluralEn": "building blocks"
   },
   {
     "exampleSentenceDe": "Wir haben viel Spaß!",
     "exampleSentenceEn": "We have a lot of fun!",
     "id": "play_activities_der_spass_31",
     "ipa": "ʃpaːs",
-    "wordDe": "der Spaß",
+    "wordDe": "Spaß",
     "wordEn": "fun",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Späße",
-    "pluralEn": "fun",
-    "imagePrompt": "Children laughing and playing, cartoon style, white background, for children's learning."
+    "pluralDe": "Späße",
+    "pluralEn": "fun"
   },
   {
     "exampleSentenceDe": "Ich mag bunte Farben.",
@@ -412,21 +381,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A rainbow with many cartoon animals under it, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir teilen unser Spielzeug.",
     "exampleSentenceEn": "We share our toys.",
     "id": "play_activities_das_spielzeug_33",
     "ipa": "ˈʃpiːlˌt͡sɔɪ̯k",
-    "wordDe": "das Spielzeug",
+    "wordDe": "Spielzeug",
     "wordEn": "toy",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Spielzeuge",
-    "pluralEn": "toys",
-    "imagePrompt": "Cartoon style, colorful toy blocks, white background, for children's learning."
+    "pluralDe": "Spielzeuge",
+    "pluralEn": "toys"
   },
   {
     "exampleSentenceDe": "Ich mag es draußen zu spielen.",
@@ -438,47 +405,43 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Kids playing in a sunny park, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir machen eine Kissenschlacht.",
     "exampleSentenceEn": "We are having a pillow fight.",
     "id": "play_activities_die_kissenschlacht_35",
     "ipa": "ˈkɪʃn̩ˌʃlaxt",
-    "wordDe": "die Kissenschlacht",
+    "wordDe": "Kissenschlacht",
     "wordEn": "pillow fight",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Kissenschlachten",
-    "pluralEn": "pillow fights",
-    "imagePrompt": "Two kids having a pillow fight, cartoon style, white background, for children's learning."
+    "pluralDe": "Kissenschlachten",
+    "pluralEn": "pillow fights"
   },
   {
     "exampleSentenceDe": "Wir spielen Fangen.",
     "exampleSentenceEn": "We play tag.",
     "id": "play_activities_fangen_36",
-    "ipa": "ˈfaŋən",
+    "ipa": "ˈfaŋən ˈʃpiːlən",
     "wordDe": "Fangen spielen",
     "wordEn": "to play tag",
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon kids chasing each other, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Murmel ist klein.",
     "exampleSentenceEn": "The marble is small.",
     "id": "play_activities_die_murmel_37",
     "ipa": "ˈmʊʁml̩",
-    "wordDe": "die Murmel",
+    "wordDe": "Murmel",
     "wordEn": "marble",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Murmeln",
-    "pluralEn": "marbles",
-    "imagePrompt": "Colorful swirling glass sphere, cartoon style, white background, for children's learning."
+    "pluralDe": "Murmeln",
+    "pluralEn": "marbles"
   },
   {
     "exampleSentenceDe": "Ich spiele mit meinem ferngesteuerten Auto.",
@@ -490,112 +453,103 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, toy car moving with a remote control, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir spielen ein Brettspiel.",
     "exampleSentenceEn": "We play a board game.",
     "id": "play_activities_das_brettspiel_39",
     "ipa": "ˈbʁɛtˌʃpiːl",
-    "wordDe": "das Brettspiel",
+    "wordDe": "Brettspiel",
     "wordEn": "board game",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Brettspiele",
-    "pluralEn": "board games",
-    "imagePrompt": "Cartoon style game with colorful pieces on a white background, for children's learning."
+    "pluralDe": "Brettspiele",
+    "pluralEn": "board games"
   },
   {
     "exampleSentenceDe": "Ich liebe es, Seifenblasen zu machen.",
     "exampleSentenceEn": "I love to make bubbles.",
     "id": "play_activities_die_seifenblase_40",
     "ipa": "ˈzaɪ̯fn̩ˌblaːzə",
-    "wordDe": "die Seifenblase",
+    "wordDe": "Seifenblase",
     "wordEn": "bubble",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Seifenblasen",
-    "pluralEn": "bubbles",
-    "imagePrompt": "Cartoon style illustration: a big, colorful sphere floating, white background, for children's learning."
+    "pluralDe": "Seifenblasen",
+    "pluralEn": "bubbles"
   },
   {
     "exampleSentenceDe": "Wir machen ein Picknick im Park.",
     "exampleSentenceEn": "We have a picnic in the park.",
     "id": "play_activities_das_picknick_41",
     "ipa": "ˈpɪknɪk",
-    "wordDe": "das Picknick",
+    "wordDe": "Picknick",
     "wordEn": "picnic",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Picknicks",
-    "pluralEn": "picnics",
-    "imagePrompt": "Cartoon style picnic basket, checkered blanket, sandwich, white background, for children's learning."
+    "pluralDe": "Picknicks",
+    "pluralEn": "picnics"
   },
   {
     "exampleSentenceDe": "Ich habe eine Rassel.",
     "exampleSentenceEn": "I have a rattle.",
     "id": "play_activities_die_rassel_42",
     "ipa": "ˈʁasl̩",
-    "wordDe": "die Rassel",
+    "wordDe": "Rassel",
     "wordEn": "rattle",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Rasseln",
-    "pluralEn": "rattles",
-    "imagePrompt": "Cartoon baby holding a colorful rattle, white background, for children's learning."
+    "pluralDe": "Rasseln",
+    "pluralEn": "rattles"
   },
   {
     "exampleSentenceDe": "Ich spiele mit einem Jo-Jo.",
     "exampleSentenceEn": "I am playing with a yo-yo.",
     "id": "play_activities_das_jo_jo_43",
     "ipa": "ˈjoːjoː",
-    "wordDe": "das Jo-Jo",
+    "wordDe": "Jo-Jo",
     "wordEn": "yo-yo",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Jo-Jos",
-    "pluralEn": "yo-yos",
-    "imagePrompt": "Cartoon style, a kid playing with a toy on a string, white background, for children's learning."
+    "pluralDe": "Jo-Jos",
+    "pluralEn": "yo-yos"
   },
   {
     "exampleSentenceDe": "Wir sind Abenteurer!",
     "exampleSentenceEn": "We are adventurers!",
     "id": "play_activities_der_abenteurer_44",
     "ipa": "ˈapənˌtɔɪ̯ʁɐ",
-    "wordDe": "der Abenteurer",
+    "wordDe": "Abenteurer",
     "wordEn": "adventurer",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Abenteurer",
-    "pluralEn": "adventurers",
-    "imagePrompt": "Cartoon boy with backpack exploring a jungle, white background, for children's learning."
+    "pluralDe": "Abenteurer",
+    "pluralEn": "adventurers"
   },
   {
     "exampleSentenceDe": "Wir spielen im Garten.",
     "exampleSentenceEn": "We play in the garden.",
     "id": "play_activities_der_garten_45",
     "ipa": "ˈɡaʁtn̩",
-    "wordDe": "der Garten",
+    "wordDe": "Garten",
     "wordEn": "garden",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Gärten",
-    "pluralEn": "gardens",
-    "imagePrompt": "Cartoon garden with colorful flowers, vegetables, and a happy child playing, white background, for children's learning."
+    "pluralDe": "Gärten",
+    "pluralEn": "gardens"
   },
   {
     "exampleSentenceDe": "Ich mag mein Dreirad.",
     "exampleSentenceEn": "I like my tricycle.",
     "id": "play_activities_das_dreirad_46",
     "ipa": "ˈdʁaɪ̯ˌʁaːt",
-    "wordDe": "das Dreirad",
+    "wordDe": "Dreirad",
     "wordEn": "tricycle",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Dreiräder",
-    "pluralEn": "tricycles",
-    "imagePrompt": "Cartoon style tricycle on a white background, for children's learning."
+    "pluralDe": "Dreiräder",
+    "pluralEn": "tricycles"
   },
   {
     "exampleSentenceDe": "Wir backen einen Kuchen.",
@@ -607,8 +561,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, happy kids baking a cake, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich spiele Cowboy und Indianer.",
@@ -616,11 +569,10 @@
     "id": "play_activities_cowboy_und_indianer_48",
     "ipa": "ˈkaʊ̯ˌbɔɪ ʊnt ɪnˈdi̯aːnɐ",
     "wordDe": "Cowboy und Indianer",
-    "wordEn": "cowboy and Indian",
-    "wordType": "noun",
+    "wordEn": "cowboys and Indians",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a boy dressed as a sheriff and a girl dressed as a native American, smiling, white background, for children's learning."
+    "pluralEn": null
   }
 ]

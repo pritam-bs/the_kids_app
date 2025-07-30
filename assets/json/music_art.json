@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Gitarren",
-    "pluralEn": "guitars",
-    "imagePrompt": "Cartoon style guitar, white background, for children's learning."
+    "pluralEn": "guitars"
   },
   {
     "exampleSentenceDe": "Ich singe gern im Chor.",
@@ -22,8 +21,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon bird singing a song, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Pinsel ist zum Malen da.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pinsel",
-    "pluralEn": "brushes",
-    "imagePrompt": "\"A paintbrush with colorful paint, cartoon style, white background, for children's learning.\""
+    "pluralEn": "brushes"
   },
   {
     "exampleSentenceDe": "Ich zeichne ein Haus.",
@@ -48,8 +45,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child drawing a house with crayons, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Klavier hat viele Tasten.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Klaviere",
-    "pluralEn": "pianos",
-    "imagePrompt": "Cartoon-style piano with colorful keys, white background, for children's learning."
+    "pluralEn": "pianos"
   },
   {
     "exampleSentenceDe": "Musik macht Spaß.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "kein Plural",
-    "pluralEn": "no plural",
-    "imagePrompt": "Cartoon style, musical notes dancing, white background, for children's learning."
+    "pluralEn": "no plural"
   },
   {
     "exampleSentenceDe": "Die Farbe ist rot.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Farben",
-    "pluralEn": "colors",
-    "imagePrompt": "Colorful crayons drawing on a white paper, cartoon style, white background, for children's learning."
+    "pluralEn": "colors"
   },
   {
     "exampleSentenceDe": "Ich tanze gern.",
@@ -100,8 +93,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A girl happily dancing, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Lied ist schön.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Lieder",
-    "pluralEn": "songs",
-    "imagePrompt": "Cartoon style, happy bird singing, white background, for children's learning."
+    "pluralEn": "songs"
   },
   {
     "exampleSentenceDe": "Ich höre gern Musik.",
@@ -126,8 +117,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a child listening with big ears, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Bleistift ist spitz.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bleistifte",
-    "pluralEn": "pencils",
-    "imagePrompt": "Cartoon style, a yellow pencil standing upright on a white background, for children's learning."
+    "pluralEn": "pencils"
   },
   {
     "exampleSentenceDe": "Ich male ein Bild.",
@@ -152,8 +141,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child painting with a brush, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Trommel ist laut.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Trommeln",
-    "pluralEn": "drums",
-    "imagePrompt": "Cartoon-style drum, red with yellow sticks, white background, for children's learning."
+    "pluralEn": "drums"
   },
   {
     "exampleSentenceDe": "Ich spiele Flöte.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Flöten",
-    "pluralEn": "flutes",
-    "imagePrompt": "Cartoon style flute, white background, for children's learning."
+    "pluralEn": "flutes"
   },
   {
     "exampleSentenceDe": "Kunst ist toll.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Künste",
-    "pluralEn": "arts",
-    "imagePrompt": "Cartoon style drawing supplies: crayons, paintbrushes, and a colorful drawing. White background, for children's learning."
+    "pluralEn": "arts"
   },
   {
     "exampleSentenceDe": "Das Atelier ist groß.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ateliers",
-    "pluralEn": "studios",
-    "imagePrompt": "Artist's workspace with easel, paints, cartoon style, white background, for children's learning."
+    "pluralEn": "studios"
   },
   {
     "exampleSentenceDe": "Die Note ist wichtig.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Noten",
-    "pluralEn": "notes",
-    "imagePrompt": "Cartoon style musical note, white background, for children's learning."
+    "pluralEn": "notes"
   },
   {
     "exampleSentenceDe": "Ich schreibe ein Gedicht.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Gedichte",
-    "pluralEn": "poems",
-    "imagePrompt": "Cartoon style, child writing in notebook with heart, white background, for children's learning."
+    "pluralEn": "poems"
   },
   {
     "exampleSentenceDe": "Der Rhythmus ist schnell.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Rhythmen",
-    "pluralEn": "rhythms",
-    "imagePrompt": "Cartoon style image for children's learning: Drums being played with musical notes floating around, white background."
+    "pluralEn": "rhythms"
   },
   {
     "exampleSentenceDe": "Die Melodie ist schön.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Melodien",
-    "pluralEn": "melodies",
-    "imagePrompt": "Cartoon style, musical notes dancing happily on a staff, white background, for children's learning."
+    "pluralEn": "melodies"
   },
   {
     "exampleSentenceDe": "Das Orchester spielt laut.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Orchester",
-    "pluralEn": "orchestras",
-    "imagePrompt": "Cartoon style orchestra playing instruments, white background, for children's learning."
+    "pluralEn": "orchestras"
   },
   {
     "exampleSentenceDe": "Ich lerne ein Instrument.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Instrumente",
-    "pluralEn": "instruments",
-    "imagePrompt": "Cartoon style, a smiling child playing a bright red toy trumpet, white background, for children's learning."
+    "pluralEn": "instruments"
   },
   {
     "exampleSentenceDe": "Die Bühne ist groß.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Bühnen",
-    "pluralEn": "stages",
-    "imagePrompt": "A cartoon-style stage with a red curtain, white background, for children's learning."
+    "pluralEn": "stages"
   },
   {
     "exampleSentenceDe": "Ich bastle gern.",
@@ -308,8 +285,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A smiling child making a paper airplane, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich höre ein Konzert.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Konzerte",
-    "pluralEn": "concerts",
-    "imagePrompt": "Cartoon style, band playing music on stage, spotlights, white background, for children's learning."
+    "pluralEn": "concerts"
   },
   {
     "exampleSentenceDe": "Der Takt ist langsam.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Takte",
-    "pluralEn": "beats",
-    "imagePrompt": "Cartoon style metronome swinging, white background, for children's learning."
+    "pluralEn": "beats"
   },
   {
     "exampleSentenceDe": "Die Skulptur ist schön.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Skulpturen",
-    "pluralEn": "sculptures",
-    "imagePrompt": "Cartoon style clay bear figure, white background, for children's learning."
+    "pluralEn": "sculptures"
   },
   {
     "exampleSentenceDe": "Ich mache ein Foto.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Fotos",
-    "pluralEn": "photos",
-    "imagePrompt": "Smiling girl taking a picture with a camera, cartoon style, white background, for children's learning."
+    "pluralEn": "photos"
   },
   {
     "exampleSentenceDe": "Ich schneide mit der Schere.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Scheren",
-    "pluralEn": "scissors",
-    "imagePrompt": "Cartoon style scissors cutting a dotted line, white background, for children's learning."
+    "pluralEn": "scissors"
   },
   {
     "exampleSentenceDe": "Der Ton ist hoch.",
@@ -386,12 +357,11 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Töne",
-    "pluralEn": "tones",
-    "imagePrompt": "Cartoon clay, shaped into a small animal, white background, for children's learning."
+    "pluralEn": "tones"
   },
   {
-    "exampleSentenceDe": "Ich klebe mit Kleber.",
-    "exampleSentenceEn": "I glue with glue.",
+    "exampleSentenceDe": "Der Kleber ist auf dem Tisch.",
+    "exampleSentenceEn": "The glue is on the table.",
     "id": "music_art_kleber_31",
     "ipa": "/ˈkleːbɐ/",
     "wordDe": "Kleber",
@@ -399,8 +369,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Kleber",
-    "pluralEn": "glues",
-    "imagePrompt": "Cartoon-style glue bottle applying glue to paper, white background, for children's learning."
+    "pluralEn": "glues"
   },
   {
     "exampleSentenceDe": "Das Lineal ist lang.",
@@ -412,8 +381,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Lineale",
-    "pluralEn": "rulers",
-    "imagePrompt": "A yellow ruler measuring a short, red line, cartoon style, white background, for children's learning."
+    "pluralEn": "rulers"
   },
   {
     "exampleSentenceDe": "Die Leinwand ist weiß.",
@@ -425,8 +393,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Leinwände",
-    "pluralEn": "canvases",
-    "imagePrompt": "Blank white rectangle on an easel, cartoon style, white background, for children's learning."
+    "pluralEn": "canvases"
   },
   {
     "exampleSentenceDe": "Die Palette hat viele Farben.",
@@ -438,8 +405,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Paletten",
-    "pluralEn": "palettes",
-    "imagePrompt": "A paint palette with colorful paints, cartoon style, white background, for children's learning."
+    "pluralEn": "palettes"
   },
   {
     "exampleSentenceDe": "Die Geige klingt schön.",
@@ -451,8 +417,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Geigen",
-    "pluralEn": "violins",
-    "imagePrompt": "Cartoon violin, brown, on white background, for children's learning."
+    "pluralEn": "violins"
   },
   {
     "exampleSentenceDe": "Ich schreibe ein Lied.",
@@ -464,8 +429,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a happy child writing a letter with a pencil, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Mikrofon ist an.",
@@ -477,8 +441,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Mikrofone",
-    "pluralEn": "microphones",
-    "imagePrompt": "Cartoon style microphone on a stand, white background, for children's learning."
+    "pluralEn": "microphones"
   },
   {
     "exampleSentenceDe": "Der Applaus ist laut.",
@@ -490,8 +453,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "kein Plural",
-    "pluralEn": "no plural",
-    "imagePrompt": "Cartoon hands clapping enthusiastically, white background, for children's learning."
+    "pluralEn": "no plural"
   },
   {
     "exampleSentenceDe": "Die Oper ist interessant.",
@@ -503,8 +465,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Opern",
-    "pluralEn": "operas",
-    "imagePrompt": "Cartoon singer with helmet and horns, white background, for children's learning."
+    "pluralEn": "operas"
   },
   {
     "exampleSentenceDe": "Ich mag bunte Bilder.",
@@ -516,7 +477,6 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon rainbow with many bright colors, white background, for children's learning\""
+    "pluralEn": null
   }
 ]

@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Frühstücke",
-    "pluralEn": "Breakfasts",
-    "imagePrompt": "Cartoon style image for children's learning: A plate with toast, eggs, and orange juice on a white background."
+    "pluralEn": "Breakfasts"
   },
   {
     "exampleSentenceDe": "Das Mittagessen ist um zwölf Uhr.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Mittagessen",
-    "pluralEn": "Lunches",
-    "imagePrompt": "Cartoon style picture of a lunchbox with sandwich, apple, and juice box, white background, for children's learning."
+    "pluralEn": "Lunches"
   },
   {
     "exampleSentenceDe": "Wir essen Abendbrot zusammen.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Abendbrote",
-    "pluralEn": "Dinners",
-    "imagePrompt": "Cartoon family eating food at table, white background, for children's learning."
+    "pluralEn": "Dinners"
   },
   {
     "exampleSentenceDe": "Das Abendessen ist oft warm.",
@@ -44,12 +41,11 @@
     "id": "meals_abendessen_04",
     "ipa": "ˈaːbn̩tˌɛsn̩",
     "wordDe": "Abendessen",
-    "wordEn": "Supper",
+    "wordEn": "Dinner",
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Abendessen",
-    "pluralEn": "Suppers",
-    "imagePrompt": "Cartoon family eating dinner together, white background, for children's learning."
+    "pluralEn": "Dinners"
   },
   {
     "exampleSentenceDe": "Ich liebe einen kleinen Snack am Nachmittag.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Snacks",
-    "pluralEn": "Snacks",
-    "imagePrompt": "Cartoon-style apple slices and crackers on a plate, white background, for children's learning."
+    "pluralEn": "Snacks"
   },
   {
     "exampleSentenceDe": "Wir machen eine Kaffeepause.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kaffeepausen",
-    "pluralEn": "Coffee breaks",
-    "imagePrompt": "Cartoon-style steaming mug, cookies, white background, for children's learning."
+    "pluralEn": "Coffee breaks"
   },
   {
     "exampleSentenceDe": "Das Picknick macht Spaß.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Picknicks",
-    "pluralEn": "Picnics",
-    "imagePrompt": "Cartoon ants stealing food from a picnic basket on a checkered blanket, white background, for children's learning."
+    "pluralEn": "Picnics"
   },
   {
     "exampleSentenceDe": "Ein Brunch am Sonntag ist toll.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Brunches",
-    "pluralEn": "Brunches",
-    "imagePrompt": "Cartoon style: A table with pancakes, eggs, and orange juice on a white background, for children's learning."
+    "pluralEn": "Brunches"
   },
   {
     "exampleSentenceDe": "Ich esse gern eine Zwischenmahlzeit.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Zwischenmahlzeiten",
-    "pluralEn": "Snacks",
-    "imagePrompt": "Cartoon style image of a happy child eating an apple, white background, for children's learning."
+    "pluralEn": "Snacks"
   },
   {
     "exampleSentenceDe": "Wir haben eine Jause gemacht.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Jausen",
-    "pluralEn": "Snacks",
-    "imagePrompt": "Cartoon apple slices and a banana on a plate, white background, for children's learning."
+    "pluralEn": "Snacks"
   },
   {
     "exampleSentenceDe": "Ich esse immer zu Mittag.",
@@ -136,11 +126,10 @@
     "ipa": "t͡sʊm ˈmɪtaːk ˈɛsn̩",
     "wordDe": "zu Mittag essen",
     "wordEn": "to have lunch",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon family eating lunch together, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir frühstücken zusammen.",
@@ -152,7 +141,6 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a family eating breakfast at a table, white background, for children's learning."
+    "pluralEn": null
   }
 ]
