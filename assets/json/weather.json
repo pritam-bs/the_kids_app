@@ -4,130 +4,120 @@
     "exampleSentenceEn": "The sun is shining brightly.",
     "id": "weather_sonne_01",
     "ipa": "ˈzɔnə",
-    "wordDe": "die Sonne",
+    "wordDe": "Sonne",
     "wordEn": "sun",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Sonnen",
-    "pluralEn": "suns",
-    "imagePrompt": "Smiling yellow star in the sky, cartoon style, white background, for children's learning."
+    "pluralDe": "Sonnen",
+    "pluralEn": "suns"
   },
   {
-    "exampleSentenceDe": "Es regnet draußen.",
-    "exampleSentenceEn": "It is raining outside.",
+    "exampleSentenceDe": "Der Regen fällt.",
+    "exampleSentenceEn": "The rain is falling.",
     "id": "weather_regen_02",
     "ipa": "ˈʁeːɡən",
-    "wordDe": "der Regen",
+    "wordDe": "Regen",
     "wordEn": "rain",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Regen",
-    "pluralEn": "rains",
-    "imagePrompt": "Falling water drops from grey clouds, cartoon style, white background, for children's learning."
+    "pluralDe": "Regen",
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist blau.",
     "exampleSentenceEn": "The sky is blue.",
     "id": "weather_himmel_03",
     "ipa": "ˈhɪml̩",
-    "wordDe": "der Himmel",
+    "wordDe": "Himmel",
     "wordEn": "sky",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Himmel",
-    "pluralEn": "skies",
-    "imagePrompt": "Cartoon blue sky with fluffy white clouds, white background, for children's learning."
+    "pluralDe": "Himmel",
+    "pluralEn": "skies"
   },
   {
-    "exampleSentenceDe": "Es ist windig heute.",
-    "exampleSentenceEn": "It is windy today.",
+    "exampleSentenceDe": "Der Wind weht stark.",
+    "exampleSentenceEn": "The wind blows strongly.",
     "id": "weather_wind_04",
     "ipa": "vɪnt",
-    "wordDe": "der Wind",
+    "wordDe": "Wind",
     "wordEn": "wind",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Winde",
-    "pluralEn": "winds",
-    "imagePrompt": "Cartoon style wind blowing leaves on a white background, for children's learning."
+    "pluralDe": "Winde",
+    "pluralEn": "winds"
   },
   {
     "exampleSentenceDe": "Die Wolke ist grau.",
     "exampleSentenceEn": "The cloud is grey.",
     "id": "weather_wolke_05",
     "ipa": "ˈvɔlkə",
-    "wordDe": "die Wolke",
+    "wordDe": "Wolke",
     "wordEn": "cloud",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Wolken",
-    "pluralEn": "clouds",
-    "imagePrompt": "Fluffy white cloud smiling, cartoon style, white background, for children's learning."
+    "pluralDe": "Wolken",
+    "pluralEn": "clouds"
   },
   {
-    "exampleSentenceDe": "Es schneit im Winter.",
-    "exampleSentenceEn": "It snows in winter.",
+    "exampleSentenceDe": "Der Schnee ist weiß und kalt.",
+    "exampleSentenceEn": "The snow is white and cold.",
     "id": "weather_schnee_06",
     "ipa": "ʃneː",
-    "wordDe": "der Schnee",
+    "wordDe": "Schnee",
     "wordEn": "snow",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schnees",
-    "pluralEn": "snows",
-    "imagePrompt": "Snowflakes falling from a gray cloud, cartoon style, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Nebel ist dicht.",
     "exampleSentenceEn": "The fog is thick.",
     "id": "weather_nebel_07",
     "ipa": "ˈneːbəl",
-    "wordDe": "der Nebel",
+    "wordDe": "Nebel",
     "wordEn": "fog",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Nebel",
-    "pluralEn": "fogs",
-    "imagePrompt": "Cartoon style, thick white mist, white background, for children's learning."
+    "pluralDe": "Nebel",
+    "pluralEn": "fogs"
   },
   {
     "exampleSentenceDe": "Der Regenbogen ist bunt.",
     "exampleSentenceEn": "The rainbow is colorful.",
     "id": "weather_regenbogen_08",
     "ipa": "ˈʁeːɡn̩ˌboːɡən",
-    "wordDe": "der Regenbogen",
+    "wordDe": "Regenbogen",
     "wordEn": "rainbow",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Regenbögen",
-    "pluralEn": "rainbows",
-    "imagePrompt": "Colorful rainbow arc in the sky, cartoon style, white background, for children's learning."
+    "pluralDe": "Regenbögen",
+    "pluralEn": "rainbows"
   },
   {
     "exampleSentenceDe": "Der Blitz ist schnell.",
     "exampleSentenceEn": "The lightning is fast.",
     "id": "weather_blitz_09",
     "ipa": "blɪts",
-    "wordDe": "der Blitz",
+    "wordDe": "Blitz",
     "wordEn": "lightning",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Blitze",
-    "pluralEn": "lightning",
-    "imagePrompt": "Cartoon yellow lightning bolt striking a tree, white background, for children's learning."
+    "pluralDe": "Blitze",
+    "pluralEn": "lightning"
   },
   {
     "exampleSentenceDe": "Der Donner ist laut.",
     "exampleSentenceEn": "The thunder is loud.",
     "id": "weather_donner_10",
     "ipa": "ˈdɔnɐ",
-    "wordDe": "der Donner",
+    "wordDe": "Donner",
     "wordEn": "thunder",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Donner",
-    "pluralEn": "thunders",
-    "imagePrompt": "Cartoon cloud with lightning bolt and sound effect, white background, for children's learning."
+    "pluralDe": "Donner",
+    "pluralEn": "thunder"
   },
   {
     "exampleSentenceDe": "Es ist heiß im Sommer.",
@@ -139,21 +129,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling, sweating, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es ist kalt im Winter.",
     "exampleSentenceEn": "It is cold in the winter.",
     "id": "weather_kalt_12",
-    "ipa": "kalt",
+    "ipa": "[kalt]",
     "wordDe": "kalt",
     "wordEn": "cold",
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, shivering penguin wearing a scarf, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Heute ist es sonnig.",
@@ -165,8 +153,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Happy sun shining brightly in a blue sky, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es ist wolkig draußen.",
@@ -178,21 +165,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, fluffy grey clouds, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Hagel fällt vom Himmel.",
     "exampleSentenceEn": "The hail falls from the sky.",
     "id": "weather_hagel_15",
     "ipa": "ˈhaːɡəl",
-    "wordDe": "der Hagel",
+    "wordDe": "Hagel",
     "wordEn": "hail",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Hagel",
-    "pluralEn": "hails",
-    "imagePrompt": "Cartoon-style ice balls falling from a gray cloud, white background, for children's learning."
+    "pluralDe": "Hagel",
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es donnert und blitzt.",
@@ -204,8 +189,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cloud making loud booming noises, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es blitzt am Himmel.",
@@ -213,12 +197,11 @@
     "id": "weather_blitzen_17",
     "ipa": "ˈblɪtsən",
     "wordDe": "blitzen",
-    "wordEn": "to lightning",
+    "wordEn": "to flash",
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Bright yellow cartoon lightning bolt striking a dark cloud, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es nieselt leicht.",
@@ -230,47 +213,43 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, very light rain falling from a gray cloud, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Frost ist eisig.",
     "exampleSentenceEn": "The frost is icy.",
     "id": "weather_frost_19",
     "ipa": "fʁɔst",
-    "wordDe": "der Frost",
+    "wordDe": "Frost",
     "wordEn": "frost",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Fröste",
-    "pluralEn": "frosts",
-    "imagePrompt": "Icy tree branch, sparkling, cartoon style, white background, for children's learning."
+    "pluralDe": "Fröste",
+    "pluralEn": "frosts"
   },
   {
     "exampleSentenceDe": "Das Eis ist glatt.",
     "exampleSentenceEn": "The ice is slippery.",
     "id": "weather_eis_20",
     "ipa": "aɪ̯s",
-    "wordDe": "das Eis",
+    "wordDe": "Eis",
     "wordEn": "ice",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Eise",
-    "pluralEn": "ices",
-    "imagePrompt": "Cartoon style block of ice with a cute, smiling face on a white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wie ist das Wetter?",
     "exampleSentenceEn": "What is the weather like?",
     "id": "weather_wetter_21",
     "ipa": "ˈvɛtɐ",
-    "wordDe": "das Wetter",
+    "wordDe": "Wetter",
     "wordEn": "weather",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Wetter",
-    "pluralEn": "weathers",
-    "imagePrompt": "Cartoon sun, cloud, rain, and snow icons on white background, for children's learning."
+    "pluralDe": "Wetter",
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es ist windstill.",
@@ -282,8 +261,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon still pond, no ripples, sunny day, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist bewölkt.",
@@ -295,47 +273,43 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Gray clouds covering the sun, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Tau liegt auf dem Gras.",
     "exampleSentenceEn": "The dew is on the grass.",
     "id": "weather_tau_24",
     "ipa": "taʊ̯",
-    "wordDe": "der Tau",
+    "wordDe": "Tau",
     "wordEn": "dew",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Taue",
-    "pluralEn": "dews",
-    "imagePrompt": "Tiny water drops clinging to green grass, cartoon style, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich mag den Sonnenschein.",
     "exampleSentenceEn": "I like the sunshine.",
     "id": "weather_sonnenschein_25",
     "ipa": "ˈzɔnənˌʃaɪ̯n",
-    "wordDe": "der Sonnenschein",
+    "wordDe": "Sonnenschein",
     "wordEn": "sunshine",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Sonnenscheine",
-    "pluralEn": "sunshines",
-    "imagePrompt": "Bright yellow sun smiling, cartoon style, white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Temperatur ist niedrig.",
     "exampleSentenceEn": "The temperature is low.",
     "id": "weather_temperatur_26",
     "ipa": "tɛmpaʁaˈtuːɐ̯",
-    "wordDe": "die Temperatur",
+    "wordDe": "Temperatur",
     "wordEn": "temperature",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Temperaturen",
-    "pluralEn": "temperatures",
-    "imagePrompt": "Cartoon thermometer showing a cold reading, white background, for children's learning."
+    "pluralDe": "Temperaturen",
+    "pluralEn": "temperatures"
   },
   {
     "exampleSentenceDe": "Es ist kühl heute.",
@@ -347,8 +321,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon thermometer showing a slightly low temperature, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es ist trocken.",
@@ -360,8 +333,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"A sun-baked, cracked desert ground, cartoon style, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es ist feucht.",
@@ -373,47 +345,43 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, sweat drops on a smiling sun, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir brauchen einen Schirm.",
     "exampleSentenceEn": "We need an umbrella.",
     "id": "weather_schirm_30",
     "ipa": "ʃɪʁm",
-    "wordDe": "der Schirm",
+    "wordDe": "Schirm",
     "wordEn": "umbrella",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schirme",
-    "pluralEn": "umbrellas",
-    "imagePrompt": "Colorful umbrella, cartoon style, white background, for children's learning."
+    "pluralDe": "Schirme",
+    "pluralEn": "umbrellas"
   },
   {
     "exampleSentenceDe": "Die Wettervorhersage ist gut.",
     "exampleSentenceEn": "The weather forecast is good.",
     "id": "weather_wettervorhersage_31",
     "ipa": "ˈvɛtɐfoːɐ̯ˌheːɐ̯zaːɡə",
-    "wordDe": "die Wettervorhersage",
+    "wordDe": "Wettervorhersage",
     "wordEn": "weather forecast",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Wettervorhersagen",
-    "pluralEn": "weather forecasts",
-    "imagePrompt": "Cartoon sun and cloud, showing temperature, white background, for children's learning."
+    "pluralDe": "Wettervorhersagen",
+    "pluralEn": "weather forecasts"
   },
   {
     "exampleSentenceDe": "Der Wirbelsturm ist gefährlich.",
     "exampleSentenceEn": "The hurricane is dangerous.",
     "id": "weather_wirbelsturm_32",
     "ipa": "ˈvɪʁbəlˌʃtʊʁm",
-    "wordDe": "der Wirbelsturm",
+    "wordDe": "Wirbelsturm",
     "wordEn": "hurricane",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Wirbelstürme",
-    "pluralEn": "hurricanes",
-    "imagePrompt": "A swirling storm cloud with raindrops, cartoon style, white background, for children's learning."
+    "pluralDe": "Wirbelstürme",
+    "pluralEn": "hurricanes"
   },
   {
     "exampleSentenceDe": "Es ist neblig am Morgen.",
@@ -425,8 +393,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a cloudy, gray sky over a green field, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist klar.",
@@ -438,21 +405,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Bright blue sky, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Dunst liegt in der Luft.",
     "exampleSentenceEn": "The haze is in the air.",
     "id": "weather_dunst_35",
     "ipa": "dʊnst",
-    "wordDe": "der Dunst",
+    "wordDe": "Dunst",
     "wordEn": "haze",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Dünste",
-    "pluralEn": "hazes",
-    "imagePrompt": "Cartoon style, light gray foggy air, white background, for children's learning."
+    "pluralDe": "Dünste",
+    "pluralEn": "hazes"
   },
   {
     "exampleSentenceDe": "Es regnet stark.",
@@ -464,21 +429,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon weightlifter lifting heavy barbell, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Brise ist angenehm.",
     "exampleSentenceEn": "The breeze is pleasant.",
     "id": "weather_brise_37",
     "ipa": "ˈbʁiːzə",
-    "wordDe": "die Brise",
+    "wordDe": "Brise",
     "wordEn": "breeze",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Brisen",
-    "pluralEn": "breezes",
-    "imagePrompt": "Cartoon style, gentle wind blowing leaves, white background, for children's learning."
+    "pluralDe": "Brisen",
+    "pluralEn": "breezes"
   },
   {
     "exampleSentenceDe": "Es ist gewittrig.",
@@ -490,34 +453,31 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style dark rain clouds with lightning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Gewitter ist laut.",
     "exampleSentenceEn": "The thunderstorm is loud.",
     "id": "weather_gewitter_39",
     "ipa": "ɡəˈvɪtɐ",
-    "wordDe": "das Gewitter",
+    "wordDe": "Gewitter",
     "wordEn": "thunderstorm",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Gewitter",
-    "pluralEn": "thunderstorms",
-    "imagePrompt": "Cartoon storm cloud with lightning, rain, white background, for children's learning."
+    "pluralDe": "Gewitter",
+    "pluralEn": "thunderstorms"
   },
   {
     "exampleSentenceDe": "Die Schneeflocke ist klein.",
     "exampleSentenceEn": "The snowflake is small.",
     "id": "weather_schneeflocke_40",
     "ipa": "ˈʃneːˌflɔkə",
-    "wordDe": "die Schneeflocke",
+    "wordDe": "Schneeflocke",
     "wordEn": "snowflake",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Schneeflocken",
-    "pluralEn": "snowflakes",
-    "imagePrompt": "A single, detailed snowflake, cartoon style, white background, for children's learning."
+    "pluralDe": "Schneeflocken",
+    "pluralEn": "snowflakes"
   },
   {
     "exampleSentenceDe": "Es friert draußen.",
@@ -529,8 +489,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon snowman shivering, wearing a blue scarf, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Luft ist frisch.",
@@ -542,34 +501,31 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, crisp green apple with water droplets, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Flut kommt.",
     "exampleSentenceEn": "The flood is coming.",
     "id": "weather_flut_43",
     "ipa": "fluːt",
-    "wordDe": "die Flut",
+    "wordDe": "Flut",
     "wordEn": "flood",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Fluten",
-    "pluralEn": "floods",
-    "imagePrompt": "Cartoon houses surrounded by rising blue water, white background, for children's learning."
+    "pluralDe": "Fluten",
+    "pluralEn": "floods"
   },
   {
     "exampleSentenceDe": "Die Dürre ist schlimm.",
     "exampleSentenceEn": "The drought is bad.",
     "id": "weather_duerre_44",
     "ipa": "ˈdʏrə",
-    "wordDe": "die Dürre",
+    "wordDe": "Dürre",
     "wordEn": "drought",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Dürren",
-    "pluralEn": "droughts",
-    "imagePrompt": "Cracked brown earth, wilted sad plant, cartoon style, white background, for children's learning."
+    "pluralDe": "Dürren",
+    "pluralEn": "droughts"
   },
   {
     "exampleSentenceDe": "Es wird heller.",
@@ -581,7 +537,6 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a yellow sun shining brighter than a grey cloud, white background, for children's learning."
+    "pluralEn": null
   }
 ]

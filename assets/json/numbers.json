@@ -9,8 +9,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '0', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Eins plus eins ist zwei.",
@@ -22,8 +21,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '1', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe zwei Äpfel.",
@@ -35,8 +33,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '2', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Drei Katzen spielen zusammen.",
@@ -48,8 +45,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '3', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir sind vier Kinder.",
@@ -61,8 +57,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '4', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Fünf Finger an einer Hand.",
@@ -74,8 +69,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '5', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sechs Buntstifte in der Packung.",
@@ -87,8 +81,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '6', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sieben Zwerge im Märchen.",
@@ -100,21 +93,19 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '7', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Acht Kekse auf dem Teller.",
     "exampleSentenceEn": "Eight cookies on the plate.",
     "id": "numbers_acht_08",
-    "ipa": "axt",
+    "ipa": "aχt",
     "wordDe": "acht",
     "wordEn": "eight",
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '8', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Neun Luftballons steigen hoch.",
@@ -126,8 +117,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '9', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Zehn Finger und zehn Zehen.",
@@ -139,8 +129,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '10', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Elf Freunde müsst ihr sein.",
@@ -152,8 +141,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '11', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Zwölf Monate im Jahr.",
@@ -165,8 +153,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '12', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Dreizehn ist eine Unglückszahl.",
@@ -178,8 +165,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '13', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Vierzehn Tage bis zum Urlaub.",
@@ -191,8 +177,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '14', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Fünfzehn Minuten Pause.",
@@ -204,8 +189,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '15', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Sechzehn Kerzen auf dem Kuchen.",
@@ -217,8 +201,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '16', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Siebzehn ist meine Glückszahl.",
@@ -230,8 +213,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '17', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Achtzehn Jahre alt werden.",
@@ -243,8 +225,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '18', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Neunzehn Uhr ist es jetzt.",
@@ -256,8 +237,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '19', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich zähle bis zwanzig.",
@@ -269,8 +249,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '20', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich zähle bis dreißig.",
@@ -282,8 +261,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a large, friendly number '30', white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die erste Blume im Frühling.",
@@ -292,11 +270,10 @@
     "ipa": "ˈeːɐ̯stə",
     "wordDe": "erste",
     "wordEn": "first",
-    "wordType": "ordinal",
+    "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, three colorful flowers in a row, with the first flower clearly marked as '1st' or visually prominent as the beginning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das zweite Haus von links.",
@@ -305,11 +282,10 @@
     "ipa": "ˈtsvaɪ̯tə",
     "wordDe": "zweite",
     "wordEn": "second",
-    "wordType": "ordinal",
+    "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, three colorful houses in a row, with the second house clearly marked as '2nd' or visually prominent as the second in sequence, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der dritte Tag der Woche.",
@@ -318,11 +294,10 @@
     "ipa": "ˈdʁɪtə",
     "wordDe": "dritte",
     "wordEn": "third",
-    "wordType": "ordinal",
+    "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, three colorful cartoon animals in a race, with the third animal clearly positioned in third place, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe ein Paar Socken.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Paare",
-    "pluralEn": "pairs",
-    "imagePrompt": "Two matching socks, cartoon style, white background, for children's learning."
+    "pluralEn": "pairs"
   },
   {
     "exampleSentenceDe": "Ein Dutzend Eier im Karton.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Dutzende",
-    "pluralEn": "dozens",
-    "imagePrompt": "\"Twelve eggs in a blue carton, cartoon style, white background, for children's learning\""
+    "pluralEn": "dozens"
   },
   {
     "exampleSentenceDe": "Die Hälfte des Kuchens ist für dich.",
@@ -360,12 +333,11 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Hälften",
-    "pluralEn": "halves",
-    "imagePrompt": "Cartoon style, half a red apple, white background, for children's learning."
+    "pluralEn": "halves"
   },
   {
-    "exampleSentenceDe": "Ich habe die Hälfte vom Apfel gegessen.",
-    "exampleSentenceEn": "I ate half of the apple.",
+    "exampleSentenceDe": "Das ist ein halber Apfel.",
+    "exampleSentenceEn": "This is half an apple.",
     "id": "numbers_halb_17",
     "ipa": "halp",
     "wordDe": "halb",
@@ -373,8 +345,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, half an apple cut in two, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ein Viertel der Pizza ist für mich.",
@@ -383,23 +354,21 @@
     "ipa": "ˈfɪʁtl̩",
     "wordDe": "Viertel",
     "wordEn": "quarter",
-    "wordType": "noun",
-    "article": "das",
-    "pluralDe": "Viertel",
-    "pluralEn": "quarters",
-    "imagePrompt": "Cartoon pizza slice, one-fourth missing, white background, for children's learning."
+    "wordType": "number",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die eine Seite ist blau.",
     "exampleSentenceEn": "One side is blue.",
     "id": "numbers_eine_seite_19",
-    "ipa": "ˈaɪ̯nə ˈzaɪ̯tə",
+    "ipa": "ˈaɪ̯nə",
     "wordDe": "eine",
     "wordEn": "one",
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A single blue block, cartoon style, white background, for children's learning."
+    "pluralEn": null
   }
 ]

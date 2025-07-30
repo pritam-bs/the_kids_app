@@ -4,221 +4,204 @@
     "exampleSentenceEn": "I have a red jacket.",
     "id": "clothing_jacke_01",
     "ipa": "ˈjakə",
-    "wordDe": "die Jacke",
+    "wordDe": "Jacke",
     "wordEn": "jacket",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Jacken",
-    "pluralEn": "jackets",
-    "imagePrompt": "Cartoon style, a blue jacket hanging, white background, for children's learning."
+    "pluralDe": "Jacken",
+    "pluralEn": "jackets"
   },
   {
     "exampleSentenceDe": "Das Hemd ist blau.",
     "exampleSentenceEn": "The shirt is blue.",
     "id": "clothing_hemd_02",
     "ipa": "hɛmt",
-    "wordDe": "das Hemd",
+    "wordDe": "Hemd",
     "wordEn": "shirt",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Hemden",
-    "pluralEn": "shirts",
-    "imagePrompt": "A blue button-up shirt, cartoon style, white background, for children's learning."
+    "pluralDe": "Hemden",
+    "pluralEn": "shirts"
   },
   {
     "exampleSentenceDe": "Ich trage eine Hose.",
     "exampleSentenceEn": "I am wearing pants.",
     "id": "clothing_hose_03",
     "ipa": "ˈhoːzə",
-    "wordDe": "die Hose",
+    "wordDe": "Hose",
     "wordEn": "pants",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Hosen",
-    "pluralEn": "pants",
-    "imagePrompt": "Blue pants on a child, cartoon style, white background, for children's learning."
+    "pluralDe": "Hosen",
+    "pluralEn": "pants"
   },
   {
     "exampleSentenceDe": "Die Schuhe sind neu.",
     "exampleSentenceEn": "The shoes are new.",
     "id": "clothing_schuh_04",
     "ipa": "ʃuː",
-    "wordDe": "der Schuh",
+    "wordDe": "Schuh",
     "wordEn": "shoe",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schuhe",
-    "pluralEn": "shoes",
-    "imagePrompt": "A single red shoe, cartoon style, white background, for children's learning."
+    "pluralDe": "Schuhe",
+    "pluralEn": "shoes"
   },
   {
     "exampleSentenceDe": "Der Rock ist rosa.",
     "exampleSentenceEn": "The skirt is pink.",
     "id": "clothing_rock_05",
     "ipa": "ʁɔk",
-    "wordDe": "der Rock",
+    "wordDe": "Rock",
     "wordEn": "skirt",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Röcke",
-    "pluralEn": "skirts",
-    "imagePrompt": "Pink skirt, cartoon style, white background, for children's learning."
+    "pluralDe": "Röcke",
+    "pluralEn": "skirts"
   },
   {
     "exampleSentenceDe": "Ich mag meinen Pullover.",
     "exampleSentenceEn": "I like my sweater.",
     "id": "clothing_pullover_06",
     "ipa": "ˈpʊlˌoːvɐ",
-    "wordDe": "der Pullover",
+    "wordDe": "Pullover",
     "wordEn": "sweater",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Pullover",
-    "pluralEn": "sweaters",
-    "imagePrompt": "Cartoon style, colorful sweater with stripes, white background, for children's learning."
+    "pluralDe": "Pullover",
+    "pluralEn": "sweaters"
   },
   {
-    "exampleSentenceDe": "Die Socken sind warm.",
-    "exampleSentenceEn": "The socks are warm.",
+    "exampleSentenceDe": "Die Socke ist weich.",
+    "exampleSentenceEn": "The sock is soft.",
     "id": "clothing_socke_07",
     "ipa": "ˈzɔkə",
-    "wordDe": "die Socke",
+    "wordDe": "Socke",
     "wordEn": "sock",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Socken",
-    "pluralEn": "socks",
-    "imagePrompt": "Cartoon style, a single striped sock, white background, for children's learning."
+    "pluralDe": "Socken",
+    "pluralEn": "socks"
   },
   {
     "exampleSentenceDe": "Der Hut ist cool.",
     "exampleSentenceEn": "The hat is cool.",
     "id": "clothing_hut_08",
     "ipa": "huːt",
-    "wordDe": "der Hut",
+    "wordDe": "Hut",
     "wordEn": "hat",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Hüte",
-    "pluralEn": "hats",
-    "imagePrompt": "Cartoon style, a happy child wearing a colorful hat, white background, for children's learning."
+    "pluralDe": "Hüte",
+    "pluralEn": "hats"
   },
   {
     "exampleSentenceDe": "Ich brauche einen Gürtel.",
     "exampleSentenceEn": "I need a belt.",
     "id": "clothing_guertel_09",
     "ipa": "ˈɡʏrtl̩",
-    "wordDe": "der Gürtel",
+    "wordDe": "Gürtel",
     "wordEn": "belt",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Gürtel",
-    "pluralEn": "belts",
-    "imagePrompt": "Brown cartoon style belt with a silver buckle, white background, for children's learning."
+    "pluralDe": "Gürtel",
+    "pluralEn": "belts"
   },
   {
     "exampleSentenceDe": "Die Handschuhe sind weich.",
     "exampleSentenceEn": "The gloves are soft.",
     "id": "clothing_handschuh_10",
     "ipa": "ˈhantʃuː",
-    "wordDe": "der Handschuh",
+    "wordDe": "Handschuh",
     "wordEn": "glove",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Handschuhe",
-    "pluralEn": "gloves",
-    "imagePrompt": "Cartoon-style pair of warm mittens, white background, for children's learning."
+    "pluralDe": "Handschuhe",
+    "pluralEn": "gloves"
   },
   {
     "exampleSentenceDe": "Das Kleid ist sehr schön.",
     "exampleSentenceEn": "The dress is very beautiful.",
     "id": "clothing_kleid_11",
     "ipa": "klaɪ̯t",
-    "wordDe": "das Kleid",
+    "wordDe": "Kleid",
     "wordEn": "dress",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Kleider",
-    "pluralEn": "dresses",
-    "imagePrompt": "Cartoon style, a pink princess dress, white background, for children's learning."
+    "pluralDe": "Kleider",
+    "pluralEn": "dresses"
   },
   {
     "exampleSentenceDe": "Der Mantel ist warm.",
     "exampleSentenceEn": "The coat is warm.",
     "id": "clothing_mantel_12",
     "ipa": "ˈmantəl",
-    "wordDe": "der Mantel",
+    "wordDe": "Mantel",
     "wordEn": "coat",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Mäntel",
-    "pluralEn": "coats",
-    "imagePrompt": "Cartoon style, winter coat hanging on a hook, white background, for children's learning."
+    "pluralDe": "Mäntel",
+    "pluralEn": "coats"
   },
   {
-    "exampleSentenceDe": "Die Stiefel sind für den Winter.",
-    "exampleSentenceEn": "The boots are for the winter.",
+    "exampleSentenceDe": "Dieser Stiefel ist warm.",
+    "exampleSentenceEn": "This boot is warm.",
     "id": "clothing_stiefel_13",
     "ipa": "ˈʃtiːfəl",
-    "wordDe": "der Stiefel",
+    "wordDe": "Stiefel",
     "wordEn": "boot",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Stiefel",
-    "pluralEn": "boots",
-    "imagePrompt": "A single brown cartoon boot on a white background, for children's learning."
+    "pluralDe": "Stiefel",
+    "pluralEn": "boots"
   },
   {
     "exampleSentenceDe": "Das T-Shirt ist gelb.",
     "exampleSentenceEn": "The T-shirt is yellow.",
     "id": "clothing_tshirt_14",
     "ipa": "ˈtiːˌʃœɐt",
-    "wordDe": "das T-Shirt",
+    "wordDe": "T-Shirt",
     "wordEn": "T-shirt",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die T-Shirts",
-    "pluralEn": "T-shirts",
-    "imagePrompt": "A simple, yellow shirt, cartoon style, white background, for children's learning."
+    "pluralDe": "T-Shirts",
+    "pluralEn": "T-shirts"
   },
   {
     "exampleSentenceDe": "Ich trage eine kurze Hose.",
     "exampleSentenceEn": "I am wearing shorts.",
     "id": "clothing_kurzehose_15",
     "ipa": "ˈkʊʁtsə ˈhoːzə",
-    "wordDe": "die kurze Hose",
+    "wordDe": "kurze Hose",
     "wordEn": "shorts",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die kurzen Hosen",
-    "pluralEn": "shorts",
-    "imagePrompt": "Blue shorts on a smiling kid, cartoon style, white background, for children's learning."
+    "pluralDe": "kurze Hosen",
+    "pluralEn": "shorts"
   },
   {
     "exampleSentenceDe": "Die Mütze ist auf meinem Kopf.",
     "exampleSentenceEn": "The beanie is on my head.",
     "id": "clothing_muetze_16",
     "ipa": "ˈmʏtsə",
-    "wordDe": "die Mütze",
+    "wordDe": "Mütze",
     "wordEn": "beanie",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Mützen",
-    "pluralEn": "beanies",
-    "imagePrompt": "Cartoon style beanie hat, red with a pompom, white background, for children's learning."
+    "pluralDe": "Mützen",
+    "pluralEn": "beanies"
   },
   {
     "exampleSentenceDe": "Der Schal ist lang.",
     "exampleSentenceEn": "The scarf is long.",
     "id": "clothing_schal_17",
     "ipa": "ʃaːl",
-    "wordDe": "der Schal",
+    "wordDe": "Schal",
     "wordEn": "scarf",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schals",
-    "pluralEn": "scarves",
-    "imagePrompt": "Cartoon style scarf wrapped around a snowman's neck, white background, for children's learning."
+    "pluralDe": "Schals",
+    "pluralEn": "scarves"
   },
   {
     "exampleSentenceDe": "Ich ziehe mich an.",
@@ -230,8 +213,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl putting on a blue shirt, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trage gern bequeme Kleidung.",
@@ -243,8 +225,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A fluffy cat sleeping on a soft pillow, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Kleidung ist sauber.",
@@ -256,8 +237,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Sparkling white shirt, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Kleidung ist schmutzig.",
@@ -269,99 +249,91 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of muddy boots on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich brauche eine neue Bluse.",
     "exampleSentenceEn": "I need a new blouse.",
     "id": "clothing_bluse_22",
     "ipa": "ˈbluːzə",
-    "wordDe": "die Bluse",
+    "wordDe": "Bluse",
     "wordEn": "blouse",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Blusen",
-    "pluralEn": "blouses",
-    "imagePrompt": "A girl wearing a pink shirt, cartoon style, white background, for children's learning."
+    "pluralDe": "Blusen",
+    "pluralEn": "blouses"
   },
   {
     "exampleSentenceDe": "Die Weste ist warm.",
     "exampleSentenceEn": "The vest is warm.",
     "id": "clothing_weste_23",
     "ipa": "ˈvɛstə",
-    "wordDe": "die Weste",
+    "wordDe": "Weste",
     "wordEn": "vest",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Westen",
-    "pluralEn": "vests",
-    "imagePrompt": "Cartoon style sleeveless jacket, white background, for children's learning."
+    "pluralDe": "Westen",
+    "pluralEn": "vests"
   },
   {
     "exampleSentenceDe": "Die Krawatte ist für Papa.",
     "exampleSentenceEn": "The tie is for Dad.",
     "id": "clothing_krawatte_24",
     "ipa": "kʁaˈvatə",
-    "wordDe": "die Krawatte",
+    "wordDe": "Krawatte",
     "wordEn": "tie",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Krawatten",
-    "pluralEn": "ties",
-    "imagePrompt": "Cartoon necktie, bright colors, white background, for children's learning."
+    "pluralDe": "Krawatten",
+    "pluralEn": "ties"
   },
   {
     "exampleSentenceDe": "Das Top ist modern.",
     "exampleSentenceEn": "The top is modern.",
     "id": "clothing_top_25",
     "ipa": "tɔp",
-    "wordDe": "das Top",
+    "wordDe": "Top",
     "wordEn": "top",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Tops",
-    "pluralEn": "tops",
-    "imagePrompt": "A girl wearing a colorful sleeveless shirt, cartoon style, white background, for children's learning."
+    "pluralDe": "Tops",
+    "pluralEn": "tops"
   },
   {
     "exampleSentenceDe": "Ich habe einen Schlafanzug.",
     "exampleSentenceEn": "I have pajamas.",
     "id": "clothing_schlafanzug_26",
     "ipa": "ˈʃlaːfˌʔantsʊk",
-    "wordDe": "der Schlafanzug",
+    "wordDe": "Schlafanzug",
     "wordEn": "pajamas",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Schlafanzüge",
-    "pluralEn": "pajamas",
-    "imagePrompt": "Cartoon pajamas with stars, white background, for children's learning."
+    "pluralDe": "Schlafanzüge",
+    "pluralEn": "pajamas"
   },
   {
     "exampleSentenceDe": "Das ist eine Uniform.",
     "exampleSentenceEn": "That is a uniform.",
     "id": "clothing_uniform_27",
     "ipa": "ˌuniˈfɔʁm",
-    "wordDe": "die Uniform",
+    "wordDe": "Uniform",
     "wordEn": "uniform",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Uniformen",
-    "pluralEn": "uniforms",
-    "imagePrompt": "Cartoon style, white background: A friendly police officer wearing a blue uniform and hat, smiling. For children's learning."
+    "pluralDe": "Uniformen",
+    "pluralEn": "uniforms"
   },
   {
     "exampleSentenceDe": "Die Tasche ist groß.",
     "exampleSentenceEn": "The bag is big.",
     "id": "clothing_tasche_28",
     "ipa": "ˈtaʃə",
-    "wordDe": "die Tasche",
+    "wordDe": "Tasche",
     "wordEn": "bag",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Taschen",
-    "pluralEn": "bags",
-    "imagePrompt": "Cartoon style, a big, red shopping bag on a white background, for children's learning."
+    "pluralDe": "Taschen",
+    "pluralEn": "bags"
   },
   {
     "exampleSentenceDe": "Die Kleidung ist bunt.",
@@ -373,72 +345,66 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"A rainbow-colored striped shirt, cartoon style, white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Leggings sind bequem.",
     "exampleSentenceEn": "The leggings are comfortable.",
     "id": "clothing_leggings_30",
     "ipa": "ˈlɛɡɪŋs",
-    "wordDe": "die Leggings",
+    "wordDe": "Leggings",
     "wordEn": "leggings",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Leggings",
-    "pluralEn": "leggings",
-    "imagePrompt": "Colorful stretchy pants on a little girl, cartoon style, white background, for children's learning."
+    "pluralDe": "Leggings",
+    "pluralEn": "leggings"
   },
   {
     "exampleSentenceDe": "Der Regenschirm schützt vor Regen.",
     "exampleSentenceEn": "The umbrella protects from rain.",
     "id": "clothing_regenschirm_31",
     "ipa": "ˈʁeːɡn̩ˌʃɪʁm",
-    "wordDe": "der Regenschirm",
+    "wordDe": "Regenschirm",
     "wordEn": "umbrella",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Regenschirme",
-    "pluralEn": "umbrellas",
-    "imagePrompt": "Cartoon style, colorful umbrella, raindrops, white background, for children's learning."
+    "pluralDe": "Regenschirme",
+    "pluralEn": "umbrellas"
   },
   {
-    "exampleSentenceDe": "Die Sandalen sind perfekt für den Sommer.",
-    "exampleSentenceEn": "The sandals are perfect for summer.",
+    "exampleSentenceDe": "Diese Sandale ist sehr bequem.",
+    "exampleSentenceEn": "This sandal is very comfortable.",
     "id": "clothing_sandale_32",
     "ipa": "zanˈdaːlə",
-    "wordDe": "die Sandale",
+    "wordDe": "Sandale",
     "wordEn": "sandal",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Sandalen",
-    "pluralEn": "sandals",
-    "imagePrompt": "Cartoon style summer footwear on a white background, for children's learning."
+    "pluralDe": "Sandalen",
+    "pluralEn": "sandals"
   },
   {
     "exampleSentenceDe": "Das Stirnband hält meine Haare zurück.",
     "exampleSentenceEn": "The headband holds my hair back.",
     "id": "clothing_stirnband_33",
     "ipa": "ˈʃtɪʁnˌbant",
-    "wordDe": "das Stirnband",
+    "wordDe": "Stirnband",
     "wordEn": "headband",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Stirnbänder",
-    "pluralEn": "headbands",
-    "imagePrompt": "Cartoon girl wearing a pink headband, white background, for children's learning."
+    "pluralDe": "Stirnbänder",
+    "pluralEn": "headbands"
   },
   {
     "exampleSentenceDe": "Das Nachthemd ist weich.",
     "exampleSentenceEn": "The nightgown is soft.",
     "id": "clothing_nachthemd_34",
     "ipa": "ˈnaxtˌhɛmt",
-    "wordDe": "das Nachthemd",
+    "wordDe": "Nachthemd",
     "wordEn": "nightgown",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Nachthemden",
-    "pluralEn": "nightgowns",
-    "imagePrompt": "Cartoon style, a girl wearing a long, pink nightgown, white background, for children's learning."
+    "pluralDe": "Nachthemden",
+    "pluralEn": "nightgowns"
   }
 ]

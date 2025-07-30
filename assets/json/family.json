@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mütter",
-    "pluralEn": "Mothers",
-    "imagePrompt": "Cartoon style, a smiling woman reading a book to a child, white background, for children's learning."
+    "pluralEn": "Mothers"
   },
   {
     "exampleSentenceDe": "Der Vater spielt mit dem Ball.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Väter",
-    "pluralEn": "Fathers",
-    "imagePrompt": "A happy dad throwing a ball, cartoon style, white background, for children's learning."
+    "pluralEn": "Fathers"
   },
   {
     "exampleSentenceDe": "Die Schwester ist nett.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schwestern",
-    "pluralEn": "Sisters",
-    "imagePrompt": "Two girls hugging, cartoon style, white background, for children's learning."
+    "pluralEn": "Sisters"
   },
   {
     "exampleSentenceDe": "Der Bruder spielt Fußball.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Brüder",
-    "pluralEn": "Brothers",
-    "imagePrompt": "Two cartoon boys, smiling, high-fiving, white background, for children's learning."
+    "pluralEn": "Brothers"
   },
   {
     "exampleSentenceDe": "Die Oma kocht Suppe.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Omas",
-    "pluralEn": "Grandmas",
-    "imagePrompt": "Smiling grandmother with glasses, hugging a child, cartoon style, white background, for children's learning."
+    "pluralEn": "Grandmas"
   },
   {
     "exampleSentenceDe": "Der Opa liest die Zeitung.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Opas",
-    "pluralEn": "Grandpas",
-    "imagePrompt": "Smiling elderly man reading a newspaper in an armchair, cartoon style, white background, for children's learning."
+    "pluralEn": "Grandpas"
   },
   {
     "exampleSentenceDe": "Die Familie isst zusammen.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Familien",
-    "pluralEn": "Families",
-    "imagePrompt": "Cartoon style image of a happy family of four smiling, white background, for children's learning."
+    "pluralEn": "Families"
   },
   {
     "exampleSentenceDe": "Ich liebe meine Eltern.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Eltern",
-    "pluralEn": "Parents",
-    "imagePrompt": "Cartoon style, a happy mom and dad holding hands, white background, for children's learning."
+    "pluralEn": "Parents"
   },
   {
     "exampleSentenceDe": "Das Kind spielt im Garten.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Kinder",
-    "pluralEn": "Children",
-    "imagePrompt": "Cartoon style, a happy child with a toy, white background, for children's learning."
+    "pluralEn": "Children"
   },
   {
     "exampleSentenceDe": "Die Tante besucht uns.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Tanten",
-    "pluralEn": "Aunts",
-    "imagePrompt": "Cartoon style, smiling woman hugging a child, white background, for children's learning."
+    "pluralEn": "Aunts"
   },
   {
     "exampleSentenceDe": "Der Onkel ist lustig.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Onkel",
-    "pluralEn": "Uncles",
-    "imagePrompt": "Smiling man hugging a happy child, cartoon style, white background, for children's learning."
+    "pluralEn": "Uncles"
   },
   {
     "exampleSentenceDe": "Der Cousin spielt mit mir.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Cousins",
-    "pluralEn": "Cousins",
-    "imagePrompt": "Two smiling children, cartoon style, playing together, white background, for children's learning."
+    "pluralEn": "Cousins"
   },
   {
     "exampleSentenceDe": "Die Cousine malt ein Bild.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Cousinen",
-    "pluralEn": "Cousins",
-    "imagePrompt": "Girl and boy hugging, cartoon style, white background, for children's learning."
+    "pluralEn": "Cousins"
   },
   {
     "exampleSentenceDe": "Ich habe eine große Familie.",
@@ -178,8 +165,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, for children's learning: a very large elephant next to a tiny mouse, white background."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir sind eine glückliche Familie.",
@@ -191,8 +177,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style of a smiling child with a big grin, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich liebe meine Familie sehr.",
@@ -204,8 +189,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, heart floating between a smiling child and parent, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir wohnen zusammen.",
@@ -217,8 +201,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: Two happy children holding hands, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Baby schläft.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Babys",
-    "pluralEn": "Babies",
-    "imagePrompt": "Cartoon style, a happy baby sleeping in a crib, white background, for children's learning."
+    "pluralEn": "Babies"
   },
   {
     "exampleSentenceDe": "Ich bin ein Einzelkind.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Einzelkinder",
-    "pluralEn": "Only children",
-    "imagePrompt": "Cartoon style drawing of a single child playing alone with toys, white background, for children's learning."
+    "pluralEn": "Only children"
   },
   {
     "exampleSentenceDe": "Wir besuchen unsere Großeltern.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Großeltern",
-    "pluralEn": "Grandparents",
-    "imagePrompt": "Cartoon grandma and grandpa hugging grandchild, white background, for children's learning."
+    "pluralEn": "Grandparents"
   },
   {
     "exampleSentenceDe": "Die Enkelin spielt mit Oma.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Enkelinnen",
-    "pluralEn": "Granddaughters",
-    "imagePrompt": "Cartoon style, little girl hugging her grandmother, white background, for children's learning."
+    "pluralEn": "Granddaughters"
   },
   {
     "exampleSentenceDe": "Der Enkel hilft Opa.",
@@ -282,21 +261,19 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Enkel",
-    "pluralEn": "Grandsons",
-    "imagePrompt": "A young boy helping an older man, cartoon style, white background, for children's learning."
+    "pluralEn": "Grandsons"
   },
   {
     "exampleSentenceDe": "Die Verwandten kommen zu Besuch.",
     "exampleSentenceEn": "The relatives are coming to visit.",
     "id": "family_verwandte_23",
-    "ipa": "fɛɐ̯ˈvantə",
-    "wordDe": "Verwandte",
+    "ipa": "fɛɐ̯ˈvantən",
+    "wordDe": "Verwandten",
     "wordEn": "Relatives",
     "wordType": "noun",
-    "article": "der/die/das",
+    "article": "die",
     "pluralDe": "Verwandten",
-    "pluralEn": "Relatives",
-    "imagePrompt": "A family gathering, cartoon style, white background, for children's learning."
+    "pluralEn": "Relatives"
   },
   {
     "exampleSentenceDe": "Ich mag meine Familie.",
@@ -308,8 +285,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a girl hugging her dog, heart floating above, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir sind eine kleine Familie.",
@@ -321,8 +297,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A tiny mouse next to a big elephant, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich spiele mit meiner Familie.",
@@ -334,21 +309,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Kids playing together with a ball, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir essen zusammen zu Hause.",
     "exampleSentenceEn": "We eat together at home.",
     "id": "family_zuhause_27",
-    "ipa": "t͡suˈhaʊ̯zə",
-    "wordDe": "Zuhause",
+    "ipa": "t͡suː ˈhaʊ̯zə",
+    "wordDe": "zu Hause",
     "wordEn": "At home",
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon family eating dinner around a table, happy, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Mein Stiefvater ist nett.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Stiefväter",
-    "pluralEn": "Stepfathers",
-    "imagePrompt": "Cartoon style, a happy family, father, child, white background, for children's learning."
+    "pluralEn": "Stepfathers"
   },
   {
     "exampleSentenceDe": "Meine Stiefmutter ist freundlich.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Stiefmütter",
-    "pluralEn": "Stepmothers",
-    "imagePrompt": "A smiling woman hugging a little girl, cartoon style, white background, for children's learning."
+    "pluralEn": "Stepmothers"
   },
   {
     "exampleSentenceDe": "Mein Halbbruder ist jünger.",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Halbbrüder",
-    "pluralEn": "Half-brothers",
-    "imagePrompt": "Two cartoon boys, one slightly shorter, standing side-by-side, smiling, cartoon style, white background, for children's learning."
+    "pluralEn": "Half-brothers"
   },
   {
     "exampleSentenceDe": "Meine Halbschwester ist älter.",
@@ -399,7 +369,6 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Halbschwestern",
-    "pluralEn": "Half-sisters",
-    "imagePrompt": "Two girls, cartoon style, one slightly taller, smiling, white background, for children's learning."
+    "pluralEn": "Half-sisters"
   }
 ]

@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Löwen",
-    "pluralEn": "lions",
-    "imagePrompt": "Cartoon style lion with a friendly face, standing, white background, for children's learning."
+    "pluralEn": "lions"
   },
   {
     "exampleSentenceDe": "Der Tiger hat Streifen.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Tiger",
-    "pluralEn": "tigers",
-    "imagePrompt": "Cartoon tiger with black stripes, white background, for children's learning."
+    "pluralEn": "tigers"
   },
   {
     "exampleSentenceDe": "Der Bär schläft im Winter.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bären",
-    "pluralEn": "bears",
-    "imagePrompt": "A friendly brown bear waving, cartoon style, white background, for children's learning."
+    "pluralEn": "bears"
   },
   {
     "exampleSentenceDe": "Der Wolf heult in der Nacht.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Wölfe",
-    "pluralEn": "wolves",
-    "imagePrompt": "Cartoon wolf howling at the moon, white background, for children's learning."
+    "pluralEn": "wolves"
   },
   {
     "exampleSentenceDe": "Der Fuchs ist schlau.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Füchse",
-    "pluralEn": "foxes",
-    "imagePrompt": "Orange fox sitting, cartoon style, white background, for children's learning."
+    "pluralEn": "foxes"
   },
   {
     "exampleSentenceDe": "Das Zebra hat schwarze und weiße Streifen.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Zebras",
-    "pluralEn": "zebras",
-    "imagePrompt": "Cartoon zebra with black and white stripes, white background, for children's learning."
+    "pluralEn": "zebras"
   },
   {
     "exampleSentenceDe": "Der Elefant hat einen langen Rüssel.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Elefanten",
-    "pluralEn": "elephants",
-    "imagePrompt": "Cartoon style elephant with big ears, gray, white background, for children's learning."
+    "pluralEn": "elephants"
   },
   {
     "exampleSentenceDe": "Die Giraffe hat einen langen Hals.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Giraffen",
-    "pluralEn": "giraffes",
-    "imagePrompt": "\"Cartoon giraffe with long neck, friendly smile, white background, for children's learning\""
+    "pluralEn": "giraffes"
   },
   {
     "exampleSentenceDe": "Das Känguru hüpft.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Kängurus",
-    "pluralEn": "kangaroos",
-    "imagePrompt": "Cartoon style kangaroo hopping, white background, for children's learning."
+    "pluralEn": "kangaroos"
   },
   {
     "exampleSentenceDe": "Das Nashorn hat ein Horn auf der Nase.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Nashörner",
-    "pluralEn": "rhinoceroses",
-    "imagePrompt": "Cartoon rhinoceros with one horn, white background, for children's learning."
+    "pluralEn": "rhinoceroses"
   },
   {
     "exampleSentenceDe": "Das Krokodil lebt im Wasser.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Krokodile",
-    "pluralEn": "crocodiles",
-    "imagePrompt": "Cartoon alligator smiling, white background, for children's learning."
+    "pluralEn": "crocodiles"
   },
   {
     "exampleSentenceDe": "Die Schlange kriecht.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schlangen",
-    "pluralEn": "snakes",
-    "imagePrompt": "Cartoon snake crawling, green and smiling, white background, for children's learning."
+    "pluralEn": "snakes"
   },
   {
     "exampleSentenceDe": "Der Affe isst Bananen.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Affen",
-    "pluralEn": "monkeys",
-    "imagePrompt": "Cartoon monkey eating a banana, white background, for children's learning."
+    "pluralEn": "monkeys"
   },
   {
     "exampleSentenceDe": "Der Gepard ist sehr schnell.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Geparden",
-    "pluralEn": "cheetahs",
-    "imagePrompt": "Cartoon cheetah running fast, spots, white background, for children's learning."
+    "pluralEn": "cheetahs"
   },
   {
     "exampleSentenceDe": "Das Nilpferd mag Wasser.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Nilpferde",
-    "pluralEn": "hippopotamuses",
-    "imagePrompt": "Cartoon hippopotamus smiling, standing on a white background, for children's learning."
+    "pluralEn": "hippopotamuses"
   },
   {
     "exampleSentenceDe": "Der Panda isst Bambus.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pandas",
-    "pluralEn": "pandas",
-    "imagePrompt": "\"Cute panda bear eating bamboo, cartoon style, white background, for children's learning\""
+    "pluralEn": "pandas"
   },
   {
     "exampleSentenceDe": "Das Faultier ist sehr langsam.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Faultiere",
-    "pluralEn": "sloths",
-    "imagePrompt": "Cartoon sloth hanging from a tree branch, smiling, white background, for children's learning."
+    "pluralEn": "sloths"
   },
   {
     "exampleSentenceDe": "Der Adler fliegt hoch.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Adler",
-    "pluralEn": "eagles",
-    "imagePrompt": "Cartoon style eagle flying, white background, for children's learning."
+    "pluralEn": "eagles"
   },
   {
     "exampleSentenceDe": "Der Kakadu ist ein bunter Vogel.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Kakadus",
-    "pluralEn": "cockatoos",
-    "imagePrompt": "Cartoon bird with yellow crest, white background, for children's learning."
+    "pluralEn": "cockatoos"
   },
   {
     "exampleSentenceDe": "Der Papagei kann sprechen.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Papageien",
-    "pluralEn": "parrots",
-    "imagePrompt": "Cartoon style, a colorful parrot perched on a branch, white background, for children's learning."
+    "pluralEn": "parrots"
   },
   {
     "exampleSentenceDe": "Das Murmeltier pfeift.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Murmeltiere",
-    "pluralEn": "marmots",
-    "imagePrompt": "Cartoon groundhog whistling, standing on hind legs, white background, for children's learning."
+    "pluralEn": "marmots"
   },
   {
     "exampleSentenceDe": "Das Stinktier stinkt.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Stinktiere",
-    "pluralEn": "skunks",
-    "imagePrompt": "Cartoon skunk with a white stripe on its back, standing on grass, white background, for children's learning."
+    "pluralEn": "skunks"
   },
   {
     "exampleSentenceDe": "Das Wildschwein wühlt im Wald.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Wildschweine",
-    "pluralEn": "wild boars",
-    "imagePrompt": "Cartoon pig with tusks running, white background, for children's learning."
+    "pluralEn": "wild boars"
   },
   {
     "exampleSentenceDe": "Der Hirsch hat ein Geweih.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hirsche",
-    "pluralEn": "deer",
-    "imagePrompt": "Cartoon deer with big antlers, white background, for children's learning."
+    "pluralEn": "deer"
   },
   {
     "exampleSentenceDe": "Das Reh ist scheu.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Rehe",
-    "pluralEn": "roe deers",
-    "imagePrompt": "Cartoon style baby deer standing in a grassy field, white background, for children's learning."
+    "pluralEn": "roe deer"
   },
   {
     "exampleSentenceDe": "Der Waschbär wäscht sein Essen.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Waschbären",
-    "pluralEn": "raccoons",
-    "imagePrompt": "\"Cartoon raccoon washing an apple in a bucket, white background, for children's learning\""
+    "pluralEn": "raccoons"
   },
   {
     "exampleSentenceDe": "Das Erdmännchen lebt in der Gruppe.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Erdmännchen",
-    "pluralEn": "meerkats",
-    "imagePrompt": "Cartoon meerkat standing upright, looking curious, white background, for children's learning."
+    "pluralEn": "meerkats"
   },
   {
     "exampleSentenceDe": "Der Jaguar ist eine Katze.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Jaguare",
-    "pluralEn": "jaguars",
-    "imagePrompt": "Cartoon jaguar sitting, smiling, white background, for children's learning."
+    "pluralEn": "jaguars"
   },
   {
     "exampleSentenceDe": "Das Lama spuckt.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Lamas",
-    "pluralEn": "llamas",
-    "imagePrompt": "Cartoon style llama, fluffy fur, white background, for children's learning."
+    "pluralEn": "llamas"
   },
   {
     "exampleSentenceDe": "Der Pinguin schwimmt gut.",
@@ -386,7 +357,6 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pinguine",
-    "pluralEn": "penguins",
-    "imagePrompt": "Cartoon style penguin standing, white background, for children's learning."
+    "pluralEn": "penguins"
   }
 ]

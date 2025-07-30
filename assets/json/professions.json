@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Ärzte",
-    "pluralEn": "Doctors",
-    "imagePrompt": "\"Cartoon doctor with stethoscope, smiling, white background, for children's learning.\""
+    "pluralEn": "Doctors"
   },
   {
     "exampleSentenceDe": "Die Ärztin untersucht das Kind.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Ärztinnen",
-    "pluralEn": "Female doctors",
-    "imagePrompt": "Cartoon style, female doctor with stethoscope, smiling, white background, for children's learning."
+    "pluralEn": "Female doctors"
   },
   {
     "exampleSentenceDe": "Der Lehrer unterrichtet die Kinder.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Lehrer",
-    "pluralEn": "Teachers",
-    "imagePrompt": "\"Cartoon teacher helping a student, white background, for children's learning\""
+    "pluralEn": "Teachers"
   },
   {
     "exampleSentenceDe": "Die Lehrerin liest eine Geschichte vor.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Lehrerinnen",
-    "pluralEn": "Female teachers",
-    "imagePrompt": "Smiling woman pointing to a blackboard in a classroom, cartoon style, white background, for children's learning."
+    "pluralEn": "Female teachers"
   },
   {
     "exampleSentenceDe": "Der Feuerwehrmann löscht das Feuer.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Feuerwehrmänner",
-    "pluralEn": "Firefighters",
-    "imagePrompt": "Cartoon firefighter wearing helmet, holding hose, white background, for children's learning."
+    "pluralEn": "Firefighters"
   },
   {
     "exampleSentenceDe": "Die Feuerwehrfrau hilft den Menschen.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Feuerwehrfrauen",
-    "pluralEn": "Female firefighters",
-    "imagePrompt": "Cartoon style woman wearing firefighter uniform, holding a hose, smiling, white background, for children's learning."
+    "pluralEn": "Female firefighters"
   },
   {
     "exampleSentenceDe": "Der Polizist fängt Diebe.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Polizisten",
-    "pluralEn": "Policemen",
-    "imagePrompt": "Cartoon style, a police officer helping a child cross the street, white background, for children's learning."
+    "pluralEn": "Policemen"
   },
   {
     "exampleSentenceDe": "Die Polizistin hilft uns.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Polizistinnen",
-    "pluralEn": "Policewomen",
-    "imagePrompt": "Cartoon-style woman in blue police uniform, smiling, white background, for children's learning."
+    "pluralEn": "Policewomen"
   },
   {
     "exampleSentenceDe": "Der Bäcker backt Brot.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bäcker",
-    "pluralEn": "Bakers",
-    "imagePrompt": "Cartoon baker holding a loaf of bread, white background, for children's learning."
+    "pluralEn": "Bakers"
   },
   {
     "exampleSentenceDe": "Die Bäckerin backt Kuchen.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Bäckerinnen",
-    "pluralEn": "Female bakers",
-    "imagePrompt": "Cartoon baker woman holding a cake, white background, for children's learning."
+    "pluralEn": "Female bakers"
   },
   {
     "exampleSentenceDe": "Der Koch kocht leckeres Essen.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Köche",
-    "pluralEn": "Cooks",
-    "imagePrompt": "Cartoon style, chef with a tall hat holding a spoon, white background, for children's learning."
+    "pluralEn": "Cooks"
   },
   {
     "exampleSentenceDe": "Die Köchin kocht Suppe.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Köchinnen",
-    "pluralEn": "Female cooks",
-    "imagePrompt": "Cartoon woman wearing a chef's hat, smiling, holding a spoon, white background, for children's learning."
+    "pluralEn": "Female cooks"
   },
   {
     "exampleSentenceDe": "Der Gärtner pflegt den Garten.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Gärtner",
-    "pluralEn": "Gardeners",
-    "imagePrompt": "Cartoon person watering flowers, white background, for children's learning."
+    "pluralEn": "Gardeners"
   },
   {
     "exampleSentenceDe": "Die Gärtnerin pflanzt Blumen.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Gärtnerinnen",
-    "pluralEn": "Female gardeners",
-    "imagePrompt": "Cartoon style, woman planting flowers, white background, for children's learning."
+    "pluralEn": "Female gardeners"
   },
   {
     "exampleSentenceDe": "Der Pilot fliegt ein Flugzeug.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Piloten",
-    "pluralEn": "Pilots",
-    "imagePrompt": "Cartoon style, airplane pilot smiling, white background, for children's learning."
+    "pluralEn": "Pilots"
   },
   {
     "exampleSentenceDe": "Die Pilotin fliegt sicher.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Pilotinnen",
-    "pluralEn": "Female pilots",
-    "imagePrompt": "Cartoon female airplane driver wearing a hat, smiling, white background, for children's learning."
+    "pluralEn": "Female pilots"
   },
   {
     "exampleSentenceDe": "Der Sänger singt ein Lied.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Sänger",
-    "pluralEn": "Singers",
-    "imagePrompt": "Cartoon girl singing into a microphone, white background, for children's learning."
+    "pluralEn": "Singers"
   },
   {
     "exampleSentenceDe": "Die Sängerin hat eine schöne Stimme.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Sängerinnen",
-    "pluralEn": "Female singers",
-    "imagePrompt": "Cartoon girl singing into a microphone, white background, for children's learning."
+    "pluralEn": "Female singers"
   },
   {
     "exampleSentenceDe": "Der Maler malt ein Bild.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Maler",
-    "pluralEn": "Painters",
-    "imagePrompt": "Cartoon painter with paintbrush, white background, for children's learning."
+    "pluralEn": "Painters"
   },
   {
     "exampleSentenceDe": "Die Malerin malt ein Haus.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Malerinnen",
-    "pluralEn": "Female painters",
-    "imagePrompt": "Cartoon style, a girl painting a house, white background, for children's learning."
+    "pluralEn": "Female painters"
   },
   {
     "exampleSentenceDe": "Der Schreiner macht Möbel.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Schreiner",
-    "pluralEn": "Carpenters",
-    "imagePrompt": "Carpenter building a wooden chair, cartoon style, white background, for children's learning."
+    "pluralEn": "Carpenters"
   },
   {
     "exampleSentenceDe": "Die Schreinerin arbeitet mit Holz.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schreinerinnen",
-    "pluralEn": "Female carpenters",
-    "imagePrompt": "Cartoon woman building a wooden house, tools around, white background, for children's learning."
+    "pluralEn": "Female carpenters"
   },
   {
     "exampleSentenceDe": "Der Verkäufer verkauft Obst.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Verkäufer",
-    "pluralEn": "Salesmen",
-    "imagePrompt": "Cartoon style, man in apron selling apples at a stand, white background, for children's learning."
+    "pluralEn": "Salesmen"
   },
   {
     "exampleSentenceDe": "Die Verkäuferin verkauft Spielzeug.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Verkäuferinnen",
-    "pluralEn": "Saleswomen",
-    "imagePrompt": "Woman selling colorful toy blocks at a table, cartoon style, white background, for children's learning."
+    "pluralEn": "Saleswomen"
   },
   {
     "exampleSentenceDe": "Der Bauer arbeitet auf dem Feld.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bauern",
-    "pluralEn": "Farmers",
-    "imagePrompt": "Cartoon style, smiling person with a hat in a field with animals, white background, for children's learning."
+    "pluralEn": "Farmers"
   },
   {
     "exampleSentenceDe": "Die Bäuerin kümmert sich um die Tiere.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Bäuerinnen",
-    "pluralEn": "Female farmers",
-    "imagePrompt": "Cartoon style, smiling woman in overalls, holding a chicken, white background, for children's learning."
+    "pluralEn": "Female farmers"
   },
   {
     "exampleSentenceDe": "Der Zahnarzt repariert Zähne.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Zahnärzte",
-    "pluralEn": "Dentists",
-    "imagePrompt": "\"Cartoon smiling doctor fixing a tooth, white background, for children's learning\""
+    "pluralEn": "Dentists"
   },
   {
     "exampleSentenceDe": "Die Zahnärztin kontrolliert die Zähne.",
@@ -360,8 +333,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Zahnärztinnen",
-    "pluralEn": "Female dentists",
-    "imagePrompt": "Cartoon style, smiling doctor with a tooth, white background, for children's learning."
+    "pluralEn": "Female dentists"
   },
   {
     "exampleSentenceDe": "Der Schauspieler spielt eine Rolle.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Schauspieler",
-    "pluralEn": "Actors",
-    "imagePrompt": "Cartoon style, a person pretending to be a king on a stage, white background, for children's learning."
+    "pluralEn": "Actors"
   },
   {
     "exampleSentenceDe": "Die Schauspielerin spielt im Theater.",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schauspielerinnen",
-    "pluralEn": "Actresses",
-    "imagePrompt": "Cartoon woman acting on a stage, smiling, white background, for children's learning."
+    "pluralEn": "Actresses"
   },
   {
     "exampleSentenceDe": "Der Briefträger bringt die Post.",
@@ -399,8 +369,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Briefträger",
-    "pluralEn": "Mailmen",
-    "imagePrompt": "\"Smiling delivery person holding letters, cartoon style, white background, for children's learning.\""
+    "pluralEn": "Mailmen"
   },
   {
     "exampleSentenceDe": "Die Briefträgerin bringt Briefe.",
@@ -412,8 +381,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Briefträgerinnen",
-    "pluralEn": "Female mail carriers",
-    "imagePrompt": "Cartoon woman delivering mail in a blue uniform, white background, for children's learning."
+    "pluralEn": "Female mail carriers"
   },
   {
     "exampleSentenceDe": "Der Mechaniker repariert Autos.",
@@ -425,8 +393,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Mechaniker",
-    "pluralEn": "Mechanics",
-    "imagePrompt": "Cartoon-style person fixing a car with tools, white background, for children's learning."
+    "pluralEn": "Mechanics"
   },
   {
     "exampleSentenceDe": "Die Mechanikerin repariert das Fahrrad.",
@@ -438,8 +405,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mechanikerinnen",
-    "pluralEn": "Female mechanics",
-    "imagePrompt": "Cartoon female fixing a car tire, white background, for children's learning."
+    "pluralEn": "Female mechanics"
   },
   {
     "exampleSentenceDe": "Der Programmierer schreibt Code.",
@@ -451,8 +417,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Programmierer",
-    "pluralEn": "Programmers",
-    "imagePrompt": "Cartoon person sitting at a computer, writing code, white background, for children's learning."
+    "pluralEn": "Programmers"
   },
   {
     "exampleSentenceDe": "Die Programmiererin entwickelt Apps.",
@@ -464,8 +429,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Programmiererinnen",
-    "pluralEn": "Female programmers",
-    "imagePrompt": "Cartoon girl coding on laptop, white background, for children's learning."
+    "pluralEn": "Female programmers"
   },
   {
     "exampleSentenceDe": "Der Tierarzt hilft Tieren.",
@@ -477,8 +441,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Tierärzte",
-    "pluralEn": "Veterinarians",
-    "imagePrompt": "Cartoon style, a friendly doctor helping a happy dog, white background, for children's learning."
+    "pluralEn": "Veterinarians"
   },
   {
     "exampleSentenceDe": "Die Tierärztin behandelt Hunde.",
@@ -490,8 +453,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Tierärztinnen",
-    "pluralEn": "Female veterinarians",
-    "imagePrompt": "Cartoon style, girl doctor hugging a puppy, white background, for children's learning."
+    "pluralEn": "Female veterinarians"
   },
   {
     "exampleSentenceDe": "Der Friseur schneidet Haare.",
@@ -503,8 +465,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Friseure",
-    "pluralEn": "Hairdressers",
-    "imagePrompt": "Cartoon style, a happy person cutting someone's hair, white background, for children's learning."
+    "pluralEn": "Hairdressers"
   },
   {
     "exampleSentenceDe": "Die Friseurin macht Locken.",
@@ -516,8 +477,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Friseurinnen",
-    "pluralEn": "Female hairdressers",
-    "imagePrompt": "Cartoon woman cutting hair, white background, for children's learning."
+    "pluralEn": "Female hairdressers"
   },
   {
     "exampleSentenceDe": "Der Krankenpfleger hilft im Krankenhaus.",
@@ -529,8 +489,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Krankenpfleger",
-    "pluralEn": "Nurses",
-    "imagePrompt": "A friendly nurse helping a child with a bandage, cartoon style, white background, for children's learning."
+    "pluralEn": "Nurses"
   },
   {
     "exampleSentenceDe": "Die Krankenschwester hilft den Ärzten.",
@@ -542,8 +501,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Krankenschwestern",
-    "pluralEn": "Nurses",
-    "imagePrompt": "A friendly nurse helping a sick teddy bear, cartoon style, white background, for children's learning."
+    "pluralEn": "Nurses"
   },
   {
     "exampleSentenceDe": "Der Wissenschaftler forscht.",
@@ -555,8 +513,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Wissenschaftler",
-    "pluralEn": "Scientists",
-    "imagePrompt": "Cartoon scientist wearing glasses, holding a beaker, white background, for children's learning."
+    "pluralEn": "Scientists"
   },
   {
     "exampleSentenceDe": "Die Wissenschaftlerin arbeitet im Labor.",
@@ -568,8 +525,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wissenschaftlerinnen",
-    "pluralEn": "Female scientists",
-    "imagePrompt": "Cartoon style, a girl in a lab coat, holding a test tube, white background, for children's learning."
+    "pluralEn": "Female scientists"
   },
   {
     "exampleSentenceDe": "Der Musiker spielt ein Instrument.",
@@ -581,8 +537,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Musiker",
-    "pluralEn": "Musicians",
-    "imagePrompt": "A cartoon musician playing a guitar, smiling, white background, for children's learning."
+    "pluralEn": "Musicians"
   },
   {
     "exampleSentenceDe": "Die Musikerin spielt Geige.",
@@ -594,8 +549,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Musikerinnen",
-    "pluralEn": "Female musicians",
-    "imagePrompt": "Cartoon girl playing a bright pink violin, white background, for children's learning."
+    "pluralEn": "Female musicians"
   },
   {
     "exampleSentenceDe": "Der Richter entscheidet über Recht.",
@@ -607,8 +561,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Richter",
-    "pluralEn": "Judges",
-    "imagePrompt": "Cartoon judge with gavel, wearing a black robe, white background, for children's learning."
+    "pluralEn": "Judges"
   },
   {
     "exampleSentenceDe": "Die Richterin ist gerecht.",
@@ -620,8 +573,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Richterinnen",
-    "pluralEn": "Female judges",
-    "imagePrompt": "Female cartoon judge with gavel, white background, for children's learning."
+    "pluralEn": "Female judges"
   },
   {
     "exampleSentenceDe": "Der Busfahrer fährt den Bus.",
@@ -633,8 +585,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Busfahrer",
-    "pluralEn": "Bus drivers",
-    "imagePrompt": "Cartoon driver waving from a big yellow bus, white background, for children's learning."
+    "pluralEn": "Bus drivers"
   },
   {
     "exampleSentenceDe": "Die Busfahrerin fährt die Kinder zur Schule.",
@@ -646,7 +597,6 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Busfahrerinnen",
-    "pluralEn": "Female bus drivers",
-    "imagePrompt": "Cartoon female bus driver smiling, white background, for children's learning."
+    "pluralEn": "Female bus drivers"
   }
 ]

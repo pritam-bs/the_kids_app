@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bäume",
-    "pluralEn": "trees",
-    "imagePrompt": "Cartoon style green tree, white background, for children's learning."
+    "pluralEn": "trees"
   },
   {
     "exampleSentenceDe": "Die Blume ist rot.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Blumen",
-    "pluralEn": "flowers",
-    "imagePrompt": "Cartoon style, red flower on a white background, for children's learning."
+    "pluralEn": "flowers"
   },
   {
     "exampleSentenceDe": "Die Sonne scheint hell.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Sonnen",
-    "pluralEn": "suns",
-    "imagePrompt": "A happy yellow sun with a smiling face, cartoon style, white background, for children's learning."
+    "pluralEn": "suns"
   },
   {
     "exampleSentenceDe": "Der Mond ist am Himmel.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Monde",
-    "pluralEn": "moons",
-    "imagePrompt": "Cartoon crescent moon, smiling face, white background, for children's learning."
+    "pluralEn": "moons"
   },
   {
     "exampleSentenceDe": "Der Stern leuchtet in der Nacht.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Sterne",
-    "pluralEn": "stars",
-    "imagePrompt": "A bright yellow star with a smiling face, cartoon style, white background, for children's learning."
+    "pluralEn": "stars"
   },
   {
     "exampleSentenceDe": "Der Himmel ist blau.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Himmel",
-    "pluralEn": "skies",
-    "imagePrompt": "Cartoon style, blue expanse with fluffy white clouds, for children's learning, white background."
+    "pluralEn": "skies"
   },
   {
     "exampleSentenceDe": "Die Wolke ist weiß.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wolken",
-    "pluralEn": "clouds",
-    "imagePrompt": "Fluffy white cloud, cartoon style, white background, for children's learning."
+    "pluralEn": "clouds"
   },
   {
     "exampleSentenceDe": "Der Regen fällt vom Himmel.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Regen",
-    "pluralEn": "rains",
-    "imagePrompt": "Cartoon style: Falling raindrops from a cloud, white background, for children's learning."
+    "pluralEn": "rains"
   },
   {
     "exampleSentenceDe": "Der Fluss fließt ins Meer.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Flüsse",
-    "pluralEn": "rivers",
-    "imagePrompt": "Cartoon style river with blue water flowing, green banks, white background, for children's learning."
+    "pluralEn": "rivers"
   },
   {
     "exampleSentenceDe": "Der See ist tief und blau.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Seen",
-    "pluralEn": "lakes",
-    "imagePrompt": "Cartoon style, blue lake with a small boat, sunny day, white background, for children's learning."
+    "pluralEn": "lakes"
   },
   {
     "exampleSentenceDe": "Das Meer ist sehr groß.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Meere",
-    "pluralEn": "seas",
-    "imagePrompt": "Cartoon style, blue ocean with a happy smiling sun and a small sailboat, white background, for children's learning."
+    "pluralEn": "seas"
   },
   {
     "exampleSentenceDe": "Der Berg ist hoch.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Berge",
-    "pluralEn": "mountains",
-    "imagePrompt": "Cartoon style, single mountain, snowy peak, white background, for children's learning."
+    "pluralEn": "mountains"
   },
   {
     "exampleSentenceDe": "Das Tal ist grün.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Täler",
-    "pluralEn": "valleys",
-    "imagePrompt": "Cartoon style: green hills with a river flowing between them, white background, for children's learning."
+    "pluralEn": "valleys"
   },
   {
     "exampleSentenceDe": "Der Wald ist voller Bäume.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Wälder",
-    "pluralEn": "forests",
-    "imagePrompt": "Cartoon forest with tall green trees, white background, for children's learning."
+    "pluralEn": "forests"
   },
   {
     "exampleSentenceDe": "Das Gras ist grün.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Gräser",
-    "pluralEn": "grasses",
-    "imagePrompt": "Cartoon style green grass, white background, for children's learning."
+    "pluralEn": "grasses"
   },
   {
     "exampleSentenceDe": "Die Erde ist unser Zuhause.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Erden",
-    "pluralEn": "earths",
-    "imagePrompt": "Cartoon style, planet Earth with smiling face, white background, for children's learning."
+    "pluralEn": "earths"
   },
   {
     "exampleSentenceDe": "Die Luft ist frisch.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Lüfte",
-    "pluralEn": "airs",
-    "imagePrompt": "Cartoon style, white background: A blue sky with fluffy white clouds, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Stein ist hart.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Steine",
-    "pluralEn": "stones",
-    "imagePrompt": "Cartoon style gray rock, white background, for children's learning."
+    "pluralEn": "stones"
   },
   {
     "exampleSentenceDe": "Der Sand ist weich.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Sande",
-    "pluralEn": "sands",
-    "imagePrompt": "Cartoon style, sandbox with yellow sand, shovel, white background, for children's learning."
+    "pluralEn": "sands"
   },
   {
     "exampleSentenceDe": "Die Wurzel hilft dem Baum zu wachsen.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wurzeln",
-    "pluralEn": "roots",
-    "imagePrompt": "Cartoon style, tree roots underground, smiling, white background, for children's learning."
+    "pluralEn": "roots"
   },
   {
     "exampleSentenceDe": "Das Blatt ist grün im Sommer.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Blätter",
-    "pluralEn": "leaves",
-    "imagePrompt": "Cartoon green leaf, white background, for children's learning."
+    "pluralEn": "leaves"
   },
   {
     "exampleSentenceDe": "Der Zweig ist vom Baum gefallen.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Zweige",
-    "pluralEn": "branches",
-    "imagePrompt": "Cartoon style drawing of a brown branch on a white background, for children's learning."
+    "pluralEn": "branches"
   },
   {
     "exampleSentenceDe": "Die Sonne scheint.",
@@ -295,8 +273,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, bright sun shining, happy face, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Wind weht stark.",
@@ -308,8 +285,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, wind blowing leaves off a tree, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Es regnet viel im Herbst.",
@@ -321,8 +297,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, raindrops falling from a cloud, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Blume wächst im Garten.",
@@ -334,8 +309,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Seedling sprouting into a small flower, cartoon style, white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist blau.",
@@ -347,8 +321,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, blue balloon floating, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Gras ist grün.",
@@ -360,8 +333,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A green apple, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Blume ist rot.",
@@ -373,8 +345,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style red apple on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Sonne ist gelb.",
@@ -386,8 +357,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A bright yellow sun, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Erde ist braun.",
@@ -399,8 +369,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Brown teddy bear sitting, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Schnecke ist langsam.",
@@ -412,8 +381,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schnecken",
-    "pluralEn": "snails",
-    "imagePrompt": "Cartoon snail with a colorful shell, slowly moving, white background, for children's learning."
+    "pluralEn": "snails"
   },
   {
     "exampleSentenceDe": "Der Käfer krabbelt.",
@@ -425,8 +393,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Käfer",
-    "pluralEn": "beetles",
-    "imagePrompt": "Cute green beetle crawling, cartoon style, white background, for children's learning."
+    "pluralEn": "beetles"
   },
   {
     "exampleSentenceDe": "Der Schmetterling fliegt.",
@@ -438,8 +405,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Schmetterlinge",
-    "pluralEn": "butterflies",
-    "imagePrompt": "Colorful butterfly flying, cartoon style, white background, for children's learning."
+    "pluralEn": "butterflies"
   },
   {
     "exampleSentenceDe": "Der Marienkäfer ist rot und hat Punkte.",
@@ -451,8 +417,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Marienkäfer",
-    "pluralEn": "ladybugs",
-    "imagePrompt": "Red beetle with black spots, cartoon style, white background, for children's learning."
+    "pluralEn": "ladybugs"
   },
   {
     "exampleSentenceDe": "Die Biene sammelt Honig.",
@@ -464,8 +429,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Bienen",
-    "pluralEn": "bees",
-    "imagePrompt": "Cartoon bee flying, collecting nectar from a flower, white background, for children's learning."
+    "pluralEn": "bees"
   },
   {
     "exampleSentenceDe": "Der Vogel singt ein Lied.",
@@ -477,8 +441,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Vögel",
-    "pluralEn": "birds",
-    "imagePrompt": "A cheerful cartoon bird singing, white background, for children's learning."
+    "pluralEn": "birds"
   },
   {
     "exampleSentenceDe": "Der Bach plätschert.",
@@ -490,8 +453,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bäche",
-    "pluralEn": "brooks",
-    "imagePrompt": "A small, clear stream flowing over rocks, cartoon style, white background, for children's learning."
+    "pluralEn": "brooks"
   },
   {
     "exampleSentenceDe": "Der Nebel ist dicht.",
@@ -503,8 +465,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Nebel",
-    "pluralEn": "fogs",
-    "imagePrompt": "Gray cartoon cloud covering a house, white background, for children's learning."
+    "pluralEn": "fogs"
   },
   {
     "exampleSentenceDe": "Die Wiese ist grün.",
@@ -516,8 +477,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wiesen",
-    "pluralEn": "meadows",
-    "imagePrompt": "Cartoon style, green field with flowers, white background, for children's learning."
+    "pluralEn": "meadows"
   },
   {
     "exampleSentenceDe": "Die Höhle ist dunkel.",
@@ -529,8 +489,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Höhlen",
-    "pluralEn": "caves",
-    "imagePrompt": "Cartoon style cave entrance with stalactites, white background, for children's learning."
+    "pluralEn": "caves"
   },
   {
     "exampleSentenceDe": "Die Pflanze braucht Wasser.",
@@ -542,8 +501,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Pflanzen",
-    "pluralEn": "plants",
-    "imagePrompt": "A green plant in a pot, cartoon style, white background, for children's learning."
+    "pluralEn": "plants"
   },
   {
     "exampleSentenceDe": "Der Garten ist schön.",
@@ -555,8 +513,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Gärten",
-    "pluralEn": "gardens",
-    "imagePrompt": "Cartoon style, flowers growing in a garden, white background, for children's learning."
+    "pluralEn": "gardens"
   },
   {
     "exampleSentenceDe": "Das Ufer ist am See.",
@@ -568,8 +525,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ufer",
-    "pluralEn": "shores",
-    "imagePrompt": "Cartoon beach with sand, seashells, and a blue ocean, white background, for children's learning."
+    "pluralEn": "shores"
   },
   {
     "exampleSentenceDe": "Das Feuer wärmt uns.",
@@ -581,8 +537,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Feuer",
-    "pluralEn": "fires",
-    "imagePrompt": "Cartoon style campfire with happy logs, white background, for children's learning."
+    "pluralEn": "fires"
   },
   {
     "exampleSentenceDe": "Die Landschaft ist wunderschön.",
@@ -594,7 +549,6 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Landschaften",
-    "pluralEn": "landscapes",
-    "imagePrompt": "Cartoon style, rolling green hills, blue sky, fluffy clouds, for children's learning, white background."
+    "pluralEn": "landscapes"
   }
 ]

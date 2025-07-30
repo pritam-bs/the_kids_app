@@ -4,13 +4,12 @@
     "exampleSentenceEn": "I go to bed.",
     "id": "evening_routine_bett_01",
     "ipa": "bɛt",
-    "wordDe": "das Bett",
+    "wordDe": "Bett",
     "wordEn": "bed",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Betten",
-    "pluralEn": "beds",
-    "imagePrompt": "Cartoon style bed with a blanket, white background, for children's learning."
+    "pluralDe": "Betten",
+    "pluralEn": "beds"
   },
   {
     "exampleSentenceDe": "Ich putze meine Zähne.",
@@ -22,8 +21,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child brushing teeth with toothbrush, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich wasche mein Gesicht.",
@@ -35,8 +33,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style child washing their face with water, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich lese ein Buch.",
@@ -45,11 +42,10 @@
     "ipa": "buːx ˈleːzən",
     "wordDe": "Buch lesen",
     "wordEn": "to read a book",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy child reading a colorful book, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trage meinen Schlafanzug.",
@@ -61,21 +57,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Girl putting on striped pajamas, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Meine Mama singt ein Schlaflied.",
     "exampleSentenceEn": "My mom sings a lullaby.",
     "id": "evening_routine_schlaflied_06",
     "ipa": "ˈʃlaːfˌliːt",
-    "wordDe": "das Schlaflied",
+    "wordDe": "Schlaflied",
     "wordEn": "lullaby",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Schlaflieder",
-    "pluralEn": "lullabies",
-    "imagePrompt": "A mother singing a baby to sleep, cartoon style, white background, for children's learning."
+    "pluralDe": "Schlaflieder",
+    "pluralEn": "lullabies"
   },
   {
     "exampleSentenceDe": "Ich sage Gute Nacht.",
@@ -84,11 +78,10 @@
     "ipa": "ˈɡuːtə ˈnaxt ˈzaːɡən",
     "wordDe": "Gute Nacht sagen",
     "wordEn": "to say good night",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, child waving goodnight in pajamas, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich schlafe ein.",
@@ -100,8 +93,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat sleeping in a bed, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin müde.",
@@ -113,8 +105,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, sleepy bear yawning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich mache das Licht aus.",
@@ -126,8 +117,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A child turning off a lamp, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kuschele mit meinem Teddy.",
@@ -139,8 +129,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A smiling teddy bear being hugged by a child, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich trinke Milch.",
@@ -149,11 +138,10 @@
     "ipa": "mɪlç ˈtʁɪŋkən",
     "wordDe": "Milch trinken",
     "wordEn": "to drink milk",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a happy child drinking milk from a glass, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich räume mein Spielzeug auf.",
@@ -165,8 +153,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a child putting toys in a toy box, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kämme meine Haare.",
@@ -178,86 +165,79 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A girl combing her long brown hair with a pink comb, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gehe auf die Toilette.",
     "exampleSentenceEn": "I go to the toilet.",
     "id": "evening_routine_toilette_15",
     "ipa": "toˈlɛtə",
-    "wordDe": "die Toilette",
+    "wordDe": "Toilette",
     "wordEn": "toilet",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Toiletten",
-    "pluralEn": "toilets",
-    "imagePrompt": "Cartoon style toilet with a smiling face, white background, for children's learning."
+    "pluralDe": "Toiletten",
+    "pluralEn": "toilets"
   },
   {
     "exampleSentenceDe": "Ich putze meine Zähne mit Zahnpasta.",
     "exampleSentenceEn": "I brush my teeth with toothpaste.",
     "id": "evening_routine_zahnpasta_16",
     "ipa": "ˈtsaːnˌpasta",
-    "wordDe": "die Zahnpasta",
+    "wordDe": "Zahnpasta",
     "wordEn": "toothpaste",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Zahnpastas",
-    "pluralEn": "toothpastes",
-    "imagePrompt": "Tube of white paste with a toothbrush, cartoon style, white background, for children's learning."
+    "pluralDe": "Zahnpasten",
+    "pluralEn": "toothpastes"
   },
   {
     "exampleSentenceDe": "Ich brauche eine Zahnbürste.",
     "exampleSentenceEn": "I need a toothbrush.",
     "id": "evening_routine_zahnbuerste_17",
     "ipa": "ˈtsaːnˌbʏʁstə",
-    "wordDe": "die Zahnbürste",
+    "wordDe": "Zahnbürste",
     "wordEn": "toothbrush",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Zahnbürsten",
-    "pluralEn": "toothbrushes",
-    "imagePrompt": "Cartoon style toothbrush on white background for children's learning."
+    "pluralDe": "Zahnbürsten",
+    "pluralEn": "toothbrushes"
   },
   {
     "exampleSentenceDe": "Ich habe einen Teddybär.",
     "exampleSentenceEn": "I have a teddy bear.",
     "id": "evening_routine_teddybaer_18",
     "ipa": "ˈtɛdiˌbɛːɐ̯",
-    "wordDe": "der Teddybär",
+    "wordDe": "Teddybär",
     "wordEn": "teddy bear",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Teddybären",
-    "pluralEn": "teddy bears",
-    "imagePrompt": "Cute brown bear toy, cartoon style, white background, for children's learning."
+    "pluralDe": "Teddybären",
+    "pluralEn": "teddy bears"
   },
   {
     "exampleSentenceDe": "Ich habe ein Kissen.",
     "exampleSentenceEn": "I have a pillow.",
     "id": "evening_routine_kissen_19",
     "ipa": "ˈkɪsn̩",
-    "wordDe": "das Kissen",
+    "wordDe": "Kissen",
     "wordEn": "pillow",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Kissen",
-    "pluralEn": "pillows",
-    "imagePrompt": "Fluffy white pillow, cartoon style, white background, for children's learning."
+    "pluralDe": "Kissen",
+    "pluralEn": "pillows"
   },
   {
     "exampleSentenceDe": "Meine Decke ist warm.",
     "exampleSentenceEn": "My blanket is warm.",
     "id": "evening_routine_decke_20",
     "ipa": "ˈdɛkə",
-    "wordDe": "die Decke",
+    "wordDe": "Decke",
     "wordEn": "blanket",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Decken",
-    "pluralEn": "blankets",
-    "imagePrompt": "Cartoon style, a cozy blanket on a white background, for children's learning."
+    "pluralDe": "Decken",
+    "pluralEn": "blankets"
   },
   {
     "exampleSentenceDe": "Es ist dunkel.",
@@ -269,21 +249,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon style, moon shining faintly in a very dark night, white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kuschele mit meinem Stofftier.",
     "exampleSentenceEn": "I cuddle with my stuffed animal.",
     "id": "evening_routine_stofftier_22",
     "ipa": "ˈʃtɔfˌtiːɐ̯",
-    "wordDe": "das Stofftier",
+    "wordDe": "Stofftier",
     "wordEn": "stuffed animal",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Stofftiere",
-    "pluralEn": "stuffed animals",
-    "imagePrompt": "Cute teddy bear smiling, cartoon style, white background, for children's learning."
+    "pluralDe": "Stofftiere",
+    "pluralEn": "stuffed animals"
   },
   {
     "exampleSentenceDe": "Ich trinke Wasser.",
@@ -292,15 +270,14 @@
     "ipa": "ˈvasɐ ˈtʁɪŋkən",
     "wordDe": "Wasser trinken",
     "wordEn": "to drink water",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a happy child drinking water from a blue glass, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich lese vor dem Schlafen.",
-    "exampleSentenceEn": "I read before sleeping.",
+    "exampleSentenceDe": "Mama liest mir ein Buch vor.",
+    "exampleSentenceEn": "Mom reads me a book aloud.",
     "id": "evening_routine_vorlesen_24",
     "ipa": "ˈfoːɐ̯ˌleːzən",
     "wordDe": "vorlesen",
@@ -308,86 +285,79 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, someone reading a storybook to a teddy bear, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin im Schlafzimmer.",
     "exampleSentenceEn": "I am in the bedroom.",
     "id": "evening_routine_schlafzimmer_25",
     "ipa": "ˈʃlaːfˌtsɪmɐ",
-    "wordDe": "das Schlafzimmer",
+    "wordDe": "Schlafzimmer",
     "wordEn": "bedroom",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Schlafzimmer",
-    "pluralEn": "bedrooms",
-    "imagePrompt": "A cozy bedroom with a bed, nightstand and a teddy bear, cartoon style, white background, for children's learning."
+    "pluralDe": "Schlafzimmer",
+    "pluralEn": "bedrooms"
   },
   {
     "exampleSentenceDe": "Ich habe eine Lampe.",
     "exampleSentenceEn": "I have a lamp.",
     "id": "evening_routine_lampe_26",
     "ipa": "ˈlampə",
-    "wordDe": "die Lampe",
+    "wordDe": "Lampe",
     "wordEn": "lamp",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Lampen",
-    "pluralEn": "lamps",
-    "imagePrompt": "Cartoon style lamp shining brightly on a white background, for children's learning."
+    "pluralDe": "Lampen",
+    "pluralEn": "lamps"
   },
   {
-    "exampleSentenceDe": "Ich mache die Tür zu.",
+    "exampleSentenceDe": "Ich schließe die Tür.",
     "exampleSentenceEn": "I close the door.",
     "id": "evening_routine_tuer_schliessen_27",
-    "ipa": "ˈtʏʁə ˈʃliːsən",
+    "ipa": "diː tyːɐ̯ ˈʃliːsən",
     "wordDe": "die Tür schließen",
     "wordEn": "to close the door",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon style, child closing a blue door, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich sage meinem Bruder gute Nacht.",
     "exampleSentenceEn": "I say good night to my brother.",
     "id": "evening_routine_bruder_28",
     "ipa": "ˈbʁuːdɐ",
-    "wordDe": "der Bruder",
+    "wordDe": "Bruder",
     "wordEn": "brother",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Brüder",
-    "pluralEn": "brothers",
-    "imagePrompt": "Two young boys hugging, cartoon style, white background, for children's learning."
+    "pluralDe": "Brüder",
+    "pluralEn": "brothers"
   },
   {
     "exampleSentenceDe": "Ich sage meiner Schwester gute Nacht.",
     "exampleSentenceEn": "I say good night to my sister.",
     "id": "evening_routine_schwester_29",
     "ipa": "ˈʃvɛstɐ",
-    "wordDe": "die Schwester",
+    "wordDe": "Schwester",
     "wordEn": "sister",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Schwestern",
-    "pluralEn": "sisters",
-    "imagePrompt": "Two girls hugging, cartoon style, white background, for children's learning."
+    "pluralDe": "Schwestern",
+    "pluralEn": "sisters"
   },
   {
     "exampleSentenceDe": "Ich sage meinen Eltern gute Nacht.",
     "exampleSentenceEn": "I say good night to my parents.",
     "id": "evening_routine_eltern_30",
     "ipa": "ˈɛltɐn",
-    "wordDe": "die Eltern",
+    "wordDe": "Eltern",
     "wordEn": "parents",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Eltern",
-    "pluralEn": "parents",
-    "imagePrompt": "Cartoon style, a smiling mom and dad holding hands, white background, for children's learning."
+    "pluralDe": "Eltern",
+    "pluralEn": "parents"
   },
   {
     "exampleSentenceDe": "Ich schlafe tief.",
@@ -396,24 +366,22 @@
     "ipa": "tiːf ˈʃlaːfn̩",
     "wordDe": "tief schlafen",
     "wordEn": "to sleep deeply",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon of a baby bear sleeping soundly in a bed, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe einen Traum.",
     "exampleSentenceEn": "I have a dream.",
     "id": "evening_routine_traum_haben_32",
-    "ipa": "tʁaʊ̯m ˈhaːbn̩",
+    "ipa": "ˈaɪ̯nən tʁaʊ̯m ˈhaːbn̩",
     "wordDe": "einen Traum haben",
     "wordEn": "to have a dream",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A child sleeping, dreaming of a happy dog, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe Durst.",
@@ -422,11 +390,10 @@
     "ipa": "dʊʁst ˈhaːbn̩",
     "wordDe": "Durst haben",
     "wordEn": "to be thirsty",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style child drinking water from a glass, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe Angst im Dunkeln.",
@@ -438,8 +405,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child hiding under a blanket, scared, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bete vor dem Schlafen.",
@@ -451,8 +417,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A child kneeling and praying, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich gähne.",
@@ -464,8 +429,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat yawning widely, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Nacht ist ruhig.",
@@ -477,8 +441,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, sleeping teddy bear on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich höre Musik.",
@@ -490,21 +453,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon child with headphones listening to music, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich schaue den Mond an.",
     "exampleSentenceEn": "I look at the moon.",
     "id": "evening_routine_mond_anschauen_39",
-    "ipa": "moːnt ˈanˌʃaʊ̯ən",
+    "ipa": "deːn moːnt ˈanˌʃaʊ̯ən",
     "wordDe": "den Mond anschauen",
     "wordEn": "to look at the moon",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Boy with telescope, gazing at crescent moon, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich sehe Sterne.",
@@ -513,24 +474,22 @@
     "ipa": "ˈʃtɛʁnə ˈzeːən",
     "wordDe": "Sterne sehen",
     "wordEn": "to see stars",
-    "wordType": "verb",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style kid bumping their head, seeing stars, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe einen Pyjama an.",
     "exampleSentenceEn": "I am wearing pajamas.",
     "id": "evening_routine_pyjama_41",
     "ipa": "pyˈʒaːma",
-    "wordDe": "der Pyjama",
+    "wordDe": "Pyjama",
     "wordEn": "pajamas",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Pyjamas",
-    "pluralEn": "pajamas",
-    "imagePrompt": "A child wearing striped pajamas, cartoon style, white background, for children's learning."
+    "pluralDe": "Pyjamas",
+    "pluralEn": "pajamas"
   },
   {
     "exampleSentenceDe": "Ich mache mich bettfertig.",
@@ -542,8 +501,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a child brushing teeth, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich fühle mich sicher.",
@@ -555,21 +513,19 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a small child being hugged by a friendly bear, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin im Haus.",
     "exampleSentenceEn": "I am in the house.",
     "id": "evening_routine_haus_44",
     "ipa": "haʊ̯s",
-    "wordDe": "das Haus",
+    "wordDe": "Haus",
     "wordEn": "house",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Häuser",
-    "pluralEn": "houses",
-    "imagePrompt": "Cartoon style, a simple, colorful house with a red roof, white background, for children's learning."
+    "pluralDe": "Häuser",
+    "pluralEn": "houses"
   },
   {
     "exampleSentenceDe": "Ich bin zuhause.",
@@ -581,7 +537,6 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, cozy house with a smiling family waving, white background, for children's learning."
+    "pluralEn": null
   }
 ]

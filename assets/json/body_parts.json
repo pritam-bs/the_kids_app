@@ -9,12 +9,11 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Köpfe",
-    "pluralEn": "heads",
-    "imagePrompt": "Cartoon drawing of a happy child's face, white background, for children's learning."
+    "pluralEn": "heads"
   },
   {
     "exampleSentenceDe": "Das sind meine Haare.",
-    "exampleSentenceEn": "These are my hairs.",
+    "exampleSentenceEn": "This is my hair.",
     "id": "body_parts_haar_02",
     "ipa": "haːɐ̯",
     "wordDe": "Haar",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Haare",
-    "pluralEn": "hairs",
-    "imagePrompt": "Cartoon style, a girl with long, brown strands on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist mein Auge.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Augen",
-    "pluralEn": "eyes",
-    "imagePrompt": "Cartoon style, a single open eye looking forward, white background, for children's learning."
+    "pluralEn": "eyes"
   },
   {
     "exampleSentenceDe": "Das ist meine Nase.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Nasen",
-    "pluralEn": "noses",
-    "imagePrompt": "Cartoon pig snout on a white background, for children's learning."
+    "pluralEn": "noses"
   },
   {
     "exampleSentenceDe": "Das ist mein Mund.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Münder",
-    "pluralEn": "mouths",
-    "imagePrompt": "Open mouth smiling, cartoon style, white background, for children's learning."
+    "pluralEn": "mouths"
   },
   {
     "exampleSentenceDe": "Das ist mein Ohr.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Ohren",
-    "pluralEn": "ears",
-    "imagePrompt": "Cartoon ear, simple drawing, white background, for children's learning."
+    "pluralEn": "ears"
   },
   {
     "exampleSentenceDe": "Das ist meine Wange.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wangen",
-    "pluralEn": "cheeks",
-    "imagePrompt": "Cartoon style close-up of a smiling face, pointing to one red cheek, white background, for children's learning."
+    "pluralEn": "cheeks"
   },
   {
     "exampleSentenceDe": "Das ist mein Kinn.",
@@ -100,21 +93,19 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Kinne",
-    "pluralEn": "chins",
-    "imagePrompt": "Cartoon face showing a smiling child pointing to their chin, white background, for children's learning."
+    "pluralEn": "chins"
   },
   {
     "exampleSentenceDe": "Das ist mein Hals.",
     "exampleSentenceEn": "This is my neck.",
     "id": "body_parts_hals_09",
-    "ipa": "hals",
+    "ipa": "/hals/",
     "wordDe": "Hals",
     "wordEn": "neck",
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Hälse",
-    "pluralEn": "necks",
-    "imagePrompt": "Cartoon drawing of a child pointing to their own neck, white background, for children's learning."
+    "pluralEn": "necks"
   },
   {
     "exampleSentenceDe": "Das ist meine Schulter.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schultern",
-    "pluralEn": "shoulders",
-    "imagePrompt": "Cartoon person pointing to their own shoulder, white background, for children's learning."
+    "pluralEn": "shoulders"
   },
   {
     "exampleSentenceDe": "Das ist mein Arm.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Arme",
-    "pluralEn": "arms",
-    "imagePrompt": "Cartoon arm reaching up, white background, for children's learning."
+    "pluralEn": "arms"
   },
   {
     "exampleSentenceDe": "Das ist meine Hand.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Hände",
-    "pluralEn": "hands",
-    "imagePrompt": "Cartoon style, a child's open hand waving, white background, for children's learning."
+    "pluralEn": "hands"
   },
   {
     "exampleSentenceDe": "Das ist mein Finger.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Finger",
-    "pluralEn": "fingers",
-    "imagePrompt": "Cartoon style, one hand pointing with a finger, white background, for children's learning."
+    "pluralEn": "fingers"
   },
   {
     "exampleSentenceDe": "Das ist mein Bauch.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bäuche",
-    "pluralEn": "bellies",
-    "imagePrompt": "Cartoon style, happy smiling child pointing to their tummy, white background, for children's learning."
+    "pluralEn": "bellies"
   },
   {
     "exampleSentenceDe": "Das ist mein Bein.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Beine",
-    "pluralEn": "legs",
-    "imagePrompt": "Cartoon style leg, white background, for children's learning."
+    "pluralEn": "legs"
   },
   {
     "exampleSentenceDe": "Das ist mein Fuß.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Füße",
-    "pluralEn": "feet",
-    "imagePrompt": "Cartoon foot with five toes, white background, for children's learning."
+    "pluralEn": "feet"
   },
   {
     "exampleSentenceDe": "Das ist meine Zehe.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Zehen",
-    "pluralEn": "toes",
-    "imagePrompt": "Cartoon style, one big toe with a smiling face, white background, for children's learning."
+    "pluralEn": "toes"
   },
   {
     "exampleSentenceDe": "Ich bin groß.",
@@ -230,8 +213,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Tall giraffe reaching for leaves, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bin klein.",
@@ -243,8 +225,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Tiny ant next to a big strawberry, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe zwei Augen.",
@@ -256,12 +237,11 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Two cute cartoon cats, white background, for children's learning."
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Ich habe einen Mund.",
-    "exampleSentenceEn": "I have one mouth.",
+    "exampleSentenceDe": "Das ist die Zahl eins.",
+    "exampleSentenceEn": "This is the number one.",
     "id": "body_parts_eins_21",
     "ipa": "ʔaɪ̯ns",
     "wordDe": "eins",
@@ -269,8 +249,7 @@
     "wordType": "number",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a single red apple, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich bewege meinen Kopf.",
@@ -282,8 +261,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl moving her arms, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich sehe mit meinen Augen.",
@@ -295,8 +273,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon eye looking with sparkles, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich höre mit meinen Ohren.",
@@ -308,8 +285,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon girl listening to music with headphones, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich rieche mit meiner Nase.",
@@ -321,12 +297,11 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl smelling a flower with her nose, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Meine Haare sind blond.",
-    "exampleSentenceEn": "My hairs are blond.",
+    "exampleSentenceEn": "My hair is blond.",
     "id": "body_parts_blond_26",
     "ipa": "blɔnt",
     "wordDe": "blond",
@@ -334,12 +309,11 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl with yellow hair, smiling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Meine Haare sind braun.",
-    "exampleSentenceEn": "My hairs are brown.",
+    "exampleSentenceEn": "My hair is brown.",
     "id": "body_parts_braun_27",
     "ipa": "bʁaʊ̯n",
     "wordDe": "braun",
@@ -347,8 +321,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"A brown teddy bear, cartoon style, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Mein Kopf tut weh.",
@@ -360,8 +333,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a sad child holding their head, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe eine Zunge.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Zungen",
-    "pluralEn": "tongues",
-    "imagePrompt": "Cartoon style drawing of a happy kid sticking out their tongue, white background, for children's learning."
+    "pluralEn": "tongues"
   },
   {
     "exampleSentenceDe": "Ich habe Zähne.",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Zähne",
-    "pluralEn": "teeth",
-    "imagePrompt": "Cartoon tooth smiling, white background, for children's learning."
+    "pluralEn": "teeth"
   },
   {
     "exampleSentenceDe": "Mein Herz ist rot.",
@@ -399,8 +369,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Herzen",
-    "pluralEn": "hearts",
-    "imagePrompt": "Cartoon style red heart shape on a white background, for children's learning."
+    "pluralEn": "hearts"
   },
   {
     "exampleSentenceDe": "Mein Rücken ist stark.",
@@ -412,8 +381,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Rücken",
-    "pluralEn": "backs",
-    "imagePrompt": "Cartoon-style child showing their back, white background, for children's learning."
+    "pluralEn": "backs"
   },
   {
     "exampleSentenceDe": "Ich sitze auf meinem Po.",
@@ -425,8 +393,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pos",
-    "pluralEn": "bottoms",
-    "imagePrompt": "Cartoon of a smiling kid sitting, white background, for children's learning."
+    "pluralEn": "bottoms"
   },
   {
     "exampleSentenceDe": "Das Blut ist rot.",
@@ -437,9 +404,8 @@
     "wordEn": "blood",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "Blute",
-    "pluralEn": "bloods",
-    "imagePrompt": "Cartoon style, a single red droplet on a white background, for children's learning."
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich fühle mit meiner Haut.",
@@ -451,8 +417,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Häute",
-    "pluralEn": "skins",
-    "imagePrompt": "Cartoon style arm and hand touching a fluffy cloud, white background, for children's learning."
+    "pluralEn": "skins"
   },
   {
     "exampleSentenceDe": "Das Skelett hat Knochen.",
@@ -464,8 +429,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Knochen",
-    "pluralEn": "bones",
-    "imagePrompt": "Cartoon dog chewing on a bone, white background, for children's learning."
+    "pluralEn": "bones"
   },
   {
     "exampleSentenceDe": "Die Muskeln sind stark.",
@@ -477,8 +441,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Muskeln",
-    "pluralEn": "muscles",
-    "imagePrompt": "Cartoon flexing arm, strong, white background, for children's learning."
+    "pluralEn": "muscles"
   },
   {
     "exampleSentenceDe": "Ich bin gesund.",
@@ -490,8 +453,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, smiling child eating an apple, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kann laufen.",
@@ -503,8 +465,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon person walking happily, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Baby hat einen Nabel.",
@@ -516,8 +477,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Nabel",
-    "pluralEn": "navels",
-    "imagePrompt": "Cartoon baby tummy with a circle in the middle, white background, for children's learning."
+    "pluralEn": "navels"
   },
   {
     "exampleSentenceDe": "Die Stirn ist oben.",
@@ -529,8 +489,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Stirnen",
-    "pluralEn": "foreheads",
-    "imagePrompt": "Cartoon face pointing to its own forehead, white background, for children's learning."
+    "pluralEn": "foreheads"
   },
   {
     "exampleSentenceDe": "Die Lippe ist rot.",
@@ -542,8 +501,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Lippen",
-    "pluralEn": "lips",
-    "imagePrompt": "Cartoon style, red lips smiling, white background, for children's learning."
+    "pluralEn": "lips"
   },
   {
     "exampleSentenceDe": "Ich kann kauen.",
@@ -555,8 +513,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon dog happily eating a bone, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich kann gähnen.",
@@ -568,8 +525,7 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a sleepy bear yawning, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Baby hat ein Gesicht.",
@@ -581,8 +537,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Gesichter",
-    "pluralEn": "faces",
-    "imagePrompt": "Cartoon face with big smile, white background, for children's learning."
+    "pluralEn": "faces"
   },
   {
     "exampleSentenceDe": "Ich kann nicken.",
@@ -594,7 +549,6 @@
     "wordType": "verb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon girl nodding her head, white background, for children's learning."
+    "pluralEn": null
   }
 ]

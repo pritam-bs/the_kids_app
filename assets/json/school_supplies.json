@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bleistifte",
-    "pluralEn": "pencils",
-    "imagePrompt": "\"Cartoon style, yellow pencil, sharp point, white background, for children's learning.\""
+    "pluralEn": "pencils"
   },
   {
     "exampleSentenceDe": "Ich habe einen Radiergummi.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Radiergummis",
-    "pluralEn": "erasers",
-    "imagePrompt": "Pink eraser removing a pencil mark, cartoon style, white background, for children's learning."
+    "pluralEn": "erasers"
   },
   {
     "exampleSentenceDe": "Das Lineal ist lang.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Lineale",
-    "pluralEn": "rulers",
-    "imagePrompt": "Cartoon ruler with clear markings, white background, for children's learning."
+    "pluralEn": "rulers"
   },
   {
     "exampleSentenceDe": "Ich schreibe mit einem Stift.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Stifte",
-    "pluralEn": "pens",
-    "imagePrompt": "\"Cartoon drawing of a blue pen, white background, for children's learning.\""
+    "pluralEn": "pens"
   },
   {
     "exampleSentenceDe": "Die Schere schneidet Papier.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Scheren",
-    "pluralEn": "scissors",
-    "imagePrompt": "Cartoon scissors cutting a paper, white background, for children's learning."
+    "pluralEn": "scissors"
   },
   {
     "exampleSentenceDe": "Ich habe einen Klebestift.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Klebestifte",
-    "pluralEn": "glue sticks",
-    "imagePrompt": "Cartoon style, purple glue stick, white background, for children's learning."
+    "pluralEn": "glue sticks"
   },
   {
     "exampleSentenceDe": "Das Papier ist weiß.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Papiere",
-    "pluralEn": "papers",
-    "imagePrompt": "Cartoon style, sheet of white paper, simple, white background, for children's learning."
+    "pluralEn": "papers"
   },
   {
     "exampleSentenceDe": "Ich male mit Buntstiften.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Buntstifte",
-    "pluralEn": "colored pencils",
-    "imagePrompt": "Cartoon style colored pencil, rainbow colors, white background, for children's learning."
+    "pluralEn": "colored pencils"
   },
   {
     "exampleSentenceDe": "Ich habe eine Mappe für meine Blätter.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Mappen",
-    "pluralEn": "folders",
-    "imagePrompt": "A red folder with a smiling face, cartoon style, white background, for children's learning."
+    "pluralEn": "folders"
   },
   {
     "exampleSentenceDe": "Meine Schultasche ist blau.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schultaschen",
-    "pluralEn": "school bags",
-    "imagePrompt": "Cartoon school bag with books, white background, for children's learning."
+    "pluralEn": "school bags"
   },
   {
     "exampleSentenceDe": "Ich brauche einen Spitzer.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Spitzer",
-    "pluralEn": "pencil sharpeners",
-    "imagePrompt": "A blue pencil sharpener sharpening a yellow pencil, cartoon style, white background, for children's learning."
+    "pluralEn": "pencil sharpeners"
   },
   {
     "exampleSentenceDe": "Wir benutzen ein Heft.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Hefte",
-    "pluralEn": "notebooks",
-    "imagePrompt": "\"Cartoon style, open spiral notebook with lined pages, white background, for children's learning.\""
+    "pluralEn": "notebooks"
   },
   {
     "exampleSentenceDe": "Ich mag meine Federtasche.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Federtaschen",
-    "pluralEn": "pencil cases",
-    "imagePrompt": "Cartoon style, zippered bag holding pencils, white background, for children's learning."
+    "pluralEn": "pencil cases"
   },
   {
     "exampleSentenceDe": "Die Kreide ist für die Tafel.",
@@ -178,12 +165,11 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kreiden",
-    "pluralEn": "chalks",
-    "imagePrompt": "Colorful chalk sticks in a box, cartoon style, white background, for children's learning."
+    "pluralEn": "chalks"
   },
   {
-    "exampleSentenceDe": "Das Buch ist sehr interessant.",
-    "exampleSentenceEn": "The book is very interesting.",
+    "exampleSentenceDe": "Ich lese ein Buch.",
+    "exampleSentenceEn": "I am reading a book.",
     "id": "school_supplies_buch_15",
     "ipa": "buːχ",
     "wordDe": "Buch",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Bücher",
-    "pluralEn": "books",
-    "imagePrompt": "Open, colorful storybook with pictures, cartoon style, white background, for children's learning."
+    "pluralEn": "books"
   },
   {
     "exampleSentenceDe": "Ich brauche einen Marker.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Marker",
-    "pluralEn": "markers",
-    "imagePrompt": "\"Colorful drawing pen, cartoon style, white background, for children's learning\""
+    "pluralEn": "markers"
   },
   {
     "exampleSentenceDe": "Die Büroklammer hält das Papier zusammen.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Büroklammern",
-    "pluralEn": "paper clips",
-    "imagePrompt": "\"Cartoon metal clip holding two pieces of paper, white background, for children's learning\""
+    "pluralEn": "paper clips"
   },
   {
     "exampleSentenceDe": "Ich habe einen Ordner.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Ordner",
-    "pluralEn": "binders",
-    "imagePrompt": "Blue ring binder, cartoon style, white background, for children's learning."
+    "pluralEn": "binders"
   },
   {
     "exampleSentenceDe": "Ich benutze ein Geodreieck",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Geodreiecke",
-    "pluralEn": "set squares",
-    "imagePrompt": "Cartoon drawing of a colorful triangle ruler, white background, for children's learning."
+    "pluralEn": "set squares"
   },
   {
     "exampleSentenceDe": "Die Tafel ist grün.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Tafeln",
-    "pluralEn": "blackboards",
-    "imagePrompt": "Green chalkboard with white chalk writing, cartoon style, white background, for children's learning."
+    "pluralEn": "blackboards"
   },
   {
     "exampleSentenceDe": "Ich brauche einen Pinsel zum Malen.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pinsel",
-    "pluralEn": "brushes",
-    "imagePrompt": "Cartoon style, paintbrush with colorful paint, white background, for children's learning."
+    "pluralEn": "brushes"
   },
   {
     "exampleSentenceDe": "Ich habe Wasserfarben.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wasserfarben",
-    "pluralEn": "watercolors",
-    "imagePrompt": "Colorful paint palette with brush, cartoon style, white background, for children's learning."
+    "pluralEn": "watercolors"
   },
   {
     "exampleSentenceDe": "Ich brauche eine Palette für die Farben.",
@@ -295,8 +273,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Paletten",
-    "pluralEn": "palettes",
-    "imagePrompt": "Cartoon style artist's palette with colorful paint blobs, white background, for children's learning."
+    "pluralEn": "palettes"
   },
   {
     "exampleSentenceDe": "Ich benutze einen Schwamm.",
@@ -308,8 +285,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Schwämme",
-    "pluralEn": "sponges",
-    "imagePrompt": "Yellow cartoon sponge with bubbles, white background, for children's learning."
+    "pluralEn": "sponges"
   },
   {
     "exampleSentenceDe": "Ich habe Klebeband.",
@@ -321,21 +297,19 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Klebebänder",
-    "pluralEn": "adhesive tapes",
-    "imagePrompt": "Cartoon style roll of tan tape, white background, for children's learning."
+    "pluralEn": "adhesive tapes"
   },
   {
-    "exampleSentenceDe": "Ich lerne Vokabeln.",
-    "exampleSentenceEn": "I learn vocabulary.",
+    "exampleSentenceDe": "Ich lerne eine Vokabel.",
+    "exampleSentenceEn": "I learn a word.",
     "id": "school_supplies_vokabeln_26",
-    "ipa": "voˈkaːbl̩n",
-    "wordDe": "Vokabeln",
-    "wordEn": "vocabulary",
+    "ipa": "voˈkaːbl̩",
+    "wordDe": "Vokabel",
+    "wordEn": "word",
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Vokabeln",
-    "pluralEn": "vocabularies",
-    "imagePrompt": "Cartoon style, open book with colorful letters jumping out, white background, for children's learning."
+    "pluralEn": "words"
   },
   {
     "exampleSentenceDe": "Das ist ein Wörterbuch.",
@@ -347,7 +321,6 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Wörterbücher",
-    "pluralEn": "dictionaries",
-    "imagePrompt": "Cartoon style book with letters, on white background, for children's learning."
+    "pluralEn": "dictionaries"
   }
 ]

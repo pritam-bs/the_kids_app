@@ -9,8 +9,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon arrow pointing left, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Ampel ist rechts.",
@@ -22,8 +21,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style sign with a big arrow pointing right, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Geh geradeaus bis zur Schule.",
@@ -35,8 +33,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon arrow pointing directly forward on white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Bäckerei ist um die Ecke.",
@@ -45,11 +42,10 @@
     "ipa": "ʊm diː ˈʔɛkə",
     "wordDe": "um die Ecke",
     "wordEn": "around the corner",
-    "wordType": "preposition",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: A yellow bakery with a red awning, seen peeking from behind a building corner, on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir gehen zurück zum Haus.",
@@ -61,8 +57,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon car driving away from a house, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Museum ist in der Nähe.",
@@ -71,11 +66,10 @@
     "ipa": "ɪn deːɐ̯ ˈnɛːə",
     "wordDe": "in der Nähe",
     "wordEn": "nearby",
-    "wordType": "preposition",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon house with a park close, sunny day, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Fluss ist weit weg.",
@@ -87,8 +81,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a tiny house far away from a big sun, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir laufen den Weg entlang.",
@@ -100,8 +93,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, people walking on a path, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Katze geht nach oben.",
@@ -113,8 +105,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat walking up a staircase, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Treppe führt nach unten.",
@@ -126,8 +117,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image: Arrow pointing downwards on stairs, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir gehen über die Brücke.",
@@ -139,8 +129,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style: A happy kid walking over a colorful bridge, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Haus ist gegenüber vom Park.",
@@ -152,8 +141,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style. Two houses facing each other across a road, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir gehen durch den Tunnel.",
@@ -165,8 +153,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon train going through a tunnel, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Katze springt auf den Stuhl.",
@@ -178,8 +165,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat jumping onto a blue chair, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir gehen die Straße hinauf.",
@@ -191,8 +177,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Arrow pointing upwards on a road, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Er kommt die Treppe herunter.",
@@ -204,8 +189,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon cat walking down stairs, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Weg führt zum See.",
@@ -217,8 +201,7 @@
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon path leading to a bright blue lake, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir gehen am Fluss entlang.",
@@ -226,12 +209,11 @@
     "id": "directions_am_18",
     "ipa": "am",
     "wordDe": "am",
-    "wordEn": "by/at (the)",
+    "wordEn": "at the",
     "wordType": "preposition",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image for children's learning: People walking near water, white background."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Schule ist nördlich vom Park.",
@@ -243,8 +225,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon compass pointing upwards, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Meer ist südlich von uns.",
@@ -256,8 +237,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, arrow pointing down, simple map, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Frankreich ist westlich von Deutschland.",
@@ -269,8 +249,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style arrow pointing left, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Polen ist östlich von Deutschland.",
@@ -282,8 +261,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun rising, pointing arrow towards it, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Wir sind hier.",
@@ -295,8 +273,7 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style arrow pointing down at a smiling child standing on a star, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Geschäft ist dort.",
@@ -308,124 +285,114 @@
     "wordType": "adverb",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon arrow pointing at a shop, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Richtung ist wichtig.",
     "exampleSentenceEn": "The direction is important.",
     "id": "directions_dieRichtung_25",
     "ipa": "ˈʁɪçtʊŋ",
-    "wordDe": "die Richtung",
+    "wordDe": "Richtung",
     "wordEn": "direction",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Richtungen",
-    "pluralEn": "directions",
-    "imagePrompt": "Cartoon arrow pointing right, white background, for children's learning."
+    "pluralDe": "Richtungen",
+    "pluralEn": "directions"
   },
   {
     "exampleSentenceDe": "Der Weg ist lang.",
     "exampleSentenceEn": "The way is long.",
     "id": "directions_derWeg_26",
     "ipa": "veːk",
-    "wordDe": "der Weg",
+    "wordDe": "Weg",
     "wordEn": "way",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Wege",
-    "pluralEn": "ways",
-    "imagePrompt": "Cartoon style road winding up a green hill, white background, for children's learning."
+    "pluralDe": "Wege",
+    "pluralEn": "ways"
   },
   {
-    "exampleSentenceDe": "Die Ecke ist scharf.",
-    "exampleSentenceEn": "The corner is sharp.",
+    "exampleSentenceDe": "Geh um die Ecke.",
+    "exampleSentenceEn": "Go around the corner.",
     "id": "directions_dieEcke_27",
     "ipa": "ˈɛkə",
-    "wordDe": "die Ecke",
+    "wordDe": "Ecke",
     "wordEn": "corner",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Ecken",
-    "pluralEn": "corners",
-    "imagePrompt": "Cartoon style, a toy block forming a sharp corner, white background, for children's learning."
+    "pluralDe": "Ecken",
+    "pluralEn": "corners"
   },
   {
     "exampleSentenceDe": "Wir brauchen eine Karte.",
     "exampleSentenceEn": "We need a map.",
     "id": "directions_dieKarte_28",
     "ipa": "ˈkaʁtə",
-    "wordDe": "die Karte",
+    "wordDe": "Karte",
     "wordEn": "map",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Karten",
-    "pluralEn": "maps",
-    "imagePrompt": "Cartoon style map showing colorful land and blue ocean, white background, for children's learning."
+    "pluralDe": "Karten",
+    "pluralEn": "maps"
   },
   {
     "exampleSentenceDe": "Die Kreuzung ist gefährlich.",
     "exampleSentenceEn": "The intersection is dangerous.",
     "id": "directions_dieKreuzung_29",
     "ipa": "ˈkʁɔɪ̯t͡sʊŋ",
-    "wordDe": "die Kreuzung",
+    "wordDe": "Kreuzung",
     "wordEn": "intersection",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Kreuzungen",
-    "pluralEn": "intersections",
-    "imagePrompt": "\"Cartoon style road intersection with traffic light, white background, for children's learning\""
+    "pluralDe": "Kreuzungen",
+    "pluralEn": "intersections"
   },
   {
     "exampleSentenceDe": "Folge dem Schild!",
     "exampleSentenceEn": "Follow the sign!",
     "id": "directions_dasschild_30",
     "ipa": "ʃɪlt",
-    "wordDe": "das Schild",
+    "wordDe": "Schild",
     "wordEn": "sign",
     "wordType": "noun",
     "article": "das",
-    "pluralDe": "die Schilder",
-    "pluralEn": "signs",
-    "imagePrompt": "Cartoon style road sign with arrow, pointing right, white background, for children's learning."
+    "pluralDe": "Schilder",
+    "pluralEn": "signs"
   },
   {
     "exampleSentenceDe": "Der Kompass hilft uns.",
     "exampleSentenceEn": "The compass helps us.",
     "id": "directions_derKompass_31",
     "ipa": "ˈkɔmpas",
-    "wordDe": "der Kompass",
+    "wordDe": "Kompass",
     "wordEn": "compass",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Kompasse",
-    "pluralEn": "compasses",
-    "imagePrompt": "Cartoon compass with a red arrow, pointing north, white background, for children's learning."
+    "pluralDe": "Kompasse",
+    "pluralEn": "compasses"
   },
   {
     "exampleSentenceDe": "Wir sind im Kreis.",
     "exampleSentenceEn": "We are in a circle.",
     "id": "directions_derKreis_32",
     "ipa": "kʁaɪ̯s",
-    "wordDe": "der Kreis",
+    "wordDe": "Kreis",
     "wordEn": "circle",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Kreise",
-    "pluralEn": "circles",
-    "imagePrompt": "Cartoon style, a bright red circle, white background, for children's learning."
+    "pluralDe": "Kreise",
+    "pluralEn": "circles"
   },
   {
     "exampleSentenceDe": "Wir sind an der Küste.",
     "exampleSentenceEn": "We are on the coast.",
     "id": "directions_dieKueste_33",
     "ipa": "ˈkʏstə",
-    "wordDe": "die Küste",
+    "wordDe": "Küste",
     "wordEn": "coast",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Küsten",
-    "pluralEn": "coasts",
-    "imagePrompt": "Cartoon style beach with a blue sea and white sand, white background, for children's learning."
+    "pluralDe": "Küsten",
+    "pluralEn": "coasts"
   }
 ]

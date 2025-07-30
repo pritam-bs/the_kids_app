@@ -9,8 +9,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bälle",
-    "pluralEn": "balls",
-    "imagePrompt": "Cartoon style red and blue striped ball, white background, for children's learning."
+    "pluralEn": "balls"
   },
   {
     "exampleSentenceDe": "Die Puppe hat blonde Haare.",
@@ -22,8 +21,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Puppen",
-    "pluralEn": "dolls",
-    "imagePrompt": "Cartoon style doll with a dress, white background, for children's learning."
+    "pluralEn": "dolls"
   },
   {
     "exampleSentenceDe": "Das Auto fährt schnell.",
@@ -35,8 +33,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Autos",
-    "pluralEn": "cars",
-    "imagePrompt": "Red cartoon car driving, white background, for children's learning."
+    "pluralEn": "cars"
   },
   {
     "exampleSentenceDe": "Der Teddybär ist weich.",
@@ -48,8 +45,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Teddybären",
-    "pluralEn": "teddy bears",
-    "imagePrompt": "Cartoon style, brown teddy bear sitting, white background, for children's learning."
+    "pluralEn": "teddy bears"
   },
   {
     "exampleSentenceDe": "Der Zug fährt auf den Schienen.",
@@ -61,8 +57,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Züge",
-    "pluralEn": "trains",
-    "imagePrompt": "Cartoon style train with happy face on white background for children's learning."
+    "pluralEn": "trains"
   },
   {
     "exampleSentenceDe": "Das Spiel ist lustig.",
@@ -74,8 +69,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Spiele",
-    "pluralEn": "games",
-    "imagePrompt": "Cartoon style, kids playing a board game, white background, for children's learning."
+    "pluralEn": "games"
   },
   {
     "exampleSentenceDe": "Der Würfel hat sechs Seiten.",
@@ -87,8 +81,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Würfel",
-    "pluralEn": "dice",
-    "imagePrompt": "Cartoon style, white background: A single six-sided game cube with colorful dots, for children's learning."
+    "pluralEn": "dice"
   },
   {
     "exampleSentenceDe": "Ich mag mein Puzzle.",
@@ -100,8 +93,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Puzzles",
-    "pluralEn": "puzzles",
-    "imagePrompt": "Cartoon puzzle pieces fitting together, white background, for children's learning."
+    "pluralEn": "puzzles"
   },
   {
     "exampleSentenceDe": "Das Buch hat viele Bilder.",
@@ -113,8 +105,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Bücher",
-    "pluralEn": "books",
-    "imagePrompt": "Cartoon style, colorful open book, white background, for children's learning."
+    "pluralEn": "books"
   },
   {
     "exampleSentenceDe": "Der Drachen fliegt hoch.",
@@ -126,8 +117,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Drachen",
-    "pluralEn": "kites",
-    "imagePrompt": "Cartoon style kite flying high in the sky, white background, for children's learning."
+    "pluralEn": "kites"
   },
   {
     "exampleSentenceDe": "Ich habe ein neues Lego.",
@@ -139,8 +129,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Legos",
-    "pluralEn": "Legos",
-    "imagePrompt": "Colorful building blocks stacked high, cartoon style, white background, for children's learning."
+    "pluralEn": "Legos"
   },
   {
     "exampleSentenceDe": "Die Murmel ist klein.",
@@ -152,8 +141,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Murmeln",
-    "pluralEn": "marbles",
-    "imagePrompt": "Colorful glass ball with swirls, cartoon style, white background, for children's learning."
+    "pluralEn": "marbles"
   },
   {
     "exampleSentenceDe": "Das Schaukelpferd steht im Garten.",
@@ -165,8 +153,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Schaukelpferde",
-    "pluralEn": "rocking horses",
-    "imagePrompt": "Cartoon horse rocking back and forth, white background, for children's learning."
+    "pluralEn": "rocking horses"
   },
   {
     "exampleSentenceDe": "Ich spiele mit dem Baukasten.",
@@ -178,8 +165,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Baukästen",
-    "pluralEn": "building blocks",
-    "imagePrompt": "Colorful blocks stacked high, cartoon style, white background, for children's learning."
+    "pluralEn": "building blocks"
   },
   {
     "exampleSentenceDe": "Ich habe ein rotes Spielzeug.",
@@ -191,8 +177,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Spielzeuge",
-    "pluralEn": "toys",
-    "imagePrompt": "A red toy car on a white background, cartoon style, for children's learning."
+    "pluralEn": "toys"
   },
   {
     "exampleSentenceDe": "Der Roboter kann laufen.",
@@ -204,8 +189,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Roboter",
-    "pluralEn": "robots",
-    "imagePrompt": "A friendly robot waving, cartoon style, white background, for children's learning."
+    "pluralEn": "robots"
   },
   {
     "exampleSentenceDe": "Die Trommel macht Lärm.",
@@ -217,8 +201,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Trommeln",
-    "pluralEn": "drums",
-    "imagePrompt": "Cartoon drum with sticks, white background, for children's learning."
+    "pluralEn": "drums"
   },
   {
     "exampleSentenceDe": "Ich male mit Wachsmalstiften.",
@@ -230,8 +213,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Wachsmalstifte",
-    "pluralEn": "crayons",
-    "imagePrompt": "Colorful crayon drawing a smiling sun, cartoon style, white background, for children's learning."
+    "pluralEn": "crayons"
   },
   {
     "exampleSentenceDe": "Das Kartenspiel ist spannend.",
@@ -243,8 +225,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Kartenspiele",
-    "pluralEn": "card games",
-    "imagePrompt": "A happy group playing cards, cartoon style, white background, for children's learning."
+    "pluralEn": "card games"
   },
   {
     "exampleSentenceDe": "Ich spiele gerne Fangen.",
@@ -256,8 +237,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Kids playing tag in a park, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Kreide ist bunt.",
@@ -269,8 +249,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Kreiden",
-    "pluralEn": "chalks",
-    "imagePrompt": "Cartoon style drawing of colorful chalk sticks, white background, for children's learning."
+    "pluralEn": "chalks"
   },
   {
     "exampleSentenceDe": "Das Stofftier ist flauschig.",
@@ -282,8 +261,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Stofftiere",
-    "pluralEn": "stuffed animals",
-    "imagePrompt": "Cartoon style, fluffy teddy bear sitting, white background, for children's learning."
+    "pluralEn": "stuffed animals"
   },
   {
     "exampleSentenceDe": "Ich habe ein ferngesteuertes Auto.",
@@ -292,24 +270,22 @@
     "ipa": "ˈfɛʁnɡəˌʃtɔɪ̯əʁtəs ˈaʊ̯toː",
     "wordDe": "ferngesteuertes Auto",
     "wordEn": "remote-controlled car",
-    "wordType": "noun",
-    "article": "das",
-    "pluralDe": "ferngesteuerte Autos",
-    "pluralEn": "remote-controlled cars",
-    "imagePrompt": "Cartoon style, red toy car controlled by a small remote, white background, for children's learning."
+    "wordType": "phrase",
+    "article": null,
+    "pluralDe": null,
+    "pluralEn": null
   },
   {
-    "exampleSentenceDe": "Das Puzzle ist schwer.",
-    "exampleSentenceEn": "The puzzle is difficult.",
+    "exampleSentenceDe": "Ich spiele gern mit dem Legespiel.",
+    "exampleSentenceEn": "I like to play with the jigsaw puzzle.",
     "id": "toys_jigsawpuzzle_24",
-    "ipa": "ˈlɛɡəˌʃpiːl",
+    "ipa": "ˈleːɡəˌʃpiːl",
     "wordDe": "Legespiel",
     "wordEn": "jigsaw puzzle",
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Legespiele",
-    "pluralEn": "jigsaw puzzles",
-    "imagePrompt": "Cartoon style jigsaw puzzle with colorful pieces on a white background, for children's learning."
+    "pluralEn": "jigsaw puzzles"
   },
   {
     "exampleSentenceDe": "Die Rutsche ist im Garten.",
@@ -321,8 +297,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Rutschen",
-    "pluralEn": "slides",
-    "imagePrompt": "Cartoon style slide in a playground, white background, for children's learning."
+    "pluralEn": "slides"
   },
   {
     "exampleSentenceDe": "Ich baue ein Haus mit Blöcken.",
@@ -334,8 +309,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Blöcke",
-    "pluralEn": "blocks",
-    "imagePrompt": "Cartoon building blocks stacked, white background, for children's learning."
+    "pluralEn": "blocks"
   },
   {
     "exampleSentenceDe": "Die Schere ist scharf.",
@@ -347,8 +321,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Scheren",
-    "pluralEn": "scissors",
-    "imagePrompt": "Cartoon scissors cutting a dotted line, white background, for children's learning."
+    "pluralEn": "scissors"
   },
   {
     "exampleSentenceDe": "Der Kleber klebt gut.",
@@ -359,9 +332,8 @@
     "wordEn": "glue",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style glue bottle smiling, white background, for children's learning."
+    "pluralDe": "Kleber",
+    "pluralEn": "glues"
   },
   {
     "exampleSentenceDe": "Ich male mit Pinseln.",
@@ -373,8 +345,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Pinsel",
-    "pluralEn": "brushes",
-    "imagePrompt": "Cartoon painting brush with colorful paint, white background, for children's learning."
+    "pluralEn": "brushes"
   },
   {
     "exampleSentenceDe": "Ich spiele mit Knete.",
@@ -386,8 +357,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Colorful playdough shapes, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Malbuch ist toll.",
@@ -399,21 +369,19 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Malbücher",
-    "pluralEn": "coloring books",
-    "imagePrompt": "Open coloring book with crayons, cartoon style, white background, for children's learning."
+    "pluralEn": "coloring books"
   },
   {
-    "exampleSentenceDe": "Ich spiele Cowboy und Indianer.",
-    "exampleSentenceEn": "I play cowboy and Indian.",
+    "exampleSentenceDe": "Das ist mein Cowboy.",
+    "exampleSentenceEn": "This is my cowboy.",
     "id": "toys_playcowboy_32",
-    "ipa": "ˈkaʊ̯bɔɪ̯ ʊnt ɪnˈdi̯aːnɐ",
+    "ipa": "ˈkaʊ̯bɔɪ̯",
     "wordDe": "Cowboy",
     "wordEn": "cowboy",
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Cowboys",
-    "pluralEn": "cowboys",
-    "imagePrompt": "Cartoon cowboy riding a horse, white background, for children's learning."
+    "pluralEn": "cowboys"
   },
   {
     "exampleSentenceDe": "Ich verkleide mich als Pirat.",
@@ -425,8 +393,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Piraten",
-    "pluralEn": "pirates",
-    "imagePrompt": "Cartoon pirate with eye patch and treasure chest, white background, for children's learning."
+    "pluralEn": "pirates"
   },
   {
     "exampleSentenceDe": "Das Karussell dreht sich.",
@@ -438,8 +405,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Karussells",
-    "pluralEn": "carousels",
-    "imagePrompt": "\"Cartoon style carousel with horses, brightly colored, white background, for children's learning\""
+    "pluralEn": "carousels"
   },
   {
     "exampleSentenceDe": "Die Wippe macht Spaß.",
@@ -451,8 +417,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Wippen",
-    "pluralEn": "seesaws",
-    "imagePrompt": "Two kids on a seesaw, cartoon style, white background, for children's learning."
+    "pluralEn": "seesaws"
   },
   {
     "exampleSentenceDe": "Ich spiele mit dem Jo-Jo.",
@@ -464,8 +429,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Jo-Jos",
-    "pluralEn": "yo-yos",
-    "imagePrompt": "A red and blue yo-yo spinning, cartoon style, white background, for children's learning."
+    "pluralEn": "yo-yos"
   },
   {
     "exampleSentenceDe": "Ich spiele Verstecken.",
@@ -474,11 +438,10 @@
     "ipa": "fɛɐ̯ˈʃtɛkən",
     "wordDe": "Verstecken",
     "wordEn": "hide and seek",
-    "wordType": "noun",
-    "article": "das",
+    "wordType": "phrase",
+    "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon children playing hide-and-seek, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Ich habe ein kleines Tier.",
@@ -490,8 +453,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Tiere",
-    "pluralEn": "animals",
-    "imagePrompt": "Cartoon style, diverse animals, happy faces, white background, for children's learning."
+    "pluralEn": "animals"
   },
   {
     "exampleSentenceDe": "Der Dino ist groß.",
@@ -503,8 +465,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Dinos",
-    "pluralEn": "dinos",
-    "imagePrompt": "Friendly green dinosaur smiling, cartoon style, white background, for children's learning."
+    "pluralEn": "dinos"
   },
   {
     "exampleSentenceDe": "Ich brauche eine Schaufel.",
@@ -516,8 +477,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schaufeln",
-    "pluralEn": "shovels",
-    "imagePrompt": "Cartoon style, a red digging tool on a white background, for children's learning."
+    "pluralEn": "shovels"
   },
   {
     "exampleSentenceDe": "Ich brauche einen Eimer.",
@@ -529,8 +489,7 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Eimer",
-    "pluralEn": "buckets",
-    "imagePrompt": "Cartoon style, a bright blue bucket, white background, for children's learning."
+    "pluralEn": "buckets"
   },
   {
     "exampleSentenceDe": "Ich mag Seifenblasen.",
@@ -542,8 +501,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Seifenblasen",
-    "pluralEn": "bubbles",
-    "imagePrompt": "Cartoon style, a single iridescent bubble floating, white background, for children's learning."
+    "pluralEn": "bubbles"
   },
   {
     "exampleSentenceDe": "Das ist meine Schleuder.",
@@ -555,21 +513,19 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Schleudern",
-    "pluralEn": "slingshots",
-    "imagePrompt": "Cartoon style slingshot with a rock, white background, for children's learning."
+    "pluralEn": "slingshots"
   },
   {
-    "exampleSentenceDe": "Ich spiele mit Bauklötzen.",
-    "exampleSentenceEn": "I play with building bricks.",
+    "exampleSentenceDe": "Das ist ein Bauklotz.",
+    "exampleSentenceEn": "This is a building brick.",
     "id": "toys_buildingbricks_44",
-    "ipa": "ˈbaʊ̯ˌklœtsə",
+    "ipa": "ˈbaʊ̯klɔt͡s",
     "wordDe": "Bauklotz",
     "wordEn": "building brick",
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Bauklötze",
-    "pluralEn": "building bricks",
-    "imagePrompt": "Colorful building blocks stacked high, cartoon style, white background, for children's learning."
+    "pluralEn": "building bricks"
   },
   {
     "exampleSentenceDe": "Ich habe eine Spielküche.",
@@ -581,8 +537,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Spielküchen",
-    "pluralEn": "toy kitchens",
-    "imagePrompt": "Cartoon-style kitchen set with colorful pots and pans, white background, for children's learning."
+    "pluralEn": "toy kitchens"
   },
   {
     "exampleSentenceDe": "Die Eisenbahn fährt schnell.",
@@ -594,8 +549,7 @@
     "wordType": "noun",
     "article": "die",
     "pluralDe": "Eisenbahnen",
-    "pluralEn": "model trains",
-    "imagePrompt": "Cartoon style toy train on tracks, white background, for children's learning."
+    "pluralEn": "model trains"
   },
   {
     "exampleSentenceDe": "Ich mag das Brettspiel.",
@@ -607,8 +561,7 @@
     "wordType": "noun",
     "article": "das",
     "pluralDe": "Brettspiele",
-    "pluralEn": "board games",
-    "imagePrompt": "\"Happy children playing a colorful board game, cartoon style, white background, for children's learning\""
+    "pluralEn": "board games"
   },
   {
     "exampleSentenceDe": "Ich fahre mit dem Roller.",
@@ -620,7 +573,6 @@
     "wordType": "noun",
     "article": "der",
     "pluralDe": "Roller",
-    "pluralEn": "scooters",
-    "imagePrompt": "A kid riding a blue scooter, cartoon style, white background, for children's learning."
+    "pluralEn": "scooters"
   }
 ]

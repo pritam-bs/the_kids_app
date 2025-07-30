@@ -9,8 +9,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very round cartoon elephant, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Stock ist dünn.",
@@ -22,8 +21,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very thin stick, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Sonne ist heiß.",
@@ -35,21 +33,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling, radiating bright light, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Eis ist kalt.",
     "exampleSentenceEn": "The ice cream is cold.",
     "id": "adjectives_opposites_heiss_kalt_02",
-    "ipa": "kalt",
+    "ipa": "/kalt/",
     "wordDe": "kalt",
     "wordEn": "cold",
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style ice cream cone shivering on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Hase ist schnell.",
@@ -61,8 +57,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very fast cartoon rabbit running, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Schnecke ist langsam.",
@@ -74,8 +69,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon snail slowly crawling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Turm ist hoch.",
@@ -87,8 +81,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, tall building reaching high, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Stuhl ist niedrig.",
@@ -100,8 +93,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very short chair, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Haus ist groß.",
@@ -113,8 +105,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Big cartoon elephant next to a small mouse, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Maus ist klein.",
@@ -126,8 +117,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Tiny mouse next to a large elephant, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Tag ist hell.",
@@ -139,8 +129,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun shining brightly, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Nacht ist dunkel.",
@@ -152,8 +141,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon style, very dark blue night sky with a small, sleeping cartoon moon, white background, for children's learning.\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Löwe ist stark.",
@@ -165,8 +153,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon lion lifting a heavy weight, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Kätzchen ist schwach.",
@@ -178,8 +165,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Tiny, cartoon-style kitten wobbling, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Aufgabe ist einfach.",
@@ -191,8 +177,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a smiling child easily solving a simple puzzle, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Rätsel ist schwierig.",
@@ -204,8 +189,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, white background: A child looking confused at a tangled ball of yarn, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Ball ist hart.",
@@ -217,8 +201,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, very hard rock, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Kissen ist weich.",
@@ -230,8 +213,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Fluffy white cartoon sheep resting on a cloud, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Glas ist voll.",
@@ -243,8 +225,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon glass overflowing with juice, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Flasche ist leer.",
@@ -256,8 +237,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, empty glass bottle, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Tag ist neu.",
@@ -269,8 +249,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a bright, shiny sun rising, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Auto ist alt.",
@@ -282,8 +261,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A rusty, broken-down car, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Weg ist breit.",
@@ -295,8 +273,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Very wide road with two cars, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Straße ist schmal.",
@@ -308,8 +285,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very narrow road with a small car, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Faden ist lang.",
@@ -321,8 +297,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A very long, colorful worm crawling, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Bleistift ist kurz.",
@@ -334,8 +309,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of a very short pencil next to a tall pencil, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Suppe ist heiß.",
@@ -347,21 +321,19 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, steaming bowl of soup, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Saft ist kalt.",
     "exampleSentenceEn": "The juice is cold.",
     "id": "adjectives_opposites_heiss_kalt_04",
-    "ipa": "kalt",
+    "ipa": "[kalt]",
     "wordDe": "kalt",
     "wordEn": "cold",
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a shivering snowman holding an ice cube, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Tag ist laut.",
@@ -373,8 +345,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a child shouting into a megaphone, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Maus ist leise.",
@@ -386,8 +357,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon mouse tiptoeing, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Junge ist sauber.",
@@ -399,8 +369,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling boy with clean face, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Schwein ist schmutzig.",
@@ -412,8 +381,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A muddy pig rolling in dirt, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Antwort ist richtig.",
@@ -425,8 +393,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, green check mark next to a happy smiling sun, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Antwort ist falsch.",
@@ -438,8 +405,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, red X mark next to a simple math problem, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Messer ist scharf.",
@@ -451,8 +417,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, very sharp knife cutting a tomato, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Messer ist stumpf.",
@@ -464,8 +429,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, dull kitchen knife on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist billig.",
@@ -477,8 +441,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, very low price tag on a simple red apple, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist teuer.",
@@ -490,8 +453,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon-style diamond ring on a velvet cushion, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Tag ist einfach.",
@@ -503,8 +465,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A single, easy-to-draw flower, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Maschine ist kompliziert.",
@@ -516,8 +477,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A robot with tangled wires, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist gut.",
@@ -529,8 +489,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling child giving a thumbs up, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das ist schlecht.",
@@ -542,8 +501,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, wilted flower looking sad, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Hund ist brav.",
@@ -555,8 +513,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A happy dog sitting calmly, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Kind ist unartig.",
@@ -568,8 +525,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A child playfully drawing on a wall with crayons, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Tag ist sonnig.",
@@ -581,8 +537,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon sun smiling brightly, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist wolkig.",
@@ -594,8 +549,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style image of fluffy white clouds covering a blue sky, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Junge ist fröhlich.",
@@ -607,8 +561,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Smiling boy jumping, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Mädchen ist traurig.",
@@ -620,8 +573,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A little girl crying, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Löwe ist wild.",
@@ -633,8 +585,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a roaring lion with messy mane, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Katze ist zahm.",
@@ -646,7 +597,6 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Friendly cat being gently petted, cartoon style, white background, for children's learning."
+    "pluralEn": null
   }
 ]

@@ -9,8 +9,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A red apple, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Himmel ist blau.",
@@ -22,8 +21,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A bluebird flying in a bright sky, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Banane ist gelb.",
@@ -35,8 +33,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, a bright yellow banana on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Gras ist grün.",
@@ -48,8 +45,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A green apple on a white background, cartoon style, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Wolke ist weiß.",
@@ -61,8 +57,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A fluffy white cloud, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Katze ist schwarz.",
@@ -74,8 +69,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A black cat sitting, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Haus ist braun.",
@@ -87,8 +81,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A brown teddy bear sitting, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Die Blume ist lila.",
@@ -100,8 +93,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A purple flower, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Schwein ist rosa.",
@@ -113,21 +105,19 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Pink pig cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Kürbis ist orange.",
     "exampleSentenceEn": "The pumpkin is orange.",
     "id": "colors_orange_10",
-    "ipa": "oˈʁɑ̃ːʒə",
+    "ipa": "oˈʁaŋʒə",
     "wordDe": "orange",
     "wordEn": "orange",
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, orange colored circle on a white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Bleistift ist grau.",
@@ -139,21 +129,19 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A gray elephant, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Herz ist gold.",
     "exampleSentenceEn": "The heart is gold.",
     "id": "colors_gold_12",
     "ipa": "ɡɔlt",
-    "wordDe": "golden",
-    "wordEn": "golden",
+    "wordDe": "gold",
+    "wordEn": "gold",
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A shiny gold star, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Stern ist silbern.",
@@ -165,34 +153,31 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style star, shiny gray color, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Ball hat viele Farben.",
     "exampleSentenceEn": "The ball has many colors.",
     "id": "colors_farbe_14",
     "ipa": "ˈfaʁbə",
-    "wordDe": "die Farbe",
-    "wordEn": "the color",
+    "wordDe": "Farbe",
+    "wordEn": "color",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Farben",
-    "pluralEn": "the colors",
-    "imagePrompt": "\"Cartoon paint palette with bright colors, white background, for children's learning\""
+    "pluralDe": "Farben",
+    "pluralEn": "colors"
   },
   {
-    "exampleSentenceDe": "Ich mag die Farbe rot.",
-    "exampleSentenceEn": "I like the color red.",
+    "exampleSentenceDe": "Ich mag alle Farben.",
+    "exampleSentenceEn": "I like all colors.",
     "id": "colors_farben_15",
     "ipa": "ˈfaʁbn̩",
-    "wordDe": "die Farben",
-    "wordEn": "the colors",
+    "wordDe": "Farben",
+    "wordEn": "colors",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Farben",
-    "pluralEn": "the colors",
-    "imagePrompt": "Cartoon paintbrushes holding different colors, white background, for children's learning."
+    "pluralDe": "Farben",
+    "pluralEn": "colors"
   },
   {
     "exampleSentenceDe": "Ist das hellblau?",
@@ -204,8 +189,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Light blue cartoon bird, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Der Pullover ist dunkelgrün.",
@@ -217,8 +201,7 @@
     "wordType": "color",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "A dark green apple, cartoon style, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Das Bonbon ist farbig.",
@@ -230,8 +213,7 @@
     "wordType": "adjective",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "\"Cartoon rainbow with many bright colors, white background, for children's learning\""
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Welche Farbe hat dein Ball?",
@@ -240,36 +222,33 @@
     "ipa": "ˈvɛlçə ˈfaʁbə",
     "wordDe": "welche Farbe",
     "wordEn": "which color",
-    "wordType": "noun",
+    "wordType": "phrase",
     "article": null,
     "pluralDe": null,
-    "pluralEn": null,
-    "imagePrompt": "Cartoon style, many colorful paintbrushes, white background, for children's learning."
+    "pluralEn": null
   },
   {
     "exampleSentenceDe": "Meine Lieblingsfarbe ist blau.",
     "exampleSentenceEn": "My favorite color is blue.",
     "id": "colors_lieblingsfarbe_20",
     "ipa": "ˈliːplɪŋsˌfaʁbə",
-    "wordDe": "die Lieblingsfarbe",
+    "wordDe": "Lieblingsfarbe",
     "wordEn": "the favorite color",
     "wordType": "noun",
     "article": "die",
-    "pluralDe": "die Lieblingsfarben",
-    "pluralEn": "the favorite colors",
-    "imagePrompt": "A cartoon heart, rainbow colors, white background, for children's learning."
+    "pluralDe": "Lieblingsfarben",
+    "pluralEn": "the favorite colors"
   },
   {
     "exampleSentenceDe": "Der Regenbogen hat viele Farben.",
     "exampleSentenceEn": "The rainbow has many colors.",
     "id": "colors_regenbogen_21",
     "ipa": "ˈʁeːɡn̩ˌboːɡən",
-    "wordDe": "der Regenbogen",
-    "wordEn": "the rainbow",
+    "wordDe": "Regenbogen",
+    "wordEn": "rainbow",
     "wordType": "noun",
     "article": "der",
-    "pluralDe": "die Regenbögen",
-    "pluralEn": "the rainbows",
-    "imagePrompt": "Colorful arc in the sky after rain, cartoon style, white background, for children's learning."
+    "pluralDe": "Regenbögen",
+    "pluralEn": "rainbows"
   }
 ]
