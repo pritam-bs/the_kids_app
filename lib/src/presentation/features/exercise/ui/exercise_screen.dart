@@ -296,7 +296,11 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                             curve: Curves.easeOut,
                           );
                         }
-                      : null,
+                      : () {
+                          context.read<ExerciseBloc>().add(
+                            const ExerciseEvent.showResult(),
+                          );
+                        },
                   icon: const Icon(Icons.arrow_forward),
                   iconAlignment: IconAlignment.end,
                   label: const Text('Next'),

@@ -14,4 +14,5 @@ sealed class ExerciseEvent with _$ExerciseEvent {
     required ExerciseType exerciseType,
   }) = ExerciseAnswered;
   const factory ExerciseEvent.clearAnswerFeedback() = ClearAnswerFeedback;
+  const factory ExerciseEvent.showResult() = ShowResult;
 }

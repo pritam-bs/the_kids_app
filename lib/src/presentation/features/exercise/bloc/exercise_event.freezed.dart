@@ -55,14 +55,15 @@ extension ExerciseEventPatterns on ExerciseEvent {
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( InitializeExercises value)?  initializeExercises,TResult Function( ChangeExercise value)?  changeExercise,TResult Function( ExerciseAnswered value)?  exerciseAnswered,TResult Function( ClearAnswerFeedback value)?  clearAnswerFeedback,required TResult orElse(),}){
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( InitializeExercises value)?  initializeExercises,TResult Function( ChangeExercise value)?  changeExercise,TResult Function( ExerciseAnswered value)?  exerciseAnswered,TResult Function( ClearAnswerFeedback value)?  clearAnswerFeedback,TResult Function( ShowResult value)?  showResult,required TResult orElse(),}){
 final _that = this;
 switch (_that) {
 case InitializeExercises() when initializeExercises != null:
 return initializeExercises(_that);case ChangeExercise() when changeExercise != null:
 return changeExercise(_that);case ExerciseAnswered() when exerciseAnswered != null:
 return exerciseAnswered(_that);case ClearAnswerFeedback() when clearAnswerFeedback != null:
-return clearAnswerFeedback(_that);case _:
+return clearAnswerFeedback(_that);case ShowResult() when showResult != null:
+return showResult(_that);case _:
   return orElse();
 
 }
@@ -80,14 +81,15 @@ return clearAnswerFeedback(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( InitializeExercises value)  initializeExercises,required TResult Function( ChangeExercise value)  changeExercise,required TResult Function( ExerciseAnswered value)  exerciseAnswered,required TResult Function( ClearAnswerFeedback value)  clearAnswerFeedback,}){
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( InitializeExercises value)  initializeExercises,required TResult Function( ChangeExercise value)  changeExercise,required TResult Function( ExerciseAnswered value)  exerciseAnswered,required TResult Function( ClearAnswerFeedback value)  clearAnswerFeedback,required TResult Function( ShowResult value)  showResult,}){
 final _that = this;
 switch (_that) {
 case InitializeExercises():
 return initializeExercises(_that);case ChangeExercise():
 return changeExercise(_that);case ExerciseAnswered():
 return exerciseAnswered(_that);case ClearAnswerFeedback():
-return clearAnswerFeedback(_that);}
+return clearAnswerFeedback(_that);case ShowResult():
+return showResult(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -101,14 +103,15 @@ return clearAnswerFeedback(_that);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( InitializeExercises value)?  initializeExercises,TResult? Function( ChangeExercise value)?  changeExercise,TResult? Function( ExerciseAnswered value)?  exerciseAnswered,TResult? Function( ClearAnswerFeedback value)?  clearAnswerFeedback,}){
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( InitializeExercises value)?  initializeExercises,TResult? Function( ChangeExercise value)?  changeExercise,TResult? Function( ExerciseAnswered value)?  exerciseAnswered,TResult? Function( ClearAnswerFeedback value)?  clearAnswerFeedback,TResult? Function( ShowResult value)?  showResult,}){
 final _that = this;
 switch (_that) {
 case InitializeExercises() when initializeExercises != null:
 return initializeExercises(_that);case ChangeExercise() when changeExercise != null:
 return changeExercise(_that);case ExerciseAnswered() when exerciseAnswered != null:
 return exerciseAnswered(_that);case ClearAnswerFeedback() when clearAnswerFeedback != null:
-return clearAnswerFeedback(_that);case _:
+return clearAnswerFeedback(_that);case ShowResult() when showResult != null:
+return showResult(_that);case _:
   return null;
 
 }
@@ -125,13 +128,14 @@ return clearAnswerFeedback(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( ExerciseType exerciseType)?  initializeExercises,TResult Function( int newIndex)?  changeExercise,TResult Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult Function()?  clearAnswerFeedback,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( ExerciseType exerciseType)?  initializeExercises,TResult Function( int newIndex)?  changeExercise,TResult Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult Function()?  clearAnswerFeedback,TResult Function()?  showResult,required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case InitializeExercises() when initializeExercises != null:
 return initializeExercises(_that.exerciseType);case ChangeExercise() when changeExercise != null:
 return changeExercise(_that.newIndex);case ExerciseAnswered() when exerciseAnswered != null:
 return exerciseAnswered(_that.isCorrect,_that.exerciseType);case ClearAnswerFeedback() when clearAnswerFeedback != null:
-return clearAnswerFeedback();case _:
+return clearAnswerFeedback();case ShowResult() when showResult != null:
+return showResult();case _:
   return orElse();
 
 }
@@ -149,13 +153,14 @@ return clearAnswerFeedback();case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( ExerciseType exerciseType)  initializeExercises,required TResult Function( int newIndex)  changeExercise,required TResult Function( bool isCorrect,  ExerciseType exerciseType)  exerciseAnswered,required TResult Function()  clearAnswerFeedback,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( ExerciseType exerciseType)  initializeExercises,required TResult Function( int newIndex)  changeExercise,required TResult Function( bool isCorrect,  ExerciseType exerciseType)  exerciseAnswered,required TResult Function()  clearAnswerFeedback,required TResult Function()  showResult,}) {final _that = this;
 switch (_that) {
 case InitializeExercises():
 return initializeExercises(_that.exerciseType);case ChangeExercise():
 return changeExercise(_that.newIndex);case ExerciseAnswered():
 return exerciseAnswered(_that.isCorrect,_that.exerciseType);case ClearAnswerFeedback():
-return clearAnswerFeedback();}
+return clearAnswerFeedback();case ShowResult():
+return showResult();}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -169,13 +174,14 @@ return clearAnswerFeedback();}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( ExerciseType exerciseType)?  initializeExercises,TResult? Function( int newIndex)?  changeExercise,TResult? Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult? Function()?  clearAnswerFeedback,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( ExerciseType exerciseType)?  initializeExercises,TResult? Function( int newIndex)?  changeExercise,TResult? Function( bool isCorrect,  ExerciseType exerciseType)?  exerciseAnswered,TResult? Function()?  clearAnswerFeedback,TResult? Function()?  showResult,}) {final _that = this;
 switch (_that) {
 case InitializeExercises() when initializeExercises != null:
 return initializeExercises(_that.exerciseType);case ChangeExercise() when changeExercise != null:
 return changeExercise(_that.newIndex);case ExerciseAnswered() when exerciseAnswered != null:
 return exerciseAnswered(_that.isCorrect,_that.exerciseType);case ClearAnswerFeedback() when clearAnswerFeedback != null:
-return clearAnswerFeedback();case _:
+return clearAnswerFeedback();case ShowResult() when showResult != null:
+return showResult();case _:
   return null;
 
 }
@@ -407,6 +413,38 @@ int get hashCode => runtimeType.hashCode;
 @override
 String toString() {
   return 'ExerciseEvent.clearAnswerFeedback()';
+}
+
+
+}
+
+
+
+
+/// @nodoc
+
+
+class ShowResult implements ExerciseEvent {
+  const ShowResult();
+  
+
+
+
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ShowResult);
+}
+
+
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'ExerciseEvent.showResult()';
 }
 
 
