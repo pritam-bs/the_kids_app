@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:the_kids_app/src/core/config/logging_config.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/domain/usecases/exercise_store/exercise_store_usecase.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_event.dart';
@@ -13,15 +12,14 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
   final ExerciseStoreUseCase _exerciseUseCase;
   final maxNumberOfExercises = 10;
 
-  int _correctAnswers = 0;
-  int _wrongAnswers = 0;
-  int _totalQuestions = 0;
+  List<bool?> _answers = [];
 
   ExerciseBloc(this._exerciseUseCase) : super(const ExerciseState.initial()) {
     on<InitializeExercises>(_onInitializeExercises);
     on<ChangeExercise>(_onChangeExercise);
     on<ExerciseAnswered>(_onExerciseAnswered);
     on<ClearAnswerFeedback>(_onClearAnswerFeedback);
+    on<ShowResult>(_showResult);
   }
 
   Future<void> _onInitializeExercises(
@@ -35,9 +33,7 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
       );
 
       final shuffledExercises = shuffleAndTake(exercises, maxNumberOfExercises);
-      _totalQuestions = shuffledExercises.length;
-      _correctAnswers = 0;
-      _wrongAnswers = 0;
+      _answers = List.filled(shuffledExercises.length, null);
 
       emit(ExerciseState.loaded(exercises: shuffledExercises, currentIndex: 0));
     } catch (e) {
@@ -72,13 +68,7 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
   ) async {
     state.whenOrNull(
       loaded: (exercises, currentIndex, _, feedbackAnimationTrigger) {
-        if (event.isCorrect) {
-          _correctAnswers++;
-          AppLogger.d('Answer correct! Playing correct sound and haptic.');
-        } else {
-          _wrongAnswers++;
-          AppLogger.d('Answer wrong! Playing wrong sound and haptic.');
-        }
+        _answers[currentIndex] = event.isCorrect;
 
         emit(
           ExerciseState.loaded(
@@ -92,12 +82,12 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
     );
   }
 
-  void _onClearAnswerFeedback(
+  Future<void> _onClearAnswerFeedback(
     ClearAnswerFeedback event,
     Emitter<ExerciseState> emit,
-  ) {
+  ) async {
     state.whenOrNull(
-      loaded: (exercises, currentIndex, _, feedbackAnimationTrigger) {
+      loaded: (exercises, currentIndex, _, feedbackAnimationTrigger) async {
         // Only clear if there's feedback to clear
         if (state is Loaded && (state as Loaded).lastAnswerCorrect != null) {
           emit(
@@ -110,14 +100,37 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
             ),
           );
         }
+      },
+    );
+  }
 
+  Future<void> _showResult(
+    ShowResult event,
+    Emitter<ExerciseState> emit,
+  ) async {
+    state.whenOrNull(
+      loaded: (exercises, currentIndex, _, _) async {
         if (currentIndex == exercises.length - 1) {
+          int correctAnswers = 0;
+          int wrongAnswers = 0;
+          int skippedQuestions = 0;
+
+          for (var answer in _answers) {
+            if (answer == true) {
+              correctAnswers++;
+            } else if (answer == false) {
+              wrongAnswers++;
+            } else {
+              skippedQuestions++;
+            }
+          }
+
           emit(
             ExerciseState.sessionCompleted(
-              correctAnswers: _correctAnswers,
-              wrongAnswers: _wrongAnswers,
-              skippedQuestions: _totalQuestions - _correctAnswers - _wrongAnswers,
-              totalQuestions: _totalQuestions,
+              correctAnswers: correctAnswers,
+              wrongAnswers: wrongAnswers,
+              skippedQuestions: skippedQuestions,
+              totalQuestions: exercises.length,
             ),
           );
         }
