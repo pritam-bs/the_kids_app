@@ -29,7 +29,7 @@ class CategorySelectionScreen extends StatelessWidget
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Choose a Category!',
+          '👋 Hallo!',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
             color: Theme.of(context).colorScheme.primary,
           ),
@@ -37,6 +37,30 @@ class CategorySelectionScreen extends StatelessWidget
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.surface,
         elevation: 0,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+                shape: BoxShape.circle,
+              ),
+              child: IconButton(
+                icon: Icon(
+                  Icons.school,
+                  size: 32,
+                  color: Theme.of(context).colorScheme.onPrimary,
+                ),
+                onPressed: () {
+                  AutoRouter.of(context).push(ExerciseHomeRoute());
+                },
+                tooltip: 'Go to Exercises & Stories',
+              ),
+            ),
+          ),
+
+          const SizedBox(width: 8),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

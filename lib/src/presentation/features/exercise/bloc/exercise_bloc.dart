@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'dart:math';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
+import 'package:the_kids_app/src/core/config/logging_config.dart';
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_entity.dart';
 import 'package:the_kids_app/src/domain/usecases/exercise_store/exercise_store_usecase.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_event.dart';
@@ -9,7 +11,11 @@ import 'package:the_kids_app/src/presentation/features/exercise/bloc/exercise_st
 @injectable
 class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
   final ExerciseStoreUseCase _exerciseUseCase;
-  final numberOfExercises = 10;
+  final maxNumberOfExercises = 10;
+
+  int _correctAnswers = 0;
+  int _wrongAnswers = 0;
+  int _totalQuestions = 0;
 
   ExerciseBloc(this._exerciseUseCase) : super(const ExerciseState.initial()) {
     on<InitializeExercises>(_onInitializeExercises);
@@ -27,7 +33,13 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
       final List<ExerciseEntity> exercises = await _exerciseUseCase(
         type: event.exerciseType,
       );
-      emit(ExerciseState.loaded(exercises: exercises, currentIndex: 0));
+
+      final shuffledExercises = shuffleAndTake(exercises, maxNumberOfExercises);
+      _totalQuestions = shuffledExercises.length;
+      _correctAnswers = 0;
+      _wrongAnswers = 0;
+
+      emit(ExerciseState.loaded(exercises: shuffledExercises, currentIndex: 0));
     } catch (e) {
       emit(ExerciseState.error('Failed to generate exercises: $e'));
     }
@@ -60,6 +72,14 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
   ) async {
     state.whenOrNull(
       loaded: (exercises, currentIndex, _, feedbackAnimationTrigger) {
+        if (event.isCorrect) {
+          _correctAnswers++;
+          AppLogger.d('Answer correct! Playing correct sound and haptic.');
+        } else {
+          _wrongAnswers++;
+          AppLogger.d('Answer wrong! Playing wrong sound and haptic.');
+        }
+
         emit(
           ExerciseState.loaded(
             exercises: exercises,
@@ -90,7 +110,33 @@ class ExerciseBloc extends Bloc<ExerciseEvent, ExerciseState> {
             ),
           );
         }
+
+        if (currentIndex == exercises.length - 1) {
+          emit(
+            ExerciseState.sessionCompleted(
+              correctAnswers: _correctAnswers,
+              wrongAnswers: _wrongAnswers,
+              skippedQuestions: _totalQuestions - _correctAnswers - _wrongAnswers,
+              totalQuestions: _totalQuestions,
+            ),
+          );
+        }
       },
     );
+  }
+
+  List<ExerciseEntity> shuffleAndTake(
+    List<ExerciseEntity> originalExercises,
+    int count,
+  ) {
+    List<ExerciseEntity> shuffledExercises = List.from(originalExercises);
+
+    shuffledExercises.shuffle(Random());
+
+    if (shuffledExercises.length > count) {
+      return shuffledExercises.sublist(0, count);
+    } else {
+      return shuffledExercises;
+    }
   }
 }

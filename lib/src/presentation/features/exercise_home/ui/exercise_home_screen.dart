@@ -354,19 +354,6 @@ class _MainContent extends StatelessWidget {
                     buttonWidth: buttonWidth,
                     buttonColor: KidsColors.getRandomKidFriendlyColor(),
                   ),
-                  // Build a Sentence (Guided)
-                  // _buildExerciseButton(
-                  //   context: context,
-                  //   label: 'Build a Sentence',
-                  //   icon: Icons.text_fields,
-                  //   onPressed: () {
-                  //     AutoRouter.of(
-                  //       context,
-                  //     ).push(ExerciseRoute(type: ExerciseType.fillBlank));
-                  //   },
-                  //   buttonWidth: buttonWidth,
-                  //   buttonColor: KidsColors.getRandomKidFriendlyColor(),
-                  // ),
                 ],
               ),
               const SizedBox(height: 48),

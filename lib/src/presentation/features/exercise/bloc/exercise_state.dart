@@ -14,4 +14,10 @@ sealed class ExerciseState with _$ExerciseState {
     bool? lastAnswerCorrect,
     @Default(0) int feedbackAnimationTrigger,
   }) = Loaded;
+  const factory ExerciseState.sessionCompleted({
+    required int correctAnswers,
+    required int wrongAnswers,
+    required int skippedQuestions,
+    required int totalQuestions,
+  }) = SessionCompleted;
 }

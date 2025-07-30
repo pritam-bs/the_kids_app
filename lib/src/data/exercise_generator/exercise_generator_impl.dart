@@ -219,7 +219,7 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
             generatedDto,
           );
 
-          if(validatedExerciseDto != null){
+          if (validatedExerciseDto != null) {
             final exerciseStoreDto = ExerciseStoreDto(
               exerciseType: type.key,
               jsonContent: jsonEncode(validatedExerciseDto.toJson()),
@@ -235,7 +235,7 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
             AppLogger.d(
               "Successfully generated '${type.key}' exercise for '${word.word}'.",
             );
-          } 
+          }
         }
       } catch (e, st) {
         AppLogger.e(
@@ -304,115 +304,98 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
     required int numberOfExercises,
     List<String>? contextWords,
   }) {
-    final baseInstruction = '''
-      You are an expert in creating engaging German language learning exercises for children.
-      Your task is to generate exercises in a strict JSON format.
-    ''';
+    // --- Centralized Instructions (Applied to all exercise types) ---
+    // These are now defined once to avoid repetition inside the switch statement.
+    // They are more direct and use fewer tokens.
+    final baseInstruction =
+        '''
+    You are a German teacher AI for kids.
+    Your task is to generate $numberOfExercises German learning exercises.
+    Your output MUST be a single, valid JSON array of objects. Do not output any markdown, comments, or other text outside of the JSON.
+  ''';
 
-    final String contextInstruction =
-        contextWords != null && contextWords.isNotEmpty
-        ? 'Focus on these German words/concepts: ${contextWords.join(', ')}. Ensure they are correctly integrated into the exercises.'
-        : 'Use common beginner-level German vocabulary suitable for children.';
+    final contextInstruction = contextWords != null && contextWords.isNotEmpty
+        ? 'Focus on these German words: ${contextWords.join(', ')}.'
+        : 'Use common, beginner-level German vocabulary suitable for children.';
 
-    String exerciseTypeKey = type.key;
+    // This will hold the specific instructions for the chosen exercise type.
+    String exerciseSpecificInstructions;
 
+    // --- Exercise-Specific Instructions (Lean and Schema-Focused) ---
+    // The switch now only contains the minimal, essential information for each type.
+    // We use a "show, don't just tell" approach with a commented JSON schema.
     switch (type) {
       case ExerciseType.matchWord:
-        return '''
-        $baseInstruction
-
-        **German Word to English Multiple Choice**
-        - **Description:** The user sees a German word and must choose its correct English translation from a list of options.
-        - **Required Fields:**
-          - `${ExerciseConstants.exerciseType}` (string): "$exerciseTypeKey"
-          - `targetGermanWord` (string): The German word to be translated.
-          - `englishOptions` (array of strings): An array containing 3 to 4 English words. One must be the correct translation, and the others should be plausible, but incorrect, distractors.
-          - `correctEnglishWord` (string): The correct English translation of `targetGermanWord`.
-        - **Number of exercises:** $numberOfExercises.
-        - **Context:** $contextInstruction
-        - **Difficulty:** Beginner.
-        - **IMPORTANT:** Your output MUST be a single, valid JSON array of objects. Do NOT include any text, explanation, or markdown outside of the JSON array.
-        - **Example:**
+        exerciseSpecificInstructions =
+            '''
+        **Exercise Type: German to English Multiple Choice.**
+        **JSON Schema:**
+        [
           {
-            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
-            "targetGermanWord": "Haus",
-            "englishOptions": ["house", "cat", "car"],
-            "correctEnglishWord": "house"
+            "${ExerciseConstants.exerciseType}": "${type.key}", // Constant value
+            "targetGermanWord": "...", // A beginner-level German word
+            "englishOptions": ["...", "...", "..."], // 3-4 English words: 1 correct, others are distractors
+            "correctEnglishWord": "..." // The correct English translation
           }
+        ]
       ''';
+        break;
 
       case ExerciseType.listenChoose:
-        return '''
-        $baseInstruction
-
-        **German Word to German Multiple Choice**
-        - **Description:** The user sees a German word and must identify it among similar-looking or related German words. This helps with recognition and distinguishing similar words.
-        - **Required Fields:**
-          - `${ExerciseConstants.exerciseType}` (string): "$exerciseTypeKey"
-          - `targetGermanWord` (string): The German word to be identified.
-          - `germanOptions` (array of strings): An array containing 3 to 4 German words. One must be the `targetGermanWord`, and the others should be plausible, but incorrect, distractors (e.g., words with similar sounds, spellings, or related categories).
-          - `correctEnglishWord` (string): The English translation of `targetGermanWord` (for informational purposes, even if not directly used in the matching task).
-        - **Number of exercises:** $numberOfExercises.
-        - **Context:** $contextInstruction
-        - **Difficulty:** Beginner.
-        - **IMPORTANT:** Your output MUST be a single, valid JSON array of objects. Do NOT include any text, explanation, or markdown outside of the JSON array.
-        - **Example:**
+        exerciseSpecificInstructions =
+            '''
+        **Exercise Type: German Word Recognition.**
+        **JSON Schema:**
+        [
           {
-            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
-            "targetGermanWord": "Hund",
-            "germanOptions": ["Hund", "Katze", "Vogel"],
-            "correctEnglishWord": "dog"
+            "${ExerciseConstants.exerciseType}": "${type.key}", // Constant value
+            "targetGermanWord": "...", // The German word to identify
+            "germanOptions": ["...", "...", "..."], // 3-4 German words: 1 correct, others are similar-sounding/related distractors
+            "correctEnglishWord": "..." // English translation of the target word
           }
+        ]
       ''';
+        break;
 
       case ExerciseType.spellWord:
-        return '''
-        $baseInstruction
-
-        **Unscramble Word**
-        - **Description:** The user sees a set of scrambled letters, and must unscramble the letters to form the correct German word.
-        - **Required Fields:**
-          - `${ExerciseConstants.exerciseType}` (string): "$exerciseTypeKey"
-          - `targetGermanWord` (string): The German word that the letters form.
-          - `scrambledLetters` (array of strings): An array of individual characters (strings) that are a scrambled version of `targetGermanWord`. Include 1-2 extra random, common letters to increase difficulty, ensuring the `targetGermanWord` can still be formed from the provided letters.
-          - `englishTranslation` (string): The English translation of `targetGermanWord`.
-        - **Number of exercises:** $numberOfExercises.
-        - **Context:** $contextInstruction
-        - **Difficulty:** Beginner.
-        - **IMPORTANT:** Your output MUST be a single, valid JSON array of objects. Do NOT include any text, explanation, or markdown outside of the JSON array.
-        - **Example:**
+        exerciseSpecificInstructions =
+            '''
+        **Exercise Type: Unscramble German Word.**
+        **JSON Schema:**
+        [
           {
-            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
-            "targetGermanWord": "Apfel",
-            "scrambledLetters": ["A", "f", "p", "e", "l", "x", "z"],
-            "englishTranslation": "Apple"
+            "${ExerciseConstants.exerciseType}": "${type.key}", // Constant value
+            "targetGermanWord": "...", // The unscrambled German word
+            "scrambledLetters": ["...", "...", "..."], // Scrambled letters of the target word plus 1-2 extra distractor letters
+            "englishTranslation": "..." // English translation of the target word
           }
+        ]
       ''';
+        break;
 
       case ExerciseType.sentenceScramble:
-        return '''
-        $baseInstruction
-
-        **Unscramble Sentence**
-        - **Description:** The user sees a set of scrambled words and an English translation, and must arrange the words to form the correct German sentence.
-        - **Required Fields:**
-          - `${ExerciseConstants.exerciseType}` (string): "$exerciseTypeKey"
-          - `targetGermanSentence` (string): The complete, grammatically correct German sentence.
-          - `englishTranslation` (string): The English translation of `targetGermanSentence`.
-          - `scrambledWords` (array of strings): An array of individual words (strings) from `targetGermanSentence`, in a scrambled order.
-        - **Number of exercises:** $numberOfExercises.
-        - **Context:** $contextInstruction
-        - **Difficulty:** Beginner.
-        - **IMPORTANT:** Your output MUST be a single, valid JSON array of objects. Do NOT include any text, explanation, or markdown outside of the JSON array.
-        - **Example:**
+        exerciseSpecificInstructions =
+            '''
+        **Exercise Type: Unscramble German Sentence.**
+        **JSON Schema:**
+        [
           {
-            "${ExerciseConstants.exerciseType}": "$exerciseTypeKey",
-            "targetGermanSentence": "Das ist ein Buch",
-            "englishTranslation": "That is a book",
-            "scrambledWords": ["ist", "Das", "ein", "Buch"]
+            "${ExerciseConstants.exerciseType}": "${type.key}", // Constant value
+            "targetGermanSentence": "...", // A simple, grammatically correct German sentence
+            "englishTranslation": "...", // The English translation of the sentence
+            "scrambledWords": ["...", "...", "..."] // The words from the German sentence, in a random order
           }
+        ]
       ''';
+        break;
     }
+
+    // Combine the parts into the final, optimized prompt.
+    return '''
+    $baseInstruction
+    $contextInstruction
+    $exerciseSpecificInstructions
+  ''';
   }
 
   /// Parses the raw JSON string from the LLM.
