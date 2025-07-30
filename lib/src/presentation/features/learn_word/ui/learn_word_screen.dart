@@ -2,7 +2,6 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_kids_app/src/core/di/injection.dart';
-import 'package:the_kids_app/src/core/router/app_router.gr.dart';
 import 'package:the_kids_app/src/domain/entities/learning_word/word_entity.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_word_bloc.dart';
 import 'package:the_kids_app/src/presentation/features/learn_word/bloc/learn_word_event.dart';
@@ -38,30 +37,6 @@ class LearnWordScreen extends StatelessWidget implements AutoRouteWrapper {
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.surface,
         elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary,
-                shape: BoxShape.circle,
-              ),
-              child: IconButton(
-                icon: Icon(
-                  Icons.school,
-                  size: 32,
-                  color: Theme.of(context).colorScheme.onPrimary,
-                ),
-                onPressed: () {
-                  AutoRouter.of(context).push(ExerciseHomeRoute());
-                },
-                tooltip: 'Go to Exercises & Stories',
-              ),
-            ),
-          ),
-
-          const SizedBox(width: 8),
-        ],
       ),
       body: BlocBuilder<LearnWordBloc, LearnWordState>(
         builder: (context, state) {

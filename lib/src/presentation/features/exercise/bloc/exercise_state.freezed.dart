@@ -55,14 +55,15 @@ extension ExerciseStatePatterns on ExerciseState {
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Initial value)?  initial,TResult Function( Loading value)?  loading,TResult Function( Error value)?  error,TResult Function( Loaded value)?  loaded,required TResult orElse(),}){
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Initial value)?  initial,TResult Function( Loading value)?  loading,TResult Function( Error value)?  error,TResult Function( Loaded value)?  loaded,TResult Function( SessionCompleted value)?  sessionCompleted,required TResult orElse(),}){
 final _that = this;
 switch (_that) {
 case Initial() when initial != null:
 return initial(_that);case Loading() when loading != null:
 return loading(_that);case Error() when error != null:
 return error(_that);case Loaded() when loaded != null:
-return loaded(_that);case _:
+return loaded(_that);case SessionCompleted() when sessionCompleted != null:
+return sessionCompleted(_that);case _:
   return orElse();
 
 }
@@ -80,14 +81,15 @@ return loaded(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Initial value)  initial,required TResult Function( Loading value)  loading,required TResult Function( Error value)  error,required TResult Function( Loaded value)  loaded,}){
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Initial value)  initial,required TResult Function( Loading value)  loading,required TResult Function( Error value)  error,required TResult Function( Loaded value)  loaded,required TResult Function( SessionCompleted value)  sessionCompleted,}){
 final _that = this;
 switch (_that) {
 case Initial():
 return initial(_that);case Loading():
 return loading(_that);case Error():
 return error(_that);case Loaded():
-return loaded(_that);}
+return loaded(_that);case SessionCompleted():
+return sessionCompleted(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -101,14 +103,15 @@ return loaded(_that);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Initial value)?  initial,TResult? Function( Loading value)?  loading,TResult? Function( Error value)?  error,TResult? Function( Loaded value)?  loaded,}){
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Initial value)?  initial,TResult? Function( Loading value)?  loading,TResult? Function( Error value)?  error,TResult? Function( Loaded value)?  loaded,TResult? Function( SessionCompleted value)?  sessionCompleted,}){
 final _that = this;
 switch (_that) {
 case Initial() when initial != null:
 return initial(_that);case Loading() when loading != null:
 return loading(_that);case Error() when error != null:
 return error(_that);case Loaded() when loaded != null:
-return loaded(_that);case _:
+return loaded(_that);case SessionCompleted() when sessionCompleted != null:
+return sessionCompleted(_that);case _:
   return null;
 
 }
@@ -125,13 +128,14 @@ return loaded(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  initial,TResult Function()?  loading,TResult Function( String message)?  error,TResult Function( List<ExerciseEntity> exercises,  int currentIndex,  bool? lastAnswerCorrect,  int feedbackAnimationTrigger)?  loaded,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  initial,TResult Function()?  loading,TResult Function( String message)?  error,TResult Function( List<ExerciseEntity> exercises,  int currentIndex,  bool? lastAnswerCorrect,  int feedbackAnimationTrigger)?  loaded,TResult Function( int correctAnswers,  int wrongAnswers,  int skippedQuestions,  int totalQuestions)?  sessionCompleted,required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case Initial() when initial != null:
 return initial();case Loading() when loading != null:
 return loading();case Error() when error != null:
 return error(_that.message);case Loaded() when loaded != null:
-return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.feedbackAnimationTrigger);case _:
+return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.feedbackAnimationTrigger);case SessionCompleted() when sessionCompleted != null:
+return sessionCompleted(_that.correctAnswers,_that.wrongAnswers,_that.skippedQuestions,_that.totalQuestions);case _:
   return orElse();
 
 }
@@ -149,13 +153,14 @@ return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.f
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  initial,required TResult Function()  loading,required TResult Function( String message)  error,required TResult Function( List<ExerciseEntity> exercises,  int currentIndex,  bool? lastAnswerCorrect,  int feedbackAnimationTrigger)  loaded,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  initial,required TResult Function()  loading,required TResult Function( String message)  error,required TResult Function( List<ExerciseEntity> exercises,  int currentIndex,  bool? lastAnswerCorrect,  int feedbackAnimationTrigger)  loaded,required TResult Function( int correctAnswers,  int wrongAnswers,  int skippedQuestions,  int totalQuestions)  sessionCompleted,}) {final _that = this;
 switch (_that) {
 case Initial():
 return initial();case Loading():
 return loading();case Error():
 return error(_that.message);case Loaded():
-return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.feedbackAnimationTrigger);}
+return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.feedbackAnimationTrigger);case SessionCompleted():
+return sessionCompleted(_that.correctAnswers,_that.wrongAnswers,_that.skippedQuestions,_that.totalQuestions);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -169,13 +174,14 @@ return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.f
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  initial,TResult? Function()?  loading,TResult? Function( String message)?  error,TResult? Function( List<ExerciseEntity> exercises,  int currentIndex,  bool? lastAnswerCorrect,  int feedbackAnimationTrigger)?  loaded,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  initial,TResult? Function()?  loading,TResult? Function( String message)?  error,TResult? Function( List<ExerciseEntity> exercises,  int currentIndex,  bool? lastAnswerCorrect,  int feedbackAnimationTrigger)?  loaded,TResult? Function( int correctAnswers,  int wrongAnswers,  int skippedQuestions,  int totalQuestions)?  sessionCompleted,}) {final _that = this;
 switch (_that) {
 case Initial() when initial != null:
 return initial();case Loading() when loading != null:
 return loading();case Error() when error != null:
 return error(_that.message);case Loaded() when loaded != null:
-return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.feedbackAnimationTrigger);case _:
+return loaded(_that.exercises,_that.currentIndex,_that.lastAnswerCorrect,_that.feedbackAnimationTrigger);case SessionCompleted() when sessionCompleted != null:
+return sessionCompleted(_that.correctAnswers,_that.wrongAnswers,_that.skippedQuestions,_that.totalQuestions);case _:
   return null;
 
 }
@@ -384,6 +390,78 @@ exercises: null == exercises ? _self._exercises : exercises // ignore: cast_null
 as List<ExerciseEntity>,currentIndex: null == currentIndex ? _self.currentIndex : currentIndex // ignore: cast_nullable_to_non_nullable
 as int,lastAnswerCorrect: freezed == lastAnswerCorrect ? _self.lastAnswerCorrect : lastAnswerCorrect // ignore: cast_nullable_to_non_nullable
 as bool?,feedbackAnimationTrigger: null == feedbackAnimationTrigger ? _self.feedbackAnimationTrigger : feedbackAnimationTrigger // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
+/// @nodoc
+
+
+class SessionCompleted implements ExerciseState {
+  const SessionCompleted({required this.correctAnswers, required this.wrongAnswers, required this.skippedQuestions, required this.totalQuestions});
+  
+
+ final  int correctAnswers;
+ final  int wrongAnswers;
+ final  int skippedQuestions;
+ final  int totalQuestions;
+
+/// Create a copy of ExerciseState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SessionCompletedCopyWith<SessionCompleted> get copyWith => _$SessionCompletedCopyWithImpl<SessionCompleted>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SessionCompleted&&(identical(other.correctAnswers, correctAnswers) || other.correctAnswers == correctAnswers)&&(identical(other.wrongAnswers, wrongAnswers) || other.wrongAnswers == wrongAnswers)&&(identical(other.skippedQuestions, skippedQuestions) || other.skippedQuestions == skippedQuestions)&&(identical(other.totalQuestions, totalQuestions) || other.totalQuestions == totalQuestions));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,correctAnswers,wrongAnswers,skippedQuestions,totalQuestions);
+
+@override
+String toString() {
+  return 'ExerciseState.sessionCompleted(correctAnswers: $correctAnswers, wrongAnswers: $wrongAnswers, skippedQuestions: $skippedQuestions, totalQuestions: $totalQuestions)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $SessionCompletedCopyWith<$Res> implements $ExerciseStateCopyWith<$Res> {
+  factory $SessionCompletedCopyWith(SessionCompleted value, $Res Function(SessionCompleted) _then) = _$SessionCompletedCopyWithImpl;
+@useResult
+$Res call({
+ int correctAnswers, int wrongAnswers, int skippedQuestions, int totalQuestions
+});
+
+
+
+
+}
+/// @nodoc
+class _$SessionCompletedCopyWithImpl<$Res>
+    implements $SessionCompletedCopyWith<$Res> {
+  _$SessionCompletedCopyWithImpl(this._self, this._then);
+
+  final SessionCompleted _self;
+  final $Res Function(SessionCompleted) _then;
+
+/// Create a copy of ExerciseState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? correctAnswers = null,Object? wrongAnswers = null,Object? skippedQuestions = null,Object? totalQuestions = null,}) {
+  return _then(SessionCompleted(
+correctAnswers: null == correctAnswers ? _self.correctAnswers : correctAnswers // ignore: cast_nullable_to_non_nullable
+as int,wrongAnswers: null == wrongAnswers ? _self.wrongAnswers : wrongAnswers // ignore: cast_nullable_to_non_nullable
+as int,skippedQuestions: null == skippedQuestions ? _self.skippedQuestions : skippedQuestions // ignore: cast_nullable_to_non_nullable
+as int,totalQuestions: null == totalQuestions ? _self.totalQuestions : totalQuestions // ignore: cast_nullable_to_non_nullable
 as int,
   ));
 }

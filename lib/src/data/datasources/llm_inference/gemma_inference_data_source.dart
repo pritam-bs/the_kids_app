@@ -40,18 +40,18 @@ class GemmaInferenceDataSource implements InferenceDataSource {
     while (_lock != null) {
       AppLogger.d('Waiting for previous Gemma session to complete...');
       // Wait until the previous operation completes
-      await _lock!.future; 
+      await _lock!.future;
     }
     // Set the lock
-    _lock = Completer<void>(); 
+    _lock = Completer<void>();
 
     try {
       final gemmaInference = await _getGemmaInference();
       final gemmaSession = await gemmaInference.createSession(
-        temperature: 1.0,
-        randomSeed: 0,
-        topK: 32,
-        topP: 0.50,
+        temperature: 0.9,
+        randomSeed: DateTime.now().microsecondsSinceEpoch,
+        topK: 64,
+        topP: 0.9,
       );
 
       AppLogger.d('Gemma Raw Prompt:\n$prompt');

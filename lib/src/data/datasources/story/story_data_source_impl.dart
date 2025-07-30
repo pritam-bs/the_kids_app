@@ -54,27 +54,23 @@ class StoryDataSourceImpl implements StoryDataSource {
   }
 
   String _generateStoryPrompt(StoryTopic topic) {
-    const String exampleJson = '''
-      {
-        "titleGerman": "Der Hase",
-        "contentGerman": "Ein kleiner Hase suchte eine Karotte. Er fand eine große Karotte.",
-        "titleEnglish": "The Rabbit",
-        "contentEnglish": "A little rabbit looked for a carrot. He found a big carrot."
-      }
-    ''';
-
     return '''
-      You are an expert in German-English children's story generation.
-      Instruction:
-      - Generate a short, simple children's story in German, along with its English translation.
-      - The story should be about ${topic.description}
-      - Difficulty: Beginner German vocabulary.
-      - IMPORTANT: Your output MUST be a single, valid JSON object. Do NOT include any text, explanation, or markdown outside the JSON.
-      - Output JSON structure: {"titleGerman": "", "contentGerman": "", "titleEnglish": "", "contentEnglish": ""}
-      - Ensure all string values within the JSON are properly escaped for JSON format. Specifically, double quotes inside the string values (e.g., in dialogue) MUST be escaped with a backslash (\\").
+    You are a German-English story AI for children.
+    Your task is to generate one short story based on the provided theme.
 
-      JSON Object Example:
-      $exampleJson
-    ''';
+    - The story must use simple, beginner-level German vocabulary and sentences (approx. 8-10 sentences long).
+    - Your output MUST be a single, valid JSON object. Do not output any text, markdown, or comments outside the JSON.
+    - IMPORTENT: Ensure all string values within the JSON are properly escaped for JSON format. Specifically, double quotes inside the string values (e.g., in dialogue) MUST be escaped with a backslash (\\").
+
+    Story Theme: ${topic.promptDescription}
+
+    JSON Schema and Output Format:
+    {
+      "titleGerman": "...", // German title for the story
+      "contentGerman": "...", // The full story in simple German
+      "titleEnglish": "...", // English translation of the title
+      "contentEnglish": "..." // English translation of the story
+    }
+  ''';
   }
 }

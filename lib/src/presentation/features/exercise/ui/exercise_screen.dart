@@ -15,6 +15,7 @@ import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card
 import 'package:the_kids_app/src/domain/entities/exercise/exercise_type.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/answer_feedback_overlay.dart';
 import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_card_widgets/listen_choose_exercise_card.dart';
+import 'package:the_kids_app/src/presentation/features/exercise/ui/exercise_result_widget.dart';
 
 @RoutePage()
 class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
@@ -98,7 +99,7 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                                 AutoRouter.of(context).popUntil(
                                   (route) =>
                                       route.settings.name ==
-                                      LearnWordRoute.name,
+                                      CategorySelectionRoute.name,
                                 );
                               },
                               icon: const Icon(Icons.arrow_back),
@@ -150,6 +151,20 @@ class ExerciseScreen extends StatelessWidget implements AutoRouteWrapper {
                           ),
                         ),
                     ],
+                  );
+                },
+            sessionCompleted:
+                (
+                  int correctAnswers,
+                  int wrongAnswers,
+                  int skippedQuestions,
+                  int totalQuestions,
+                ) {
+                  return ExerciseResultView(
+                    correctAnswers: correctAnswers,
+                    wrongAnswers: wrongAnswers,
+                    skippedQuestions: skippedQuestions,
+                    totalQuestions: totalQuestions,
                   );
                 },
           );
