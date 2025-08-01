@@ -38,7 +38,7 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
     this._inferenceDataSource,
   );
 
-  /// Initializes the exercise generator and starts the process if conditions are met.
+  /// Initializes the exercise generator and starts the process.
   Future<void> initialize() async {
     _portSubscription = _receivePort.listen(_handleIsolateMessages);
     _learnedWordDataSource.onNewWordAdded.listen(_handleNewWord);
@@ -46,7 +46,7 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
     start();
   }
 
-  /// To be called when the Gemma model has finished downloading.
+  /// To be called when the Gemma 3n model has finished downloading.
   @override
   Future<void> onModelDownloaded() async {
     start();
@@ -57,7 +57,7 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
   Future<void> start() async {
     if (await _modelDataSource.isModelDownloaded()) {
       final allWords = await _learnedWordDataSource.getAllWords();
-      // Just check which words have no exercises yet.
+      // Checking which words have no exercises yet.
       final wordsToProcess = allWords
           .where((word) => word.exerciseCount < ExerciseType.values.length)
           .toList();
@@ -135,7 +135,7 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
   Future<void> _handleIsolateMessages(dynamic message) async {
     if (message is SendPort) {
       _sendPort = message;
-      // If there are words in the queue from before the isolate was ready, send them now.
+      // If there are words in the queue from before the isolate was ready, send them.
       if (_wordQueue.isNotEmpty) {
         _sendPort?.send({
           'type': 'add_words',
@@ -305,8 +305,6 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
     List<String>? contextWords,
   }) {
     // --- Centralized Instructions (Applied to all exercise types) ---
-    // These are now defined once to avoid repetition inside the switch statement.
-    // They are more direct and use fewer tokens.
     final baseInstruction =
         '''
     You are a German teacher AI for kids.
@@ -321,9 +319,8 @@ class ExerciseGeneratorImpl implements ExerciseGenerator {
     // This will hold the specific instructions for the chosen exercise type.
     String exerciseSpecificInstructions;
 
-    // --- Exercise-Specific Instructions (Lean and Schema-Focused) ---
-    // The switch now only contains the minimal, essential information for each type.
-    // We use a "show, don't just tell" approach with a commented JSON schema.
+    // --- Exercise-Specific Instructions ---
+    // Using a "show, don't just tell" approach with a commented JSON schema.
     switch (type) {
       case ExerciseType.matchWord:
         exerciseSpecificInstructions =
