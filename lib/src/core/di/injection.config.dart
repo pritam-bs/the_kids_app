@@ -151,10 +151,8 @@ extension GetItInjectableX on _i174.GetIt {
       () => injectionModule.store,
       preResolve: true,
     );
-    gh.lazySingleton<_i369.SoundService>(() => audioModule.soundService);
-    gh.lazySingleton<_i1047.HapticService>(
-      () => audioHapticsModule.hapticService,
-    );
+    gh.singleton<_i369.SoundService>(() => audioModule.soundService);
+    gh.singleton<_i1047.HapticService>(() => audioHapticsModule.hapticService);
     gh.factory<String>(
       () => gemmaModule.gemmaModelFileName,
       instanceName: 'gemma_model_file_name',
@@ -333,7 +331,7 @@ class _$DataModule extends _i742.DataModule {
 
   @override
   _i226.AppUpdateCheckRepositoryImpl get appUpdateCheckRepositoryImpl =>
-      _i226.AppUpdateCheckRepositoryImpl(_getIt<_i627.FirebaseRemoteConfig>());
+      _i226.AppUpdateCheckRepositoryImpl();
 
   @override
   _i680.AppLocalSettingsRepositoryImpl get appLocalSettingsRepositoryImpl =>
