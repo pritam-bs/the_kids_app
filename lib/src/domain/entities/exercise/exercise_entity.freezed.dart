@@ -200,7 +200,7 @@ class MatchWordExerciseEntity implements ExerciseEntity {
   return EqualUnmodifiableListView(_englishOptions);
 }
 
-// List of 3 English words (options)
+// List of 3-4 English words
  final  String correctEnglishWord;
 
 /// Create a copy of ExerciseEntity

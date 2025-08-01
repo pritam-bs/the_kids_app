@@ -3,6 +3,6 @@ import 'package:the_kids_app/src/core/haptics/haptic_service.dart';
 
 @module
 abstract class AudioHapticsModule {
-  @preResolve
+  @Singleton()
   HapticService get hapticService => HapticService();
 }
