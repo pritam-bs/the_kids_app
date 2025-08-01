@@ -7,14 +7,14 @@ sealed class ExerciseEntity with _$ExerciseEntity {
   // Data for "Match the Word" exercise
   const factory ExerciseEntity.matchWord({
     required String targetGermanWord, // The German word to be shown
-    required List<String> englishOptions, // List of 3 English words (options)
+    required List<String> englishOptions, // List of 3-4 English words
     required String correctEnglishWord, // The correct English translation
   }) = MatchWordExerciseEntity;
 
   // Data for "Listen and Choose" exercise
   const factory ExerciseEntity.listenChoose({
     required String targetGermanWord, // The German word to be spoken
-    required List<String> germanOptions, // List of 3 German words (options)
+    required List<String> germanOptions, // List of 3-4 German words
   }) = ListenChooseExerciseEntity;
 
   // Data for "Spell the Word" exercise
@@ -22,7 +22,7 @@ sealed class ExerciseEntity with _$ExerciseEntity {
     required String targetGermanWord,
     required String englishTranslation, // The German word to be spelled
     required List<String>
-    scrambledLetters, // Scrambled letters (includes extra)
+    scrambledLetters, // Scrambled letters
   }) = SpellWordExerciseEntity;
 
   // Data for "Sentence Scramble" exercise

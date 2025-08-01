@@ -4,7 +4,6 @@ abstract class ExerciseConstants {
   static const listenChoose = 'listenChoose';
   static const spellWord = 'spellWord';
   static const sentenceScramble = 'sentenceScramble';
-  static const fillBlank = 'fillBlank';
 }
 
 enum ExerciseType { matchWord, listenChoose, spellWord, sentenceScramble }
