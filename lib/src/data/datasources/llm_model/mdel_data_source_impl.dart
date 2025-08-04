@@ -30,6 +30,7 @@ class ModelDataSourceImpl implements ModelDataSource {
       url: _getGcsUrl(_modelFileName),
       filename: _modelFileName,
       updates: Updates.statusAndProgress,
+      retries: 5,
     );
 
     await _saveTaskId(_modelFileName, task.taskId);
