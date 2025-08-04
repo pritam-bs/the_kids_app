@@ -17,7 +17,8 @@ class ModelRepositoryImpl implements ModelRepository {
         .downloadModel(
           onProgress: (progress) {
             if (!controller.isClosed) {
-              controller.sink.add(progress);
+              final clampedProgress = progress.clamp(0.0, 1.0);
+              controller.sink.add(clampedProgress);
             }
           },
         )
@@ -57,7 +58,8 @@ class ModelRepositoryImpl implements ModelRepository {
           onProgress: (progress) {
             // The data source's callback feeds our stream.
             if (!controller.isClosed) {
-              controller.sink.add(progress);
+              final clampedProgress = progress.clamp(0.0, 1.0);
+              controller.sink.add(clampedProgress);
             }
           },
         )
